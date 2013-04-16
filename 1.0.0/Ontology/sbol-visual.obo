@@ -1,0 +1,179 @@
+format-version: 1.2
+date: 12:04:2013 23:39
+saved-by: jackie
+auto-generated-by: OBO-Edit 2.2
+default-namespace: sbolv
+
+[Term]
+id: SBOL:0000000
+name: DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T15:19:00Z
+
+[Term]
+id: SBOL:0000001
+name: promoter
+xref: SO:0000167
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T15:19:30Z
+
+[Term]
+id: SBOL:0000002
+name: assembly scar
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T15:25:29Z
+
+[Term]
+id: SBOL:0000003
+name: operator
+xref: SO:0000057
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000004
+name: cds
+xref: SO:0000316
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000005
+name: ribosome entry site
+xref: SO:0000139
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000006
+name: terminator
+xref: SO:0000141
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000007
+name: insulator
+xref: SO:0000627
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000008
+name: ribonuclease site
+def: "A region of DNA sequence that codes for a ribonuclease cleavage site on the RNA transcript." []
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000009
+name: rna stability element
+xref: SO:0001957
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000010
+name: protease site
+xref: SO:0001956
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000011
+name: protein stability element
+xref: SO:0001955
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000012
+name: origin of replication
+xref: SO:0000296
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000013
+name: primer binding site
+xref: SO:0005850
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000014
+name: restriction enzyme recognition site
+xref: SO:0001687
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000015
+name: blunt restriction site
+xref: SO:0001691
+is_a: SBOL:0000014 ! restriction enzyme recognition site
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000016
+name: 5' sticky restriction site
+def: "A restriction enzyme recognition site that, when cleaved, results in 3-prime overhangs." []
+is_a: SBOL:0000014 ! restriction enzyme recognition site
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000017
+name: 3' sticky restriction site
+def: "A restriction enzyme recognition site that, when cleaved, results in 3-prime overhangs." []
+is_a: SBOL:0000014 ! restriction enzyme recognition site
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000018
+name: 5' overhang
+xref: SO:0001932
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000019
+name: 3' overhang
+xref: SO:0001933
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000020
+name: signature
+def: "A region of DNA sequence where developer information is encoded." []
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000021
+name: user defined
+def: "A region of a DNA sequence not covered by other SBOL Visual symbols." []
+is_a: SBOL:0000000 ! DNA Component Type
+created_by: jackie
+creation_date: 2013-04-11T18:23:06Z
+
