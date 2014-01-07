@@ -1,12 +1,13 @@
 format-version: 1.2
-date: 12:04:2013 23:39
+date: 17:07:2013 20:34
 saved-by: jackie
 auto-generated-by: OBO-Edit 2.2
-default-namespace: sbolv
+default-namespace: sbol
 
 [Term]
 id: SBOL:0000000
-name: DNA Component Type
+name: SBOL Visual Symbol
+relationship: represents SBOL:0000023 ! DNAComponent
 created_by: jackie
 creation_date: 2013-04-11T15:19:00Z
 
@@ -14,30 +15,33 @@ creation_date: 2013-04-11T15:19:00Z
 id: SBOL:0000001
 name: promoter
 xref: SO:0000167
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T15:19:30Z
 
 [Term]
 id: SBOL:0000002
 name: assembly scar
-is_a: SBOL:0000000 ! DNA Component Type
+def: "A region of DNA sequence formed from the ligation of two sticky ends where the palindrome is broken and no longer comprises the recognition site and thus cannot be re-cut by the restriction enzymes used to create the sticky ends" []
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T15:25:29Z
 
 [Term]
 id: SBOL:0000003
 name: operator
+def: "A regulatory element of an operon to which activators or repressors bind thereby effecting translation of genes in that operon" []
 xref: SO:0000057
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
 [Term]
 id: SBOL:0000004
 name: cds
+def: "A contiguous sequence which begins with, and includes, a start codon and ends with, and includes, a stop codon." []
 xref: SO:0000316
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -45,7 +49,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000005
 name: ribosome entry site
 xref: SO:0000139
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -53,15 +57,16 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000006
 name: terminator
 xref: SO:0000141
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
 [Term]
 id: SBOL:0000007
 name: insulator
+def: "A transcriptional cis regulatory region that when located between a CM and a gene's promoter prevents the CRM from modulating that genes expression." []
 xref: SO:0000627
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -69,7 +74,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000008
 name: ribonuclease site
 def: "A region of DNA sequence that codes for a ribonuclease cleavage site on the RNA transcript." []
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -77,7 +82,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000009
 name: rna stability element
 xref: SO:0001957
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -85,7 +90,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000010
 name: protease site
 xref: SO:0001956
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -93,15 +98,16 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000011
 name: protein stability element
 xref: SO:0001955
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
 [Term]
 id: SBOL:0000012
 name: origin of replication
+def: "The origin of replication; starting site for duplication of a nucleic acid molecule to give two identical copies" [SO:0000296]
 xref: SO:0000296
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -109,7 +115,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000013
 name: primer binding site
 xref: SO:0005850
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -117,7 +123,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000014
 name: restriction enzyme recognition site
 xref: SO:0001687
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -148,16 +154,18 @@ creation_date: 2013-04-11T18:23:06Z
 [Term]
 id: SBOL:0000018
 name: 5' overhang
+def: "A terminal region of DNA sequence where the end of the region is not blunt ended and the exposed single strand terminates at the 3' end." []
 xref: SO:0001932
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
 [Term]
 id: SBOL:0000019
 name: 3' overhang
+def: "A terminal region of DNA sequence where the end of the region is not blunt ended and the exposed single strand terminates at the 3' end." []
 xref: SO:0001933
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -165,7 +173,7 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000020
 name: signature
 def: "A region of DNA sequence where developer information is encoded." []
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
 
@@ -173,7 +181,72 @@ creation_date: 2013-04-11T18:23:06Z
 id: SBOL:0000021
 name: user defined
 def: "A region of a DNA sequence not covered by other SBOL Visual symbols." []
-is_a: SBOL:0000000 ! DNA Component Type
+is_a: SBOL:0000000 ! SBOL Visual Symbol
 created_by: jackie
 creation_date: 2013-04-11T18:23:06Z
+
+[Term]
+id: SBOL:0000022
+name: SBOL:Core Term
+created_by: jackie
+creation_date: 2013-07-17T01:44:12Z
+
+[Term]
+id: SBOL:0000023
+name: DNAComponent
+def: "A DNA component represents a segment of DNA that serves to  abstract the DNA sequence as an individual object, which can then be manipulated, combined, and reused in engineering new biological systems." []
+is_a: SBOL:0000022 ! SBOL:Core Term
+relationship: has_property SBOL:0000027 ! type
+created_by: jackie
+creation_date: 2013-07-17T01:27:13Z
+
+[Term]
+id: SBOL:0000024
+name: Collection
+def: "Collection A collection is an organizational container, a group of DnaComponents. For example, a set of restriction enzyme recognition sites, such as the components commonly used for BBF RFC 10 BioBricks could be grouped. A Collection might contain DNA components used in a specific project, lab, or custom \ngrouping specified by the user." []
+is_a: SBOL:0000022 ! SBOL:Core Term
+created_by: jackie
+creation_date: 2013-07-17T01:45:49Z
+
+[Term]
+id: SBOL:0000025
+name: DNASequence
+def: "DNA Sequence The DNA sequence is a contiguous sequence of nucleotides. The sequence is a fundamental information object for synthetic biology and is needed to reuse components, replicate synthetic biology work, and to assemble new synthetic biological systems. Therefore, both experimental work and theoretical sequence composition research depend heavily on the exact base pair sequence specification associated with DnaComponents." []
+is_a: SBOL:0000022 ! SBOL:Core Term
+created_by: jackie
+creation_date: 2013-07-17T01:46:01Z
+
+[Term]
+id: SBOL:0000026
+name: SequenceAnnotation
+def: "Sequence Annotation The sequence annotation is the position and strand orientation of a notable sub-sequence found within the DnaComponent being described. Annotations provide the link which describes the DNA sequence of a component in terms of other components, subComponents. When a DNA component is abstract, SequenceAnnotations specify relative positions between subComponents." []
+is_a: SBOL:0000022 ! SBOL:Core Term
+created_by: jackie
+creation_date: 2013-07-17T01:48:15Z
+
+[Term]
+id: SBOL:0000027
+name: type
+def: "Zero or more values of type URI (IETF RFC 2396) referencing the Sequence Ontology (see Appendix for commonly used terms). These provide a defined terminology of types of DnaComponents. This vocabulary may be extended, (use \"Request a Term\" http://sequenceontology.org)." []
+created_by: jackie
+creation_date: 2013-07-17T01:53:34Z
+
+[Typedef]
+id: has_property
+name: has_property
+created_by: jackie
+creation_date: 2013-07-17T01:58:14Z
+
+[Typedef]
+id: is_property_of
+name: is_property_of
+created_by: jackie
+creation_date: 2013-07-17T01:56:48Z
+
+[Typedef]
+id: represents
+name: represents
+def: "A SBOL Visual Symbol represents a DNA Component when..." []
+created_by: jackie
+creation_date: 2013-07-17T01:26:09Z
 
