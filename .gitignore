@@ -1,0 +1,26 @@
+## python notebooks
+##########
+.ipynb_checkpoints
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+**.DS_Store
+**.svn
+
+#####################
+# Office files
+#####################
+**.xlsx
+**.xls
+**.doc
