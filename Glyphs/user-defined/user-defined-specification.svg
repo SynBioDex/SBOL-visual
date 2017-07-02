@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="terminator.svg"><metadata
-     id="metadata14"><rdf:RDF><cc:Work
+   sodipodi:docname="user-defined-specification.svg"><metadata
+     id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
@@ -28,14 +28,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1008"
-     inkscape:window-height="746"
-     id="namedview12"
+     inkscape:window-width="944"
+     inkscape:window-height="738"
+     id="namedview10"
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
      inkscape:cx="25"
-     inkscape:cy="23.034063"
+     inkscape:cy="20.037848"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -43,18 +43,24 @@
      id="defs4"><style
        type="text/css"
        id="style6"><![CDATA[
-      path,circle {
+      path,circle,polygon {
         stroke:#000000;
         stroke-width: 3;
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><path
-     d="m 22.499997,34.989391 0,-24.000001"
+     d="m 2.4999973,12.499997 0,20 39.9999997,0 0,-20 z"
      id="path8"
      inkscape:connector-curvature="0"
-     style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /><path
-     d="m 7.4999973,9.9893904 29.9999997,0"
-     id="path10"
-     inkscape:connector-curvature="0"
-     style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /></svg>
+     style="fill:#b3b3b3;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /><rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.50000000000000000;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4159"
+     width="43.370213"
+     height="23.220665"
+     x="0.89886445"
+     y="10.918052" /><path
+     style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#999999;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="m -5.9265904,33.914 c 56.8531754,0 56.8531754,0 56.8531754,0"
+     id="path4161"
+     inkscape:connector-curvature="0" /></svg>
