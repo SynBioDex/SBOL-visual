@@ -4,7 +4,7 @@
 SO:0001691
 
 ## Recommended Glyph and Alternates
-The sole blunt restriction site glyph is an image of two brackets facing away from one another to make a smooth-edged gap:
+The blunt restriction site glyph is an image of two brackets facing away from one another to make a smooth-edged gap:
 
 ![glyph specification](blunt-restriction-site-specification.png)
 
