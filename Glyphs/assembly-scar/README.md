@@ -6,7 +6,7 @@ SO:0001953
 ## Recommended Glyph and Alternates
 The sole assembly scar glyph is an "equal sign" image, the pattern produced by the union of a 5' sticky end and 3' sticky end glyph:
 
-![glyph](assembly-scar.pdf)
+![glyph](assembly-scar.png)
 
 ## Prototypical Example
 
