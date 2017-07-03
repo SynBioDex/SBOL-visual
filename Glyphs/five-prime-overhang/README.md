@@ -1,9 +1,9 @@
 # 5' Overhang Site
 
 ## Associated SO term(s)
-SO:0001932
+SO:0001932: 5' Overhang Site
 
-SO:0001933 (3' Overhang Site)
+SO:0001933: 3' Overhang Site
 
 
 ## Recommended Glyph and Alternates

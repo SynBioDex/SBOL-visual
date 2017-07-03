@@ -1,7 +1,7 @@
 # 5' Sticky Restriction Site
 
 ## Associated SO term(s)
-SO:0001975
+SO:0001975 (5' Sticky Restriction Site)
 
 SO:0001976 (3' Sticky Restriction Site)
 
