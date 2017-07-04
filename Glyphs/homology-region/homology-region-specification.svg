@@ -16,13 +16,13 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="cds.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/cds/cds-specification.png"
+   sodipodi:docname="homology-region.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/homology-region/homology-region-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -53,8 +53,18 @@
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><path
-     d="m 5.2562231,33.900582 23.6111729,0 10.876433,-11.400584 -10.876433,-11.400585 -23.6111729,0 z"
+     d="m 14.41933,33.858209 15.772191,0 L 41.067954,22.457625 30.191521,11.05704 14.41933,11.162972 3.9320435,22.182201 Z"
      id="path8"
      inkscape:connector-curvature="0"
      style="fill:none;stroke:#000000;stroke-width:2.99544764;stroke-linecap:round;stroke-linejoin:round"
-     sodipodi:nodetypes="cccccc" /></svg>
+     sodipodi:nodetypes="ccccccc" /><path
+     style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 45.233046,38.432198 c -45.44491038,0 -45.233046,0 -45.233046,0"
+     id="path4134"
+     inkscape:connector-curvature="0" /><rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.53353709;stroke-miterlimit:4;stroke-dasharray:1.06707425, 0.53353712;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4136"
+     width="39.305588"
+     height="28.500502"
+     x="2.9107354"
+     y="9.7857628" /></svg>

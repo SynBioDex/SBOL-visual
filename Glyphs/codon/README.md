@@ -10,7 +10,7 @@ SO:0000319: Stop Codon
 ## Recommended Glyph and Alternates
 The proposed aptamer glyphs are two versions of a cartoon diagram of nucleic acid secondary structure like that found in aptamers:
 
-![glyph specification](codon.png)
+![glyph specification](codon-specification.png)
 
 Nucleotides can be indicated with colors or letters in the boxes:
 
