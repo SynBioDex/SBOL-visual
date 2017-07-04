@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="27.438627mm"
-   height="30.240513mm"
-   viewBox="0 0 97.223482 107.15142"
+   width="0.5in"
+   height="0.5in"
+   viewBox="0 0 45.000002 44.999996"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="codon.svg"
-   inkscape:export-filename="/home/nmrp3/Documents/sbol/codon.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/codon/codon.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,23 +28,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9140339"
-     inkscape:cx="27.257272"
-     inkscape:cy="53.575708"
+     inkscape:zoom="11.192134"
+     inkscape:cx="12.604124"
+     inkscape:cy="24.984199"
      inkscape:document-units="px"
-     inkscape:current-layer="g3524"
-     showgrid="true"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1021"
-     inkscape:window-x="-4"
+     inkscape:window-width="1118"
+     inkscape:window-height="762"
+     inkscape:window-x="5"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     showguides="true"
-     gridtolerance="10">
+     inkscape:window-maximized="0"
+     showguides="false"
+     gridtolerance="10"
+     units="in">
     <inkscape:grid
        type="xygrid"
        id="grid4201" />
@@ -57,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,17 +66,18 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-95.34347,-307.55329)">
+     transform="translate(-95.34347,-369.70473)">
     <rect
-       style="opacity:0.5;fill:none;stroke:#000000;stroke-width:2.90799999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4157"
-       width="94.315483"
-       height="104.24342"
-       x="96.79747"
-       y="309.00729" />
+       style="opacity:0.5;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4163"
+       width="32.612183"
+       height="13.044894"
+       x="101.68721"
+       y="383.96887"
+       ry="0" />
     <g
        id="g3524"
-       transform="translate(0.63178906,-20.469965)">
+       transform="matrix(0.51627698,0,0,0.44246563,44.11762,233.2864)">
       <g
          transform="translate(6.3267494,5.0505704)"
          id="g4159">
@@ -102,5 +104,17 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
     </g>
+    <rect
+       style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.50000000000000000;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4141"
+       width="34.845901"
+       height="18.763178"
+       x="100.34698"
+       y="382.80734" />
+    <path
+       style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 95.34347,401.39181 c 45.12097,0 45.12097,0 45.12097,0"
+       id="path4165"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
