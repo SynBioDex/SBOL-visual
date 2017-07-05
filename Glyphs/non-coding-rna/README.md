@@ -15,4 +15,4 @@ The proposed non-coding RNA glyphs are both single-stranded RNA "wiggles," one o
 gRNA
 
 ## Notes
-*this section deliberately blank*
+Note overlap with proposal for mature transcript region
