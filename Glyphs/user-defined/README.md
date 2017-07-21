@@ -10,27 +10,42 @@ Composite: SO:0000804 Engineered Region
 ## Recommended Glyph and Alternates
 
 Currently, all three of these meanings are covered by the "User Defined" glyph, a plain rectangle suggesting a blank slate to be written upon:
+
 ![glyph specification](user-defined-specification.png)
 
 A number of potential replacement glyphs and variants have been proposed for covering Unspecified and/or No Glyph Assigned.  These are:
 
 * The unicode "replacement character" glyph, indicating a missing or invalid symbol:
-* A tall thin rectangle, which some fonts use as an alternative "replacement character"
-* A piece of DNA:
-![glyph specification](dna-specification.png)
+* A tall thin rectangle, which some fonts use as an alternative "replacement character":
+
+  ![glyph specification](tall-rectangle-specification.png)
+* A piece of DNA: 
+
+  ![glyph specification](dna-specification.png)
 * A horizontal line:
 * A horizontal line with a question mark over it:
 * A dashed line rectangle, implying something is missing:
+
+  ![glyph specification](dashed-rectangle-specification.png)
 * A rectangle with an X through it:
+
+  ![glyph specification](X-rectangle-specification.png)
 * A half-rounded rectangle, the SBGN glyph for a nucleic acid:
+
+  ![glyph specification](halfround-rectangle-specification.png)
 
 For Composite the following glyphs have been proposed:
 
 * Dashed "expanding lines" connecting a point of the backbone to a backbone diagramming the contents of the composite:
 * Dashed "expanding lines" connecting an Omitted glyph (one candidate shown here for an example) to a backbone diagramming the contents of the composite:
-* Dashest "expanding lines" connecting two bars to a backbone diagramming the contents of the composite: 
+* Dashed "expanding lines" connecting two bars to a backbone diagramming the contents of the composite: 
 * A double rectangle:
+
+![glyph specification](double-box-specification.png)
+
 * A "black box":
+
+![glyph specification](black-box-specification.png)
 
 ## Prototypical Example
 
