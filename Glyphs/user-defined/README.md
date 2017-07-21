@@ -16,6 +16,8 @@ Currently, all three of these meanings are covered by the "User Defined" glyph, 
 A number of potential replacement glyphs and variants have been proposed for covering Unspecified and/or No Glyph Assigned.  These are:
 
 * The unicode "replacement character" glyph, indicating a missing or invalid symbol:
+
+  ![glyph specification](replacement-glyph-specification.png)
 * A tall thin rectangle, which some fonts use as an alternative "replacement character":
 
   ![glyph specification](tall-rectangle-specification.png)
@@ -23,7 +25,11 @@ A number of potential replacement glyphs and variants have been proposed for cov
 
   ![glyph specification](dna-specification.png)
 * A horizontal line:
+
+  ![glyph specification](blank-line-specification.png)
 * A horizontal line with a question mark over it:
+
+  ![glyph specification](blank-line-question-specification.png)
 * A dashed line rectangle, implying something is missing:
 
   ![glyph specification](dashed-rectangle-specification.png)
@@ -34,11 +40,19 @@ A number of potential replacement glyphs and variants have been proposed for cov
 
   ![glyph specification](halfround-rectangle-specification.png)
 
+
 For Composite the following glyphs have been proposed:
 
-* Dashed "expanding lines" connecting a point of the backbone to a backbone diagramming the contents of the composite:
-* Dashed "expanding lines" connecting an Omitted glyph (one candidate shown here for an example) to a backbone diagramming the contents of the composite:
-* Dashed "expanding lines" connecting two bars to a backbone diagramming the contents of the composite: 
+* Dashed "expanding lines" connecting an Omitted glyph (one candidate shown here for an example) to a backbone diagramming the contents of the composite. Note this glyph's bounding box is only the Omitted glyph.
+
+  ![glyph specification](composite-omitted-detail-specification.png)
+
+* Dashed "expanding lines" connecting a point of the backbone to a backbone diagramming the contents of the composite.  Note that this glyph has no bounding box.
+
+  ![glyph specification](composite-point-specification.png)
+* Dashed "expanding lines" connecting two bars to a backbone diagramming the contents of the composite. Note that this glyph has no bounding box.
+
+  ![glyph specification](composite-bars-specification.png)
 * A double rectangle:
 
 ![glyph specification](double-box-specification.png)
