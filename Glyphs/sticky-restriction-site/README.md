@@ -9,6 +9,10 @@ SO:0001976 (3' Sticky Restriction Site)
 
 
 ## Recommended Glyph and Alternates
+A sticky restriction site of unspecified direction is an angled set of cuts:
+
+![glyph specification](sticky-restriction-site-specification.png)
+
 The 5' sticky restriction site glyph is an image of the lines along which two strands of DNA will be cut into 5' sticky ends:
 
 ![glyph specification](five-prime-sticky-restriction-site-specification.png)
