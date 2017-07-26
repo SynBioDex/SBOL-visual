@@ -43,7 +43,11 @@ A number of potential replacement glyphs and variants have been proposed for cov
 
 For Composite the following glyphs have been proposed:
 
-* Dashed "expanding lines" connecting an Omitted glyph (one candidate shown here for an example) to a backbone diagramming the contents of the composite. Note this glyph's bounding box is only the Omitted glyph.
+* Dashed "expanding lines" connecting any "base" glyph representing the more abstract composite (e.g., Omitted Detail, or Terminator, or Promoter) to a backbone diagramming the contents of the composite. Note the bounding box is indicating the location of the base glyph, and would scale with that glyph.
+
+  ![glyph specification](composite-base-symbol-specification.png)
+
+* Dashed "expanding lines" connecting specifically an Omitted glyph (one candidate shown here for an example) to a backbone diagramming the contents of the composite. Note this glyph's bounding box is only the Omitted glyph.
 
   ![glyph specification](composite-omitted-detail-specification.png)
 
