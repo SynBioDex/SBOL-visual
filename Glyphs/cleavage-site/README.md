@@ -12,11 +12,19 @@ The protease site glyph is an "X" denoting cleavage on top of a stem connecting 
 
 ![glyph specification](protease-site-specification.png)
 
+The complementary Ribonuclease Site glyph is identical except that its stem is a dashed line rather than a solid line.
+
+The complementary Restriction Site glyph is identical except that it has no "X" on top. Two possible recommended backbone alignments are under consideration.  Site centered on backbone:
+
+![glyph specification](restriction-enzyme-recognition-site-middle.png)
+
+Site on top of backbone:
+
+![glyph specification](restriction-enzyme-recognition-site-top.png)
+
 ## Prototypical Example
 
 RNAse E site, BamHI
 
 ## Notes
-The complementary Ribonuclease Site glyph is identical except that its stem is a dashed line rather than a solid line.
-
-The complementary Restriction Site glyph is identical except that it has no "X" on top. Its vertical alignment is currently ambiguous and thus not specified.
+*this section deliberately blank*

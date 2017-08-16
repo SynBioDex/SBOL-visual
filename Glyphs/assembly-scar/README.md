@@ -8,10 +8,17 @@ The assembly scar glyph is an "equal sign" image, the pattern produced by the un
 
 ![glyph specification](assembly-scar-specification.png)
 
+Two possible recommended backbone alignments are under consideration.  Scar on either side of backbone:
+
+![glyph specification](assembly-scar-specification-middle.png)
+
+Scar on top of backbone:
+
+![glyph specification](assembly-scar-specification-top.png)
+
 ## Prototypical Example
 
 Ligated sticky ends following BioBrick assembly.
 
 ## Notes
-Assembly Scar has ambiguous vertical position, so its glyph does not yet have a recommended backbone alignment.
-
+*this section deliberately blank*
