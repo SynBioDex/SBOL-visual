@@ -1,7 +1,7 @@
 # Sticky End Restriction Enzyme Cleavage Site
 
 ## Associated SO term(s)
-SO:0001692 (unspecified direction)
+SO:0001692 (sticky end restriction enzyme cleavage site)
 
 SO:0001975 (5' Sticky Restriction Site)
 

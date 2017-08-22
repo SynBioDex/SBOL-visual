@@ -20,7 +20,7 @@ A number of proposals have been made for Protein Domain glyphs. These are:
 
 * A broken CDS pentagon
 
-![glyph specification](broken-CDS-specification.png)
+![glyph specification](broken-cds-specification.png)
 
 * A broken arrow (i.e., broken alternate CDS)
 
