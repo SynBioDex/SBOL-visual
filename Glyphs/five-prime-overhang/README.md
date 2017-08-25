@@ -11,6 +11,11 @@ The 5' overhang site glyph is an image of a strand of DNA extended on the 5' edg
 
 ![glyph specification](five-prime-overhang-specification.png)
 
+With a double-stranded backbone:
+
+![glyph specification](five-prime-overhang-specification-double.png)
+
+
 ## Prototypical Example
 
 EcoRI site after cleavage.

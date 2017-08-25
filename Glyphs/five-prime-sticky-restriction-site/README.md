@@ -11,12 +11,20 @@ The 5' sticky restriction site glyph is an image of the lines along which two st
 
 ![glyph specification](five-prime-sticky-restriction-site-specification.png)
 
+Verticle position with respect to the backbone might be either between a douple backbone and in a break in a single backbone:
+
+![glyph specification](five-prime-sticky-restriction-site-specification-middle.png)
+
+![glyph specification](five-prime-sticky-restriction-site-specification-break.png)
+
+or else above it:
+
+![glyph specification](five-prime-sticky-restriction-site-specification-top.png)
+
+
 ## Prototypical Example
 
 EcoRI restriction site.
 
 ## Notes
 The complementary 3' Sticky Restriction Site glyph is a reflection of the 5' Sticky Restriction Site.
-
-5' Sticky Restriction Site has ambiguous vertical position, so its glyph does not yet have a recommended backbone alignment.
-
