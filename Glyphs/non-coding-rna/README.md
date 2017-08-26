@@ -4,11 +4,15 @@
 SO:0001263: Non-Coding RNA Gene
 
 ## Recommended Glyph and Alternates
-The proposed non-coding RNA glyphs are both single-stranded RNA "wiggles," one on top of a box, the other hovering above the backbone:
+The proposed non-coding RNA glyphs are both single-stranded RNA "wiggles," one on top of a box:
 
 ![glyph specification](ncrna-box-specification.png)
 
+the other hovering above the backbone, with or without nucleotide "teeth":
+
 ![glyph specification](ncrna-hover-specification.png)
+
+![glyph specification](ncrna-hover-teeth-specification.png)
 
 ## Prototypical Example
 
