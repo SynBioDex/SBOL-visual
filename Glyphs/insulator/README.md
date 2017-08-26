@@ -19,7 +19,17 @@ The position of the back bone might be below, centered, or hovering below:
 ![glyph specification](insulator-specification-middle.png)
 ![glyph specification](insulator-specification-bottom.png)
 ![glyph specification](insulator-specification-hover.png)
- 
+
+Two possible alternate glyphs have also been proposed:
+
+- A circle with an X through the middle:
+
+![glyph specification](insulator-specification-circle.png)
+
+- Parentheses around an ellipsis:
+
+![glyph specification](insulator-specification-ellipsis.png)
+
 ## Prototypical Example
 
 RiboJ or BCDs
