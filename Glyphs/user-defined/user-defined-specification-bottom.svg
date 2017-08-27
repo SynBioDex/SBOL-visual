@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="user-defined-specification.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/user-defined/user-defined-specification.png"
+   sodipodi:docname="user-defined-specification-bottom.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/user-defined/user-defined-specification-bottom.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -62,4 +62,8 @@
      width="43.370213"
      height="23.220665"
      x="0.89886445"
-     y="10.918052" /></svg>
+     y="10.918052" /><path
+     style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#999999;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="m -5.9265904,33.914 c 56.8531754,0 56.8531754,0 56.8531754,0"
+     id="path4161"
+     inkscape:connector-curvature="0" /></svg>
