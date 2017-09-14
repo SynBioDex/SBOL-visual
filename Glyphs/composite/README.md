@@ -20,4 +20,9 @@ An "expression cassette" containing a ribosome entry site, coding sequence, and 
 
 ## Notes
 An "abbreviated" representation of composite, simply indicating that more structure is available, can be made by using short lines and placing only an Omitted Detail glyph in the secondary backbone. For example, here is an example of an abbreviated composite promoter: 
+
 ![glyph specification](abbreviated-composite-example.png)
+
+and a composite with a base symbol for which no particular glyph has been assigned:
+
+![glyph specification](abbreviated-composite-example2.png)
