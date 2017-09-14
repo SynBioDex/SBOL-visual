@@ -9,7 +9,15 @@ Currently, this is covered by the "User Defined" glyph, a plain rectangle sugges
 
 ![glyph specification](user-defined-specification.png)
 
-A number of potential replacement glyphs have been proposed for covering No Glyph Assigned.  These are:
+A number of potential replacement glyphs have been proposed for covering No Glyph Assigned.  
+
+One option is to have a bracket, suggesting information that needs to be filled in:
+
+![glyph specification](no-glyph-assigned-brackets-specification.png)
+
+We might also suggest putting the name of the term in between the brackets.
+
+Alternatively, it might be handled by styling requirements on rectangle. The proposed options are:
 
 * A tall thin rectangle, which some fonts use as an alternative "replacement character":
 
