@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="omitted-detail-brackets-specification.svg"
-   inkscape:export-filename="omitted-detail-brackets-specification.png"
+   sodipodi:docname="omitted-detail.svg"
+   inkscape:export-filename="omitted-detail-ellipsis-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,33 +68,16 @@
     <g
        id="g4159"
        transform="matrix(0.36747894,0,0,0.36747894,68.26791,261.3534)" />
-    <path
-       style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.43169853;stroke-miterlimit:4;stroke-dasharray:0.86339708, 0.43169854;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 95.432818,392.20473 c 14.653152,0 14.653152,0 14.653152,0"
-       id="path4146"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.45806268;stroke-miterlimit:4;stroke-dasharray:0.91612535, 0.45806267;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 123.84563,392.20473 16.79751,0"
-       id="path4148"
-       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="117.3232"
-       y="397.34634"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.96691132px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="117.32998"
+       y="393.50592"
        id="text4203"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4205"
-         x="117.3232"
-         y="397.34634">[ ]</tspan></text>
-    <rect
-       style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4207"
-       width="15.993375"
-       height="18.405785"
-       x="109.28183"
-       y="382.98602" />
+         x="117.32998"
+         y="393.50592">...</tspan></text>
   </g>
 </svg>
