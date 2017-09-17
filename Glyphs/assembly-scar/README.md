@@ -8,9 +8,10 @@ The assembly scar glyph is an "equal sign" image, the pattern produced by the un
 
 ![glyph specification](assembly-scar-specification.png)
 
-Three possible recommended backbone alignments are under consideration.  Scar covering backbone:
+Three possible recommended backbone alignments are under consideration.  Scar covering backbone, single or double-strand:
 
 ![glyph specification](assembly-scar-specification-covering.png)
+![glyph specification](assembly-scar-specification-covering-doublestrand.png)
 
 Scar on either side of backbone:
 
