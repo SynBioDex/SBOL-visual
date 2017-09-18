@@ -25,7 +25,7 @@ There are several proposals for the DNA / RNA / protein system for stems:
 
 ![glyph specification](stem-top-specification-straight.png)
 ![glyph specification](stem-top-specification-wavy.png)
-![glyph specification](stem-top-specification-sawtooth.png)
+![glyph specification](stem-top-specification-sawtooth-sharper.png)
 
 - One, two, three lines:
 
