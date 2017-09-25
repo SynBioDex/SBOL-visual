@@ -1,7 +1,7 @@
 # Double-Stranded Nucleic Acid
 
 ## Associated BioPAX term(s)
-Dna: http://www.biopax.org/release/biopax- level3.owl#Dna
+Dna: http://www.biopax.org/release/biopax-level3.owl#Dna
 
 ## Recommended Glyph and Alternates
 A number of variant glyphs have been proposed for dsNA, including a double-helix:
@@ -33,7 +33,7 @@ a "ladder" with 5' hooks in each direction:
 
 ![glyph specification](ladder-hook-specification.png)
 
-Alternately, ssNA might be represented by the SBGN "nucleic acid" half-round rectangle:
+Alternately, dsNA might be represented by the SBGN "nucleic acid" half-round rectangle:
 
 ![glyph specification](halfround-rectangle-specification.png)
 

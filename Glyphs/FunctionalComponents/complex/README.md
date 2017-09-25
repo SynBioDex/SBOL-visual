@@ -1,7 +1,7 @@
 # Complex
 
 ## Associated BioPAX term(s)
-Complex: http://www.biopax.org/release/biopax- level3.owl#Complex
+Complex: http://www.biopax.org/release/biopax-level3.owl#Complex
 
 ## Recommended Glyph and Alternates
 There are several proposed complex glyphs. One is to simply composite together other glyphs.  For example, a protein bound to a small molecule, a guide RNA, or another protein:

@@ -1,7 +1,7 @@
 # Macromolecule
 
 ## Associated BioPAX term(s)
-Protein: http://www.biopax.org/release/biopax- level3.owl#Protein
+Protein: http://www.biopax.org/release/biopax-level3.owl#Protein
 
 ## Recommended Glyph and Alternates
 The macromolecule glyph is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of proteins:
