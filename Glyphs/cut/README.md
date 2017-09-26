@@ -27,6 +27,13 @@ There are several proposals for the DNA / RNA / protein system for stems:
 ![glyph specification](stem-top-specification-wavy.png)
 ![glyph specification](stem-top-specification-sawtooth-sharper.png)
 
+- Straight, Wavy, Looped lines:
+
+![glyph specification](stem-top-specification-straight.png)
+![glyph specification](stem-top-specification-wavy.png)
+![glyph specification](stem-top-specification-loops.png)
+
+
 - One, two, three lines:
 
 ![glyph specification](stem-top-specification-straight.png)
@@ -72,6 +79,10 @@ Stability tops:
 - Semi-circle
 
 ![glyph specification](stem-top-specification-semicircle.png)
+
+- Shield
+
+![glyph specification](stem-top-specification-shield.png)
 
 
 ## Prototypical Example
