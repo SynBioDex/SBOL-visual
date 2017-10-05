@@ -5,31 +5,20 @@ Any SO term that is not covered by any glyph besides the root Sequence Feature
 
 ## Recommended Glyph and Alternates
 
-Currently, this is covered by the "User Defined" glyph, a plain rectangle suggesting a blank slate to be written upon:
+When a part has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.
 
-![glyph specification](user-defined-specification.png)
+An alternative is brackets, suggesting information that needs to be filled in:
 
-A number of potential replacement glyphs have been proposed for covering No Glyph Assigned.  
+![glyph specification](no-glyph-assigned-specification.png)
 
-One option is to have a bracket, suggesting information that needs to be filled in:
-
-![glyph specification](no-glyph-assigned-brackets-specification.png)
-
-We might also suggest putting the name of the term in between the brackets.
-
-Alternatively, it might be handled by styling requirements on rectangle. The proposed options are:
-
-* A tall thin rectangle, which some fonts use as an alternative "replacement character":
-
-  ![glyph specification](tall-rectangle-specification.png)
-
-* A dashed line rectangle, implying something is missing:
-
-  ![glyph specification](dashed-rectangle-specification.png)
+As a best practice, it is RECOMMENDED that the name of the term be put in between the brackets.
 
 ## Prototypical Example
 
 No Glyph Assigned is intended to be used for any Component that is not covered by other SBOL Visual glyphs.
+
+For example, at present there is no glyph recommended for representing a transposon.
+
 
 ## Notes
 No Glyph Assigned is intended for constructs with a defined specific role that happens to not yet be covered by available approved glyphs (other than the root "Sequence Feature"). It is more likely to appear in machine-generated diagrams than in human-generated diagrams, since humans are likely to invent and use their own glyph for the purpose.
