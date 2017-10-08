@@ -1,0 +1,41 @@
+% -----------------------------------------------------------------------------
+\section{Relationship to SBOL Visual 1.0}\label{sec:sbol1}
+% -----------------------------------------------------------------------------
+
+SBOL Visual 1.1 differs from SBOL Visual 1.0 in the following major ways:
+\begin{itemize}
+\item The relationship between diagrams and the SBOL data model is made explicit.
+\item A number of requirements and best practices are specified for glyphs and diagrams, including:
+	\begin{itemize}
+	\item Components within a ComponentDefinition are required to contact its nucleic acid backbone.
+	\item When specifying a ComponentDefinition, the nucleic acid backbone line is now required, and the number of lines allowed in various circumstances is constrained.
+	% glyph overlaps needs to be handled be SEP
+	%\item Glyphs are not allowed to overlap in bounding-box unless 
+	\item Explicit statement of when a glyph can and cannot be used to represent a particular element of a diagram.
+	\end{itemize}
+\item Labels that name objects are distinguished from other types of textual annotation.
+\item Explicit statement of which aspects of a symbol are {\em not} controlled.
+\item Symbol variants are now supported.
+\end{itemize}
+
+In addition, the collection of glyphs have been expanded and modified in the following ways:
+\todo[inline]{work this through in detail per the various SEPs}
+
+%
+%\begin{itemize}
+%\item Ribonuclease Site has been assigned SO:0001977.
+%\item 5' Sticky End Restriction Site has been assigned SO:0001975.
+%\item 3' Sticky End Restriction Site has been assigned SO:0001976.
+%\item Signature has been assigned SO:0001978.
+%\end{itemize}
+%
+%% I have verified that there are all as desired.
+%In addition, the following changes have been made to ontology links:
+%\begin{itemize}
+%\item The symbol for 5'UTR (SO:0000204) has been generalized from its former definition as Ribosome Entry Site (SO:0000139).
+%\item User-defined component has been assigned a definition as Sequence Feature (SO:0000110).
+%\item RNA stability element's can be defined as either SO:0001957 or SO:0001546.
+%\item Restriction site can be defined as either SO:0001687 or SO:0000061.
+%\item 5' Overhang Site and 3' Overhang Site were erroneously listed with their ontology terms exchanged; this has been fixed.
+%\end{itemize}
+%

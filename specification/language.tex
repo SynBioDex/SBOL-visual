@@ -1,0 +1,183 @@
+% % -----------------------------------------------------------------------------
+\section{SBOL Visual Diagram Language}
+\label{sec:language}
+% % -----------------------------------------------------------------------------
+
+An SBOL visual diagram represents a collection of \sbol{ModuleDefinition} and \sbol{ComponentDefinition} information.  
+Each \sbol{ModuleDefinition} describes the functional relationships between a set of biological entities,
+while each \sbol{ComponentDefinition} describes the structure of a biological entity.  
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{figures/SBOLsyntax.pdf}
+\caption{Generic syntax of SBOL visual 2.0. A rectilinear boundary indicates a \sbol{ModuleDefinition} comprising some set of \sbol{FunctionalComponent} and \sbol{Interaction} instances.
+A nucleic acid backbone indicates a \sbol{FunctionalComponent} whose \sbol{ComponentDefinition} is specified by the collection of attached nucleic acid \sbol{Component} icons.  
+Strand can optionally be indicated by placing a \sbol{Component} above or below the backbone.  
+Other \sbol{FunctionalComponent} instances are indicated by glyphs not in contact with any backbone.
+\sbol{Interaction}s are directed edges connecting \sbol{Component} or \sbol{FunctionalComponent} instances of the appropriate type for the \sbol{Interaction}.  Undirected edges indicate \sbol{MapsTo} relationships between \sbol{Component} or \sbol{FunctionalComponent} instances (not shown).
+Any of these objects may have an associated label showing its \sbol{name}, and the diagram may further include any form of other annotations, including other types of text.}
+\label{f:syntax}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{figures/SBOLgeneral.pdf}
+\caption{Example illustrating the elements of an SBOL Visual 2 diagram: nucleic acid components on the forward and reverse strand of a backbone, non-nucleic acid components,  interactions between components, and a modular subsystem; the grey labels and indicator lines are annotations.}
+\label{f:example}
+\end{figure}
+% inhibition and production relationships
+
+Specifically, an SBOL visual diagram consists of the classes of object illustrated in \ref{f:syntax}.
+\ref{f:example} shows an example of such a diagram, in a typical usage.
+Full details of this specification are provided in the remainder of this section.
+
+
+\subsection{Nucleic Acid Backbone}
+\label{s:lang:backbone}
+
+A \sbol{FunctionalComponent} with a \sbol{type} designating it as a nucleic acid (e.g., DNA, RNA) MAY be represented by a single or double line, representing the nucleic acid backbone. 
+Information about the \sbol{ComponentDefinition} associated with that \sbol{FunctionalComponent} SHOULD be provided by attaching nucleic acid glyphs to the backbone, as defined below in \ref{s:lang:nacomponent}
+
+\begin{enumerate}
+\item Lines in some cases indicate strand count. 
+	A double-stranded \sbol{Range} of the \sbol{ComponentDefinition} MAY use either a single or double line for the backbone.  
+	A single-stranded \sbol{Range} of the \sbol{ComponentDefinition} MUST use a single line to indicate the backbone.
+	When single and double lines are mixed within a single \sbol{ComponentDefinition}, the single lines always indicate single-stranded regions.
+	Examples are provided in~\ref{exa:1a}.
+	
+	\begin{figure}[h!]
+	\centering
+	\subfigure[Single- or double-strand backbone]{\includegraphics[scale=0.4]{figures/examples/1a-singlestrand.pdf}}
+	\subfigure[Double-strand backbone]{\includegraphics[scale=0.4]{figures/examples/1a-doublestrand.pdf}}
+	\subfigure[Double-strand backbone with single-strand overhangs]{\includegraphics[scale=0.4]{figures/examples/1a-overhangstrand.pdf}}
+	\caption{Examples of indicating strand count in nucleic acid backbones}
+	\label{exa:1a}
+	\end{figure}
+		
+\item A nucleic acid backbone SHOULD be horizontal in orientation, 
+	but MAY use non-horizontal structure to indicate important physical attributes 
+	(e.g., a closed loop to indicate a cyclic plasmid or more complex shapes for DNA nanotech structures).   
+	Examples are provided in~\ref{exa:1b}.
+	
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{figures/examples/1b.pdf}
+	\caption{Recommended, acceptable, and problematic examples of nucleic backbone orientation}
+	\label{exa:1b}
+	\end{figure}
+	
+\item A nucleic acid backbone SHOULD have at least one associated \sbol{Component} glyph (else no structural information is being provided).
+	
+\item Note: while inclusion of two \sbol{Component} instances on the same backbone can provide information about their relative locations (since both are part of the same \sbol{ComponentDefinition}), no relationship is specified between instances on different backbones.
+\end{enumerate}
+
+\subsection{Nucleic Acid Component}
+\label{s:lang:nacomponent}
+
+A glyph in contact with a nucleic acid backbone indicates a \sbol{Component} with a nucleic acid \sbol{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
+The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition} or recursively through a series of such containments.
+
+
+\begin{enumerate}
+\item Every nucleic acid \sbol{Component} glyph MUST have its bounding box contact the nucleic acid backbone associated with its (nth)-parent \sbol{ComponentDefinition}.  In general, it is RECOMMENDED that the symbol itself touch, and not just the bounding box, but for some symbols this may impede clarity.
+	Examples are provided in~\ref{exa:2a}.
+   	\begin{figure}[h!]
+	\centering
+	\subfigure[MUST]{\includegraphics[width=3in]{figures/examples/2a-contact.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[width=3in]{figures/examples/2a-noncontact.pdf}}
+	\caption{Examples of correct and incorrect association of glyphs with a nucleic acid backbone.}
+	\label{exa:2a}
+	\end{figure}
+		
+\item Any nucleic acid \sbol{Component} that is associated with a strand SHOULD be drawn
+	with its vertical midpoint on the side of the backbone representing that strand.
+	In a horizontal orientation the top SHOULD indicate the inline strand and the bottom
+	SHOULD indicate the reverse complement strand.
+	\todo[inline]{Consider allowing reverse by backwards symbol, then all SHOULD use same alignment indicator - bottom or backward}
+	Examples are provided in~\ref{exa:2b}.
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=6in]{figures/examples/2b.pdf}
+	\caption{Example of inline (+) and reverse complement (-) elements.}
+	\label{exa:2b}
+	\end{figure} 
+
+\item Nucleic acid \sbol{Component}s in a sequential relationship SHOULD be drawn from 5' left to 3' right on the inline strand and from 5' right to 3' left on the reverse complement strand.
+
+\item Nucleic acid components with \sbol{Locations} that do not overlap MUST NOT have glyphs whose bounding boxes overlap.
+	An examples is provided in~\ref{exa:2d}.
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=3in]{figures/examples/2d.pdf}
+	\caption{Example of incorrect glyph overlap: promoter (arrow) does not overlap in sequence with 5'UTR and CDS, so MUST NOT overlap visually with them.}
+	\label{exa:2d}
+	\end{figure}
+
+\item Nucleic acid components with \sbol{Location}s that overlap SHOULD have glyphs whose bounding boxes overlap.  Overlap size MAY be used to indicate relative position.
+	Examples are provided in~\ref{exa:2e}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[Restriction site in a CDS]{\includegraphics[scale=0.4]{figures/examples/2e-cutsite.pdf}}
+	\subfigure[3'-side operator in a promoter]{\includegraphics[scale=0.4]{figures/examples/2e-promoter.pdf}}
+	\subfigure[5'-side operator in a promoter]{\includegraphics[scale=0.4]{figures/examples/2e-promoter2.pdf}}
+	\caption{Examples where glyphs SHOULD overlap, but might not if it is more clear, e.g., with an operator site located within the 5' portion of a promoter}
+	\label{exa:2e}
+	\end{figure}
+
+\item A nucleic acid \sbol{Component} SHOULD be represented using a glyph defined in \ref{apdx:sym:nacomponent}.  In this case, the glyph's definition MUST be equal to or a parent of at least one of the \sbol{roles} for the \sbol{Component} or its associated \sbol{ComponentDefinition}, and SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:nacomponent} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	Examples are provided in~\ref{exa:2f}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[SHOULD]{\includegraphics[scale=0.5]{figures/examples/2f-recommended.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.5]{figures/examples/2f-custom.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.5]{figures/examples/2f-generic.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.5]{figures/examples/2f-conflict.pdf}}
+	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, 5'UTR, CDS, and terminator: (b) is allowed because it uses a custom non-conflicting symbol to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs and (d) is forbidden because it use a promoter symbol to represent the terminator.}
+	\label{exa:2f}
+	\end{figure}
+\end{enumerate}
+	
+	
+\subsection{Labels}
+The \sbol{name} of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  If no \sbol{name} is supplied, then the \sbol{displayId} MAY be used instead.
+Examples are provided in~\ref{exa:5}.
+
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=3in]{figures/examples/5-labels.pdf}
+	\caption{Examples of labels on glyphs.}
+	\label{exa:5}
+	\end{figure}
+
+
+\subsection{Annotations}
+Other text or graphics may be included as annotations with no constraint on their syntax or semantics.
+
+\begin{enumerate}
+\item Annotations SHOULD NOT be displayed in a way that allows them to be confused with other SBOL visual elements.
+\item Annotations SHOULD NOT be used to display information that can be displayed using other SBOL visual elements.
+\end{enumerate}
+
+\subsection{Criteria for Compliance with SBOL Visual}
+
+A diagram of a biological system is compliant with SBOL Visual if it complies with all MUST and MUST NOT requirements as specified above.
+A diagram is compliant with SBOL Visual best practices if it also complies with all RECOMMENDED, SHOULD, and SHOULD NOT statements as specified above.
+
+Importantly, note that a non-SBOL glyph can be used in a compliant
+diagram when its definition is a subset or superset of definition that
+does have an SBOL Visual glyph.  For example, a diagram that creates a
+new glyph for a special type of promoter can be SBOL Visual compliant
+even though there is an SBOL Visual glyph for a general promoter.
+
+A piece of software or other system for producing diagrams is
+compliant with SBOL Visual under the following conditions:
+\begin{enumerate}
+\item The system MUST be capable of producing diagrams that are
+  compliant with SBOL Visual.
+\item If the system can also produce diagrams that are {\em not}
+  compliant with SBOL Visual, it MUST clearly distinguish to the user
+  between compliant and non-compliant usage and diagrams.
+\end{enumerate}
+
