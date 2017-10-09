@@ -3,14 +3,13 @@
 \label{sec:language}
 % % -----------------------------------------------------------------------------
 
-An SBOL visual diagram represents a collection of \sbol{ModuleDefinition} and \sbol{ComponentDefinition} information.  
-Each \sbol{ModuleDefinition} describes the functional relationships between a set of biological entities,
-while each \sbol{ComponentDefinition} describes the structure of a biological entity.  
+An SBOL visual diagram represents information about the structure of a nucleic acid design.
+For SBOL 2 data models, this is formally defined as represention one or more \sbol{ComponentDefinition} objects.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLsyntax.pdf}
-\caption{Generic syntax of SBOL visual 2.0. A rectilinear boundary indicates a \sbol{ModuleDefinition} comprising some set of \sbol{FunctionalComponent} and \sbol{Interaction} instances.
+\caption{Generic syntax of SBOL visual:  2.0. A rectilinear boundary indicates a \sbol{ModuleDefinition} comprising some set of \sbol{FunctionalComponent} and \sbol{Interaction} instances.
 A nucleic acid backbone indicates a \sbol{FunctionalComponent} whose \sbol{ComponentDefinition} is specified by the collection of attached nucleic acid \sbol{Component} icons.  
 Strand can optionally be indicated by placing a \sbol{Component} above or below the backbone.  
 Other \sbol{FunctionalComponent} instances are indicated by glyphs not in contact with any backbone.
