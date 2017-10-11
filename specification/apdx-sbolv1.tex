@@ -7,8 +7,9 @@ SBOL Visual 1.1 differs from SBOL Visual 1.0 in the following major ways:
 \item The relationship between diagrams and the SBOL data model is made explicit.
 \item A number of requirements and best practices are specified for glyphs and diagrams, including:
 	\begin{itemize}
-	\item Components within a ComponentDefinition are required to contact its nucleic acid backbone.
-	\item When specifying a ComponentDefinition, the nucleic acid backbone line is now required, and the number of lines allowed in various circumstances is constrained.
+	\item Glyphs include information on interior, bounding box, and recommended backbone alignment.
+	\item Glyphs are required to have their bounding boxes contact the nucleic acid backbone.
+	\item Nucleic acid diagrams now require the nucleic acid backbone line, and the number of lines allowed in various circumstances is constrained.
 	% glyph overlaps needs to be handled be SEP
 	%\item Glyphs are not allowed to overlap in bounding-box unless 
 	\item Explicit statement of when a glyph can and cannot be used to represent a particular element of a diagram.
