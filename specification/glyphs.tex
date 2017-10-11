@@ -19,8 +19,14 @@ In such cases, it is RECOMMENDED that the most specific applicable glyph be used
 For example, a CDS may be represented as either using the CDS glyph (Sequence Ontology term SO:0000316) or the Unspecified glyph (Sequence Ontology term SO:0000001).  
 Since SO:0000316 is contained by SO:0000001, the preferred glyph is CDS, rather than Unspecified.
 Likewise, a CDS may be represented by either a pentagonal glyph or an arrow glyph, but the pentagon is the RECOMMENDED variant, and so it is likewise preferred.  
+\ref{f:glyphalternatives} illustrates this example.
 
-\actionitem{Make a figure for this example}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{figures/glyphalternatives.pdf}
+\caption{A biological design element such as a protein coding sequence (CDS) is best represented by the most specific RECOMMENDED glyph (middle), but can be represented by a less specific glyph such as Unspecified (left) or an approved alternative glyph (right).}
+\label{f:glyphalternatives}
+\end{figure}
 
 \subsection{Requirements for Glyphs}
 
@@ -40,10 +46,18 @@ be constructed:
 \item A glyph SHOULD NOT be similar enough to be easily confused with any other glyph when written by hand, or when scaled either vertically, horizontally, or both.
 \item A glyph SHOULD be asymmetric on the horizontal axis. Vertical asymmetry is also preferred when possible.
 \item If a glyph can represent components of highly variable size or structural complexity, the glyph SHOULD be able to be scaled horizontally to indicate relative property value.
-\item A glyphs SHOULD NOT include text.
+\item A glyph SHOULD NOT include text.
 \end{enumerate}
 
-\actionitem{example of a glyph specification: promoter}
+\ref{f:specexample} shows examples a compliant glyph specification.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=2.0]{figures/promoter-specification.pdf}
+\includegraphics[scale=2.0]{figures/ribosome-entry-site-specification.pdf}
+\caption{Examples of glyph specification: this specification for the Promoter glyph (left) and Ribosome Entry Site glyph (right) include the glyph outline, fill (grey center of Ribosome Entry Site), bounding box (dashed box), and recommended alignment with the nucleic acid backbone (dashed horizontal line), all at a preferred relative scale.}
+\label{f:specexample}
+\end{figure}
 
 \subsection{Reserved Visual Properties}
 
@@ -58,9 +72,16 @@ When using a glyph in a diagram, the following choices in glyph presentation are
 \item The scale of glyphs are RECOMMENDED to be kept consistent with their specification and throughout a diagram, but can be altered if desired, particularly to convey additional information (e.g., length of a sequence).
 \item Minor styling effects MAY be chosen (e.g., shadow, corner styling, other "font-level" customization)
 \end{enumerate}
-Exceptions may be made for certain glyphs in special cases, but such cases are expected to be rare and strongly motivated.
+\ref{f:stylevariation} shows some examples of acceptable style variation.
 
-\actionitem{examples of stylistic variation}
+In certain special cases, the style of a glyph may be more constrained, but such cases are expected to be rare and strongly motivated.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{figures/style-variation.pdf}
+\caption{Examples of acceptable style variation for a Promoter glyph.}
+\label{f:stylevariation}
+\end{figure}
 
 
 \subsection{Extending the Set of Glyphs}\label{sec:extension}

@@ -4,15 +4,15 @@
 % % -----------------------------------------------------------------------------
 
 An SBOL visual diagram represents information about the structure of a nucleic acid design.
-For SBOL 2 data models, this is formally defined as representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
+In terms of SBOL 2 data models, this is formally defined as representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLsyntax.pdf}
 \caption{Generic syntax of SBOL visual:  
-a nucleic acid backbone indicates a \sbol{ComponentDefinition}, its structure specified by the sequence of attached nucleic acid \sbol{Component} icons.  
-Strand can optionally be indicated by placing a \sbol{Component} above or below the backbone.  
-Any of these objects may have an associated label showing its \sbol{name}, and the diagram may further include any form of other annotations, including other types of text.}
+a diagram for a nucleic acid construct is based around a backbone line, its structure specified by the sequence of attached nucleic acid glyphs.  
+Strand can optionally be indicated by placing a glyph above or below the backbone.  
+Any of these objects may have an associated label showing its name, and the diagram may further include any form of other annotations, including other types of text.}
 \label{f:syntax}
 \end{figure}
 
@@ -28,19 +28,20 @@ Specifically, an SBOL visual diagram consists of the classes of object illustrat
 \ref{f:example} shows an example of such a diagram, in a typical usage.
 Full details of this specification are provided in the remainder of this section.
 
-\actionitem{make sure all SBOL terms are actually in the definitions --- some like "range" are not}
 
 \subsection{Nucleic Acid Backbone}
 \label{s:lang:backbone}
 
-A \sbol{ComponentDefinition} with a \sbol{type} designating it as a nucleic acid (e.g., DNA, RNA) MAY be represented by a single or double line, representing the nucleic acid backbone. 
-Information about the \sbol{ComponentDefinition} can then be represented by attaching nucleic acid glyphs to the backbone, as defined below in \ref{s:lang:nacomponent}
+A diagram for a nucleic acid construct is based around a single or double line, representing the nucleic acid backbone. 
+Information about features of the construct can then be represented by attaching nucleic acid glyphs to the backbone, as defined below in \ref{s:lang:nacomponent}
+%
+In terms of SBOL 2 data models, the backbone represents a \sbol{ComponentDefinition} with a nucleic acid \sbol{type} (e.g., DNA, RNA), and the features represent \sbol{Component} and \sbol{SequenceAnnotation} members of the \sbol{ComponentDefinition}.
 
 \begin{enumerate}
 \item Lines in some cases indicate strand count. 
-	A double-stranded \sbol{Range} of the \sbol{ComponentDefinition} MAY use either a single or double line for the backbone.  
-	A single-stranded \sbol{Range} of the \sbol{ComponentDefinition} MUST use a single line to indicate the backbone.
-	When single and double lines are mixed within a single \sbol{ComponentDefinition}, the single lines always indicate single-stranded regions.
+	A double-stranded region of the nucleic acid construct MAY use either a single or double line for the backbone.  
+	A single-stranded region of the nucleic acid construct MUST use a single line to indicate the backbone.
+	When single and double lines are mixed within a single diagram, the single lines always indicate single-stranded regions.
 	Examples are provided in~\ref{exa:1a}.
 	
 	\begin{figure}[h!]
@@ -64,18 +65,21 @@ Information about the \sbol{ComponentDefinition} can then be represented by atta
 	\label{exa:1b}
 	\end{figure}
 	
-\item A nucleic acid backbone SHOULD have at least one associated \sbol{Component} glyph (else no structural information is being provided).
+\item A nucleic acid backbone SHOULD have at least one associated feature glyph (else no structural information is being provided).
 \end{enumerate}
 
 
-\subsection{Nucleic Acid Component}
+\subsection{Nucleic Acid Features}
 \label{s:lang:nacomponent}
 
-A glyph in contact with a nucleic acid backbone indicates a \sbol{Component} with a nucleic acid \sbol{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
-The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition} or recursively through a series of such containments.
+A glyph in contact with a nucleic acid backbone indicates a feature of the nucleic acid sequence.
+% 
+In terms of SBOL 2 data models, this is either a \sbol{SequenceFeature} or a \sbol{Component} with a nucleic acid{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
+The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition} or recursively through a sequence of such containments.
 
 \begin{enumerate}
-\item Every nucleic acid \sbol{Component} glyph MUST have its bounding box contact the nucleic acid backbone associated with its (nth)-parent \sbol{ComponentDefinition}. 
+\item Every feature glyph MUST have its bounding box in contact with the backbone for the nucleic acid construct it describes. 
+The placement of the glyph SHOULD follow the recommendation for backbone alignment in the glyph specification.
 	Examples are provided in~\ref{exa:2a}.
    	\begin{figure}[h!]
 	\centering
@@ -85,25 +89,33 @@ The \sbol{Component} may be contained either directly, as one of the \sbol{compo
 	\label{exa:2a}
 	\end{figure}
 
-\actionitem{Adjust per adopted definition of preferred alignment}
-		
-\item Any nucleic acid \sbol{Component} that is associated with a strand SHOULD be drawn
-	with its vertical midpoint on the side of the backbone representing that strand.
-	In a horizontal orientation the top SHOULD indicate the inline strand and the bottom
-	SHOULD indicate the reverse complement strand.
-	\actionitem{Explain allowing reverse by backwards symbol, in which case all SHOULD use same alignment indicator - bottom or backward. Extend Figure 6 to match}
-	Examples are provided in~\ref{exa:2b}.
+\item The horizontal orientation of a glyph can be used to indicate the strand alignment of a feature, as shown in \ref{f:orientation}. 
+	Any glyphs for a feature associated with the inline strand SHOULD be placed in the prototypical orientation given by the specification,
+	while any glyph that is associated with the reverse complement strand SHOULD be inverted vertically and horizontally (i.e., rotated 180 degrees). 
+	Reverse complement MAY also be indicated by horizontal-only inversion.
+	Finally, a glyph inverted only vertically still indicates inline strand, but it is RECOMMENDED NOT to use this orientation.
+	Orientation SHOULD be used consistently throughout a diagram, rather than mixing conventions.
+	Examples are provided in \ref{exa:2b}.
+	
 	\begin{figure}[h!]
 	\centering
-	\includegraphics[width=6in]{figures/examples/2b.pdf}
-	\caption{Example of inline (+) and reverse complement (-) elements.}
+	\includegraphics[width=2.5in]{figures/orientation.pdf}
+	\caption{Use of glyph orientation to indicate inline vs. reverse complement direction}
+	\label{f:orientation}
+	\end{figure} 
+	
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{figures/examples/2b.pdf}
+	\caption{Example construct incorporating both inline (+) and reverse complement (-) features.}
 	\label{exa:2b}
 	\end{figure} 
 
-\item Nucleic acid \sbol{Component}s in a sequential relationship SHOULD be drawn from 5' left to 3' right on the inline strand and from 5' right to 3' left on the reverse complement strand.
+\item Nucleic acid features in a sequential relationship SHOULD be drawn from 5' left to 3' right on the inline strand and from 5' right to 3' left on the reverse complement strand.
+	In terms of SBOL 2 data models, this indicates a \sbol{SequenceConstraint} on the relative ordering of two features.
 
-\item Nucleic acid components with \sbol{Locations} that do not overlap MUST NOT have glyphs whose bounding boxes overlap.
-	An examples is provided in~\ref{exa:2d}.
+\item Nucleic acid features that do not overlap in their locations MUST NOT have glyphs whose bounding boxes overlap.
+	An example is provided in~\ref{exa:2d}.
 	\begin{figure}[h!]
 	\centering
 	\includegraphics[width=3in]{figures/examples/2d.pdf}
@@ -111,7 +123,7 @@ The \sbol{Component} may be contained either directly, as one of the \sbol{compo
 	\label{exa:2d}
 	\end{figure}
 
-\item Nucleic acid components with \sbol{Location}s that overlap SHOULD have glyphs whose bounding boxes overlap.  Overlap size MAY be used to indicate relative position.
+\item Nucleic acid features that overlap in their locations SHOULD have glyphs whose bounding boxes overlap.  Overlap size MAY be used to indicate relative position.
 	Examples are provided in~\ref{exa:2e}.
 
 	\begin{figure}[h!]
@@ -123,23 +135,24 @@ The \sbol{Component} may be contained either directly, as one of the \sbol{compo
 	\label{exa:2e}
 	\end{figure}
 
-\item A nucleic acid \sbol{Component} SHOULD be represented using a glyph defined in \ref{apdx:symbols}.  In this case, the glyph's definition MUST be equal to or a parent of at least one of the \sbol{roles} for the \sbol{Component} or its associated \sbol{ComponentDefinition}, and SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:symbols} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+\item A nucleic acid feature SHOULD be represented using a glyph defined in \ref{apdx:symbols}.  In this case, the feature MUST be contained within at least one of the glyph's associated terms.
+In terms of SBOL 2 data models, this means the glyph is equal to or a parent of at least one of the \sbol{roles} for the \sbol{Component} or its associated \sbol{ComponentDefinition}.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:symbols} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 	Examples are provided in~\ref{exa:2f}.
-\actionitem{update 9c to use Unspecified}
 	\begin{figure}[h!]
 	\centering
 	\subfigure[SHOULD]{\includegraphics[scale=0.5]{figures/examples/2f-recommended.pdf}}
 	\subfigure[MAY]{\includegraphics[scale=0.5]{figures/examples/2f-custom.pdf}}
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.5]{figures/examples/2f-generic.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.5]{figures/examples/2f-conflict.pdf}}
-	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, 5'UTR, CDS, and terminator: (b) is allowed because it uses a custom non-conflicting symbol to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs and (d) is forbidden because it use a promoter symbol to represent the terminator.}
+	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, 5'UTR, CDS, and terminator: (a) is RECOMMENDED because it uses the preferred variant of the most specific defined glyphs, (b) is allowed because it uses a custom non-conflicting symbol to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs and (d) is forbidden because it use a promoter symbol to represent the terminator.}
 	\label{exa:2f}
 	\end{figure}
 \end{enumerate}
 	
 	
 \subsection{Labels}
-The \sbol{name} of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  If no \sbol{name} is supplied, then the \sbol{displayId} MAY be used instead.
+The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of SBOL 2 data models, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
 Examples are provided in~\ref{exa:5}.
 
 	\begin{figure}[h!]
