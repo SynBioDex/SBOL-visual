@@ -8,14 +8,6 @@ The origin of replication glyph is a circle suggesting the "bulge" opened in a p
 
 ![glyph specification](origin-of-replication-specification.png)
 
-Two possible recommended backbone alignments are under consideration.  Backbone through the middle:
-
-![glyph specification](origin-of-replication-specification-middle.png)
-
-Sitting on top of backbone:
-
-![glyph specification](origin-of-replication-specification-top.png)
-
 ## Prototypical Example
 
 oriT
