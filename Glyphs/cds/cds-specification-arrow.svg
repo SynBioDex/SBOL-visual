@@ -17,12 +17,12 @@
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="cds-specification-arrow.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/cds/cds-specification.png"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/cds/cds-specification-arrow.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -36,7 +36,7 @@
      id="namedview10"
      showgrid="false"
      units="in"
-     inkscape:zoom="18.88"
+     inkscape:zoom="13.350176"
      inkscape:cx="25"
      inkscape:cy="24.576271"
      inkscape:window-x="0"
@@ -53,6 +53,10 @@
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><path
+     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#cccccc;stroke-width:0.49999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 0,22.499997 45.018128,0"
+     id="path4135"
+     inkscape:connector-curvature="0" /><path
      d="M 5.2562231,28.868803 28.707624,28.815837 28.867396,33.900582 39.743829,22.499998 28.867396,11.099413 28.813556,17.031616 5.2562231,16.925683 Z"
      id="path8"
      inkscape:connector-curvature="0"

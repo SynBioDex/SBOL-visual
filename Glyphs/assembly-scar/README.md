@@ -4,22 +4,10 @@
 SO:0001953
 
 ## Recommended Glyph and Alternates
-The assembly scar glyph is an "equal sign" image, the pattern produced by the union of a 5' sticky end and 3' sticky end glyph:
+The assembly scar glyph is an "equal sign" image, the pattern produced by the union of a 5' sticky end and 3' sticky end glyph. The scar will cover the backbone, creating a visual break suggesting the potential disruption associated with a scar:
 
 ![glyph specification](assembly-scar-specification.png)
-
-Three possible recommended backbone alignments are under consideration.  Scar covering backbone, single or double-strand:
-
-![glyph specification](assembly-scar-specification-covering.png)
 ![glyph specification](assembly-scar-specification-covering-doublestrand.png)
-
-Scar on either side of backbone:
-
-![glyph specification](assembly-scar-specification-middle.png)
-
-Scar on top of backbone:
-
-![glyph specification](assembly-scar-specification-top.png)
 
 ## Prototypical Example
 
