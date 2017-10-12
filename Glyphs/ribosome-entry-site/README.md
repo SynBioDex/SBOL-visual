@@ -2,7 +2,8 @@
 
 ## Associated SO term(s)
 SO:0000139: Ribosome Entry Site
-SO:0000204: 5’UTR
+
+SO:0000204: 5ʼUTR
 
 ## Recommended Glyph and Alternates
 The ribosome entry promoter glyph is a half-ovoid sitting on the backbone, suggesting an attached ribosome beginning transcription:
