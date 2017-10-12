@@ -13,7 +13,7 @@ The 5' sticky restriction site glyph is an image of the lines along which two st
 
 and between strands of a double backbone:
 
-![glyph specification](five-prime-sticky-restriction-site-specification-middle.png)
+![glyph specification](five-prime-sticky-restriction-site-specification-doublestrand.png)
 
 ## Prototypical Example
 

@@ -10,7 +10,7 @@ The coding sequence glyph is a "box" with one side bent out arrow-like to show d
 
 Alternately, CDS may be represented as a block arrow:
 
-![glyph specification](cds-specification-arrow.png)
+![glyph specification](cds-arrow-specification.png)
 
 ## Prototypical Example
 
