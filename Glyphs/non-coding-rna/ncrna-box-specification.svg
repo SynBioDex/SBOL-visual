@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -11,43 +9,15 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="0.5in"
    height="0.5in"
-   viewBox="0 0 45 45"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="ncrna-box-specification.svg"
-   inkscape:export-filename="C:\Users\sbhatia\Desktop\sbhatia\ncrna-glyph.png"
+   sodipodi:docname="ncrna-boxC-specification.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/non-coding-rna/ncrna-boxC-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="15.184314"
-     inkscape:cx="22.5"
-     inkscape:cy="21.601239"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="in"
-     inkscape:window-width="1044"
-     inkscape:window-height="748"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid3338"
-       units="px"
-       visible="true" />
-  </sodipodi:namedview>
   <metadata
-     id="metadata7">
+     id="metadata21">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -58,40 +28,55 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1056"
+     inkscape:window-height="818"
+     id="namedview17"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="12.836708"
+     inkscape:cx="21.816898"
+     inkscape:cy="25.418947"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1007.3622)">
+     id="g12"
+     transform="matrix(0.47148661,0,0,0.47148661,-1.6350431,-1.6880776)"
+     style="fill:#cccccc">
+    <title
+       id="title14">Layer 1</title>
     <path
-       style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.50000000000000000;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 5.9930269,1027.3364 c 2.1203071,0.6184 4.9780001,2.8428 6.6728681,1.8026 4.300158,-2.6393 6.564477,-3.5807 6.564477,-3.5807 l 6.058884,3.6221 6.454029,-3.4905 7.376033,1.844 -0.197572,6.3224 -32.8628617,0.066 z"
-       id="path4143"
+       id="svg_6"
+       d="m 82.316714,53.499993 c -8.999994,-15.999994 -10,-12.500001 -15,-5.500001 -5,7 -6.25,7.249998 -11.000001,1e-6 -4.75,-7.249997 -7.249998,-6.749999 -11.749999,0 -4.500001,6.749999 -5.749999,8.250003 -11.500001,0.500001 -5.750002,-7.750002 -8.750005,-8.249989 -12.75,-0.25 l -0.125382,12.9365 62.010474,-0.165225 0,-7.930822"
+       fill-opacity="null"
+       stroke-opacity="null"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csccccccc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.6371932;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 6.1126405,1027.3633 c 0,0 4.3121005,1.8827 6.5487735,1.6372 2.426011,-0.2663 4.108188,-3.2744 6.548773,-3.2744 2.440582,0 4.10819,3.2744 6.548772,3.2744 2.440584,0 4.122762,-3.008 6.548773,-3.2744 2.236671,-0.2455 6.548773,1.6372 6.548773,1.6372"
-       id="path4142"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssssc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.6371932;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 6.0550296,1027.4456 0.05847,6.578 32.8315734,-0.058 0,-6.5487"
-       id="path3335"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <path
-       style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
-       d="m -0.13171488,1034.8441 c 40.23889488,0 45.24405988,0 45.24405988,0"
-       id="path4138"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.50000000000000000;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4140"
-       width="34.509296"
-       height="10.076188"
-       x="5.2027378"
-       y="1024.8337" />
+       style="fill:#cccccc;stroke:#000000;stroke-width:3"
+       sodipodi:nodetypes="csssscccc" />
   </g>
+  <path
+     style="opacity:0.5;fill:#b3b3b3;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="m -0.07790159,27.602555 c 44.94922059,0 45.02712159,0 45.02712159,0"
+     id="path4149"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4151"
+     width="30.615328"
+     height="10.049305"
+     x="7.1669469"
+     y="17.475348" />
 </svg>
