@@ -1,0 +1,32 @@
+% -----------------------------------------------------------------------------
+\section{Purpose}
+% -----------------------------------------------------------------------------
+
+People who are engineering biological organisms often find it useful to communicate in
+diagrams about the structure of the nucleic acid sequences that they are engineering.
+%
+Some typical practices and conventions have begun to emerge for such
+diagrams.  SBOL Visual aims to organize and systematize such
+conventions in order to produce a coherent language for expressing
+the structure % and function 
+of genetic designs. 
+%
+At the same time, we aim to make this language simple and easy to use,
+allowing a high degree of flexibility and freedom in how such diagrams are organized, presented, and
+styled---in particular, it should be readily possible to create
+diagrams both by hand and with a wide variety of software programs.
+%
+Finally, means are provided for extending the language with new and
+custom diagram elements, and for adoption of useful new elements into
+the language.
+
+\subsection{Relation to Data Models}
+
+In order to ground SBOL Visual with precise definitions, we reference its visual elements to data models with a well-defined semantics.
+In particular, glyphs in SBOL Visual are defined in terms of their relation to the SBOL 2 data model and terms in the Sequence Ontology~\citep{SequenceOntology}.
+% the Systems Biology Ontology~\citep{SBO} and
+
+SBOL Visual is not intended to represent designs at the same level of detail as these data models.
+Effective visual diagrams are necessarily more abstract, focusing only on those aspects of a system that are the subject of the communication.
+Nevertheless, we take as a principle that it should be possible to transform any SBOL Visual diagram into an equivalent (if highly abstract) SBOL 2 data representation.
+Likewise, we require that SBOL Visual should be able to represent all of the significant structural relationships in any GenBank or SBOL data representation.

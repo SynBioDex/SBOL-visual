@@ -1,0 +1,76 @@
+% -----------------------------------------------------------------------------
+\section{SBOL Specification Vocabulary}
+% -----------------------------------------------------------------------------
+
+\subsection{Term Conventions}
+
+% Note: yes, it's really RFC 0
+This document indicates requirement levels using the controlled vocabulary specified in IETF RFC 2119 and reiterated in BBF RFC 0.
+In particular, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119:
+
+\begin{itemize}
+\item The words "MUST", "REQUIRED", or "SHALL" mean that the item is an absolute requirement of the specification.
+\item The phrases "MUST NOT" or "SHALL NOT" mean that the item is an absolute prohibition of the specification.
+\item The word "SHOULD" or the adjective "RECOMMENDED" mean that there might exist valid reasons in particular circumstances to ignore a particular item, but the full implications need to be understood and carefully weighed before choosing a different course.
+\item The phrases "SHOULD NOT" or "NOT RECOMMENDED" mean that there might exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications need to be understood and the case carefully weighed before implementing any behavior described with this label.
+\item The word "MAY" or the adjective "OPTIONAL" mean that an item is truly optional.
+\end{itemize}
+
+\subsection{SBOL Class Names}
+
+The definition of SBOL Visual references several SBOL classes, which are defined as listed here.  For full definitions and explanations, see BBF RFC 112, describing the SBOL 2.1 data model.
+
+\begin{description}
+
+%\item \emph{\sbol{Collection}}:
+%Represents a user-defined container for organizing a group of SBOL objects.
+
+\item \emph{\sbol{ComponentDefinition}}: Describes the structure of designed entities, such as DNA, RNA, and proteins, as well as other entities they interact with, such as small molecules or environmental properties.
+
+\begin{itemize}
+\item \emph{\sbol{Component}}:
+Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ComponentDefinition}. Represents a specific occurrence or instance of an entity within the design of a more complex entity. Because the same definition might appear in  multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ComponentDefinition}s, and each such parent-child link requires its own, distinct \sbol{Component}.
+
+\item \emph{\sbol{Location}}:
+Specifies the base coordinates and orientation of a genetic feature on a DNA or RNA molecule or a residue or site on another sequential macromolecule such as a protein.
+
+\item \emph{\sbol{SequenceAnnotation}}:
+Describes the \sbol{Location} of a notable sub-sequence found within the \sbol{Sequence} of a \sbol{ComponentDefinition}. Can also link to and effectively position a child \sbol{Component}.
+
+\item \emph{\sbol{SequenceConstraint}}:
+Describes the relative spatial position and orientation of two \sbol{Component} objects that are contained within the same \sbol{ComponentDefinition}.
+\end{itemize}
+
+%\item \emph{\sbol{GenericTopLevel}}:
+%Represents a data container that can contain custom data added by user applications.
+
+%\item \emph{\sbol{Model}}:
+%Links to quantitative or qualitative computational models that might be used to predict the functional behavior of a biological design.
+
+%\item \emph{\sbol{ModuleDefinition}}:
+%Describes a ``system'' design as a collection of biological components and their functional relationships.
+%
+%\begin{itemize}
+%\item \emph{\sbol{FunctionalComponent}}:
+%Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of an entity within the design of a system. Because the same definition might appear in multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{FunctionalComponent}.
+%
+%\item \emph{\sbol{Interaction}}:
+%Describes a functional relationship between biological entities, such as regulatory activation or repression, or a biological process such as transcription or translation.
+%
+%\item \emph{\sbol{MapsTo}}:
+%When a design (\sbol{ComponentDefinition} or \sbol{ModuleDefinition}) includes another design as a sub-design, the parent design might need to refer to a \sbol{ComponentInstance} (either a \sbol{Component} or \sbol{FunctionalComponent}) in the sub-design.
+%In this case, a \sbol{MapsTo} needs to be added to the instance for the sub-design, and this \sbol{MapsTo} needs to link between the \sbol{ComponentInstance} in the sub-design and a \sbol{ComponentInstance} in the parent design.
+%
+%\item \emph{\sbol{Module}}:
+%Pointer class. Incorporates a child \sbol{ModuleDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single \sbol{ModuleDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{Module}.
+%
+%\item \emph{\sbol{Participation}}:
+%Describes the role that a \sbol{FunctionalComponent} plays in an \sbol{Interaction}.
+%For example, a transcription factor might participate in an \sbol{Interaction} as a repressor or as an activator.
+%
+%\end{itemize}
+
+%\item \emph{\sbol{Sequence}}:
+%Generally represents a contiguous series of monomers in a macromolecular polymer such as DNA, RNA, or protein. A \sbol{Sequence} can also encode the atoms and bonds of a molecule with non-linear structure (see \ref{sec:Sequence}).
+
+\end{description}
