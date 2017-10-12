@@ -15,4 +15,4 @@ The operator glyph is an open "cup" suggesting a binding location:
 Gal4 binding site in an activatable promoter.
 
 ## Notes
-*this section deliberately blank*
+This glyph puts a "dent" in the backbone line.
