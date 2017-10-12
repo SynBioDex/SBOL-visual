@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="five-prime-sticky-restriction-site-specification.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/five-prime-sticky-restriction-site/five-prime-sticky-restriction-site-specification.png"
+   sodipodi:docname="five-prime-sticky-restriction-site-specification-break.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/five-prime-sticky-restriction-site/five-prime-sticky-restriction-site-specification-break.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -53,13 +53,23 @@
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><path
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="m -0.1059322,22.341099 4.5550849,0"
+     id="path4135"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" /><path
      d="m 7.5,9.499998 0,13 30,0 0,13"
      id="path8"
      inkscape:connector-curvature="0"
      style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /><rect
      style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
      id="rect3400"
-     width="33.262711"
-     height="29.555084"
-     x="5.8262711"
-     y="7.8177948" /></svg>
+     width="35.381355"
+     height="29.025423"
+     x="4.8728814"
+     y="7.923727" /><path
+     sodipodi:nodetypes="cc"
+     inkscape:connector-curvature="0"
+     id="path4191"
+     d="m 40.254237,22.341099 4.555085,0"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1" /></svg>
