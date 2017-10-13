@@ -13,4 +13,4 @@ The specific recombination site glyph is a triangle, centered on the backbone, a
 flippase recognition target (FRT) site
 
 ## Notes
-Potential conflict with proposed Inverter glyph.
+*This section left deliberately blank*

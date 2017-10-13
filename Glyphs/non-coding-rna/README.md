@@ -2,6 +2,7 @@
 
 ## Associated SO term(s)
 SO:0001263: Non-Coding RNA Gene
+SO:0000834: Mature Transcript Region
 
 ## Recommended Glyph and Alternates
 The proposed non-coding RNA glyphs are both single-stranded RNA "wiggles," one on top of a box:
@@ -17,4 +18,4 @@ the other hovering above the backbone, with or without nucleotide "teeth":
 gRNA
 
 ## Notes
-Note overlap with proposal for mature transcript region
+*This section left deliverately blank*
