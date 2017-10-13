@@ -10,8 +10,7 @@ The origin of replication glyph is a circle suggesting the "bulge" opened in a p
 
 ## Prototypical Example
 
-oriT
+human herpesvirus-6 OOR
 
 ## Notes
-Origin of Replication has ambiguous vertical position, so its glyph does not yet have a recommended backbone alignment.  The "bulge" explanation for the glyph does suggest it should be vertically centered on the backbone, however.
-
+*this section deliberately blank*
