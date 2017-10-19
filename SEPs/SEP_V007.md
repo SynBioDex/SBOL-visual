@@ -8,7 +8,7 @@
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Draft |
 | **Created** | 17-Sep-2017 |
-| **Last modified** | 26-Sep-2017 |
+| **Last modified** | 19-Oct-2017 |
 ## Abstract
 
 This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein. The glyphs in this system are Junction, Stability Element, and Cleavage Site.
@@ -45,7 +45,9 @@ SO:0001977 (Ribonuclease Site)
 
 SO:0001687 (Restriction Enzyme Recognition Site), SO:0001688 (Restriction Enzyme Cleavage Junction)
 
-(Note: Restriction site previously also associated with SO:0000061, but that was incorrect, since it refers to the binding site and *not* the location of cleavage)
+Note: Restriction site previously also associated with SO:0000061, but that was incorrect, since it refers to the binding site and *not* the location of cleavage)
+
+Note: SO does not currently have Junction equivalents for ribonuclease and protease; a request to add these will be made if this SEP is approved.
 
 ### Stability Element
 
