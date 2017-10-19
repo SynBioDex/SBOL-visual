@@ -2,13 +2,13 @@
 
 | SEP | <leave empty> |
 | --- | --- |
-| **Authors** | Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof |
+| **Authors** | Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof, Jacob Beal |
 | **Editor** | <leave empty> |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.0 |
 | **Status** | Draft |
 | **Created** | 10-Oct-2017 |
-| **Last modified** | Never |
+| **Last modified** | 19-Oct-2017 |
 
 ## Abstract
 
@@ -23,75 +23,104 @@ We need to represent interactions of different types.  As much as possible, we w
 
 ### Stimulation
 
-Associated SBO term: SBO:0000170 Stimulation
+#### Associated SBO term(s)
+
+SBO:0000170 Stimulation
+
+#### Recommended Glyph and Alternates
+
+An arrow with an head that is empty or of a different color than the line, per SBGN:
 
 ![image](https://user-images.githubusercontent.com/2539464/31392865-9c042c26-adda-11e7-82c6-04e7db942882.png)
 
-Note: arrowhead should not be filled.
+#### Prototypical Example
+
+Activation of pTAL14 promoter by Gal4VP16 activator
 
 ### Inhibition
 
-Associated SBO term: SBO:0000169 Inhibition
+#### Associated SBO term(s)
+
+SBO:0000169 Inhibition
+
+#### Recommended Glyph and Alternates
+
+An arrow whose sink is a bar, suggesting blocking, per SBGN:
 
 ![image](https://user-images.githubusercontent.com/2539464/31392755-5c893456-adda-11e7-9e94-b224a0995209.png)
 
+#### Prototypical Example
+
+Repression of pTAL14 promoter by TAL14
+
+
 ### Control
 
-Associated SBO term: SBO:0000168 Control
+#### Associated SBO term(s)
+
+SBO:0000168 Control
+
+#### Recommended Glyph and Alternates
+
+An arrow with a diamond head, per SBGN:
 
 ![modulation_arrowhead_sized](https://user-images.githubusercontent.com/2539464/31395052-20c86486-ade0-11e7-97e8-14447561f450.png)
 
-### Genetic Production
+#### Prototypical Example
 
-Associated SBO term: SBO:0000589 Genetic Production
+Inversion of a sequence flanked by FRT sites by FLP recombinase
+
+
+### Process
+
+#### Associated SBO term(s)
+SBO:0000375 Process
+
+#### Recommended Glyph and Alternates
+
+An arrow with a filled head the same color of the line, per SBGN:
 
 ![image](https://user-images.githubusercontent.com/2539464/31392807-7e998f50-adda-11e7-918f-62626750ed06.png)
 
-Source of the arrowhead should be a DNA component, and sink could be either an RNA or Macromolecule.
+#### Prototypical Example
 
-Note: arrowhead should be filled.
+Production of Green Fluorescent Protein (GFP) from the gfp Coding Sequence
 
-### Non-covalent Binding
-
-Associated SBO term: SBO:0000177 Non-covalent Binding
-
-![image](https://user-images.githubusercontent.com/2539464/31392807-7e998f50-adda-11e7-918f-62626750ed06.png)
-
-Source of the arrowhead should not be a DNA component, and sink should be a complex component.
-
-Note: arrowhead should be filled.
+#### Notes:
+The assocated SBO term also covers
+- SBO:0000176 Biochemical Reaction
+- SBO:0000589 Genetic Production (source is DNA component, sink is usually RNA or Macromolecule)
+- SBO:0000177 Non-covalent Binding (sink is a Complex)
 
 ### Degradation
 
-Associated SBO term: SBO:0000179 Degradation
+#### Associated SBO term(s)
+
+SBO:0000179 Degradation
+
+#### Recommended Glyph and Alternates
+
+Identical to the Process glyph, but with an empty set at the sink of the arrowhead:
 
 ![image](https://user-images.githubusercontent.com/2539464/31393991-6ecc1432-addd-11e7-95aa-8ec80e670722.png)
 
-There should be an empty set at the sink the arrowhead.
+#### Prototypical Example
 
-Note: arrowhead should be filled.
+Cellular recycling of mRNA
 
-### Biochemical Reaction
-
-Associated SBO term: SBO:0000176 Biochemical Reaction
-
-![image](https://user-images.githubusercontent.com/2539464/31392807-7e998f50-adda-11e7-918f-62626750ed06.png)
-
-Does not match any of the other patterns.
-
-Note: arrowhead should be filled.
 
 ## 3. Examples <a name='example'></a>
 
-TBD
+See examples in individual glyph proposals
+
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
-SBOL Visual does not currently support interactions, so there is no backwards compatibility issues.
+SBOL Visual does not currently support interactions, so there are no backwards compatibility issues.
 
 ## 5. Discussion <a name='discussion'></a>
 
-TBD
+
 
 ## References <a name='references'></a>
 
