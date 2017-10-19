@@ -44,10 +44,6 @@ There are several proposed complex glyphs. One is to simply composite together o
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
 
-Another possibility is two connected circles, with or without a line between them:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/circlepair-specification.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/circlepair-split-specification.png)
-
 Another alternative is the SBGN "cornered rectangle" glyph for a complex:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/corneredrect-specification.png)
@@ -64,32 +60,7 @@ Dna: http://www.biopax.org/release/biopax-level3.owl#Dna
 #### Recommended Glyph and Alternates
 A number of variant glyphs have been proposed for dsNA, including a double-helix:
 
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublehelix-specification.png)
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublehelixB-specification.png)
-
-a double-helix with nucleotides:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublehelix-teeth-specification.png)
-
-a parallel pair of ssNA wiggles:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublewiggle-specification.png)
-
-a parallel pair of ssNA wiggles with nucleotides:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublewiggle-teeth-specification.png)
-
-two parallel lines:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/parallel-lines-specification.png)
-
-a "ladder":
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/ladder-specification.png)
-
-a "ladder" with 5' hooks in each direction:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/ladder-hook-specification.png)
 
 Alternately, dsNA might be represented by the SBGN "nucleic acid" half-round rectangle:
 
@@ -165,22 +136,6 @@ A number of variant glyphs have been proposed for ssNA, including a wiggly line:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/wiggle-specification.png)
 
-a wiggly line with teeth:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/wiggle-teeth-specification.png)
-
-a "comb" of a straight line with teeth:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/comb-specification.png)
-
-a "comb" with an additional 5' hook:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/comb-hook-specification.png)
-
-or a small rectangular box:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/rectangle-specification.png)
-
 Alternately, ssNA might be represented by the SBGN "nucleic acid" half-round rectangle:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/halfround-rectangle-specification.png)
@@ -222,6 +177,64 @@ See examples in individual glyph proposals.
 All proposals are for new glyphs that do not conflict with existing glyphs.
 
 ## 5. Discussion <a name='discussion'></a>
+
+Alternatives currently lacking suppport:
+
+### Complex
+Another possibility is two connected circles, with or without a line between them:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/circlepair-specification.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/complex/circlepair-split-specification.png)
+
+### Double-Stranded Nucleic Acid
+
+a different variant of the double helix:
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublehelix-specification.png)
+
+a double-helix with nucleotides:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublehelix-teeth-specification.png)
+
+a parallel pair of ssNA wiggles:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublewiggle-specification.png)
+
+a parallel pair of ssNA wiggles with nucleotides:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/doublewiggle-teeth-specification.png)
+
+two parallel lines:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/parallel-lines-specification.png)
+
+a "ladder":
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/ladder-specification.png)
+
+a "ladder" with 5' hooks in each direction:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/dsNA/ladder-hook-specification.png)
+
+
+### Single-Stranded Nucleic Acid
+
+a wiggly line with teeth:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/wiggle-teeth-specification.png)
+
+a "comb" of a straight line with teeth:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/comb-specification.png)
+
+a "comb" with an additional 5' hook:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/comb-hook-specification.png)
+
+or a small rectangular box:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/51b5f17/Glyphs/FunctionalComponents/ssNA/rectangle-specification.png)
+
+
+
 
 ## References <a name='references'></a>
 
