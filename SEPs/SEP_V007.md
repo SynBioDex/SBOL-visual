@@ -25,7 +25,7 @@ Stability Element and Cleavage site currently form a semi-systematic language fo
 
 ## 2. Specification <a name="specification"></a>
 
-This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein.  The glyphs in this system are the current Stability Element and Cleavage Site glyphs, plus a new "Junction" glyph
+This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein.  The glyphs in this system are the current Stability Element and Cleavage Site glyphs, plus a new "Biopolymer Location" glyph
 
 ### Biopolymer Location
 
