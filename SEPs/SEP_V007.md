@@ -11,7 +11,7 @@
 | **Last modified** | 19-Oct-2017 |
 ## Abstract
 
-This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein. The glyphs in this system are Junction, Stability Element, and Cleavage Site.
+This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein. The glyphs in this system are Biopolymer Location, Stability Element, and Cleavage Site.
 
 ## 1. Rationale <a name="rationale"></a>
 
@@ -27,13 +27,17 @@ Stability Element and Cleavage site currently form a semi-systematic language fo
 
 This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein.  The glyphs in this system are the current Stability Element and Cleavage Site glyphs, plus a new "Junction" glyph
 
-### Junction
+### Biopolymer Location
 
 Associated SO term(s):
 
 SO:0000699 (Junction, Boundary, Breakpoint)
 
-This also matches the SBOL "Cut" class
+SO:0001236 (Base)
+
+SO:0001237 (Amino Acid)
+
+This can thus represent either an SBOL "Cut" location or a "Range" or length 1
 
 ### Cleavage Site
 
@@ -80,7 +84,7 @@ There are several proposals for the DNA / RNA / protein system for stems (showin
 
 ### Tops
 
-Junction tops:
+ Biopolymer Location tops:
 
 - Circle:
 
@@ -105,9 +109,9 @@ Stability tops:
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/90e8478/Glyphs/cut/stem-top-specification-shield.png)
 
 ### Notes
-Junction is a general glyph for all zero-length sequence features, including insertion and deletion sites and X-ase cut sites.
+ Biopolymer Location is a general glyph for all zero- and one-length sequence features, including insertion and deletion sites and X-ase cut sites.
 
-Junction does not cover stability sites, since their length is typically non-zero.
+Biopolymer Location does not cover stability sites, since their length is typically multiple bases / amino acids.
 
 ## 3. Examples <a name='example'></a>
 
