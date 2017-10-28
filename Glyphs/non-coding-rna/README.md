@@ -2,20 +2,17 @@
 
 ## Associated SO term(s)
 SO:0001263: Non-Coding RNA Gene
+
 SO:0000834: Mature Transcript Region
 
 ## Recommended Glyph and Alternates
-The proposed non-coding RNA glyphs are both single-stranded RNA "wiggles," one on top of a box:
+The non-coding RNA glyph is a rectangular box whose top is a single-stranded RNA "wiggle":
 
-![glyph specification](ncrna-box-specification.png)
-
-the other hovering above the backbone, with or without nucleotide "teeth":
-
-![glyph specification](ncrna-hover-specification.png)
+![glyph specification](ncrna-specification.png)
 
 ## Prototypical Example
 
-gRNA
+gRNA sequence for targeting a dCas9 repressor
 
 ## Notes
 *This section left deliverately blank*
