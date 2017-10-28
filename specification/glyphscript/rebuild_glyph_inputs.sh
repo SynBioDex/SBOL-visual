@@ -29,6 +29,7 @@ glyph_to_page Glyphs/five-prime-overhang
 glyph_to_page Glyphs/five-prime-sticky-restriction-site
 glyph_to_page Glyphs/insulator
 glyph_to_page Glyphs/no-glyph-assigned
+glyph_to_page Glyphs/non-coding-rna
 glyph_to_page Glyphs/omitted-detail
 glyph_to_page Glyphs/operator
 glyph_to_page Glyphs/origin-of-replication
