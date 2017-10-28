@@ -9,7 +9,7 @@ function glyph_to_page {
     pushd ../../$1
     markdown-pdf README.md --out $targetdir/$1.pdf
     popd
-    echo "\includepdf[pagecommand={}]{glyphscript/$1.pdf}" >> glyphs.tex
+    echo "\includepdf[pagecommand={},pages={1-}]{glyphscript/$1.pdf}" >> glyphs.tex
 }
 
 
@@ -24,6 +24,7 @@ glyph_to_page Glyphs/blunt-restriction-site
 glyph_to_page Glyphs/cds
 glyph_to_page Glyphs/cleavage-site
 glyph_to_page Glyphs/composite
+glyph_to_page Glyphs/engineered-region
 glyph_to_page Glyphs/five-prime-overhang
 glyph_to_page Glyphs/five-prime-sticky-restriction-site
 glyph_to_page Glyphs/insulator
