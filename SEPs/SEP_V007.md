@@ -37,7 +37,7 @@ SO:0001236 (Base)
 
 SO:0001237 (Amino Acid)
 
-This can thus represent either an SBOL "Cut" location or a "Range" or length 1
+This can thus represent either an SBOL "Cut" location of a "Range" or length 1
 
 ### Cleavage Site
 
