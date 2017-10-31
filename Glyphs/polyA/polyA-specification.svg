@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 44.999998 44.999998"
+   version="1.1"
+   xml:space="preserve"
+   x="0px"
+   y="0px"
+   width="0.5in"
+   height="0.5in"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="polyA-specification.svg"
+   inkscape:export-filename="polyA-specification.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"><metadata
+     id="metadata12"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="942"
+     inkscape:window-height="693"
+     id="namedview10"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="9.44"
+     inkscape:cx="25"
+     inkscape:cy="24.576271"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" /><defs
+     id="defs4"><style
+       type="text/css"
+       id="style6"><![CDATA[
+      path,circle {
+        stroke:#000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none
+      }]]></style></defs><text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.15233421px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="22.535488"
+     y="28.281082"
+     id="text4134"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4136"
+       x="22.535488"
+       y="28.281082">AAA</tspan></text>
+<rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:0.713;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.139, 0.713;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4138"
+     width="35.275421"
+     height="11.652541"
+     x="4.8728809"
+     y="16.716101" /><path
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:0.713;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.139, 0.713;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 0,28.474574 45.021181,0"
+     id="path4140"
+     inkscape:connector-curvature="0" /></svg>
