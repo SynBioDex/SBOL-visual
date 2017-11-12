@@ -5,22 +5,29 @@ SO:0001956 (Protease Site)
 
 SO:0001977 (Ribonuclease Site)
 
-SO:0000061, SO:0001687 (Restriction Site)
+SO:0001687 (Restriction Enzyme Recognition Site), SO:0001688 (Restriction Enzyme Cleavage Junction)
 
 ## Recommended Glyph and Alternates
-The protease site glyph is an "X" denoting cleavage on top of a stem connecting to the backbone at the point where cleavage will occur:
+Biopolymer Location is a "stem-top" glyph for describing small sites. In this system:
 
+- the top glyph indicates the type of site (i.e., Biopolymer Location)
+- the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)
+
+![glyph specification](stem-top-specification.png)
+
+The protease site top is an "X" suggesting slicing on top of a stem connecting to the backbone at the point where cleavage will occur (left to right: DNA, RNA, Protein):
+
+![glyph specification](nuclease-site-specification.png)
+![glyph specification](ribonuclease-site-specification.png)
 ![glyph specification](protease-site-specification.png)
 
 The complementary Ribonuclease Site glyph is identical except that its stem is a dashed line rather than a solid line.
-
-The complementary Restriction Site glyph is identical except that it has no "X" on top:
-
-![glyph specification](restriction-enzyme-recognition-site.png)
 
 ## Prototypical Example
 
 RNAse E site, BamHI
 
 ## Notes
-*this section deliberately blank*
+Restriction site previously also associated with SO:0000061, but that was incorrect, since it refers to the binding site and *not* the location of cleavage)
+
+This is backwards compatible with the SBOL Visual 1.0 glyph for Restriction Site, as that is covered by the Location glyph. The SBOL Visual 1.0 glyphs for Protease Site and Ribonuclease site, however, are obsolete and superseded by the new system.
