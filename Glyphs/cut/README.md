@@ -16,17 +16,6 @@ In this system:
 ### Stems
 There are several proposals for the DNA / RNA / protein system for stems:
 
-- Current system: [nothing], straight, dashed:
-
-![glyph specification](stem-top-specification-straight.png)
-![glyph specification](stem-top-specification-dashed.png)
-
-- Straight, Wavy, Sawtooth lines:
-
-![glyph specification](stem-top-specification-straight.png)
-![glyph specification](stem-top-specification-wavy.png)
-![glyph specification](stem-top-specification-sawtooth-sharper.png)
-
 - Straight, Wavy, Looped lines:
 
 ![glyph specification](stem-top-specification-straight.png)
@@ -34,23 +23,11 @@ There are several proposals for the DNA / RNA / protein system for stems:
 ![glyph specification](stem-top-specification-loops.png)
 
 
-- One, two, three lines:
-
-![glyph specification](stem-top-specification-straight.png)
-![glyph specification](stem-top-specification-double.png)
-![glyph specification](stem-top-specification-triple.png)
-
-- Two, wavy, one line:
-
-![glyph specification](stem-top-specification-double.png)
-![glyph specification](stem-top-specification-wavy.png)
-![glyph specification](stem-top-specification-straight.png)
-
 ### Tops
 
 Cut tops:
 
-- Circle:
+- Circle (RECOMMENDED):
 
 ![glyph specification](stem-top-specification-straight.png)
 
@@ -65,20 +42,8 @@ X-ase tops:
 
 ![glyph specification](stem-top-specification-X.png)
 
-- Binding pocket square cup:
-
-![glyph specification](stem-top-specification-cup.png)
-
 
 Stability tops:
-
-- Circle
-
-![glyph specification](stem-top-specification-straight.png)
-
-- Semi-circle
-
-![glyph specification](stem-top-specification-semicircle.png)
 
 - Shield
 
