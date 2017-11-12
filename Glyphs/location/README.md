@@ -1,60 +1,38 @@
-# Cut
+# Biopolymer Location
 
 ## Associated SO term(s)
 SO:0000699 (Junction, Boundary, Breakpoint)
 
+SO:0001236 (Base)
+
+SO:0001237 (Amino Acid)
+
 ## Recommended Glyph and Alternates
-The new Cut glyph is proposed as part of introducing a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein.  The other glyphs in this system are Stability Element and Cleavage Site.
 
-In this system:
+Biopolymer Location is a "stem-top" glyph for describing small sites. In this system:
 
-- the stem glyph indicates whether the site affects DNA, RNA, or protein
-- the top glyph indicates the type of site
+- the top glyph indicates the type of site (i.e., Biopolymer Location)
+- the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)
 
 ![glyph specification](stem-top-specification.png)
 
-### Stems
-There are several proposals for the DNA / RNA / protein system for stems:
+The RECOMMENDED top for Biopolymer Location is a circle, reminiscent of a pin stuck into a location (left to right: DNA, RNA, Protein):
 
-- Straight, Wavy, Looped lines:
+![glyph specification](location-dna-specification.png)
+![glyph specification](location-rna-specification.png)
+![glyph specification](location-protein-specification.png)
 
-![glyph specification](stem-top-specification-straight.png)
-![glyph specification](stem-top-specification-wavy.png)
-![glyph specification](stem-top-specification-loops.png)
+An alternative is to have "nothing" for the top, just an extended version of the stem itself (left to right: DNA, RNA, Protein):
 
-
-### Tops
-
-Cut tops:
-
-- Circle (RECOMMENDED):
-
-![glyph specification](stem-top-specification-straight.png)
-
-- Nothing:
-
-![glyph specification](stem-top-specification-plain.png)
-
-
-X-ase tops:
-
-- An "X":
-
-![glyph specification](stem-top-specification-X.png)
-
-
-Stability tops:
-
-- Shield
-
-![glyph specification](stem-top-specification-shield.png)
-
+![glyph specification](location-dna-no-top-specification.png)
+![glyph specification](location-rna-no-top-specification.png)
+![glyph specification](location-protein-no-top-specification.png)
 
 ## Prototypical Example
 
-CRISPR-targeted insertion site, protease site
+CRISPR-targeted insertion site, protease site, mutation site
 
 ## Notes
-Cut is a general glyph for all zero-length sequence features, including insertion and deletion sites and X-ase cut sites.
+Biopolymer Location is a general glyph for all zero- and one-length sequence features, including insertion and deletion sites and X-ase cut sites.
 
-The proposed glyph system affects other glyphs as well, as noted above.
+Note also that Biopolymer Location does not cover stability elements, since their length is typically multiple bases / amino acids.
