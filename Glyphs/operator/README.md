@@ -1,10 +1,12 @@
-# Operator
+# Operator / Binding Site
 
 ## Associated SO term(s)
-SO:0000057
+SO:0000057 Operator
+
+SO:0000409 Binding Site
 
 ## Recommended Glyph and Alternates
-The operator glyph is a box marking a place:
+The operator glyph is an open "cup" suggesting a binding location:
 
 ![glyph specification](operator-specification.png)
 
@@ -13,5 +15,4 @@ The operator glyph is a box marking a place:
 Gal4 binding site in an activatable promoter.
 
 ## Notes
-Operator has ambiguous vertical position, so its glyph does not yet have a recommended backbone alignment.
-
+This glyph puts a "dent" in the backbone line.

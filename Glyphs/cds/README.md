@@ -8,10 +8,14 @@ The coding sequence glyph is a "box" with one side bent out arrow-like to show d
 
 ![glyph specification](cds-specification.png)
 
+Alternately, CDS may be represented as a block arrow:
+
+![glyph specification](cds-arrow-specification.png)
+
 ## Prototypical Example
 
 α-Hemoglobin coding sequence
 
 ## Notes
-CDS has ambiguous vertical position, so its glyph does not yet have a recommended backbone alignment.
 
+*this section deliberately blank*
