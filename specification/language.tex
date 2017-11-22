@@ -3,15 +3,20 @@
 \label{sec:language}
 % % -----------------------------------------------------------------------------
 
-An SBOL visual diagram represents information about the structure of a nucleic acid design.
-In terms of SBOL 2 data models, this is formally defined as representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
+An SBOL visual diagram represents information about the structure of a nucleic acid design and its associated molecular species and interactions.
+%
+In terms of SBOL 2 data models, the description of a nucleic acid design is formally defined as representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
+%
+The description of interactions between some number of nucleic acid designs and other molecular species is formally defined as a representation of a \sbol{ModuleDefinition}, the \sbol{FunctionalComponent} objects describing the nucleic acid designs and other molecular species, and the \sbol{Interaction} and \sbol{Participation} objects describing their functional relationships.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLsyntax.pdf}
-\caption{Generic syntax of SBOL visual:  
-a diagram for a nucleic acid construct is based around a backbone line, its structure specified by the sequence of attached nucleic acid glyphs.  
+\caption{Generic syntax of SBOL visual 2.0:  
+a diagram for a nucleic acid construct is based around a backbone line, its structure specified by the sequence of attached sequence feature glyphs.  
 Strand can optionally be indicated by placing a glyph above or below the backbone.  
+Other molecular species are indicated by glyphs not in contact with any backbone.
+Interactions are directed edges connecting sequence feature or molecular species glyphs.
 Any of these objects may have an associated label showing its name, and the diagram may further include any form of other annotations, including other types of text.}
 \label{f:syntax}
 \end{figure}
@@ -19,7 +24,7 @@ Any of these objects may have an associated label showing its name, and the diag
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLgeneral.pdf}
-\caption{Example illustrating the elements of an SBOL Visual 2 diagram, with nucleic acid components on the forward and reverse strand of a backbone; the grey labels and indicator lines are annotations.}
+\caption{Example illustrating the elements of an SBOL Visual 2 diagram, with nucleic acid sequence features on the forward and reverse strand of a backbone, other molecular species, and interactions between elements; the grey labels and indicator lines are annotations.}
 \label{f:example}
 \end{figure}
 % inhibition and production relationships
@@ -69,7 +74,7 @@ In terms of SBOL 2 data models, the backbone represents a \sbol{ComponentDefinit
 \end{enumerate}
 
 
-\subsection{Nucleic Acid Features}
+\subsection{Nucleic Acid Sequence Features}
 \label{s:lang:nacomponent}
 
 A glyph in contact with a nucleic acid backbone indicates a feature of the nucleic acid sequence.
@@ -135,9 +140,9 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\label{exa:2e}
 	\end{figure}
 
-\item A nucleic acid feature SHOULD be represented using a glyph defined in \ref{apdx:symbols}.  In this case, the feature MUST be contained within at least one of the glyph's associated terms.
+\item A nucleic acid feature SHOULD be represented using a glyph defined in \ref{apdx:sym:feature}.  In this case, the feature MUST be contained within at least one of the glyph's associated terms.
 In terms of SBOL 2 data models, this means the glyph is equal to or a parent of at least one of the \sbol{roles} for the \sbol{Component} or its associated \sbol{ComponentDefinition}.
-	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:symbols} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:feature} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 	Examples are provided in~\ref{exa:2f}.
 	\begin{figure}[h!]
 	\centering
@@ -149,8 +154,61 @@ In terms of SBOL 2 data models, this means the glyph is equal to or a parent of 
 	\label{exa:2f}
 	\end{figure}
 \end{enumerate}
+
+
+\subsection{Molecular Species}
+A glyph that is not in contact with any backbone represents any class of molecule whose detailed structure is not being shown using sequence feature glyphs.
+In other words, either not a nucleic acid (e.g., proteins, small molecules) or else a nucleic acid whose structure is not being shown (e.g., an ``uninteresting'' mRNA coming from a CDS).
+In terms of SBOL 2 data models, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
+
+\begin{enumerate}
+\item A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box.
+\item A molecular species SHOULD be represented using a glyph defined in \ref{apdx:sym:species}.  In this case, the species MUST be contained within at least one of the glyph's associated terms.
+In terms of SBOL 2 data models, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the associated \sbol{ComponentDefinition}.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:species} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+\end{enumerate}
+
+
+\subsection{Interaction}
+
+A directed edge ``arrow'' attached to one or more glyphs indicates a functional interaction involving those elements.
+The roles of the elements is indicated by their position at the head or tail of the edge.
+In terms of SBOL 2 data models, this is an \sbol{Interaction}, with either one or two \sbol{Participation} relationships, their \sbol{role} set by position at the head or tail of the edge.
+	An example is provided in~\ref{exa:4}.
+
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=3in]{figures/examples/4-regulation.pdf}
+	\caption{Example of an interaction indicating a promoter stimulated by the CDS that it regulates.}
+	\label{exa:4}
+	\end{figure}
+		
+\begin{enumerate}
+\item Two interaction edges SHOULD NOT cross one another.  When edges cross, they MUST indicate the distinction between arrows with a crossover pattern, in which one edge ``diverts'' at the intersection (see \ref{f:crossover}).
+Examples are provided in~\ref{exa:4c}.
+
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=4in]{figures/crossovers.pdf}
+	\caption{Examples of \sbol{Interaction} crossover patterns.}
+	\label{f:crossover}
+	\end{figure}
 	
-	
+	\begin{figure}[h!]
+	\centering
+	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/4c-noncrossing.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4c-crossover.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4c-conflict.pdf}}
+	\caption{Examples of recommended, allowed, and forbidden relationships between two interactions in a mutual repression system: (a) non-crossing is recommended, (b) using a crossover pattern is allowed, but (c) crossing without a crossover pattern is forbidden, since the relationship between the two edges is ambiguous.}
+	\label{exa:4c}
+	\end{figure}
+
+\item An interaction SHOULD be represented using a glyph defined in \ref{apdx:sym:interaction}.  In this case, the interaction MUST be contained within at least one of the glyph's associated terms.
+In terms of SBOL 2 data models, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+\end{enumerate}
+
+
 \subsection{Labels}
 The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of SBOL 2 data models, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
 Examples are provided in~\ref{exa:5}.
