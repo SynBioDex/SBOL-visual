@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="protein-stability-element-specification.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/stability-element/protein-stability-element-specification.png"
+   sodipodi:docname="rna-stability-element-specification.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/stability-element/rna-stability-element-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata14"><rdf:RDF><cc:Work
@@ -53,7 +53,7 @@
         stroke-linejoin: round;
         fill: none
       }]]></style><style
-       id="style6-2"
+       id="style6-5"
        type="text/css"><![CDATA[
       path,circle {
         stroke:#000000;
@@ -77,10 +77,20 @@
      id="rect4156"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccc" /><g
-     id="g4192"
-     transform="translate(0.81922316,2.9117397)"><path
-       sodipodi:nodetypes="cccc"
+     id="g4194"
+     transform="matrix(1.0312613,0,0,0.91965854,-0.41121068,2.9268369)"><path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:2.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:connector-curvature="0"
-       id="path5401"
-       d="m 21.683565,20.375099 c 8.864406,-1.922677 9.102925,6.7584 -0.15538,5.286135 9.140445,-2.515454 8.800654,6.934411 -0.08776,5.215394 9.06355,-2.471877 8.98889,6.988159 -0.07466,5.415146"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /></g></svg>
+       id="path8-6"
+       d="m 22.433046,30.321771 c 4.327115,-4.802042 -4.168807,-4.698615 0,-8.867421" /><path
+       d="m 22.485815,39.13431 c 4.327115,-4.802042 -4.168806,-4.698614 0,-8.86742"
+       id="path5363"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" /><path
+       d="m 22.433046,30.321771 c 4.327115,-4.802042 -4.168807,-4.698615 0,-8.867421"
+       id="path4157"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" /></g></svg>

@@ -11,7 +11,7 @@ SO:0001237 (Amino Acid)
 
 Biopolymer Location is a "stem-top" glyph for describing small sites. In this system:
 
-- the top glyph indicates the type of site (i.e., Biopolymer Location)
+- the top glyph indicates the type of site (e.g., Biopolymer Location)
 - the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)
 
 ![glyph specification](stem-top-specification.png)
