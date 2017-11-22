@@ -1,14 +1,24 @@
 # Stability Element
 
 ## Associated SO term(s)
-SO:0001955 (Protein Stability Element)
+SO:0001955, SO:0001546 (Protein Stability Element)
 
 SO:0001979 (RNA Stability Element)
 
+*No SO term is currently associated with DNA stability.*
 
 ## Recommended Glyph and Alternates
-The protein stability site glyph is a loop on top of a stem, suggesting the structure of a stabilizing hairpin secondary structure:
+Stability Element is a "stem-top" glyph for describing small sites. In this system:
 
+- the top glyph indicates the type of site (e.g., Stability Elemenmt)
+- the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)
+
+![glyph specification](stem-top-specification.png)
+
+The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (left to right: DNA, RNA, Protein):
+
+![glyph specification](dna-stability-element-specification.png)
+![glyph specification](rna-stability-element-specification.png)
 ![glyph specification](protein-stability-element-specification.png)
 
 ## Prototypical Example
@@ -16,6 +26,9 @@ The protein stability site glyph is a loop on top of a stem, suggesting the stru
 PEST tag, 3’ Hairpin
 
 ## Notes
-The complementary RNA Stability Element glyph is identical except that its stem is a dashed line rather than a solid line.
+RNA Stability Element glyph was previously also associated with SO:0001957, but that SO term has been declared obsolete in Sequence Ontology.
 
-The SO term for this glyph was previously tied to SO:0001957, which has been declared obsolete in Sequence Ontology.
+This glyph is not backwards compatible with SBOL Visual 1.0.
+
+Despite both being stem-top glyphs, Biopolymer Location is not a parent to Stability Element, since the length of a Stability Element is typically multiple bases / amino acids.
+

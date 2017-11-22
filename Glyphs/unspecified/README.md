@@ -12,10 +12,6 @@ Unspecified is represented by the unicode "replacement character" glyph, indicat
 A half-rounded rectangle, the SBGN glyph for a nucleic acid, is an alternative:
 
   ![glyph specification](halfround-rectangle-specification.png)
-  
-For backward compatibility with the prior "User Defined" glyph, Unspecified can also be represented by a plain rectangle suggesting a blank slate to be written upon:
-
-![glyph specification](user-defined-specification.png)
 
 
 ## Prototypical Example

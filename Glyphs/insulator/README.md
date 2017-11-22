@@ -13,5 +13,4 @@ The insulator glyph is a box inside another box that isolates it from its enviro
 RiboJ or BCDs
 
 ## Notes
-Insulator has ambiguous interior and vertical position, so its glyph does not yet have a recommended backbone alignment or interior
-
+*this section deliberately blank*
