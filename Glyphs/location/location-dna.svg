@@ -16,7 +16,7 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="protein-stability-element.svg"
+   sodipodi:docname="location-dna.svg"
    inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/stability-element/protein-stability-element-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
@@ -36,7 +36,7 @@
      id="namedview12"
      showgrid="false"
      units="in"
-     inkscape:zoom="13.350176"
+     inkscape:zoom="9.44"
      inkscape:cx="25"
      inkscape:cy="20.338983"
      inkscape:window-x="0"
@@ -52,25 +52,13 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style><style
-       id="style6-2"
-       type="text/css"><![CDATA[
-      path,circle {
-        stroke:#000000;
-        stroke-width: 3;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none
       }]]></style></defs><path
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 15.805033,6.4237289 13.557872,0 0,11.9099541 -6.816388,5.01866 -6.741484,-5.243376 z"
-     id="rect4156"
+     d="m 22.499997,38.489314 0,-16"
+     id="path8"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccccc" /><g
-     id="g4192"
-     transform="translate(0.81922316,2.9117397)"><path
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       id="path5401"
-       d="m 21.683565,20.375099 c 8.864406,-1.922677 9.102925,6.7584 -0.15538,5.286135 9.140445,-2.515454 8.800654,6.934411 -0.08776,5.215394 9.06355,-2.471877 8.98889,6.988159 -0.07466,5.415146"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /></g></svg>
+     style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /><circle
+     cx="22.499998"
+     cy="13.489317"
+     r="7"
+     id="circle10"
+     style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" /></svg>

@@ -8,7 +8,7 @@
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Draft |
 | **Created** | 17-Sep-2017 |
-| **Last modified** | 19-Oct-2017 |
+| **Last modified** | 12-Nov-2017 |
 ## Abstract
 
 This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein. The glyphs in this system are Biopolymer Location, Stability Element, and Cleavage Site.
@@ -37,7 +37,7 @@ SO:0001236 (Base)
 
 SO:0001237 (Amino Acid)
 
-This can thus represent either an SBOL "Cut" location of a "Range" or length 1
+This can thus represent either an SBOL "Cut" location or a "Range" or length 1
 
 ### Cleavage Site
 
@@ -78,15 +78,11 @@ There are several proposals for the DNA / RNA / protein system for stems (showin
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-straight.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-wavy.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/90e8478/Glyphs/cut/stem-top-specification-loops.png)
 
-- Straight, Wavy, Sawtooth lines:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-straight.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-wavy.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/cd93a0b/Glyphs/cut/stem-top-specification-sawtooth-sharper.png)
-
 ### Tops
 
  Biopolymer Location tops:
 
-- Circle:
+- Circle (RECOMMENDED):
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-straight.png)
 
@@ -129,6 +125,11 @@ Alternatives currently without support:
 - Current system: [nothing], dashed, straight:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-dashed.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-straight.png)
+
+- Straight, Wavy, Sawtooth lines:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-straight.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/a30f24c/Glyphs/cut/stem-top-specification-wavy.png)![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOLv-realizations/cd93a0b/Glyphs/cut/stem-top-specification-sawtooth-sharper.png)
+
 
 - One, two, three lines:
 
