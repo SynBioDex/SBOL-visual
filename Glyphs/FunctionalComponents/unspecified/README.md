@@ -4,13 +4,13 @@
 PhysicalEntity: http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity
 
 ## Recommended Glyph and Alternates
-Unspecified is represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol, is RECOMMENDED:
+Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:
 
-  ![glyph specification](replacement-glyph-specification.png)
+![glyph specification](replacement-glyph-specification.png)
 
-An allowed alternative is the SBGN "generic species" glyph, which is an oval:
+An alternative is the SBGN "generic species" glyph, which is an oval:
 
-![glyph specification](oval-specification.png)
+![glyph specification](generic-sbgn-specification.png)
 
 ## Prototypical Example
 

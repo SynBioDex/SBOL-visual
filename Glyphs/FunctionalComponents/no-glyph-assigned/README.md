@@ -4,9 +4,11 @@
 Any BioPAX type that is not covered by any glyph besides the root
 
 ## Recommended Glyph and Alternates
-The recommended option is to have a bracket, suggesting information that needs to be filled in:
+When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.
 
-![glyph specification](no-glyph-assigned-brackets-specification.png)
+An alternative option is to have a bracket, suggesting information that needs to be filled in:
+
+![glyph specification](no-glyph-assigned-specification.png)
 
 ## Prototypical Example
 

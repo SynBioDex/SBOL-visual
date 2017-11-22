@@ -4,20 +4,15 @@
 Complex: http://www.biopax.org/release/biopax-level3.owl#Complex
 
 ## Recommended Glyph and Alternates
-There are several proposed complex glyphs. One is to simply composite together other glyphs.  For example, a protein bound to a small molecule, a guide RNA, or another protein:
+The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules of comprising the complex.  For example, a protein bound to a small molecule, a guide RNA, or another protein:
 
 ![glyph specification](complex-ps-specification.png)
 ![glyph specification](complex-pr-specification.png)
 ![glyph specification](complex-pp-specification.png)
 
-Another possibility is two connected circles, with or without a line between them:
+An alternative is the SBGN "cornered rectangle" glyph for a complex:
 
-![glyph specification](circlepair-specification.png)
-![glyph specification](circlepair-split-specification.png)
-
-Another alternative is the SBGN "cornered rectangle" glyph for a complex:
-
-![glyph specification](corneredrect-specification.png)
+![glyph specification](complex-sbgn-specification.png)
 
 ## Prototypical Example
 

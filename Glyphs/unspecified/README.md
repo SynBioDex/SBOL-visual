@@ -5,7 +5,7 @@ Unspecified: SO:0000110 Sequence Feature
 
 ## Recommended Glyph and Alternates
 
-Unspecified is represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol, is RECOMMENDED:
+Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:
 
   ![glyph specification](replacement-glyph-specification.png)
 

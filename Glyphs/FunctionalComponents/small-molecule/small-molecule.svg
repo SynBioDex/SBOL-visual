@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="circlepair-split-specification.svg"
-   inkscape:export-filename="circlepair-split-specification.png"
+   sodipodi:docname="small-molecule.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/small-molecule/stadium-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -53,16 +53,10 @@
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><rect
-     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.49999994;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4159"
-     width="25.092657"
-     height="15.729483"
-     x="9.9536695"
-     y="14.626188" /><path
-     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 17.96875 15.009766 A 7.4905381 7.4905381 0 0 0 10.478516 22.5 A 7.4905381 7.4905381 0 0 0 17.96875 29.990234 A 7.4905381 7.4905381 0 0 0 22.503906 28.453125 A 7.4905381 7.4905381 0 0 0 27.03125 29.990234 A 7.4905381 7.4905381 0 0 0 34.521484 22.5 A 7.4905381 7.4905381 0 0 0 27.03125 15.009766 A 7.4905381 7.4905381 0 0 0 22.496094 16.546875 A 7.4905381 7.4905381 0 0 0 17.96875 15.009766 z "
-     id="path4158" /><path
-     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 22.499997,16.461048 0,12.134671"
-     id="path4182"
-     inkscape:connector-curvature="0" /></svg>
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4135"
+     width="31.759876"
+     height="13.857493"
+     x="6.620059"
+     y="15.571251"
+     ry="6.9287467" /></svg>

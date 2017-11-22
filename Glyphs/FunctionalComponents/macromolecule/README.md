@@ -10,11 +10,11 @@ The macromolecule glyph is a diagonally offset union of a large and small circle
 
 An alternative is the SBGN macromolecule glyph, a rounded rectangle:
 
-![glyph specification](roundrect-specification.png)
+![glyph specification](macromolecule-sbgn-specification.png)
 
 ## Prototypical Example
 
 AraC
 
 ## Notes
-It is unclear whether this should be just "Protein" or whether we also want it to be able to repesent multi-component elements like a protein composed of multiple sub-units.
+It is unclear whether this should be just "Protein" or whether we also want it to be able to repesent multi-component elements like a protein composed of multiple sub-units or a complex polymer.

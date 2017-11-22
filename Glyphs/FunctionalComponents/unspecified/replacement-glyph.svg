@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="parallel-lines-specification.svg"
-   inkscape:export-filename="parallel-lines-specification.png"
+   sodipodi:docname="replacement-glyph.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/user-defined/replacement-glyph-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -31,14 +31,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="942"
-     inkscape:window-height="693"
+     inkscape:window-width="944"
+     inkscape:window-height="738"
      id="namedview10"
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
-     inkscape:cx="25"
-     inkscape:cy="24.576271"
+     inkscape:cx="22.603028"
+     inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -46,26 +46,29 @@
      id="defs4"><style
        type="text/css"
        id="style6"><![CDATA[
-      path,circle {
+      path,circle,polygon {
         stroke:#000000;
         stroke-width: 3;
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><rect
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4187"
-     width="35.389797"
-     height="9.2608871"
-     x="4.7676458"
-     y="17.869553" /><path
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.99999976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 5.817706,18.954334 33.378374,0"
-     id="path4135"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" /><path
-     sodipodi:nodetypes="cc"
-     inkscape:connector-curvature="0"
-     id="path4141"
-     d="m 39.217412,26.134993 -33.3783743,0"
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.99999976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /></svg>
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.72234631;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4136"
+     width="18.319849"
+     height="18.319849"
+     x="21.229794"
+     y="-11.238423"
+     ry="0"
+     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" /><text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="22.696327"
+     y="26.498367"
+     id="text4141"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4143"
+       x="22.696327"
+       y="26.498367">?</tspan></text>
+</svg>

@@ -12,8 +12,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="doublehelix-specification.svg"
-   inkscape:export-filename="doublehelix-specification.png"
+   sodipodi:docname="ssNA.svg"
+   inkscape:export-filename="wiggle-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <metadata
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,26 +64,5 @@
        stroke-opacity="null"
        inkscape:connector-curvature="0"
        style="fill:#ffffff;stroke:#000000;stroke-width:3" />
-  </g>
-  <rect
-     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4151"
-     width="37.159061"
-     height="7.089045"
-     x="3.904933"
-     y="18.955477" />
-  <g
-     transform="matrix(0.47148661,0,0,-0.47148661,-1.4693867,45.390873)"
-     id="g4136"
-     style="fill:none">
-    <title
-       id="title4138">Layer 1</title>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:3"
-       inkscape:connector-curvature="0"
-       stroke-opacity="null"
-       fill-opacity="null"
-       d="m 12.999996,42.249994 c 5.749999,17.999995 11.250003,12.499991 14.499998,6 3.999995,-7.999989 6.999998,-7.500002 12.75,0.25 5.750002,7.750002 7,6.249998 11.500001,-0.500001 4.500001,-6.749999 6.999999,-7.249997 11.749999,0 4.750001,7.249997 6.000001,6.999999 11.000001,-1e-6 5,-7 6.000006,-10.499993 15,5.500001"
-       id="path4140" />
   </g>
 </svg>
