@@ -15,4 +15,4 @@ The non-coding RNA glyph is a rectangular box whose top is a single-stranded RNA
 gRNA sequence for targeting a dCas9 repressor
 
 ## Notes
-*This section left deliverately blank*
+*This section left deliberately blank*

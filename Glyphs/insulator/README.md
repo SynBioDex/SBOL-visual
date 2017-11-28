@@ -10,7 +10,7 @@ The insulator glyph is a box inside another box that isolates it from its enviro
 
 ## Prototypical Example
 
-RiboJ or BCDs
+RiboJ
 
 ## Notes
 *this section deliberately blank*

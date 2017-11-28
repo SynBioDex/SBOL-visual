@@ -15,7 +15,7 @@ Stability Element is a "stem-top" glyph for describing small sites. In this syst
 
 ![glyph specification](stem-top-specification.png)
 
-The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (left to right: DNA, RNA, Protein):
+The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (in order: DNA, RNA, Protein):
 
 ![glyph specification](dna-stability-element-specification.png)
 ![glyph specification](rna-stability-element-specification.png)

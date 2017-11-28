@@ -3,7 +3,7 @@
 \label{sec:language}
 % % -----------------------------------------------------------------------------
 
-An SBOL visual diagram represents information about the structure of a nucleic acid design and its associated molecular species and interactions.
+An SBOL Visual diagram represents information about the structure of a nucleic acid design and its associated molecular species and interactions.
 %
 In terms of SBOL 2 data models, the description of a nucleic acid design is formally defined as representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
 %
@@ -12,7 +12,7 @@ The description of interactions between some number of nucleic acid designs and 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLsyntax.pdf}
-\caption{Generic syntax of SBOL visual 2.0:  
+\caption{Generic syntax of SBOL Visual 2:  
 a diagram for a nucleic acid construct is based around a backbone line, its structure specified by the sequence of attached sequence feature glyphs.  
 Strand can optionally be indicated by placing a glyph above or below the backbone.  
 Other molecular species are indicated by glyphs not in contact with any backbone.
@@ -29,7 +29,7 @@ Any of these objects may have an associated label showing its name, and the diag
 \end{figure}
 % inhibition and production relationships
 
-Specifically, an SBOL visual diagram consists of the classes of object illustrated in \ref{f:syntax}.
+Specifically, an SBOL Visual diagram consists of the classes of object illustrated in \ref{f:syntax}.
 \ref{f:example} shows an example of such a diagram, in a typical usage.
 Full details of this specification are provided in the remainder of this section.
 
@@ -54,7 +54,7 @@ In terms of SBOL 2 data models, the backbone represents a \sbol{ComponentDefinit
 	\subfigure[Single- or double-strand backbone]{\includegraphics[scale=0.4]{figures/examples/1a-singlestrand.pdf}}
 	\subfigure[Double-strand backbone]{\includegraphics[scale=0.4]{figures/examples/1a-doublestrand.pdf}}
 	\subfigure[Double-strand backbone with single-strand overhangs]{\includegraphics[scale=0.4]{figures/examples/1a-overhangstrand.pdf}}
-	\caption{Examples of indicating strand count in nucleic acid backbones}
+	\caption{Examples of indicating strand count in nucleic acid backbones.}
 	\label{exa:1a}
 	\end{figure}
 		
@@ -65,8 +65,8 @@ In terms of SBOL 2 data models, the backbone represents a \sbol{ComponentDefinit
 	
 	\begin{figure}[h!]
 	\centering
-	\includegraphics[width=5in]{figures/examples/1b.pdf}
-	\caption{Recommended, acceptable, and problematic examples of nucleic backbone orientation}
+	\includegraphics[width=6in]{figures/examples/1b.pdf}
+	\caption{Recommended, acceptable, and problematic examples of nucleic backbone orientation.}
 	\label{exa:1b}
 	\end{figure}
 	
@@ -79,8 +79,8 @@ In terms of SBOL 2 data models, the backbone represents a \sbol{ComponentDefinit
 
 A glyph in contact with a nucleic acid backbone indicates a feature of the nucleic acid sequence.
 % 
-In terms of SBOL 2 data models, this is either a \sbol{SequenceFeature} or a \sbol{Component} with a nucleic acid{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
-The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition} or recursively through a sequence of such containments.
+In terms of SBOL 2 data models, this is either a \sbol{SequenceFeature} or a \sbol{Component} with a nucleic acid \sbol{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
+The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition}, or recursively through a sequence of such containments.
 
 \begin{enumerate}
 \item Every feature glyph MUST have its bounding box in contact with the backbone for the nucleic acid construct it describes. 
@@ -105,7 +105,7 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\begin{figure}[h!]
 	\centering
 	\includegraphics[width=2.5in]{figures/orientation.pdf}
-	\caption{Use of glyph orientation to indicate inline vs. reverse complement direction}
+	\caption{Use of glyph orientation to indicate inline vs. reverse complement direction.}
 	\label{f:orientation}
 	\end{figure} 
 	
@@ -124,7 +124,7 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\begin{figure}[h!]
 	\centering
 	\includegraphics[width=3in]{figures/examples/2d.pdf}
-	\caption{Example of incorrect glyph overlap: promoter (arrow) does not overlap in sequence with 5'UTR and CDS, so SHOULD NOT overlap visually with them.}
+	\caption{Example of incorrect glyph overlap: promoter (arrow) does not overlap in sequence with the ribosome entry site and CDS, so SHOULD NOT overlap visually with them.}
 	\label{exa:2d}
 	\end{figure}
 
@@ -136,7 +136,7 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\subfigure[Restriction site in a CDS]{\includegraphics[scale=0.4]{figures/examples/2e-cutsite.pdf}}
 	\subfigure[3'-side operator in a promoter]{\includegraphics[scale=0.4]{figures/examples/2e-promoter.pdf}}
 	\subfigure[5'-side operator in a promoter]{\includegraphics[scale=0.4]{figures/examples/2e-promoter2.pdf}}
-	\caption{Examples where glyphs SHOULD overlap, but might not if it is more clear, e.g., with an operator site located within the 5' portion of a promoter}
+	\caption{Examples where glyphs SHOULD overlap, but might not if it is more clear, e.g., with an operator site located within the 5' portion of a promoter.}
 	\label{exa:2e}
 	\end{figure}
 
@@ -150,7 +150,7 @@ In terms of SBOL 2 data models, this means the glyph is equal to or a parent of 
 	\subfigure[MAY]{\includegraphics[scale=0.5]{figures/examples/2f-custom.pdf}}
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.5]{figures/examples/2f-generic.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.5]{figures/examples/2f-conflict.pdf}}
-	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, 5'UTR, CDS, and terminator: (a) is RECOMMENDED because it uses the preferred variant of the most specific defined glyphs, (b) is allowed because it uses a custom non-conflicting symbol to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs and (d) is forbidden because it use a promoter symbol to represent the terminator.}
+	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, ribosome entry site, CDS, and terminator: (a) is RECOMMENDED because it uses the preferred variant of the most specific defined glyphs, (b) is allowed because it uses a custom non-conflicting symbol to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs, and (d) is forbidden because it use a promoter symbol to represent the terminator.}
 	\label{exa:2f}
 	\end{figure}
 \end{enumerate}
@@ -160,6 +160,8 @@ In terms of SBOL 2 data models, this means the glyph is equal to or a parent of 
 A glyph that is not in contact with any backbone represents any class of molecule whose detailed structure is not being shown using sequence feature glyphs.
 In other words, either not a nucleic acid (e.g., proteins, small molecules) or else a nucleic acid whose structure is not being shown (e.g., an ``uninteresting'' mRNA coming from a CDS).
 In terms of SBOL 2 data models, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
+
+\todo[inline]{Open a discussion on interpretation of "composite" touching of molecular species to backbone.}
 
 \begin{enumerate}
 \item A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box.
@@ -225,8 +227,8 @@ Examples are provided in~\ref{exa:5}.
 Other text or graphics may be included as annotations with no constraint on their syntax or semantics.
 
 \begin{enumerate}
-\item Annotations SHOULD NOT be displayed in a way that allows them to be confused with other SBOL visual elements.
-\item Annotations SHOULD NOT be used to display information that can be displayed using other SBOL visual elements.
+\item Annotations SHOULD NOT be displayed in a way that allows them to be confused with other SBOL Visual elements.
+\item Annotations SHOULD NOT be used to display information that can be displayed using other SBOL Visual elements.
 \end{enumerate}
 
 \subsection{Criteria for Compliance with SBOL Visual}
@@ -235,7 +237,7 @@ A diagram of a biological system is compliant with SBOL Visual if it complies wi
 A diagram is compliant with SBOL Visual best practices if it also complies with all RECOMMENDED, SHOULD, and SHOULD NOT statements as specified above.
 
 Importantly, note that a non-SBOL glyph can be used in a compliant
-diagram when its definition is a subset or superset of definition that
+diagram when its definition is a subset or superset of a definition that
 does have an SBOL Visual glyph.  For example, a diagram that creates a
 new glyph for a special type of promoter can be SBOL Visual compliant
 even though there is an SBOL Visual glyph for a general promoter.

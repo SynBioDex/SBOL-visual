@@ -14,6 +14,8 @@ The glyph for Composite is dashed "expanding lines" connecting any "base" glyph 
 
 An "expression cassette" containing a ribosome entry site, coding sequence, and terminator.
 
+In this case, the recommended "base" glyph would be Engineered Region.
+
 
 ## Notes
 An "abbreviated" representation of composite, simply indicating that more structure is available, can be made by using short lines and placing only an Omitted Detail glyph in the secondary backbone. For example, here is an example of an abbreviated composite promoter: 
