@@ -10,7 +10,7 @@ SO:0001979 (RNA Stability Element)
 ## Recommended Glyph and Alternates
 Stability Element is a "stem-top" glyph for describing small sites. In this system:
 
-- the top glyph indicates the type of site (e.g., Stability Elemenmt)
+- the top glyph indicates the type of site (e.g., Stability Element)
 - the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)
 
 ![glyph specification](stem-top-specification.png)

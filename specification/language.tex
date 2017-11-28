@@ -29,7 +29,7 @@ Any of these objects may have an associated label showing its name, and the diag
 \end{figure}
 % inhibition and production relationships
 
-Specifically, an SBOL Visual diagram consists of the classes of object illustrated in \ref{f:syntax}.
+Specifically, an SBOL Visual diagram consists of the classes of objects illustrated in \ref{f:syntax}.
 \ref{f:example} shows an example of such a diagram, in a typical usage.
 Full details of this specification are provided in the remainder of this section.
 
@@ -205,7 +205,7 @@ Examples are provided in~\ref{exa:4c}.
 	\label{exa:4c}
 	\end{figure}
 
-\item An interaction SHOULD be represented using a glyph defined in \ref{apdx:sym:interaction}.  In this case, the interaction MUST be contained within at least one of the glyph's associated terms.
+\item An interaction SHOULD be represented using a glyph defined in \ref{apdx:sym:interaction}.  In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
 In terms of SBOL 2 data models, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 \end{enumerate}

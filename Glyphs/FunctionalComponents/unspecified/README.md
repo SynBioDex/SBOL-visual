@@ -8,7 +8,7 @@ Unspecified is RECOMMENDED to be represented by the unicode "replacement charact
 
 ![glyph specification](replacement-glyph-specification.png)
 
-An alternative is the SBGN "generic species" glyph, which is an oval:
+An alternative is the SBGN "generic species" glyph, which is an ellipse:
 
 ![glyph specification](generic-sbgn-specification.png)
 

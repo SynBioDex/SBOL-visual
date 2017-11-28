@@ -8,6 +8,8 @@ The assembly scar glyph is an "equal sign" image, the pattern produced by the un
 
 ![glyph specification](assembly-scar-specification.png)
 
+With a double-stranded backbone:
+
 ![glyph specification](assembly-scar-specification-doublestrand.png)
 
 ## Prototypical Example
