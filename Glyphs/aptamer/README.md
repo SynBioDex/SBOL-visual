@@ -4,7 +4,7 @@
 SO:0000031: Aptamer
 
 ## Recommended Glyph and Alternates
-The proposed aptamer glyphs are two versions of a cartoon diagram of nucleic acid secondary structure like that found in aptamers:
+The aptamer glyph is a cartoon diagram of a prototypical nucleic acid secondary structure for an aptamer:
 
 ![glyph specification](aptamer-specification.png)
 

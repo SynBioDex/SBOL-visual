@@ -2,13 +2,14 @@
 \section{Relationship to SBOL Visual 1.0}\label{sec:sbol1}
 % -----------------------------------------------------------------------------
 
-SBOL Visual 1.1 differs from SBOL Visual 1.0 in the following major ways:
+SBOL Visual 2.0 differs from SBOL Visual 1.0 in the following major ways:
 \begin{itemize}
+\item Diagram syntax is expanded to include functional interactions and other molecular species.
 \item The relationship between diagrams and the SBOL data model is made explicit.
 \item A number of requirements and best practices are specified for glyphs and diagrams, including:
 	\begin{itemize}
 	\item Glyphs include information on interior, bounding box, and recommended backbone alignment.
-	\item Glyphs are required to have their bounding boxes contact the nucleic acid backbone.
+	\item Sequence feature glyphs are required to have their bounding boxes contact the nucleic acid backbone.
 	\item Nucleic acid diagrams now require the nucleic acid backbone line, and the number of lines allowed in various circumstances is constrained.
 	\item Explicit statement of when a glyph can and cannot be used to represent a particular element of a diagram.
 	\end{itemize}
@@ -17,11 +18,11 @@ SBOL Visual 1.1 differs from SBOL Visual 1.0 in the following major ways:
 \item Symbol variants are now supported.
 \end{itemize}
 
-In addition, the collection of glyphs have been expanded and modified in the following ways:
+In addition, the collection of sequence feature glyphs have been expanded and modified in the following ways:
 \begin{itemize}
 \item All non-ambiguous glyphs have been provided with bounding box, interior, and recommended backbone alignment.
-\item The User Defined glyph has been split into Unspecified, No Glyph Assigned, and Composite. 
-\item A glyph has been added for Omitted Detail.
+\item The User Defined glyph has been split into Unspecified, No Glyph Assigned, Engineered Region, and Composite. 
+\item Glyphs have been added for Aptamer, Omitted Detail, Biopolymer Location, Non-Coding RNA Gene, Origin of Transfer, PolyA Site, and Specific Recombination Site.
 \item The following ontology terms have been assigned or adjusted: 
 	\begin{itemize}
 	\item Ribonuclease Site has been assigned SO:0001977.
@@ -29,7 +30,6 @@ In addition, the collection of glyphs have been expanded and modified in the fol
 	\item 3' Sticky End Restriction Site has been assigned SO:0001976.
 	\item Signature has been assigned SO:0001978.
 	\item RNA Stability Element has been updated from the obsolete SO:0001957 to the current SO:0001979
-	\item Ribosome Entry Site, in addition to SO:0000139 has an second definition as 5'UTR (SO:0000204).
 	\item Restriction Enzyme Recognition Site, in addition to SO:0000139 has a second definition as SO:0000061.
 	\item 5' Overhang Site and 3' Overhang Site were erroneously listed with their ontology terms exchanged; this has been fixed.
 	\end{itemize}

@@ -47,28 +47,28 @@ Describes the relative spatial position and orientation of two \sbol{Component} 
 %\item \emph{\sbol{Model}}:
 %Links to quantitative or qualitative computational models that might be used to predict the functional behavior of a biological design.
 
-%\item \emph{\sbol{ModuleDefinition}}:
-%Describes a ``system'' design as a collection of biological components and their functional relationships.
-%
-%\begin{itemize}
-%\item \emph{\sbol{FunctionalComponent}}:
-%Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of an entity within the design of a system. Because the same definition might appear in multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{FunctionalComponent}.
-%
-%\item \emph{\sbol{Interaction}}:
-%Describes a functional relationship between biological entities, such as regulatory activation or repression, or a biological process such as transcription or translation.
-%
+\item \emph{\sbol{ModuleDefinition}}:
+Describes a ``system'' design as a collection of biological components and their functional relationships.
+
+\begin{itemize}
+\item \emph{\sbol{FunctionalComponent}}:
+Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of an entity within the design of a system. Because the same definition might appear in multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{FunctionalComponent}.
+
+\item \emph{\sbol{Interaction}}:
+Describes a functional relationship between biological entities, such as regulatory activation or repression, or a biological process such as transcription or translation.
+
 %\item \emph{\sbol{MapsTo}}:
 %When a design (\sbol{ComponentDefinition} or \sbol{ModuleDefinition}) includes another design as a sub-design, the parent design might need to refer to a \sbol{ComponentInstance} (either a \sbol{Component} or \sbol{FunctionalComponent}) in the sub-design.
 %In this case, a \sbol{MapsTo} needs to be added to the instance for the sub-design, and this \sbol{MapsTo} needs to link between the \sbol{ComponentInstance} in the sub-design and a \sbol{ComponentInstance} in the parent design.
 %
 %\item \emph{\sbol{Module}}:
 %Pointer class. Incorporates a child \sbol{ModuleDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single \sbol{ModuleDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{Module}.
-%
-%\item \emph{\sbol{Participation}}:
-%Describes the role that a \sbol{FunctionalComponent} plays in an \sbol{Interaction}.
-%For example, a transcription factor might participate in an \sbol{Interaction} as a repressor or as an activator.
-%
-%\end{itemize}
+
+\item \emph{\sbol{Participation}}:
+Describes the role that a \sbol{FunctionalComponent} plays in an \sbol{Interaction}.
+For example, a transcription factor might participate in an \sbol{Interaction} as a repressor or as an activator.
+
+\end{itemize}
 
 %\item \emph{\sbol{Sequence}}:
 %Generally represents a contiguous series of monomers in a macromolecular polymer such as DNA, RNA, or protein. A \sbol{Sequence} can also encode the atoms and bonds of a molecule with non-linear structure (see \ref{sec:Sequence}).
