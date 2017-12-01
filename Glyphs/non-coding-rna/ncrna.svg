@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="0.5in"
+   height="0.5in"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ncrna.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/non-coding-rna/ncrna-boxC-specification.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1056"
+     inkscape:window-height="818"
+     id="namedview17"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="12.836708"
+     inkscape:cx="21.816898"
+     inkscape:cy="25.418947"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g
+     id="g12"
+     transform="matrix(0.47148661,0,0,0.47148661,-1.6350431,-1.6880776)"
+     style="fill:none">
+    <title
+       id="title14">Layer 1</title>
+    <path
+       id="svg_6"
+       d="m 82.316714,53.499993 c -8.999994,-15.999994 -10,-12.500001 -15,-5.500001 -5,7 -6.25,7.249998 -11.000001,1e-6 -4.75,-7.249997 -7.249998,-6.749999 -11.749999,0 -4.500001,6.749999 -5.749999,8.250003 -11.500001,0.500001 -5.750002,-7.750002 -8.750005,-8.249989 -12.75,-0.25 l -0.125382,12.9365 62.010474,-0.165225 0,-7.930822"
+       fill-opacity="null"
+       stroke-opacity="null"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:3"
+       sodipodi:nodetypes="csssscccc" />
+  </g>
+</svg>

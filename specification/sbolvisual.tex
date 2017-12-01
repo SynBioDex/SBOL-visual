@@ -1,0 +1,192 @@
+\documentclass[finalspec]{sbmlpkgspec}
+%%\documentclass[draftspec]{sbmlpkgspec}
+\usepackage{microtype}
+\usepackage{color}
+
+\usepackage{todonotes}
+\usepackage{subfigure}
+\usepackage{longtable}
+
+\usepackage[final]{pdfpages}
+
+%% ============================================================================
+%% Description:  Documentation for sbmlpkgspec.cls
+%% First author: Michael Hucka <mhucka@caltech.edu>
+%% Organization: California Institute of Technology
+%% Date created: September 2011
+%% https://sbml.svn.sourceforge.net/svnroot/sbml/trunk/project/tex/sbmlpkgspec
+%%
+%% Copyright (C) 2011-2012 California Institute of Technology, Pasadena, CA.
+%%
+%% SBMLPkgSpec is free software; you can redistribute it and/or modify it
+%% under the terms of the GNU Lesser General Public License as published by
+%% the Free Software Foundation.  A copy of the license agreement is provided
+%% in the file named "LICENSE.txt" included with this software distribution.
+%% ============================================================================
+
+% Macros just for this document:
+
+\newcommand{\rfcnum}{{115}}
+
+\newcommand{\sbmlpkg}{\texorpdfstring{%
+    \textls[-25]{\textsc{SBMLPkgSpec}}}{%
+    \textsc{SBMLPkgSpec}}\xspace}
+\newcommand{\sbmlpkghead}{\texorpdfstring{%
+    \textls[-50]{\textsc{SBMLPkgSpec}}}{%
+    \textsc{SBMLPkgSpec}}\xspace}
+\newcommand{\sbmlpkgfile}{\literalFont{sbmlpkgspec.cls}\xspace}
+\newcommand{\latex}{\LaTeX{}\xspace}
+\newcommand{\tex}{\TeX{}\xspace}
+\newcommand{\distURL}{http://sourceforge.net/projects/sbml/files/specifications/tex}
+\newcommand{\srcURL}{https://sbml.svn.sourceforge.net/svnroot/sbml/trunk/project/tex/sbmlpkgspec}
+\newcommand{\webURL}{http://sbml.org/Documents/Specifications/The_SBMLPkgSpec_LaTeX_class}
+\newcommand{\cmd}[1]{\literalFont{\textbackslash #1}}
+
+% Custom latex listing style, for use with the listings package.  The default
+% highlights far too many things, IMHO.  This keeps it simple and only adjusts
+% the appearance of comments within listings.
+
+\lstdefinelanguage{mylatex}{%
+  morekeywords={},%
+  sensitive,%
+  alsoother={0123456789$_},%$
+  morecomment=[l]\%%
+}[keywords,tex,comments]
+
+\lstdefinestyle{latex}{language=mylatex}
+
+
+%Listing style for SBOL RDF/XML serialization examples
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor} 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{light-gray}{gray}{0.97}
+\lstdefinelanguage{sbol}
+    {morekeywords={xmlns:sbol,rdf:about,sbol:displayId,sbol:persistentIdentity,sbol:version,sbol:timeStamp,sbol:name,sbol:description,sbol:member,sbol:Collection,sbol:type, sbol:role, sbol:ComponentDefinition, sbol:MapsTo, sbol:sequence,sbol:wasDerivedFrom,sbol:Component,sbol:subComponent,sbol:SequenceAnnotation,sbol:component,sbol:location, sbol:sequenceAnnotation, sbol:Range, sbol:start, sbol:end, sbol:orientation,sbol:SequenceConstraint, sbol:restriction, sbol:subject, sbol:object,sbol:Sequence, sbol:elements, sbol:encoding,sbol:Model, sbol:source, sbol:language, sbol:framework,sbol:FunctionalComponent, sbol:Module, sbol:Interaction, sbol:interaction, sbol:module, sbol:model,sbol:Model,sbol:definition, sbol:access, sbol:direction, sbol:mapsTo, sbol:refinement, sbol:local, sbol:remote, sbol:participation, sbol:Participation, sbol:participant,sbol:sequenceConstraint,sbol:at,sbol:Cut,sbol:functionalComponent,sbol:ModuleDefinition,prov:wasDerivedFrom,dcterms:title,dcterms:description},
+     basicstyle=\fontsize{7}{9}\selectfont\ttfamily,
+     backgroundcolor=\color{light-gray},
+     keywordstyle=\color{blue},
+     commentstyle=\color{gray},
+     stringstyle=\color{dkgreen},
+     tabsize=2,
+     showspaces=false,
+     showstringspaces=false,
+     breaklines=true,                           % wrap text
+     sensitive=true,                            % keywords are case sensitive
+     %morecomment=[l][commentstyle]{\#},         % comment format
+     morestring=[b]",                           % string format
+     escapeinside={[}{]},
+     alsoletter=:
+     %breakatwhitespace=true, 
+     %literate={\-}{}{0\discretionary{a}{\\}{}}
+}
+
+%Command to format the listings containing SBOL RDF/XML serialization examples
+\newcommand{\lstsetsbol}{
+ \lstset{language=sbol,
+        tabsize=2
+ }
+}
+
+%Commands to format SBOL terms in the document
+\newcommand{\sbolheading}[1]{\texttt{#1}}
+\newcommand{\sbol}[1]{\texttt{#1}} % no hyperrefs, because they're in a different document
+%\newcommand{\sbol}[1]{\texttt{\hyperref[sec:#1]{#1}}}
+%\newcommand{\sbolmult}[2]{\texttt{\hyperref[sec:#1]{#2}}}
+\newcommand{\refObj}[1]{$\langle$#1$\rangle$}
+
+%Command to format external terms in the document
+\newcommand{\external}[1]{\texttt{#1}}
+
+% Commands to track certain TODO nodes in document:
+\newcommand{\todoresolved}[1]{\todo[color=blue, inline]{{\bf Resolved:} {\it #1}}}
+\newcommand{\actionitem}[1]{\todo[color=green, inline]{#1}}
+\newcommand{\tododeferred}[1]{\todo[color=cyan, inline]{#1}}
+\newcommand{\todoquery}[1]{\todo[color=yellow, inline]{DECISION NEEDED: #1}}
+\newcommand{\todocritical}[1]{\todo[color=red, inline]{CRITICAL ISSUE: #1}}
+
+% -----------------------------------------------------------------------------
+% Start of document
+% -----------------------------------------------------------------------------
+
+\begin{document}
+
+\packageTitle{\latex Class for SBML Package Specifications}
+\packageVersion{Version 2.0}
+\packageVersionDate{December 1, 2017}
+
+% BBF RFC \rfcnum{}: 
+\title{BBF RFC \rfcnum{}: Synthetic Biology Open \\Language Visual (SBOL Visual) Version~2.0}
+
+
+\author{{\bf Editors:}\hfil\\
+\begin{tabular}{l>{\hspace*{15pt}}r}
+Robert Sidney Cox & \emph{Kobe University, Japan}\\
+Curtis Madsen & \emph{Boston University, USA}\\
+James McLaughlin & \emph{Newcastle University, UK}\\
+Tramy Nguyen & \emph{University of Utah, USA}\\
+Nicholas Roehner & \emph{Raytheon BBN Technologies, USA}\\
+\end{tabular}\\
+{\bf Chair:}\hfil\\
+\begin{tabular}{l>{\hspace*{15pt}}r}
+Anil Wipat & \emph{Newcastle University, UK}\\
+\end{tabular}\\
+\href{mailto:editors@sbolstandard.org}{\sffamily editors@sbolstandard.org}\\
+\\
+{\bf Additional authors, by last name:}\\
+\begin{tabular}{l>{\hspace*{15pt}}r}
+Bryan Bartley & \emph{University of Washington, USA}\\
+Jacob Beal & \emph{Raytheon BBN Technologies, USA}\\
+Swapnil Bhatia & \emph{Boston University, USA}\\
+Mike Bissell & \emph{Amyris, Inc., USA}\\
+Kevin Clancy & \emph{Thermo Fisher Scientific, USA}\\
+Thomas Gorochowski & \emph{University of Bristol, UK}\\
+Raik Grunberg &\emph{KAUST, Saudi Arabia}\\
+Augustin Luna & \emph{Harvard Medical School, USA}\\
+Chris Myers & \emph{University of Utah, USA}\\
+Nicolas Le Novere & \emph{Babraham Institute, UK}\\
+Matthew Pocock & \emph{Turing Ate My Hamster, Ltd., UK}\\
+Herbert Sauro & \emph{University of Washington, USA}\\
+John T. Sexton & \emph{Rice University, USA}\\
+Guy-Bart Stan & \emph{Imperial College, UK}\\
+Jeffrey J. Tabor & \emph{Rice University, USA}\\
+Chris Voigt & \emph{MIT, USA}\\
+Zach Zundel & \emph{University of Utah, USA}\\
+%\bf{and also any others} & \bf{who believe they should be authors} \\
+\end{tabular}\\
+}
+
+\maketitlepage
+%\tododeferred{Confirm date, authors, turn off draft mode}
+
+\maketableofcontents
+
+
+\input{purpose}
+
+\input{relation}
+
+\input{copyright}
+
+\input{vocabulary}
+
+\input{glyphs}
+
+\input{language}
+
+\appendix
+\appendixlabels
+
+\input{apdx-glyphs}
+
+\input{apdx-examples}
+
+\input{apdx-sbolv1}
+
+\newpage
+\label{s:bibliography}
+\bibliography{sbol}
+
+\end{document}
