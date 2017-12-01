@@ -8,15 +8,15 @@ All of the currently defined glyphs are collected in \ref{apdx:symbols}.
 This section explains how glyphs are specified and how to add new glyphs.
 
 Each SBOL glyph is defined by association with ontology terms, and can be used to represent any diagram element that is well-described by that term.
-Currently there are three classes of glyphs, each associated with a different ontology and different class in an SBOL 2 data model:
+Currently there are three classes of glyphs, each associated with a different ontology and different class in the SBOL 2 data model:
 \begin{itemize}
 \item {\bf Sequence Feature Glyphs} describe features of nucleic acid sequences. They are associated with Sequence Ontology terms.
-For SBOL 2 data models, this is formally defined as any \sbol{Component} with a compatible term within its associated \sbol{roles},
+For the SBOL 2 data model, this is formally defined as any \sbol{Component} with a compatible term within its associated \sbol{roles},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
-\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. They are associated with BioPAX terms.  For SBOL 2 data models, this is formally defined as any \sbol{FunctionalComponent} with a compatible term within its associated \sbol{types},
+\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. They are associated with BioPAX terms.  For the SBOL 2 data model, this is formally defined as any \sbol{FunctionalComponent} with a compatible term within its associated \sbol{types},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
 \item {\bf Interaction Glyphs} are ``arrows'' indicating functional relationships between sequence features and/or molecular species. They are associated with Systems Biology Ontology terms.
-For SBOL 2 data models, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
+For the SBOL 2 data model, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
  i.e., one that is equal to or a child of at least one term associated with the glyph, 
  and with a compatible \sbol{Participation} at the head and tail of the arrow.
  \end{itemize}
