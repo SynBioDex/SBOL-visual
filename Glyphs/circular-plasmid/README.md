@@ -17,10 +17,12 @@ _E. coli_ p15A plasmid
 
 ## Notes
 
+SO:0000155 Plasmid covers both circular and linear plasmids, so a new more specific child term has been requested from SO. SO:0000155 may be used as a stopgap until the new term is added.
+
 Complementary "left" and "right" versions of this glyph SHOULD be used together, flanking the region whose genomic context is being described.
 
 The Omitted Detail glyph SHOULD generally be contatenated to indicate that there is information about the plasmid not being represented.
 
-Example of RECOMMENDED usage:
+Example of RECOMMENDED usage: a plasmid containing a functional unit consisting of promoter, ribosome entry site, CDS, and terminator:
 
-SO:0000155 Plasmid covers both circular and linear plasmids, so a new more specific child term has been requested from SO. SO:0000155 may be used as a stopgap until the new term is added.
+![glyph specification](circular-plasmid-example.png)

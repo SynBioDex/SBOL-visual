@@ -22,4 +22,12 @@ Complementary "left" and "right" versions of this glyph SHOULD be used together,
 
 The Omitted Detail glyph SHOULD generally be contatenated to indicate that there is information about the chromosome not being represented.
 
-Example of RECOMMENDED usage:
+Examples of RECOMMENDED usage:
+
+- A functional unit consisting of promoter, ribosome entry site, CDS, and terminator, all integrated together into the chromosome:
+
+![glyph specification](chromosomal-locus-example.png)
+
+- Two functional units, one integrated into the amyE locus, another integrated into the ganA locus:
+
+![glyph specification](chromosomal-locus-example2.png)
