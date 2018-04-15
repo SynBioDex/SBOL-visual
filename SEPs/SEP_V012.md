@@ -22,9 +22,9 @@ It is sometimes necessary to highlight stop codons in a coding region. At presen
 
 The stop codon will be represented as a specific biopolymer location with either a cross or asterisk in the box at the top. The stem denotes the precise location on the DNA backbone.
 
-![image](https://raw.githubusercontent.com/chofski/SBOLv/master/SEPs/SEP_V012-stop-codon/stop-codon.png)
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/c34ce998/Glyphs/stop-codon/stop-codon.png)
 
-![image](https://raw.githubusercontent.com/chofski/SBOLv/master/SEPs/SEP_V012-stop-codon/stop-codon-variant.png)
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/c34ce998/Glyphs/stop-codon/stop-codon-variant.png)
 
 ## 3. Examples
 
