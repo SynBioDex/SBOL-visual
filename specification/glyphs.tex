@@ -24,8 +24,8 @@ For the SBOL 2 data model, this is formally defined as any \sbol{Interaction} wi
 More than one glyph may share the same definition: in this case, these glyphs form a family of variants, of which precisely one MUST be designated as the RECOMMENDED glyph, which is to be used unless there are strong reasons to prefer an alternative variant.
 
 It will also frequently be the case that a diagram element could be represented by more than one glyph (e.g., a glyph for a specific term and a glyph for a more general term).
-In such cases, it is RECOMMENDED that the most specific applicable glyph be used
-(if upward branching in the relevant ontology means two applicable glyphs do not have an ordered parent/child relation, either MAY be used).
+In such cases, it is RECOMMENDED that the most specific applicable glyph be used.
+However, if upward branching in the relevant ontology means two applicable glyphs do not have an ordered parent/child relation, then either MAY be used.
 
 For example, a protein coding sequence (CDS) is a sequence feature that may be represented either using the CDS glyph (Sequence Ontology term SO:0000316) or the Unspecified glyph (Sequence Ontology term SO:0000001).  
 Since SO:0000316 is contained by SO:0000001, the preferred glyph is CDS, rather than Unspecified.
