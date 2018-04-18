@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <path id="path8" d="M18,30.791L18,17.991" style="fill:none;stroke:black;stroke-width:2.4px;"/>
+    <circle id="circle10" cx="18" cy="10.791" r="5.6" style="fill:rgb(179,179,179);stroke:black;stroke-width:2.4px;"/>
+    <rect id="rect4180" x="11.186" y="3.797" width="13.729" height="28.22" style="fill:none;stroke:rgb(153,153,153);stroke-opacity:0.5;stroke-width:0.4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1,0.5;"/>
+    <use id="path4182" xlink:href="#_Image1" x="0" y="79.542" width="36px" height="0.4px" transform="matrix(1,0,0,0.4,0,0)"/>
+    <g transform="matrix(1,0,0,1,12.0767,6.25093)">
+        <text x="2.841px" y="13.751px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:16px;">*</text>
+    </g>
+    <defs>
+        <image id="_Image1" width="36px" height="1px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAABCAYAAAC2YQwdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAT0lEQVQImXXMsRFEQAAAwL1AZtDACySM15Syrq9nRkBCAUg/IJHaAjbEGHv8MaPBiR0lNqQoMKFCggEtAn7ocGHE9/kW1Die84MVGfK37wY4ChMu/VMSMwAAAABJRU5ErkJggg=="/>
+    </defs>
+</svg>
