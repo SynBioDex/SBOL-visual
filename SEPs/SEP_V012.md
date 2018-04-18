@@ -1,30 +1,49 @@
-# SEP V012: Stop Codons
+# SEP V012: Transcription and translation end points
 
 | SEP | <leave empty> |
 | --- | --- |
 | **Authors** | Thomas Gorochowski |
 | **Editor** | <leave empty> |
 | **Type** | Specification |
-| **SBOL Visual Version** | 2.0 |
+| **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 07-Apr-2018 |
-| **Last modified** | 15-Apr-2018 |
+| **Last modified** | 18-Apr-2018 |
 
 ## Abstract
 
-This SEP proposes to add a specific biopolymer tag for stop codons in coding regions.
+This SEP proposes to add a specific biopolymer tag for denoting the end points of transcription (i.e. end of a transcript) and translation (i.e. start of a stop codon).
 
 ## 1. Rationale <a name="rationale"></a>
 
-It is sometimes necessary to highlight stop codons in a coding region. At present, the stop codon is implicitly part of a CDS when describing a DNA design, but this is not ideal when the stop codon is the point of interest in a diagram.
+It is sometimes necessary to highlight the precise end point of a transcript or the start position of stop codons in a coding region. At present, these are implicitly present within transcription terminators or the end of a CDS region when describing a DNA design. This is insufficient if such points are of particular interest, or if numerous potential end points (both for transcription and translation) are present.
 
 ## 2. Specification <a name="specification"></a>
 
-The stop codon will be represented as a specific biopolymer location with either a cross or asterisk in the box at the top. The stem denotes the precise location on the DNA backbone.
+### Transcription end point
 
-![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/c34ce998/Glyphs/stop-codon/stop-codon.png)
+#### Associated SO term(s)
 
-![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/c34ce998/Glyphs/stop-codon/stop-codon-variant.png)
+SO:0000616) Transcription End Site
+
+#### Recommended Glyph and Alternates
+
+Transcription end points will be represented as a biopolymer location with a DNA stem and an asterisk in the box at the top (note that this accommodates font level style differences such as asterisks with varying numbers of points).
+
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/feature/stop-codon/Glyphs/stop-codon/transcription-end.png)
+
+### Translation end point
+
+#### Associated SO term(s)
+
+SO:0000319 Stop Codon
+SO:0000327 Coding End, Translation Termination Site, Translation End
+
+#### Recommended Glyph and Alternates
+
+Translation end points will be represented as a biopolymer location with a RNA stem and an asterisk in the box at the top (note that this accommodates font level style differences such as asterisks with varying numbers of points).
+
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/feature/stop-codon/Glyphs/stop-codon/translation-end.png)
 
 ## 3. Examples
 
@@ -32,9 +51,9 @@ See above.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
-SBOL Visual does not currently have a specific symbol for stop codons, so there are no backwards compatibility issues.
+SBOL Visual does not currently have a specific symbol for these elements, so there are no backwards compatibility issues.
 
-## 5. Discussion <a name='discussion'></a>stop-codon
+## 5. Discussion <a name='discussion'></a>
 
 ## References <a name='references'></a>
 
