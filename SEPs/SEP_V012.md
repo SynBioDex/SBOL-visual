@@ -30,7 +30,7 @@ SO:0000616) Transcription End Site
 
 Transcription end points will be represented as a biopolymer location with a DNA stem and an asterisk in the box at the top (note that this accommodates font level style differences such as asterisks with varying numbers of points).
 
-![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/feature/stop-codon/Glyphs/stop-codon/transcription-end.png)
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/e64d26c305/Glyphs/stop-codon/transcription-end.png)
 
 ### Translation end point
 
@@ -43,7 +43,7 @@ SO:0000327 Coding End, Translation Termination Site, Translation End
 
 Translation end points will be represented as a biopolymer location with a RNA stem and an asterisk in the box at the top (note that this accommodates font level style differences such as asterisks with varying numbers of points).
 
-![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/feature/stop-codon/Glyphs/stop-codon/translation-end.png)
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/e64d26c305/Glyphs/stop-codon/translation-end.png)
 
 ## 3. Examples
 
@@ -54,6 +54,12 @@ See above.
 SBOL Visual does not currently have a specific symbol for these elements, so there are no backwards compatibility issues.
 
 ## 5. Discussion <a name='discussion'></a>
+
+Some alternatives for Stop Codon that were considered but did not gain support:
+
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/e64d26c305/Glyphs/stop-codon/stop-codon.png)
+
+![image](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/e64d26c305/Glyphs/stop-codon/stop-codon-variant.png)
 
 ## References <a name='references'></a>
 
