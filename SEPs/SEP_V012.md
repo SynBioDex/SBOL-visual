@@ -2,13 +2,13 @@
 
 | SEP | <leave empty> |
 | --- | --- |
-| **Authors** | Thomas Gorochowski |
+| **Authors** | Thomas Gorochowski, John Sexton, Jacob Beal |
 | **Editor** | <leave empty> |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 07-Apr-2018 |
-| **Last modified** | 18-Apr-2018 |
+| **Last modified** | 19-Apr-2018 |
 
 ## Abstract
 
