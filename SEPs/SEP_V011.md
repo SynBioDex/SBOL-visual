@@ -45,7 +45,6 @@ The following will be added to the notes of the Origin of Replication glyph:
 
 SO:0002211 Circular Plasmid - A self replicating circular nucleic acid molecule that is distinct from a chromosome in the organism.
 
-
 #### Recommended Glyph and Alternates
 
 The glyph to indicate embedding in a plasmid is a turn of the backbone indicating its circular structure:
@@ -57,6 +56,8 @@ The glyph to indicate embedding in a plasmid is a turn of the backbone indicatin
 _E. coli_ p15A plasmid
 
 #### Notes
+
+Note that for SBOL data representations, circularity SHOULD also be indicated with a type of SO:0000988.
 
 Complementary "left" and "right" versions of this glyph SHOULD be used together, flanking the region whose genomic context is being described.
 
