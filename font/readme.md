@@ -13,7 +13,7 @@ How to install the font:
 How to use the font:
 ====================
 * Please cite the according [technial note(not published yet)](https://arxiv.org/) if you use this font in publications
-* In text-processing program, insert "Special Character"
+* In a text-processing program, insert "Special Character"
 * Choose required symbols (see [Examples.pdf](https://github.com/BenjaminAleritsch/SBOL-visual/blob/master/font/Example.pdf) for ideas)
 * Place and align according to demands
 * If e.g., a closed circular multiline plasmidmap is required, close vertical gaps adjusting line spacing by
@@ -29,7 +29,7 @@ Principles that were used in designing the font:
 * Create a layer for each glyph in Inkscape via Menu:Extensions/Typography/Add Glyph Layer
 * Add DNA baseline if required according to specification
 * Ungroup if required
-* Convert from strokes to paths
+* Convert from strokes and objects to paths
 * Combine paths
 * Center & Align
 * Save all layers as one svg
@@ -46,14 +46,13 @@ Principles that were used in designing the font:
 
 Principles that were used in testing the font:
 ==============================================
-Font has been tested by recreating Examples.odt and Examples.pdf in LibreOffice Writer Version: 5.4.6.2:
-* in Kubuntu 17.10 Artful Aardvark and 18.04 Bionic Beaver
+Font has been tested by recreating Examples.odt and Examples.pdf in LibreOffice Writer Version 5.4.6.2 in Kubuntu 17.10 Artful Aardvark and 18.04 Bionic Beaver:
 * On menu click: "insert" / "special character"
 * Choose up to 16 characters per insert (can be repeated)
 * Place and align as desired
 * If required, close vertical gaps adjusting line spacing by
   * clicking on menu: "Format" / "Paragraph" and
-  * select "Proportional" of ~"92%" at "Line Spacing"
+  * select "Proportional" of ~"92%" at "Line Spacing" to reduce space between lines below zero
 * Click "File" / "Save as" "Example.odt"
 * Click "File" / "Export as PDF" "Example.pdf"
 
