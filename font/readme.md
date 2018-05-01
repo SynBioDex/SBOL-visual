@@ -13,7 +13,7 @@ How to install the font:
 How to use the font:
 ====================
 * In text-processing program, insert "Special Character"
-* Choose required symbols (see Examples.pdf or Examples.odt for ideas)
+* Choose required symbols (see [Examples.pdf](https://github.com/BenjaminAleritsch/SBOL-visual/blob/master/font/Example.pdf)] for ideas)
 * Place and align according to demands
 * If e.g., a closed circular multiline plasmidmap is required, close vertical gaps adjusting line spacing by
   * clicking on menu: "Format" / "Paragraph" and
