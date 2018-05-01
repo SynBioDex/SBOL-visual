@@ -3,10 +3,10 @@ How to install the font:
 **Linux(Ubuntu):**
 * Open font with Font Manager and install on System-level
 
-## Microsoft Windows:
+**Microsoft Windows:**
 * Double-click on font file and install
 
-## Apple/Mac:
+**Apple/Mac:**
 * Unknown
 
 
@@ -22,7 +22,7 @@ How to use the font:
 
 Principles that were used in designing the font:
 ================================================
-## Inkscape:
+**Inkscape:**
 * Import the svg files from the SBOL Github Rep
 * Scale them up to 4096px width
 * Create a layer for each glyph in Inkscape via Menu:Extensions/Typography/Add Glyph Layer
@@ -33,7 +33,7 @@ Principles that were used in designing the font:
 * Center & Align
 * Save all layers as one svg
 
-## FontForge:
+**FontForge:**
 * Open/Import above svg through FontForge or manually (ctrl+c & ctrl+v)
 * Setup font information
 * Correct wrong direction
