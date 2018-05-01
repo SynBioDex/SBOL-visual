@@ -12,6 +12,7 @@ How to install the font:
 
 How to use the font:
 ====================
+* Please cite the according [technial note](https://arxiv.org/) if you use this font in publications
 * In text-processing program, insert "Special Character"
 * Choose required symbols (see [Examples.pdf](https://github.com/BenjaminAleritsch/SBOL-visual/blob/master/font/Example.pdf) for ideas)
 * Place and align according to demands
