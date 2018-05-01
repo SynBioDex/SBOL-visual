@@ -3,7 +3,7 @@ FontName: SBOL_2018.04
 FullName: SBOL_2018.04
 FamilyName: SBOL_2018.04
 Weight: Regular
-Copyright: 
+Copyright: By Benjamin Aleritsch. Please cite the soon to be published technical note if you use this font.
 Version: 2018.04
 ItalicAngle: 0
 UnderlinePosition: -816
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1524582028
-ModificationTime: 1524760955
+ModificationTime: 1525182542
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
