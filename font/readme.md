@@ -12,7 +12,7 @@ How to install the font:
 
 How to use the font:
 ====================
-* Please cite the according <a href="https://arxiv.org/" target="_blank1">technial note(not published yet)</a> if you use this font in publications
+* Please cite the according [technial note(not published yet)](https://arxiv.org/) if you use this font in publications
 * In a text-processing program, insert "Special Character"
 * Choose required symbols (see [Examples.pdf](https://github.com/BenjaminAleritsch/SBOL-visual/blob/master/font/Example.pdf) for ideas)
 * Place and align according to demands
