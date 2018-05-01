@@ -17,7 +17,7 @@ How to use the font:
 * Place and align according to demands
 * If e.g., a closed circular multiline plasmidmap is required, close vertical gaps adjusting line spacing by
   * clicking on menu: "Format" / "Paragraph" and
-  * select "Proportional" of ~"92%" at "Line Spacing"
+  * select "Proportional" of ~"92%" at "Line Spacing" to reduce space between lines below zero
 * After export to PDF, document can be imported to e.g., Inkscape via Poppler/Cairo import and used as path element
 
 Principles that were used in designing the font:
