@@ -6,7 +6,7 @@ SO:0000830 Chromosome Part
 
 ## Recommended Glyph and Alternates
 
-The glyph to indicate integration into a chromosome is an S-shaped curve of the backbone, suggesting a larger looping structure:
+The glyph to indicate integration into a chromosome is an S-shaped curve of the backbone, suggesting something that might be part of a larger looping structure:
 
 ![glyph specification](chromosomal-locus-specification.png)
 
