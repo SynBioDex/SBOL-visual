@@ -23,6 +23,8 @@ glyph_to_page Glyphs/aptamer
 glyph_to_page Glyphs/assembly-scar
 glyph_to_page Glyphs/blunt-restriction-site
 glyph_to_page Glyphs/cds
+glyph_to_page Glyphs/chromosomal-locus
+glyph_to_page Glyphs/circular-plasmid
 glyph_to_page Glyphs/cleavage-site
 glyph_to_page Glyphs/composite
 glyph_to_page Glyphs/engineered-region
