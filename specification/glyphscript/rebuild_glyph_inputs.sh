@@ -44,5 +44,6 @@ glyph_to_page Glyphs/ribosome-entry-site
 glyph_to_page Glyphs/signature
 glyph_to_page Glyphs/specific-recombination-site
 glyph_to_page Glyphs/stability-element
+glyph_to_page Glyphs/stop-site
 glyph_to_page Glyphs/terminator
 glyph_to_page Glyphs/unspecified
