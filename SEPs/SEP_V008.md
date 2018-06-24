@@ -6,9 +6,10 @@
 | **Editor** | <leave empty> |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.0 |
-| **Status** | Draft |
+| **Status** | Accepted |
 | **Created** | 25-Sep-2017 |
 | **Last modified** | 26-Sep-2017 |
+| **Issue**       | [#13](https://github.com/SynBioDex/SBOL-visual/issues/13) |
 
 ## Abstract
 

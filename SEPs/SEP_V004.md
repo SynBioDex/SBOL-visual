@@ -6,9 +6,11 @@
 | **Editor** | <leave empty> |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
-| **Status** | Draft |
+| **Status** | Accepted |
 | **Created** | 22-Aug-2017 |
 | **Last modified** | 18-Sep-2017 |
+| **Issue**         | [#8](https://github.com/SynBioDex/SBOL-visual/issues/8) |
+
 ## Abstract
 
 A number of new glyphs have been proposed over the past few years, and we need to put them to an up-or-down vote. 

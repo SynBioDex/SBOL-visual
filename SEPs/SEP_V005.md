@@ -6,9 +6,11 @@
 | **Editor** | <leave empty> |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
-| **Status** | Draft |
+| **Status** | Accepted |
 | **Created** | 30-Aug-2017 |
 | **Last modified** | 17-Sep-2017 |
+| **Issue**         | [#9](https://github.com/SynBioDex/SBOL-visual/issues/9) |
+
 ## Abstract
 
 A number of potential variants of existing glyphs have been proposed, and we need to put them to an up-or-down vote. We also need to clarify the position and/or interior of some of the existing glyphs.
