@@ -9,6 +9,8 @@
 | **Status** | Draft |
 | **Created** | 21-Jul-2017 |
 | **Last modified** | <leave empty if this is the first submission> |
+| **Issue**         | [#5](https://github.com/SynBioDex/SBOL-visual/issues/5) |
+
 ## Abstract
 
 Sometimes there is more than one way of drawing a diagram that is accepted by the community and no strong reason to attempt to force a choice of only one.  In such cases, SBOL Visual should recommend one symbol, but also endorse good alternatives.

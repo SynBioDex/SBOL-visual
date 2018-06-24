@@ -9,6 +9,9 @@
 | **Status** | Draft |
 | **Created** | 01-Jul-2017 |
 | **Last modified** | 03-Sep-2017 |
+| **Issue**         | [#4](https://github.com/SynBioDex/SBOL-visual/issues/4) |
+
+
 ## Abstract
 
 Glyphs need some additional information about how they are to be used, as failing to specify this has caused confusion. In particular:

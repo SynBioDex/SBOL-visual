@@ -9,6 +9,8 @@
 | **Status** | Draft |
 | **Created** | 17-Sep-2017 |
 | **Last modified** | 12-Nov-2017 |
+| **Issue**       | [#12](https://github.com/SynBioDex/SBOL-visual/issues/12) |
+
 ## Abstract
 
 This SEP proposes a systematic set of "stem-top" glyphs representing small sites affecting DNA, RNA, or protein. The glyphs in this system are Biopolymer Location, Stability Element, and Cleavage Site.
