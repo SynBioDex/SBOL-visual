@@ -26,3 +26,24 @@ Within the "Glyphs" directory, each individual glyph set has a sub-directory und
 - Optionally, any examples useful for making a glyph's usage clear.
 
 Glyphs are specified relative to a standard canvas of size 0.5 x 0.5 inches, based on the SBOL Visual 1.0 "Promoter" and "CDS" symbols.
+
+## Submitting changes to the specification
+
+Before writing text for a non-trivial change, please have it approved by discussion as an Issue and/or SEP.
+
+Proposed changes should be made in either a branch or a separate fork on GitHub.  To do this, follow standard git branching or forking procedure.  
+
+Here is an example of git commands to achieve this:
+
+    git clone https://github.com/SynBioDex/SBOL-visual.git
+    git pull origin master # MAKE SURE NO ONE HAS MADE ANYMORE CHANGES
+    git checkout -b <newBranch> # CREATE NEW BRANCH
+    
+    # MAKE YOUR EDITS
+    
+    git add <filesYouChanged>
+    git commit
+    git push origin <newBranch>
+
+When you are ready for your changes to be reviewed for incorporation, create a pull request.
+If you need help on pull requests see: https://help.github.com/articles/about-pull-requests/
