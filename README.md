@@ -29,7 +29,7 @@ Glyphs are specified relative to a standard canvas of size 0.5 x 0.5 inches, bas
 
 ## Submitting changes to the specification
 
-Before writing text for a non-trivial change, please have it approved by discussion as an Issue and/or SEP.
+Any text for a non-trivial change should be approved by discussion as an Issue and/or SEP.
 
 Proposed changes should be made in either a branch or a separate fork on GitHub.  To do this, follow standard git branching or forking procedure.  
 
