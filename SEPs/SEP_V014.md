@@ -8,7 +8,7 @@
 | **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 18-Jul-2018 |
-| **Last modified** | 18-Jul-2018 |
+| **Last modified** | 20-Jul-2018 |
 | **Issue**         | [#48](https://github.com/SynBioDex/SBOL-visual/issues/48) |
 
 
@@ -38,9 +38,9 @@ Modules and MapsTo relations were introduced in version 2 of the SBOL data model
 
 The representation of modules in a diagram is OPTIONAL. In some cases, it may be important to directly communicate hierarchical structure, whereas in other cases the use of modules may be a detail of how a design is represented in the SBOL data model that would simply add clutter and confusion if included in a diagram. The decision about whether to represent modules should be based upon consideration of the intended reader of the diagram, and what the user intends to communicate to them.
 
-If modules are represented, then they SHOULD be represented by enclosure in a closed curve or polygon; it is RECOMMENDED that this shape be a rectangle or a rounded rectangle. Rectangular protrusion MAY be drawn from this to represent input/output ports: if a line or arrow connects to the outside of a port, it should be interpreted as being directly connected to any glyph inside the module that is connected to the inside of the same port. If arrows connect to both the outside and inside of a port, then they MUST have consistent directions.
+If modules are represented, then they SHOULD be represented by enclosure in a closed curve or polygon; it is RECOMMENDED that this shape be a rectangle or a rounded rectangle. Rectangular protrusion MAY be drawn from this to represent input/output ports: if a line or arrow connects to the outside of a port, it should be interpreted as being directly connected to any glyph inside the module that is connected to the inside of the same port. If arrows connect to both the outside and inside of a port, then they MUST have consistent directions. A port MUST NOT be connected to more than one glyph outside of the module, unless all of the glyphs it connects to represent the same entity.
 
-It is OPTIONAL to represent the internal structure of a module: a module can be drawn as a 'black box' with its internal structure hidden. It is RECOMMENDED that a black-box module be larger than other glyphs, to avoid confusion with similarly shaped macromolecule glyphs. It is RECOMMENDED that a black-box module be drawn with ports, as if a line or arrow crosses the boundary of the module at a position other than a port it is impossible to see where it terminates.
+It is OPTIONAL to represent the internal structure of a module: a module can be drawn as a 'black box' with its internal structure hidden. It is RECOMMENDED that a black-box module be larger than other glyphs, to avoid confusion with similarly shaped macromolecule glyphs. It is RECOMMENDED that a black-box module be drawn with ports, as if a line or arrow crosses the boundary of the module at a position other than a port it is impossible to see where it terminates. If a line or arrow crosses a module's boundary other than at a port, it SHOULD be labelled.
 
 If lines indicating MapsTo relations are drawn, then these lines SHOULD be made visually distinct from other lines included in the same diagram. It is RECOMMENDED that this distinction be made by using dashed lines to represent MapsTo relations.
 A MapsTo relation MAY be indicated by a line with no arrowhead; alternatively, to visually distinguish between inputs and outputs of a module, a MapsTo relation for the input of a module MAY be drawn with a filled arrowhead directed into the module, and a MapsTo relation for the output of a module MAY be drawn with a filled arrowhead directed out of the module.
