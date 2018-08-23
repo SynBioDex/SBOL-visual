@@ -56,7 +56,7 @@ If a species or interaction has many targets then an arrow can split to allow a 
 
 If a species breaks down into multiple parts then an arrow can split to connect these sub-components, but the junction SHOULD be annotated with a solid filled circle, as per SBGN.
 
-![example-multi-source](SEP_V013-ex-multi-source.png)
+![example-multi-source](SEP_V013-ex-multi-source-complex.png)
 
 ## 3. Examples <a name='example'></a>
 
