@@ -26,7 +26,7 @@ This SEP proposes to provide meaning to the splitting and joining of lines conne
 
 ## 1. Rationale <a name="rationale"></a>
 
-The SBOL Visual 2.0 standard defines no formal meaning when lines connecting components split or join. This has lead to these features being used to serve several different meanings and adding confusion to the interpretation of a diagram (e.g. one species that has multiple sources or multiple points of effect, and chemical reactions that combines multiple species into one or split one species into many). To ensure consistency and an ability to be explicit about the processes taking place, it is essential that clear guidelines are provided. We would also as much as possible like to adhere to standards already proposed in the SBGN-AF language.
+The SBOL Visual 2.0 standard defines no formal meaning when lines connecting components split or join. This has led to these features being used to serve several different meanings and adding confusion to the interpretation of a diagram (e.g., one species that has multiple sources or multiple points of effect, and chemical reactions that combines multiple species into one or split one species into many). To ensure consistency and an ability to be explicit about the processes taking place, it is essential that clear guidelines are provided. We would also as much as possible like to adhere to standards already proposed in the SBGN-PD language.
 
 ## 2. Specification <a name="specification"></a>
 
@@ -40,7 +40,7 @@ If a species or interactions has multiple sources of production then lines from 
 
 #### Formation of a species from many others
 
-If many different source elements combine (e.g. complex formation) to produce a new species or act together for regulation, then lines can be joined, but the junction SHOULD be annotated with a solid filled circle, as per SBGN.
+If multiple source elements combine (e.g., complex formation) to produce a new species or act together for regulation, then lines can be joined, but the junction SHOULD be annotated with a solid filled circle, as per SBGN.
 
 ![example-multi-source-complex](SEP_V013-ex-multi-source-complex.png)
 
