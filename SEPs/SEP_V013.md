@@ -40,7 +40,7 @@ If a species or interactions has multiple sources of production then lines from 
 
 #### Formation of a species from many others
 
-If multiple source elements combine (e.g., complex formation) to produce a new species or act together for regulation, then lines can be joined, but the junction SHOULD be annotated with a solid filled circle, as per SBGN.
+If multiple source elements combine (e.g., complex formation) to produce a new species or act together for regulation, then lines can be joined, but the junction MUST be annotated with a process glyph, as per SBGN.  For example, SBGN uses a circle to indicate association of species into a complex, which can be used to show CAS9 combining with gRNA as in the diagram below:
 
 ![example-multi-source-complex](SEP_V013-ex-multi-source-complex.png)
 
@@ -54,7 +54,7 @@ If a species or interaction has many targets then an arrow can split to allow a 
 
 #### Splitting of one species into many others
 
-If a species breaks down into multiple parts then an arrow can split to connect these sub-components, but the junction SHOULD be annotated with a solid filled circle, as per SBGN.
+If a species breaks down into multiple parts then an arrow can split to connect these sub-components, but the junction MUST be annotated with process glyph, as per SBGN.  For example, the dissociation of gRNA from CAS9 can be indicated with the aid of a "double-circle" SBGN dissociation glyph:
 
 ![example-multi-source](SEP_V013-ex-multi-target-complex.png)
 
