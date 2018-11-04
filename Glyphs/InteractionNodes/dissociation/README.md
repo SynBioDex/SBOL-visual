@@ -13,4 +13,4 @@ An circular node inside another circle
 Dissociation of an active CRISPR complex into gRNA and Cas9.
 
 ## Notes
-The process gylph is based on the SBGN Process Description dissociation glyph.
+The dissociation gylph is based on the SBGN Process Description dissociation glyph.

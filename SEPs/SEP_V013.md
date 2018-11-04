@@ -2,13 +2,13 @@
 
 | SEP | |
 | --- | --- |
-| **Authors** | Thomas Gorochowski |
+| **Authors** | Thomas Gorochowski, Jacob Beal |
 | **Editor** |  |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 23-Aug-2018 |
-| **Last modified** | 23-Aug-2018 |
+| **Last modified** | 4-Nov-2018 |
 | **Issue**         | [#47](https://github.com/SynBioDex/SBOL-visual/issues/47) |
 
 ## Abstract
@@ -30,33 +30,99 @@ The SBOL Visual 2.0 standard defines no formal meaning when lines connecting com
 
 ## 2. Specification <a name="specification"></a>
 
-### Multi-source arrows
+The specification will be modified with additions to the definition of Interactions and an addition of three "Interaction Node" glyphs imported from SBGN-PD.
 
-#### Multiple sources of a production
+### Extension to Interaction definition
 
-If a species or interactions has multiple sources of production then lines from these can join to allow for a single arrowhead connecting to the target.
+An edge may have multiple heads or multiple tails. 
+In this case, a split or join in an edge represents either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  
+An edge with multiple heads MUST use the same glyph for each head.
+An edge that splits or joins with no glyph at the junction represents multiple participants with the same role.
+A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional Interaction with type and roles set by the process glyph. 
 
-![example-multi-source](SEP_V013-ex-multi-source.png)
+A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in the Interaction Node Glyphs Appendix. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
+In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the types for the Interaction, and that each associated Participation object has a role compatible with its position on the head or tail of the edge.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in the appendix MAY be used, but SHOULD be proposed for adoption.
 
-#### Formation of a species from many others
+### Examples
 
-If multiple source elements combine (e.g., complex formation) to produce a new species or act together for regulation, then lines can be joined, but the junction MUST be annotated with a process glyph, as per SBGN.  For example, SBGN uses a circle to indicate association of species into a complex, which can be used to show CAS9 combining with gRNA as in the diagram below:
+Examples of use of multi-head and multi-tail arrows: 
+Repression from multiple independent sources:
+![example](../specification/figures/examples/pngversions/4d-multisource.png)
 
-![example-multi-source-complex](SEP_V013-ex-multi-source-complex.png)
+Repressor with multiple targets:
+![example](../specification/figures/examples/pngversions/4d-multisink.png)
 
-### Multi-target arrows
+Association of gRNA and Cas9 into an active CRISPR complex and the dissociation of that complex:
+![example](../specification/figures/examples/pngversions/4d-association.png)
+![example](../specification/figures/examples/pngversions/4d-dissociation.png)
 
-#### Multiple points of effect
+Composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
+![example](../specification/figures/examples/pngversions/4d-composite.png)
 
-If a species or interaction has many targets then an arrow can split to allow a single starting point connect to multiple target.
+Multi-head interactions, however, MUST NOT use different glyphs for different heads, so images like the one below are forbidden:
 
-![example-multi-target](SEP_V013-ex-multi-target.png)
+![example](../specification/figures/examples/pngversions/4d-conflict.png)
 
-#### Splitting of one species into many others
+### Interaction Node Glyphs
 
-If a species breaks down into multiple parts then an arrow can split to connect these sub-components, but the junction MUST be annotated with process glyph, as per SBGN.  For example, the dissociation of gRNA from CAS9 can be indicated with the aid of a "double-circle" SBGN dissociation glyph:
+These glyphs are placed at the junctions of edges to represent biochemical processes, and include a bounding box (grey dashed box) but are not connected to any nucleic acid backbone. Grey dashed lines provide examples of how edges may connect to the glyph.
 
-![example-multi-source](SEP_V013-ex-multi-target-complex.png)
+#### Association
+
+##### Associated SBO term(s)
+SBO:0000177 Non-Covalent Binding
+
+##### Recommended Glyph and Alternates
+A circular node:
+
+![glyph specification](../Glyphs/InteractionNodes/association/association-specification.png)
+
+##### Prototypical Example
+
+Association of gRNA and Cas9 to form an active CRISPR complex.
+
+##### Notes
+The association gylph is based on the SBGN Process Description association glyph.
+
+#### Dissociation
+
+##### Associated SBO term(s)
+SBO:0000180 Dissociation
+
+##### Recommended Glyph and Alternates
+An circular node inside another circle
+
+![glyph specification](../Glyphs/InteractionNodes/dissociation/dissociation-specification.png)
+
+##### Prototypical Example
+
+Dissociation of an active CRISPR complex into gRNA and Cas9.
+
+##### Notes
+The dissociation gylph is based on the SBGN Process Description dissociation glyph.
+
+#### Process
+
+##### Associated SBO term(s)
+SBO:0000375 Process
+
+##### Recommended Glyph and Alternates
+A square node:
+
+![glyph specification](../Glyphs/InteractionNodes/process/process-specification.png)
+
+##### Prototypical Example
+
+Association of gRNA and Cas9 to form an active CRISPR complex.
+
+##### Notes
+The process gylph is based on the SBGN Process Description process glyph.
+
+The assocated SBO term also covers:
+
+- SBO:0000176 Biochemical Reaction
+- SBO:0000177 Non-covalent Binding (sink is a Complex)
 
 ## 3. Examples <a name='example'></a>
 
