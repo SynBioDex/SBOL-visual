@@ -239,12 +239,11 @@ Note that the internals of a module need not be shown: some details can be omitt
 
 	\begin{figure}[h!]
 	\centering
-	\subfigure[SHOULD]{rectangle}
-	\subfigure[SHOULD]{round rectangle}
-	\subfigure[SHOULD NOT]{tilted rectangle}
-	\subfigure[SHOULD NOT]{blobby mess}
-	\subfigure[SHOULD NOT]{non-distinct module}
-	\caption{}
+	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/moduleA-rectangle.pdf}}
+	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/moduleA-roundrect.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nonrect.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nondistinct.pdf}}
+	\caption{Examples of recommended and problematic module boundaries: (a) two modules with visually distinct rectangular borders, (b) shows the same modules but with rounded rectangles and the second being a ``black box'' module with no internal structure shown, (c) shows modules with non-rectilinear borders, and (d) shows a black-box module that is not visually distinct from a sequence feature glyph.}
 	\label{exa:moduleA}
 	\end{figure}
 
@@ -256,10 +255,10 @@ In terms of the SBOL 2 data model, the line represents a \sbol{MapsTo} relations
 
 	\begin{figure}[h!]
 	\centering
-	\subfigure[MAY]{legal mapsto}
-	\subfigure[SHOULD NOT]{non-distinct mapsto}
-	\subfigure[MUST NOT]{incompatible mapsto}
-	\caption{}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleB-mapping.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-nondistinct.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-incompatible.pdf}}
+	\caption{Examples of recommended and problematic mappings: (a) mapping showing that the promoter inside the module on the left is also used in the construct on the right, (b) mapping is not visually distinct from nucleic acid backbone, (c) mapping cannot identify a promoter with a macromolecule species.}
 	\label{exa:moduleB}
 	\end{figure}
 
@@ -270,10 +269,10 @@ In terms of the SBOL 2 data model, the line represents a \sbol{MapsTo} relations
 
 	\begin{figure}[h!]
 	\centering
-	\subfigure[MUST NOT]{sequence feature and molecular species crossing line}
-	\subfigure[MAY]{backbone crossing}
-	\subfigure[MAY]{interaction crossing}
-	\caption{}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleC-badcrossing.pdf}}\\
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-backbone.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-interaction.pdf}}
+	\caption{Examples of recommended and problematic boundary intersections: (a) sequence feature and molecular species glyphs MUST NOT intersect a module boundary, (b) implicit mapping from the promoter in the left module and the regulated elements in the right module to a nucleic acid construct ordering both into a complete functional unit, (c) implicit mapping from the CDS in the left module and the promoter in the right module to instances in the complete system in which the CDS inhibits the promoter (presumably by a repressor product).}
 	\label{exa:moduleC}
 	\end{figure}
 
@@ -291,13 +290,13 @@ A port SHOULD NOT both have interactions both connecting to it and crossing the 
 
 	\begin{figure}[h!]
 	\centering
-	\subfigure[MAY]{blackbox ports}
-	\subfigure[MAY]{ports with mappings}
-	\subfigure[MAY]{ports with interactions through}
-	\subfigure[SHOULD NOT]{ports with mappings and interactions through}
-	\subfigure[MUST NOT]{post with interaction going around it}
-	\subfigure[MUST NOT]{port disconnected from associated element}
-	\caption{}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-blackbox.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-mappings.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-interactions.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-mixed.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-disconnected.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-evaded.pdf}}
+	\caption{Examples of recommended and problematic module ports: (a) port on a black-box module, (b) ports connected to module internals via mappings, (c) boundary-crossing interaction passing through a port, (d) diagrams SHOULD NOT mix mappings and interactions on a give port, (e) ports MUST NOT be disconnected from their associated glyphs, and (f) if a port exists, interactions with that port MUST NOT cross the boundary at any other location.}
 	\label{exa:moduleD}
 	\end{figure}
 
