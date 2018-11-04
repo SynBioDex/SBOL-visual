@@ -13,7 +13,7 @@ A square node:
 Association of gRNA and Cas9 to form an active CRISPR complex.
 
 ## Notes
-The process gylph is based on the SBGN Process Description process glyph.
+The process glyph is based on the SBGN Process Description process glyph.
 
 The assocated SBO term also covers:
 

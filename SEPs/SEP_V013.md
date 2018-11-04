@@ -60,7 +60,7 @@ Association of gRNA and Cas9 into an active CRISPR complex and the dissociation 
 Composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
 ![example](../specification/figures/examples/pngversions/4d-composite.png)
 
-Two different CDS sequences producing the same product, which is then modulated into an activator form by interaction with another macromolecule (e.g., a phosphorylation enzyme).
+Phosphorylation of an inactive transcription factor (produced by two different CDSs) by a kinase to form an active transcriptional activator, which then stimulates a promoter:
 ![example](../specification/figures/apdx-examples/pngversions/apdx-exa14.png)
 
 Multi-head interactions, however, MUST NOT use different glyphs for different heads, so images like the one below are forbidden:
@@ -86,7 +86,7 @@ A circular node:
 Association of gRNA and Cas9 to form an active CRISPR complex.
 
 ##### Notes
-The association gylph is based on the SBGN Process Description association glyph.
+The association glyph is based on the SBGN Process Description association glyph.
 
 #### Dissociation
 
@@ -103,7 +103,7 @@ An circular node inside another circle
 Dissociation of an active CRISPR complex into gRNA and Cas9.
 
 ##### Notes
-The dissociation gylph is based on the SBGN Process Description dissociation glyph.
+The dissociation glyph is based on the SBGN Process Description dissociation glyph.
 
 #### Process
 
@@ -120,7 +120,7 @@ A square node:
 Association of gRNA and Cas9 to form an active CRISPR complex.
 
 ##### Notes
-The process gylph is based on the SBGN Process Description process glyph.
+The process glyph is based on the SBGN Process Description process glyph.
 
 The assocated SBO term also covers:
 

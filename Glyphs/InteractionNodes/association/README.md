@@ -13,4 +13,4 @@ A circular node:
 Association of gRNA and Cas9 to form an active CRISPR complex.
 
 ## Notes
-The association gylph is based on the SBGN Process Description association glyph.
+The association glyph is based on the SBGN Process Description association glyph.
