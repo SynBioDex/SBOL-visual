@@ -13,4 +13,5 @@ The origin of replication glyph is a circle suggesting the "bulge" opened in a p
 human herpesvirus-6 OOR
 
 ## Notes
-*this section deliberately blank*
+
+The label on an origin of replication glyph is RECOMMENDED as the location to label either specifically the identity of the origin of replication or the name of the entire plasmid backbone more generally.

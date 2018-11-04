@@ -73,6 +73,20 @@ In terms of the SBOL 2 data model, the backbone represents a \sbol{ComponentDefi
 	\label{exa:1b}
 	\end{figure}
 	
+\item As a special case of non-horizontal backbone structure, certain stylized backbone shapes are used as sequence feature glyphs to indicate the genomic context of a sequence. 
+	These glyphs SHOULD be used as a matched pair, indicating the bounds of the context region.
+	It is further RECOMMENDED that each glyph be concatenated with an Omitted Detail glyph to explicitly indicate that some surrounding context is not being shown. 
+	Examples are provided in~\ref{exa:1c}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[Functional unit on a circular plasmid]{\includegraphics[scale=1]{figures/examples/1c-circular-plasmid.pdf}}
+	\subfigure[Functional unit integrated at a chromosomal locus]{\includegraphics[scale=1]{figures/examples/1c-chromosomal-locus.pdf}}
+	\subfigure[Two functional units on the same chromosome but different loci.]{\includegraphics[scale=1]{figures/examples/1c-chromosomal-locus2.pdf}}
+	\caption{Examples of RECOMMENDED indication of genomic context.}
+	\label{exa:1c}
+	\end{figure}
+
 \item A nucleic acid backbone SHOULD have at least one associated feature glyph (else no structural information is being provided).
 \end{enumerate}
 
