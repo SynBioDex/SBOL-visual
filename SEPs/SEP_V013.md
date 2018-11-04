@@ -60,6 +60,9 @@ Association of gRNA and Cas9 into an active CRISPR complex and the dissociation 
 Composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
 ![example](../specification/figures/examples/pngversions/4d-composite.png)
 
+Two different CDS sequences producing the same product, which is then modulated into an activator form by interaction with another macromolecule (e.g., a phosphorylation enzyme).
+![example](../specification/figures/apdx-examples/pngversions/apdx-exa14.png)
+
 Multi-head interactions, however, MUST NOT use different glyphs for different heads, so images like the one below are forbidden:
 
 ![example](../specification/figures/examples/pngversions/4d-conflict.png)
