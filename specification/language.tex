@@ -224,7 +224,11 @@ Examples are provided in~\ref{exa:4c}.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 
-\item An edge may have multiple heads or multiple tails, joining together to represent either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  An edge that splits or joins with no glyph at the junction represents multiple participants with the same role. A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional \sbol{Interaction} with type and roles set by the process glyph. An edge with multiple heads MUST use the same glyph for each head.
+\item An edge may have multiple heads or multiple tails. 
+In this case, a split or join in an edge represents either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  
+An edge with multiple heads MUST use the same glyph for each head.
+An edge that splits or joins with no glyph at the junction represents multiple participants with the same role.
+A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional \sbol{Interaction} with type and roles set by the process glyph. 
 Examples are provided in~\ref{exa:4d}.
 
 	\begin{figure}[h!]
@@ -242,6 +246,11 @@ Examples are provided in~\ref{exa:4d}.
 	(f) Multi-head interactions, however, MUST NOT use different glyphs for different heads.}
 	\label{exa:4d}
 	\end{figure}
+
+\item A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
+In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	
 
 \end{enumerate}
 
