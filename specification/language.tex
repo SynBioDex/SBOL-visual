@@ -225,6 +225,55 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 \end{enumerate}
 
+\subsection{Modules}
+
+A module within a system MAY be represented by a visual boundary in the form of closed polygon or closed curve.
+Everything inside of the boundary is part of the module, and everything outside of the boundary is not part of the module; only certain diagram elements are allowed to cross a boundary, as defined below.
+In terms of the SBOL 2 data model, the line represents a \sbol{Module} included within the \sbol{ModuleDefinition} represented by the surrounding diagram, and boundary-crossing elements defined \sbol{MapsTo} relationships.
+Note that the internals of a module need not be shown: some details can be omitted or a module can even be a ``black box'' with no structure at all being shown.
+
+\begin{enumerate}
+\item The boundary of module SHOULD should be a rectangle or rounded rectangle. Boundary sides SHOULD be oriented vertically and horizontally.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[SHOULD]{rectangle}
+	\subfigure[SHOULD]{round rectangle}
+	\subfigure[SHOULD NOT]{tilted rectangle}
+	\subfigure[SHOULD NOT]{blobby mess}
+	\caption{}
+	\label{exa:moduleA}
+	\end{figure}
+
+\item An undirected edge (i.e., having no ``arrow head'') crossing the boundary of a module represents an identity mapping between the 
+
+\item Glyphs for sequence features and molecular species MUST NOT intersect with the boundary of a module.
+\item A nucleic acid backbone MAY cross the boundary of a module. This represents...
+\item An interaction edge MAY cross the boundary of a module. This represents...
+
+\item Rectangles MAY be drawn on the outside of the module boundary to represent input/output ports.
+In terms of the SBOL 2 data model, each rectangle is associated with a \sbol{FunctionalComponent} with a \sbol{direction} property that is \sbol{in}, \sbol{out}, or \sbol{inout}.
+
+If both a port and its associated component (sequence feature or module species) are present in a diagram, then they MUST be visually connected, either explicitly by means of a mapping or implicitly by an interaction that passes through the port rectangle.
+Likewise, mappings and interactions with the associated component MUST NOT cross the boundary except through the port.
+
+
+
+
+ if a line or arrow connects to the outside of a port, it should be interpreted as being directly connected to any glyph inside the module that is connected to the inside of the same port. If arrows connect to both the outside and inside of a port, then they MUST have consistent directions. A port MUST NOT be connected to more than one glyph outside of the module, unless all of the glyphs it connects to represent the same entity.
+
+It is OPTIONAL to represent the internal structure of a module: a module can be drawn as a 'black box' with its internal structure hidden. It is RECOMMENDED that a black-box module be larger than other glyphs, to avoid confusion with similarly shaped macromolecule glyphs. It is RECOMMENDED that a black-box module be drawn with ports, as if a line or arrow crosses the boundary of the module at a position other than a port it is impossible to see where it terminates. If a line or arrow crosses a module's boundary other than at a port, it SHOULD be labelled.
+
+If lines indicating MapsTo relations are drawn, then these lines SHOULD be made visually distinct from other lines included in the same diagram. It is RECOMMENDED that this distinction be made by using dashed lines to represent MapsTo relations.
+A MapsTo relation MAY be indicated by a line with no arrowhead; alternatively, to visually distinguish between inputs and outputs of a module, a MapsTo relation for the input of a module MAY be drawn with a filled arrowhead directed into the module, and a MapsTo relation for the output of a module MAY be drawn with a filled arrowhead directed out of the module.
+
+As an alternative to depicting MapsTo relations, it is permitted to draw arrows entering a module.
+In such a case, the representation of the module does not modify the semantics of the interactions shown: it simply indicates that where the corresponding interaction is defined.
+If an interaction arrow is completely enclosed within a module boundary, this SHOULD be interpreted to mean that the corresponding interaction is defined within the corresponding ModuleDefinition.
+
+The positioning of inputs and outputs SHOULD be consistent between modules in the same diagram (e.g. with inputs on the left and outputs on the right, or inputs at the top and outputs at the bottom).
+
+\end{enumerate}
 
 \subsection{Labels}
 The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of the SBOL 2 data model, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.

@@ -34,6 +34,18 @@ Modules and MapsTo relations were introduced in version 2 of the SBOL data model
 
 ## 2. Specification <a name="specification"></a>
 
+The specification will be modified with addition of a subsection on Modules, plus the inclusion of SBOL 2.0 Module and MapsTo definitions in the vocabulary.
+
+### Vocabulary
+
+The following will be added to the vocabulary section, copied from the SBOL 2 specification:
+
+* _MapsTo:_ When a design (ComponentDefinition or ModuleDefinition) includes another design as a sub-design, the parent design might need to refer to a ComponentInstance (either a Component or FunctionalComponent) in the sub-design.
+In this case, a MapsTo needs to be added to the instance for the sub-design, and this MapsTo needs to link between the ComponentInstance in the sub-design and a ComponentInstance} in the parent design.
+
+* _Module:_ Pointer class. Incorporates a child ModuleDefinition by reference into exactly one parent ModuleDefinition. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single ModuleDefinition can have zero or more parent ModuleDefinitions, and each such parent-child link requires its own, distinct Module.
+
+
 ### Representation of modules 
 
 The representation of modules in a diagram is OPTIONAL. In some cases, it may be important to directly communicate hierarchical structure, whereas in other cases the use of modules may be a detail of how a design is represented in the SBOL data model that would simply add clutter and confusion if included in a diagram. The decision about whether to represent modules should be based upon consideration of the intended reader of the diagram, and what the user intends to communicate to them.
