@@ -545,7 +545,7 @@ Package Specification Style]
     \vspace*{2em}
   \fi
   \vfill
-  \centerline{\includegraphics[width=2in]{\SBMLbadge}}
+  \centerline{\includegraphics[width=2.0in]{\SBMLbadge}}
   \clearpage
   \endgroup
   \setcounter{footnote}{0}%
@@ -573,9 +573,9 @@ Package Specification Style]
     {\lineskip .5em%
       \@putauthorinfo
       }%
-    \vskip 2em%
+    \vskip 0.5em%
     {\large\fbox{\@packageVersion}}%
-    \vskip 1.5em%
+    \vskip 0.5em%
     {\large\@packageVersionDate}%
   \end{center}%
   \par%
