@@ -223,8 +223,36 @@ Examples are provided in~\ref{exa:4c}.
 \item An interaction SHOULD be represented using a glyph defined in \ref{apdx:sym:interaction}.  In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
-\end{enumerate}
 
+\item An edge may have multiple heads or multiple tails. 
+In this case, a split or join in an edge represents either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  
+An edge with multiple heads MUST use the same glyph for each head.
+An edge that splits or joins with no glyph at the junction represents multiple participants with the same role.
+A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional \sbol{Interaction} with type and roles set by the process glyph. 
+Examples are provided in~\ref{exa:4d}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-multisource.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-multisink.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-association.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-dissociation.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-composite.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4d-conflict.pdf}}
+	\caption{Examples of use of multi-head and multi-tail arrows: 
+	(a) Repression from multiple independent sources, (b) repressor with multiple targets, 
+	(c) association of gRNA and Cas9 into an active CRISPR complex and (d) the dissociation of that complex, and
+	(e) composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
+	(f) Multi-head interactions, however, MUST NOT use different glyphs for different heads.}
+	\label{exa:4d}
+	\end{figure}
+
+\item A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
+In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
+	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	
+
+\end{enumerate}
 
 \subsection{Labels}
 The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of the SBOL 2 data model, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
