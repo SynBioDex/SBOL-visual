@@ -251,6 +251,82 @@ Examples are provided in~\ref{exa:4d}.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 	
+\end{enumerate}
+
+\subsection{Modules}
+
+A module within a system MAY be represented by a visual boundary in the form of closed polygon or closed curve.
+Everything inside of the boundary is part of the module, and everything outside of the boundary is not part of the module; only certain diagram elements are allowed to cross a boundary, as defined below.
+In terms of the SBOL 2 data model, the line represents a \sbol{Module} included within the \sbol{ModuleDefinition} represented by the surrounding diagram, and boundary-crossing elements define \sbol{MapsTo} relationships.
+Note that the internals of a module need not be shown: some details can be omitted or a module can even be a ``black box'' with no internal structure at all being shown.
+
+\begin{enumerate}
+\item The boundary of module SHOULD should be a rectangle or rounded rectangle. Boundary sides SHOULD be oriented vertically and horizontally.  
+	It is RECOMMENDED that a module be made visually distinct by making it larger than other glyphs and with a different line style.
+	Examples are provided in~\ref{exa:moduleA}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/moduleA-rectangle.pdf}}
+	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/moduleA-roundrect.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nonrect.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nondistinct.pdf}}
+	\caption{Examples of recommended and problematic module boundaries: (a) two modules with visually distinct rectangular borders, (b) shows the same modules but with rounded rectangles and the second being a ``black box'' module with no internal structure shown, (c) shows modules with non-rectilinear borders, and (d) shows a black-box module that is not visually distinct from a sequence feature glyph.}
+	\label{exa:moduleA}
+	\end{figure}
+
+\item An undirected edge (i.e., having no ``arrow head'') that crosses the boundary of a module represents a mapping associating the diagram elements that it links. 
+Glyphs associated by a mapping MUST either be sequence features, molecular species, or module ports (see below), and must be of compatible types.
+In terms of the SBOL 2 data model, the line represents a \sbol{MapsTo} relationship between a \sbol{FunctionalComponent} in the \sbol{ModuleDefinition} and another \sbol{FunctionalComponent} in the definition of the \sbol{Module}.
+	Mapping edges SHOULD be made visually distinct from other lines in the same diagram, and it is RECOMMENDED that this distinction be made using dashed lines to represent mapping edges.
+	Examples are provided in~\ref{exa:moduleB}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleB-mapping.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-nondistinct.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-incompatible.pdf}}
+	\caption{Examples of recommended and problematic mappings: (a) mapping showing that the promoter inside the module on the left is also used in the construct on the right, (b) mapping is not visually distinct from nucleic acid backbone, (c) mapping cannot identify a promoter with a macromolecule species.}
+	\label{exa:moduleB}
+	\end{figure}
+
+\item Glyphs for sequence features and molecular species MUST NOT intersect with the boundary of a module.
+	A nucleic acid backbone MAY cross the boundary of a module. This represents an implicit mapping between the region of the nucleic acid construct contained within the module and a compatible region of the larger construct represented in the enclosing system.
+	An interaction edge MAY cross the boundary of a module. This represents an interaction in the enclosing system plus an implicit mapping between the component inside of the module and a compatible instance in the enclosing system.
+	Examples are provided in~\ref{exa:moduleC}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleC-badcrossing.pdf}}\\
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-backbone.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-interaction.pdf}}
+	\caption{Examples of recommended and problematic boundary intersections: (a) sequence feature and molecular species glyphs MUST NOT intersect a module boundary, (b) implicit mapping from the promoter in the left module and the regulated elements in the right module to a nucleic acid construct ordering both into a complete functional unit, (c) implicit mapping from the CDS in the left module and the promoter in the right module to instances in the complete system in which the CDS inhibits the promoter (presumably by a repressor product).}
+	\label{exa:moduleC}
+	\end{figure}
+
+
+\item Small rectangles MAY be drawn on the outside of the module boundary to represent input/output ports.
+In terms of the SBOL 2 data model, each rectangle is associated with a \sbol{FunctionalComponent} with a \sbol{direction} property that is \sbol{in}, \sbol{out}, or \sbol{inout}.
+A port may be connected to an interaction edge head or tail to represent interactions with its associated component. 
+%
+If both a port and a glyph for its associated component are present in a diagram, then they MUST be visually connected, either explicitly by means of a mapping or implicitly by an interaction that passes through the port rectangle.
+Likewise, mappings and interactions with the associated component MUST NOT cross the boundary except through the port.
+%
+A port SHOULD NOT both have interactions both connecting to it and crossing the boundary across it.
+	Examples are provided in~\ref{exa:moduleD}.
+% How do we show direction on a port?  We can't, really.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-blackbox.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-mappings.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-interactions.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-mixed.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-disconnected.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-evaded.pdf}}
+	\caption{Examples of recommended and problematic module ports: (a) port on a black-box module, (b) ports connected to module internals via mappings, (c) boundary-crossing interaction passing through a port, (d) diagrams SHOULD NOT mix mappings and interactions on a give port, (e) ports MUST NOT be disconnected from their associated glyphs, and (f) if a port exists, interactions with that port MUST NOT cross the boundary at any other location.}
+	\label{exa:moduleD}
+	\end{figure}
 
 \end{enumerate}
 
