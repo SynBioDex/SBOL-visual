@@ -57,12 +57,12 @@ Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by refere
 \item \emph{\sbol{Interaction}}:
 Describes a functional relationship between biological entities, such as regulatory activation or repression, or a biological process such as transcription or translation.
 
-%\item \emph{\sbol{MapsTo}}:
-%When a design (\sbol{ComponentDefinition} or \sbol{ModuleDefinition}) includes another design as a sub-design, the parent design might need to refer to a \sbol{ComponentInstance} (either a \sbol{Component} or \sbol{FunctionalComponent}) in the sub-design.
-%In this case, a \sbol{MapsTo} needs to be added to the instance for the sub-design, and this \sbol{MapsTo} needs to link between the \sbol{ComponentInstance} in the sub-design and a \sbol{ComponentInstance} in the parent design.
-%
-%\item \emph{\sbol{Module}}:
-%Pointer class. Incorporates a child \sbol{ModuleDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single \sbol{ModuleDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{Module}.
+\item \emph{\sbol{MapsTo}}:
+When a design (\sbol{ComponentDefinition} or \sbol{ModuleDefinition}) includes another design as a sub-design, the parent design might need to refer to a \sbol{ComponentInstance} (either a \sbol{Component} or \sbol{FunctionalComponent}) in the sub-design.
+In this case, a \sbol{MapsTo} needs to be added to the instance for the sub-design, and this \sbol{MapsTo} needs to link between the \sbol{ComponentInstance} in the sub-design and a \sbol{ComponentInstance} in the parent design.
+
+\item \emph{\sbol{Module}}:
+Pointer class. Incorporates a child \sbol{ModuleDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single \sbol{ModuleDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{Module}.
 
 \item \emph{\sbol{Participation}}:
 Describes the role that a \sbol{FunctionalComponent} plays in an \sbol{Interaction}.
