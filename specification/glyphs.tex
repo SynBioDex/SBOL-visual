@@ -13,7 +13,7 @@ Currently there are three classes of glyphs, each associated with a different on
 \item {\bf Sequence Feature Glyphs} describe features of nucleic acid sequences. They are associated with Sequence Ontology terms.
 For the SBOL 2 data model, this is formally defined as any \sbol{Component} with a compatible term within its associated \sbol{roles},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
-\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. They are associated with BioPAX terms.  For the SBOL 2 data model, this is formally defined as any \sbol{FunctionalComponent} with a compatible term within its associated \sbol{types},
+\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. They are associated with \twotwozero{Systems Biology Ontology} terms.  For the SBOL 2 data model, this is formally defined as any \sbol{FunctionalComponent} with a compatible term within its associated \sbol{types},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
 \item {\bf Interaction Glyphs} are ``arrows'' indicating functional relationships between sequence features and/or molecular species. They are associated with Systems Biology Ontology terms.
 For the SBOL 2 data model, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
@@ -46,7 +46,7 @@ ensure both the clarity of diagrams and the ease with which they can
 be constructed:
 \begin{enumerate}
 \item A glyph SHOULD have its meaning defined by associating the glyph with at least one ontology definition.
-	Definitions are RECOMMENDED to be from the Sequence Ontology for nucleic acid components, from BioPAX for other components, and from the Systems Biology Ontology for interactions.  
+	Definitions are RECOMMENDED to be from the Sequence Ontology for sequence feature glyphs, from the \twotwozero{Systems Biology Ontology for molecular species glyphs}, and from the Systems Biology Ontology for interaction glyphs.  
 	If no applicable terms are available in the preferred ontology, proposal of a new glyph SHOULD be accompanied by a request to the ontology maintainers to add a term for the undefined entity.  
 \item A glyph SHOULD be relatively easy to sketch by hand (e.g., no high-complexity images or precise angles required).
 \item A glyph specification MUST indicate which portions of the glyph are the ``interior'' for purposes of color fill.

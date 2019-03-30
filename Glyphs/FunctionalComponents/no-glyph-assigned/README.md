@@ -1,7 +1,7 @@
 # No Glyph Assigned
 
-## Associated BioPAX term(s)
-Any BioPAX type that is not covered by any glyph besides the root
+## Associated SBO term(s)
+Any SBO type that is not covered by any glyph besides the root
 
 ## Recommended Glyph and Alternates
 When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.

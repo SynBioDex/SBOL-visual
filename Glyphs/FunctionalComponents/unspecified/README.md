@@ -1,7 +1,7 @@
 # Unspecified
 
-## Associated BioPAX term(s)
-PhysicalEntity: http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity
+## Associated SBO term(s)
+SBO:0000285 Material entity of unspecified nature
 
 ## Recommended Glyph and Alternates
 Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:
@@ -19,3 +19,4 @@ An anonymous chemical species that is missing any information about its nature o
 ## Notes
 The Unspecified glyph is intended for showing where a chemical species' type is missing (or, equivalently, given only the uninformative root role). It should never appear with well-curated designs or diagrams.
 
+Alternate BioPAX definition: PhysicalEntity: http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity

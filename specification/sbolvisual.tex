@@ -13,7 +13,7 @@
 \usepackage[final]{pdfpages}
 
 % putting versions on changebars
-\newcommand{\version}[1]{\marginpar{\hspace*{34pt}\raisebox{-3.0ex}{\color{red}\small #1}}}
+\newcommand{\version}[2]{\marginpar{\hspace*{34pt}\raisebox{-3.0ex}{\color{#1}\small #2}}}
 
 %% ============================================================================
 %% Description:  Documentation for sbmlpkgspec.cls
@@ -119,7 +119,7 @@
 \cbcolor{red}
 \cbstart%
 {\color{red}%
-\version{2.1.0}%
+\version{red}{2.1.0}%
 #1
 }
 \cbend
@@ -138,8 +138,8 @@
 \newcommand{\twotwozero}[1]{%
 \cbcolor{magenta}
 \cbstart%
-{\color{red}%
-\version{2.2.0}%
+{\color{magenta}%
+\version{magenta}{2.2.0}%
 #1
 }
 \cbend
