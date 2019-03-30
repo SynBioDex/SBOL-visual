@@ -6,8 +6,14 @@
 \usepackage{todonotes}
 \usepackage{subfigure}
 \usepackage{longtable}
+\usepackage[color]{changebar}
+\usepackage{xcolor}
+\usepackage{soul}
 
 \usepackage[final]{pdfpages}
+
+% putting versions on changebars
+\newcommand{\version}[1]{\marginpar{\hspace*{34pt}\raisebox{-3.0ex}{\color{red}\small #1}}}
 
 %% ============================================================================
 %% Description:  Documentation for sbmlpkgspec.cls
@@ -108,6 +114,51 @@
 % -----------------------------------------------------------------------------
 % Start of document
 % -----------------------------------------------------------------------------
+%Commands to highlight SBOL versions
+\newcommand{\twoonezero}[1]{%
+\cbcolor{red}
+\cbstart%
+{\color{red}%
+\version{2.1.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twoonezeronopage}[1]{%
+\cbcolor{red}
+\cbstart%
+{\color{red}%
+#1
+}
+\cbend
+}
+
+\newcommand{\twotwozero}[1]{%
+\cbcolor{magenta}
+\cbstart%
+{\color{red}%
+\version{2.2.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twotwozeronopage}[1]{%
+\cbcolor{magenta}
+\cbstart%
+{\color{red}%
+#1
+}
+\cbend
+}
+
+
+% -----------------------------------------------------------------------------
+% Start of document
+% -----------------------------------------------------------------------------
 
 \begin{document}
 
@@ -124,7 +175,7 @@
 Curtis Madsen & \emph{Boston University, USA}\\
 Angel Goni Moreno & \emph{Newcastle University}\\
 Zachary Palchick & \emph{Zymergen, USA}\\
-Umesh P & \emph{Kerala Technological University}\\
+Umesh P & \emph{Kerala Technological University, India}\\
 Nicholas Roehner & \emph{Raytheon BBN Technologies, USA}\\
 \end{tabular}\\
 {\bf Chair:}\hfil\\
@@ -134,7 +185,7 @@ Anil Wipat & \emph{Newcastle University, UK}\\
 \href{mailto:editors@sbolstandard.org}{\sffamily editors@sbolstandard.org}\\
 {\bf Additional authors, by last name:}\\
 \begin{tabular}{l>{\hspace*{15pt}}r}
-Bryan Bartley & \emph{University of Washington, USA}\\
+Bryan Bartley & \emph{Raytheon BBN Technologies, USA}\\
 Jacob Beal & \emph{Raytheon BBN Technologies, USA}\\
 Swapnil Bhatia & \emph{Boston University, USA}\\
 Shyam Bhakta & \emph{Rice University, USA}\\
