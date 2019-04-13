@@ -73,6 +73,7 @@ In terms of the SBOL 2 data model, the backbone represents a \sbol{ComponentDefi
 	\label{exa:1b}
 	\end{figure}
 	
+\twoonezero{
 \item As a special case of non-horizontal backbone structure, certain stylized backbone shapes are used as sequence feature glyphs to indicate the genomic context of a sequence. 
 	These glyphs SHOULD be used as a matched pair, indicating the bounds of the context region.
 	It is further RECOMMENDED that each glyph be concatenated with an Omitted Detail glyph to explicitly indicate that some surrounding context is not being shown. 
@@ -86,6 +87,7 @@ In terms of the SBOL 2 data model, the backbone represents a \sbol{ComponentDefi
 	\caption{Examples of RECOMMENDED indication of genomic context.}
 	\label{exa:1c}
 	\end{figure}
+}
 
 \item A nucleic acid backbone SHOULD have at least one associated feature glyph (else no structural information is being provided).
 \end{enumerate}
@@ -224,6 +226,7 @@ Examples are provided in~\ref{exa:4c}.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interaction} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 
+\twoonezero{
 \item An edge may have multiple heads or multiple tails. 
 In this case, a split or join in an edge represents either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  
 An edge with multiple heads MUST use the same glyph for each head.
@@ -250,9 +253,11 @@ Examples are provided in~\ref{exa:4d}.
 \item A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
-	
+}
+
 \end{enumerate}
 
+\twoonezero{
 \subsection{Modules}
 
 A module within a system MAY be represented by a visual boundary in the form of closed polygon or closed curve.
@@ -329,6 +334,7 @@ A port SHOULD NOT both have interactions both connecting to it and crossing the 
 	\end{figure}
 
 \end{enumerate}
+}
 
 \subsection{Labels}
 The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of the SBOL 2 data model, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
