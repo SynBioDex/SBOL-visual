@@ -68,3 +68,12 @@ How to update the font when new symbols are added:
 How to test that an update has been completed correctly:
 ========================================================
 * Recreate Example.odt and Example.pdf now including the new symbol
+
+Changelog:
+========================================================
+* v2019.04: Glyphs added:
+  * Transcription end
+  * Translation end
+  * Chromosomal locus
+  * Circular plasmid
+  * Interaction nodes: association, dissociation, process
