@@ -1,7 +1,7 @@
-# Small Molecule
+# Simple Chemical
 
-## Associated BioPAX term(s)
-Small Molecule: http://www.biopax.org/release/biopax-level3.owl#SmallMolecule
+## Associated SBO term(s)
+SBO:0000247 Simple chemical
 
 ## Recommended Glyph and Alternates
 The small molecule glyph is a circle that stretches sideways into a "stadium" to accomodate longer names:
@@ -13,4 +13,4 @@ The small molecule glyph is a circle that stretches sideways into a "stadium" to
 Arabinose
 
 ## Notes
-*This section left intentionally blank*
+Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopax-level3.owl#SmallMolecule

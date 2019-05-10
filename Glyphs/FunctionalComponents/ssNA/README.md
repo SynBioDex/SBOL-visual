@@ -1,7 +1,7 @@
 # Single-Stranded Nucleic Acid
 
-## Associated BioPAX term(s)
-Rna: http://www.biopax.org/release/biopax-level3.owl#Rna
+## Associated SBO term(s)
+SBO:0000250 Ribonucleic acid
 
 ## Recommended Glyph and Alternates
 The RECOMMENDED glyph for ssNA is a wiggly line:
@@ -17,4 +17,4 @@ An alternative is the SBGN "nucleic acid" half-round rectangle:
 mRNA, gRNA, siRNA
 
 ## Notes
-*This section left intentionally blank*
+Alternate BioPAX definition: Rna: http://www.biopax.org/release/biopax-level3.owl#Rna
