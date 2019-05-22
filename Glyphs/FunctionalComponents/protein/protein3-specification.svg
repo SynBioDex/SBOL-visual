@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 44.999998 44.999998"
+   version="1.1"
+   xml:space="preserve"
+   x="0px"
+   y="0px"
+   width="0.5in"
+   height="0.5in"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="protein3-specification.svg"
+   inkscape:export-filename="protein3-specification.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"><metadata
+     id="metadata12"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="944"
+     inkscape:window-height="738"
+     id="namedview10"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="13.350176"
+     inkscape:cx="10.505809"
+     inkscape:cy="21.626025"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" /><defs
+     id="defs4"><style
+       type="text/css"
+       id="style6"><![CDATA[
+      path,circle,polygon {
+        stroke:#000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none
+      }]]></style></defs><path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 12.681641 15.496094 A 7.0036529 7.0036529 0 0 0 5.6464844 22.427734 A 7.0036529 7.0036529 0 0 0 12.537109 29.501953 A 7.0036529 7.0036529 0 0 0 19.310547 24.660156 A 3.8576271 3.8576271 0 0 0 22.4375 26.357422 A 3.8576271 3.8576271 0 0 0 25.695312 24.652344 A 7.0036529 7.0036529 0 0 0 32.238281 29.501953 A 7.0036529 7.0036529 0 0 0 39.351562 22.652344 A 7.0036529 7.0036529 0 0 0 32.542969 15.498047 L 32.382812 15.496094 A 7.0036529 7.0036529 0 0 0 25.689453 20.339844 A 3.8576271 3.8576271 0 0 0 22.605469 18.644531 L 22.517578 18.642578 A 3.8576271 3.8576271 0 0 0 19.304688 20.341797 A 7.0036529 7.0036529 0 0 0 12.841797 15.498047 L 12.681641 15.496094 z "
+     id="path3524" /></svg>

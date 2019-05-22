@@ -14,7 +14,6 @@ An alternative is the SBGN macromolecule glyph, a rounded rectangle:
 
 ## Prototypical Example
 
-AraC
+AraC protein, polymerized chitin
 
 ## Notes
-Note that this also covers BioPAX term Protein: http://www.biopax.org/release/biopax-level3.owl#Protein
