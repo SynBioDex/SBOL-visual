@@ -16,13 +16,13 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="protein1-specification.svg"
-   inkscape:export-filename="protein1-specification.png"
+   sodipodi:docname="macromolecule.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/macromolecule/macromolecule-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -38,7 +38,7 @@
      units="in"
      inkscape:zoom="13.350176"
      inkscape:cx="22.603028"
-     inkscape:cy="21.626025"
+     inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -53,8 +53,7 @@
         stroke-linejoin: round;
         fill: none
       }]]></style></defs><path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 22.09458,22.320406 c -0.12653,6.09641 4.518039,7.720092 0.20745,11.142735 -4.549741,3.612533 -10.451537,-5.101577 -10.391513,-11.199109 0.06002,-6.097531 5.928097,-13.8851771 10.730664,-10.969298 4.802568,2.915879 -0.420072,4.929262 -0.546601,11.025672 z"
-     id="path3335"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="zsszz" /></svg>
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 22.91113,11.713864 a 9.5129835,9.5129835 0 0 0 -9.513671,9.513672 9.5129835,9.5129835 0 0 0 1.5625,5.210937 3.5205528,3.5205528 0 0 0 -2.384766,3.328126 3.5205528,3.5205528 0 0 0 3.519531,3.519531 3.5205528,3.5205528 0 0 0 3.501953,-3.154297 9.5129835,9.5129835 0 0 0 3.314453,0.607422 9.5129835,9.5129835 0 0 0 9.513672,-9.511719 9.5129835,9.5129835 0 0 0 -9.513672,-9.513672 z"
+     id="path4135"
+     inkscape:connector-curvature="0" /></svg>

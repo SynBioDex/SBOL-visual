@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="protein2-specification.svg"
-   inkscape:export-filename="protein2-specification.png"
+   sodipodi:docname="small-molecule.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/small-molecule/stadium-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -38,7 +38,7 @@
      units="in"
      inkscape:zoom="13.350176"
      inkscape:cx="22.603028"
-     inkscape:cy="21.626025"
+     inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -52,9 +52,11 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style></defs><path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 28.951172,27.771484 c 3.87236,0.0621 7.067923,-3.01478 7.152344,-6.886718 0.08523,-3.872618 -2.973615,-7.086801 -6.927089,-7.149728 -3.953474,-0.06293 -6.963419,2.975675 -7.041608,5.238031 0.120596,-2.261902 -3.088911,-5.025763 -7.041784,-5.088705 -3.952874,-0.06294 -7.1138204,3.05088 -7.1535819,6.92423 -0.039118,3.87215 3.0558859,7.049176 6.9277349,7.111328 3.873116,0.06319 7.069876,-2.564575 7.11782,-4.7147 -0.07668,2.149848 3.093546,4.504108 6.966164,4.566262 z"
-     id="path3407"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccccccc" /></svg>
+      }]]></style></defs><rect
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4135"
+     width="31.759876"
+     height="13.857493"
+     x="6.620059"
+     y="15.571251"
+     ry="6.9287467" /></svg>

@@ -16,13 +16,13 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="protein3-specification.svg"
-   inkscape:export-filename="protein3-specification.png"
+   sodipodi:docname="stadium-specification.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/small-molecule/stadium-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -37,8 +37,8 @@
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
-     inkscape:cx="10.505809"
-     inkscape:cy="21.626025"
+     inkscape:cx="22.603028"
+     inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -52,7 +52,17 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style></defs><path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 12.681641 15.496094 A 7.0036529 7.0036529 0 0 0 5.6464844 22.427734 A 7.0036529 7.0036529 0 0 0 12.537109 29.501953 A 7.0036529 7.0036529 0 0 0 19.310547 24.660156 A 3.8576271 3.8576271 0 0 0 22.4375 26.357422 A 3.8576271 3.8576271 0 0 0 25.695312 24.652344 A 7.0036529 7.0036529 0 0 0 32.238281 29.501953 A 7.0036529 7.0036529 0 0 0 39.351562 22.652344 A 7.0036529 7.0036529 0 0 0 32.542969 15.498047 L 32.382812 15.496094 A 7.0036529 7.0036529 0 0 0 25.689453 20.339844 A 3.8576271 3.8576271 0 0 0 22.605469 18.644531 L 22.517578 18.642578 A 3.8576271 3.8576271 0 0 0 19.304688 20.341797 A 7.0036529 7.0036529 0 0 0 12.841797 15.498047 L 12.681641 15.496094 z "
-     id="path3524" /></svg>
+      }]]></style></defs><rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.49999994;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4159"
+     width="33.182438"
+     height="14.98043"
+     x="5.9087791"
+     y="15.000715" /><rect
+     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4135"
+     width="31.759876"
+     height="13.857493"
+     x="6.620059"
+     y="15.571251"
+     ry="6.9287467" /></svg>
