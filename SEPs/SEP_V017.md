@@ -109,6 +109,14 @@ To avoid confusion with pills or ellipses, when the small circle alternative gly
 
 Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopax-level3.owl#SmallMolecule
 
+### Complex
+
+Examples are updated to match new glyphs for this SEP:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
+
 
 ## 3. Examples <a name='example'></a>
 
