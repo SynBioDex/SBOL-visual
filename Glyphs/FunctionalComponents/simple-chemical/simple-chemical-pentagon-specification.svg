@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="simple-chemical.svg"
-   inkscape:export-filename="simple-chemical.png"
+   sodipodi:docname="simple-chemical-pentagon-specification.svg"
+   inkscape:export-filename="simple-chemical-pentagon-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -37,7 +37,7 @@
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
-     inkscape:cx="9.082607"
+     inkscape:cx="21.067468"
      inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -52,9 +52,25 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style></defs><path
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 12.999998,15.499998 18.999998,0 6.999999,6.999999 -6.999999,6.999999 -18.999998,0 -6.9999987,-6.999999 z"
-     id="rect4142"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccccc" /></svg>
+      }]]></style></defs><rect
+     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.49999994;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4159"
+     width="7.5084925"
+     height="7.508492"
+     x="18.690056"
+     y="18.74575" /><path
+     sodipodi:type="star"
+     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path6514"
+     sodipodi:sides="5"
+     sodipodi:cx="22.499997"
+     sodipodi:cy="22.844517"
+     sodipodi:r1="3.6079204"
+     sodipodi:r2="2.918869"
+     sodipodi:arg1="-1.5707963"
+     sodipodi:arg2="-0.9424778"
+     inkscape:flatsided="true"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="m 22.499997,19.236596 3.431337,2.493012 -1.310654,4.033778 -4.241365,0 -1.310654,-4.033778 z"
+     inkscape:transform-center-y="-0.34452577" /></svg>

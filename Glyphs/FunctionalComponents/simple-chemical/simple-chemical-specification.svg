@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="stadium-specification.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/small-molecule/stadium-specification.png"
+   sodipodi:docname="simple-chemical-specification.svg"
+   inkscape:export-filename="simple-chemical-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -37,7 +37,7 @@
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
-     inkscape:cx="22.603028"
+     inkscape:cx="9.082607"
      inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -58,11 +58,9 @@
      width="33.182438"
      height="14.98043"
      x="5.9087791"
-     y="15.000715" /><rect
-     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4135"
-     width="31.759876"
-     height="13.857493"
-     x="6.620059"
-     y="15.571251"
-     ry="6.9287467" /></svg>
+     y="15.000715" /><path
+     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 12.999998,15.499998 18.999998,0 6.999999,6.999999 -6.999999,6.999999 -18.999998,0 -6.9999987,-6.999999 z"
+     id="rect4142"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccc" /></svg>
