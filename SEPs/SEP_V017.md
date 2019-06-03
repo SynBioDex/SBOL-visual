@@ -1,4 +1,4 @@
-# SEP V017: Protein, Deprecated Macromolecule, and Alternative Small Molecules
+# SEP V017: Protein, Macromolecule, and Alternative Small Molecules
 
 | SEP | |
 | --- | --- |
@@ -8,13 +8,13 @@
 | **SBOL Visual Version** | 2.2 |
 | **Status** | Draft |
 | **Created** | 1-June-2019 |
-| **Last modified** |  |
-| **Issue**         |  |
+| **Last modified** | 3-June-2019 |
+| **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/67 |
 
 
 ## Abstract
 
-Proteins are currently represented by the Macromolecule glyph, which looks much like the "shmoo" shape that people often use to represent yeast cells. This SEP proposes to deprecate the "shmoo", represent proteins explicitly with the "pill" glyph, and allow a family of different simple shapes to represent simple chemicals.
+Proteins are currently represented by the Macromolecule glyph, which looks much like the "shmoo" shape that people often use to represent yeast cells. This SEP proposes to represent proteins explicitly with the "pill" glyph, and allow a family of different simple shapes to represent simple chemicals.
 
 ## Table of Contents  <remove TOC if SEP is rather short>
 - [1. Rationale](#rationale) 
@@ -33,33 +33,12 @@ We thus propose the following changes:
 
 - A Protein glyph is added, with "pill" shape
 - Simple chemical is changed from chemical to hexagon, with alternates of small circle, small simple polygon, and molecular diagram.
-- Macromolecule deprecates the "shmoo" and recommends the current alternate "rounded rectangle"
+
+Macromolecule is left unchanged.
 
 ## 2. Specification <a name="specification"></a>
 
 New or updated definitions for each glyph follow:
-
-### Macromolecule
-
-#### Associated SBO term(s)
-SBO:0000245 Macromolecule
-
-#### Recommended Glyph and Alternates
-The macromolecule glyph is a rounded rectangle, as used in SBGN:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/d792cc5/Glyphs/FunctionalComponents/macromolecule/macromolecule-specification.png)
-
-A deprecated alternative is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of protein. It is now deprecated for being too similar to a yeast cell "shmoo" symbol:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/d792cc5/Glyphs/FunctionalComponents/macromolecule/macromolecule-deprecated-specification.png)
-
-#### Prototypical Example
-
-AraC
-
-#### Notes
-Note that this also covers BioPAX term Protein: http://www.biopax.org/release/biopax-level3.owl#Protein
-
 
 ### Protein
 
@@ -124,7 +103,7 @@ No examples are needed.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
-The "shmoo" Macromolecule glyph is being retained (though deprecated) to support backward compatibility.
+The "shmoo" Macromolecule glyph is being retained to support backward compatibility.
 
 Of greater concern is the fact that "pill" (or "stadium") has been used to represent simple chemicals in published diagrams that will now be invalid. Compatibility with SBGN use of "stadium" will also be broken as of SBGN PD 2.0, which has just been released (SBGN 1.x uses circle, not stadium).
 
