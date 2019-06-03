@@ -92,9 +92,10 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
 
 Examples are updated to match new glyphs for this SEP:
 
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-ps-alt-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
 
 
 ## 3. Examples <a name='example'></a>
