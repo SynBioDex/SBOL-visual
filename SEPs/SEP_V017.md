@@ -128,7 +128,8 @@ Examples are updated to match new glyphs for this SEP:
 
 ## 3. Examples <a name='example'></a>
 
-No examples are needed.
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/33e7b8f/SEPs/SEPV017-protein-simplechem-sampler.png)
+
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
