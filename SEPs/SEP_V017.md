@@ -37,10 +37,9 @@ We thus propose the following changes:
 Macromolecule is either left unchanged or has the "shmoo" deprecated.
 
 ### Alternatives that must be voted on:
-1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or c) have rounded rectangle become RECOMMENDED and deprecate "shmoo".  
+1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).  
 2. Should we adopt the "pill" Protein glyph, or just represent proteins using the Macromolecule rounded-rectangle?
-3. If Protein is adopted, should it include an alternate with lines sticking from its ends?
-4. Should the recommended glyph for Simple Chemical be the hexagon or the small circle?
+3. Should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
 
 ## 2. Specification <a name="specification"></a>
 
@@ -55,10 +54,6 @@ SBO:0000252 Polypeptide Chain
 The protein glyph is a "pill" shape with a rectangular body and rounded ends, representing the compact space-filling mass of many proteins:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/d792cc5/Glyphs/FunctionalComponents/protein/protein-specification.png)
-
-Potential alternate: a "pill" shape with lines extending from its ends.
-
-![glyph specification](https://user-images.githubusercontent.com/1862877/58933854-41698780-8771-11e9-8eed-538147bfbf2d.png)
 
 
 #### Prototypical Example
@@ -108,19 +103,19 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
 
 ### Complex
 
-Examples are updated to match new glyphs for this SEP:
+Examples will be updated to match new glyphs for this SEP. One set of possible updates:
 
-* Protein (as macromolecule) bound with small molecule:
+* Protein bound with small molecule (stretchable hexagon version):
 
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
+  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
 
-* Protein (as macromolecule) bound with alternative small molecule:
+* Protein (as macromolecule) bound with small molecule (small circle version):
 
   ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-ps-alt-specification.png)
   
-* Protein (as macromolecule) bound with RNA:
+* Protein bound with RNA:
 
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
+  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
   
 * Two proteins bound together:
 
@@ -134,7 +129,7 @@ Examples are updated to match new glyphs for this SEP:
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
-The "shmoo" Macromolecule glyph is being retained to support backward compatibility.
+The "shmoo" Macromolecule glyph is being retained to support backward compatibility.  It may or may not be schedule for deletion at a future date, depending on the outcome of the deprecation vote.
 
 Of greater concern is the fact that "pill" (or "stadium") has been used to represent simple chemicals in published diagrams that will now be invalid. 
 
@@ -150,6 +145,11 @@ Instead, opinion seemed to push hard toward using the simple "pill" glyph for pr
 Strong concerns were raised regarding the potential confusion between ellipse, pill, and circle. Setting simple chemicals to one specific small polygon was also not found acceptable in discussion due to the fact that any given small polygon is a mismatch for the molecular structure of many small molecules.
 
 Backwards compatibility and compatibility with SBGN are also issues, but the consensus seems to have been that compatibility with "pill" images of proteins, including in the pending protein language, is more important. SBGN compatibility is still maintained, however, via Macromolecule and the circle variant of Simple Chemical.
+
+A potential alternate glyph for protein is currently being deferred: a "pill" shape with lines extending from its ends.
+
+![glyph specification](https://user-images.githubusercontent.com/1862877/58933854-41698780-8771-11e9-8eed-538147bfbf2d.png)
+
 
 
 ## Copyright <a name='copyright'></a>
