@@ -1,4 +1,4 @@
-# SEP V017: Protein, Macromolecule, and Alternative Small Molecules
+# SEP V017: Protein, Macromolecule, and Alternative Simple Chemicals
 
 | SEP | |
 | --- | --- |
@@ -32,14 +32,15 @@ The Macromolecule glyph looks a lot like a yeast "shmoo" form, which has been no
 We thus propose the following changes:
 
 - A Protein glyph is added, with "pill" shape
-- Simple chemical is changed from chemical to hexagon, with alternates of small circle, small simple polygon, and molecular diagram.
+- Simple chemical is changed from circle/pill to hexagon, with alternates of small circle, small simple polygon, and molecular diagram.
 
 Macromolecule is either left unchanged or has the "shmoo" deprecated.
 
 ### Alternatives that must be voted on:
-1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).  
-2. Should we adopt the "pill" Protein glyph, or just represent proteins using the Macromolecule rounded-rectangle?
-3. Should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
+1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).
+2. Should the "pill" Protein glyph be adopted, or should proteins be represented by the Macromolecule rounded-rectangle?
+3. Should Simple Chemical be changed from "large circle / pill" to the collection of "stretchable hexagon", "small circle", "small simple polygon", and molecular diagram?
+4. Assuming 3 is accepted, should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
 
 ## 2. Specification <a name="specification"></a>
 
@@ -91,7 +92,7 @@ Finally, a simple chemical may also be represented directly by its chemical diag
 Arabinose
 
 #### Notes
-The RECOMMENDED hexagon shape is suggested for diagrams where labels are being kept inside of shapes or where there are potentially many species of small molecules. The alternatives allow a greater degree of visual distinction for individual species of small molecule, but will typically require external labels.
+The RECOMMENDED hexagon shape is suggested for diagrams where labels are being kept inside of shapes or where there are potentially many species of simple chemicals (i.e., small molecules). The alternatives allow a greater degree of visual distinction for individual species of simple chemical, but will typically require external labels.
 
 When small geometric shapes, it is RECOMMENDED that visual differentiation be maximized by associating each distinct species in a diagram with a different small geometric shape. Rotations may also be used (e.g., pentagon pointing up vs. pentagon pointing down).
 
@@ -105,7 +106,7 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
 
 Examples will be updated to match new glyphs for this SEP. One set of possible updates:
 
-* Protein bound with small molecule (stretchable hexagon version):
+* Protein bound with small molecule (stretchable hexagon version of simple chemical):
 
   ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
 
@@ -140,9 +141,9 @@ Compatibility with SBGN use of "stadium" will also be reduced as of SBGN PD 2.0,
 
 Extensive discussion on both a GitHub issue (https://github.com/SynBioDex/SBOL-visual/issues/60) and mailing list thread (https://groups.google.com/d/topic/sbol-visual/icUP1WXgKzw/discussion) failed  to produce any novel glyph with significant support. 
 
-Instead, opinion seemed to push hard toward using the simple "pill" glyph for proteins and changing small molecules to be small circles.
+Instead, opinion seemed to push hard toward using the simple "pill" glyph for proteins and changing simple chemicals to be small circles.
 
-Strong concerns were raised regarding the potential confusion between ellipse, pill, and circle. Setting simple chemicals to one specific small polygon was also not found acceptable in discussion due to the fact that any given small polygon is a mismatch for the molecular structure of many small molecules.
+Strong concerns were raised regarding the potential confusion between ellipse, pill, and circle. Setting simple chemicals to one specific small polygon was also not found acceptable in discussion due to the fact that any given small polygon is a mismatch for the molecular structure of many simple chemicals (small molecules).
 
 Backwards compatibility and compatibility with SBGN are also issues, but the consensus seems to have been that compatibility with "pill" images of proteins, including in the pending protein language, is more important. SBGN compatibility is still maintained, however, via Macromolecule and the circle variant of Simple Chemical.
 
