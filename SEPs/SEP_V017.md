@@ -39,8 +39,12 @@ Macromolecule is either left unchanged or has the "shmoo" deprecated.
 ### Alternatives that must be voted on:
 1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).
 2. Should the "pill" Protein glyph be adopted, or should proteins be represented by the Macromolecule rounded-rectangle?
-3. Should Simple Chemical be changed from "large circle / pill" to the collection of "stretchable hexagon", "small circle", "small simple polygon", and molecular diagram?
-4. Assuming 3 is accepted, should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
+3. Simple Chemical is proposed to changed from "large circle / pill" to some subset of the collection of "stretchable hexagon", "small circle", "small simple polygon", and molecular diagram. Which of these glyphs do you support allowing (check all that apply)?
+  * "stretchable hexagon"
+  * "small circle"
+  * "small simple polygon"
+  * "molecular diagram"
+4. Should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
 
 ## 2. Specification <a name="specification"></a>
 
