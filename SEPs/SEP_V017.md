@@ -32,19 +32,19 @@ The Macromolecule glyph looks a lot like a yeast "shmoo" form, which has been no
 We thus propose the following changes:
 
 - A Protein glyph is added, with "pill" shape
-- Simple chemical is changed from circle/pill to hexagon, with alternates of small circle, small simple polygon, and molecular diagram.
+- Simple chemical is changed from circle/pill to small simple polygon, with alternate of small circle.
 
 Macromolecule is either left unchanged or has the "shmoo" deprecated.
 
 ### Alternatives that must be voted on:
-1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).
-2. Should the "pill" Protein glyph be adopted, or should proteins be represented by the Macromolecule rounded-rectangle?
+1. Should Macromolecule a) have rounded-rectangle become RECOMMENDED, leaving "shmoo" as an alternative, or b) have rounded rectangle become RECOMMENDED and deprecate "shmoo" (i.e., mark it for future removal).  **RESULT: shmoo is deprecated**
+2. Should the "pill" Protein glyph be adopted, or should proteins be represented by the Macromolecule rounded-rectangle? **RESULT: "pill" is adopted**
 3. Simple Chemical is proposed to changed from "large circle / pill" to some subset of the collection of "stretchable hexagon", "small circle", "small simple polygon", and molecular diagram. Which of these glyphs do you support allowing (check all that apply)?
-  * "stretchable hexagon"
-  * "small circle"
-  * "small simple polygon"
-  * "molecular diagram"
-4. Should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle?
+  * "stretchable hexagon" **RESULT: rejected**
+  * "small circle" **RESULT: alternative**
+  * "small simple polygon"  **RESULT: RECOMMENDED**
+  * "molecular diagram"  **RESULT: rejected**
+4. Should the RECOMMENDED glyph for Simple Chemical be (a) stretchable hexagon or (b) small circle? **RESULT: neither: "small simple polygon" is RECOMMENDED**
 
 ## 2. Specification <a name="specification"></a>
 
@@ -78,29 +78,24 @@ Note that the Protein glyph is not compatible with SBGN 2.0 diagrams, as the pil
 SBO:0000247 Simple chemical
 
 #### Recommended Glyph and Alternates
-The simple chemical glyph is a hexagon that stretches sideways to accomodate longer names:
+The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon:
 
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-specification.png)
-
-Alternately, a simple chemical may also be represented by one of several small simple geometric shapes, a circle, triangle, pentagon, or hexagon:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-circle-specification.png)
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-triangle-specification.png)
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-pentagon-specification.png)
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-hexagon-specification.png)
 
-Finally, a simple chemical may also be represented directly by its chemical diagram, using any standard form thereof.
+Alternately, a simple chemical may also be represented a small circle:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-circle-specification.png)
 
 #### Prototypical Example
 
 Arabinose
 
 #### Notes
-The RECOMMENDED hexagon shape is suggested for diagrams where labels are being kept inside of shapes or where there are potentially many species of simple chemicals (i.e., small molecules). The alternatives allow a greater degree of visual distinction for individual species of simple chemical, but will typically require external labels.
+It is RECOMMENDED that visual differentiation be maximized by associating each distinct species in a diagram with a different small geometric shape. Rotations may also be used (e.g., pentagon pointing up vs. pentagon pointing down).
 
-When small geometric shapes, it is RECOMMENDED that visual differentiation be maximized by associating each distinct species in a diagram with a different small geometric shape. Rotations may also be used (e.g., pentagon pointing up vs. pentagon pointing down).
-
-With small geometric shapes or chemical diagrams it is RECOMMENDED that labels should be placed outside of the shapes rather than inside, to avoid squeezing the labels.
+It is RECOMMENDED that labels should be placed outside of the shapes rather than inside, to avoid squeezing the labels.
 
 To avoid confusion with pills or ellipses, when the small circle alternative glyph is used, it SHOULD be significantly smaller than other types of molecular species glyphs, as indicated by the recommended scale of the glyph.
 
@@ -154,6 +149,16 @@ Backwards compatibility and compatibility with SBGN are also issues, but the con
 A potential alternate glyph for protein is currently being deferred: a "pill" shape with lines extending from its ends.
 
 ![glyph specification](https://user-images.githubusercontent.com/1862877/58933854-41698780-8771-11e9-8eed-538147bfbf2d.png)
+
+### Glyphs Rejected via Vote
+
+Two Simple Chemical alternatives were rejected by vote:
+
+- A hexagon that stretches sideways to accomodate longer names:
+
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/a786daa/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-specification.png)
+
+- A simple chemical represented directly by its chemical diagram, using any standard form thereof.
 
 
 
