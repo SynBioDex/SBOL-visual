@@ -16,8 +16,8 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="macromolecule.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/macromolecule/macromolecule-specification.png"
+   sodipodi:docname="macromolecule-sbgn.svg"
+   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/macro-molecule/roundrect-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
@@ -52,8 +52,11 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style></defs><path
-     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 22.91113,11.713864 a 9.5129835,9.5129835 0 0 0 -9.513671,9.513672 9.5129835,9.5129835 0 0 0 1.5625,5.210937 3.5205528,3.5205528 0 0 0 -2.384766,3.328126 3.5205528,3.5205528 0 0 0 3.519531,3.519531 3.5205528,3.5205528 0 0 0 3.501953,-3.154297 9.5129835,9.5129835 0 0 0 3.314453,0.607422 9.5129835,9.5129835 0 0 0 9.513672,-9.511719 9.5129835,9.5129835 0 0 0 -9.513672,-9.513672 z"
-     id="path4135"
-     inkscape:connector-curvature="0" /></svg>
+      }]]></style></defs><rect
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4135"
+     width="31.759876"
+     height="13.857493"
+     x="6.620059"
+     y="15.571251"
+     ry="4.0074377" /></svg>
