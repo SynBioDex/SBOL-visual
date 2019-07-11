@@ -6,7 +6,7 @@
 | **Editor** | Hasan Baig |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.2 |
-| **Status** | Draft |
+| **Status** | Accepted |
 | **Created** | 1-June-2019 |
 | **Last modified** | 3-June-2019 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/67 |
