@@ -23,6 +23,7 @@ glyph_to_page Glyphs/FunctionalComponents/complex
 glyph_to_page Glyphs/FunctionalComponents/dsNA
 glyph_to_page Glyphs/FunctionalComponents/macromolecule
 glyph_to_page Glyphs/FunctionalComponents/no-glyph-assigned
-glyph_to_page Glyphs/FunctionalComponents/small-molecule
+glyph_to_page Glyphs/FunctionalComponents/protein
+glyph_to_page Glyphs/FunctionalComponents/simple-chemical
 glyph_to_page Glyphs/FunctionalComponents/ssNA
 glyph_to_page Glyphs/FunctionalComponents/unspecified
