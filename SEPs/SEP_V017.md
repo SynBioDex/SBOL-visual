@@ -124,7 +124,7 @@ Examples will be updated to match new glyphs for this SEP. One set of possible u
 
 ## 3. Examples <a name='example'></a>
 
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/2cdcf63/SEPs/SEPV017-protein-simplechem-sampler.png)
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/1a03bcb/SEPs/SEPV017-protein-simplechem-sampler.png)
 
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
