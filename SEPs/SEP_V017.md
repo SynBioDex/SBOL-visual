@@ -3,12 +3,12 @@
 | SEP | |
 | --- | --- |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | Hasan Baig |
+| **Editor** | Zach Palchick |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.2 |
 | **Status** | Accepted |
 | **Created** | 1-June-2019 |
-| **Last modified** | 3-June-2019 |
+| **Last modified** | 11-July-2019 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/67 |
 
 
@@ -105,22 +105,35 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
 
 Examples will be updated to match new glyphs for this SEP. One set of possible updates:
 
-* Protein bound with small molecule (stretchable hexagon version of simple chemical):
+* Protein bound with small molecule (hexagon version of simple chemical):
 
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
+  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/13c2220/Glyphs/FunctionalComponents/complex/complex-ps-specification.png)
 
-* Protein (as macromolecule) bound with small molecule (small circle version):
-
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-ps-alt-specification.png)
-  
 * Protein bound with RNA:
 
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/7371b94/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
+  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/13c2220/Glyphs/FunctionalComponents/complex/complex-pr-specification.png)
   
 * Two proteins bound together:
 
-  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/21b2dec/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
+  ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/13c2220/Glyphs/FunctionalComponents/complex/complex-pp-specification.png)
 
+### Macromolecule
+
+#### Recommended Glyph and Alternates
+The macromolecule glyph is a rounded rectangle, as used in SBGN:
+ 
+ ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/13c2220/Glyphs/FunctionalComponents/macromolecule/macromolecule-specification.png)
+ 
+A deprecated alternative is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of protein. It is now deprecated for being too similar to a yeast cell "shmoo" symbol:
+ 
+![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/13c2220/Glyphs/FunctionalComponents/macromolecule/macromolecule-deprecated-specification.png)
+ 
+#### Prototypical Example
+ 
+AraC protein, polymerized chitin
+ 
+#### Notes
+*this section deliberately blank*
 
 ## 3. Examples <a name='example'></a>
 
