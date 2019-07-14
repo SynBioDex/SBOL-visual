@@ -31,7 +31,8 @@ These glyphs are designed to compose with CDS glyphs, as shown in the examples b
 SO:0000188 (intron)
 
 #### Recommended Glyph and Alternates
-The intron glyph is a box whose left and right has a number of angles making "torn out" edges, suggesting removal from an enclosing coding sequence:
+
+An intron is designated by a boundaries interrupting CDS, each side having a two-triangle "torn out" edges, suggesting removal from an enclosing coding sequence:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/2b4e91f1/Glyphs/intron/intron-specification.png)
 
@@ -47,27 +48,25 @@ Intron including a gRNA non-coding RNA sequence (blue), embedded in an mKate red
 SO:0000839 (polypeptide region)
 
 #### Recommended Glyph and Alternates
-The polypeptide region glyph is a chevron suggesting a fragment of a coding sequence:
+A polypeptide region inside a coding sequence is indicated by insertion of triangular boundaries inside of the CDS, parallel to the 3' side of the CDS.  This will produce chevron segments on the 3' side and a CDS shape on the 5' side:
 
 ![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/2b4e91f1/Glyphs/polypeptide-region/polypeptide-region-specification.png)
-
-For polypeptide regions at the extreme 5' end of a coding sequence, the RECOMMENDED alternative is instead a truncated chevron that can be put flush with the left side of a CDS glyph:
-
-![glyph specification](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/2b4e91f1/Glyphs/polypeptide-region/five-prime-polypeptide-region-specification.png)
 
 #### Prototypical Example
 
 degradation tag on a protein coding sequence
+
 nuclear localization tag on a protein coding sequence
 
-This glyph is intended to be used in composition or superposition with the glyph for the coding sequence of which the polypeptide regions are fragments: Example of a coding sequence with three an N-tag (blue), C-tag (yellow), and internal region (red):
+coding sequence for the membrane-crossing region of a protein
+
+Example of a coding sequence with three an N-tag (blue), C-tag (yellow), and internal region (red):
 
 ![example of usage](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/2b4e91f1/Glyphs/polypeptide-region/polypeptide-region-example.png)
 
-
 ## 3. Examples <a name='example'></a>
 
-See above.
+Example mixing both coding domains and introns:
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
