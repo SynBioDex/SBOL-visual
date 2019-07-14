@@ -39,7 +39,7 @@
      inkscape:zoom="11.244444"
      inkscape:cx="22.5"
      inkscape:cy="22.5"
-     inkscape:window-x="0"
+     inkscape:window-x="276"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" /><defs
@@ -70,8 +70,22 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
+      }]]></style><style
+       id="style6-0"
+       type="text/css"><![CDATA[
+      path,circle {
+        stroke:#000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none
       }]]></style></defs><path
-     d="m 5.1396974,33.911176 23.6111726,0 10.876433,-11.400584 -10.876433,-11.400585 -23.6111726,0 11.2072946,11.61818 z"
+     sodipodi:nodetypes="cccccc"
+     style="fill:none;stroke:#000000;stroke-width:2.99544764;stroke-linecap:round;stroke-linejoin:round"
+     inkscape:connector-curvature="0"
+     id="path8-5"
+     d="m 5.2562229,33.900582 23.6111731,0 10.876433,-11.400584 -10.876433,-11.400585 -23.6111731,0 z" /><path
+     d="m 15.139998,33.911176 13.610872,0 10.876433,-11.400584 -10.876433,-11.400585 -13.610872,0 11.206999,11.61818 z"
      id="path8"
      inkscape:connector-curvature="0"
      style="fill:none;stroke:#000000;stroke-width:2.99544764;stroke-linecap:round;stroke-linejoin:round"
