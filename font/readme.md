@@ -32,7 +32,7 @@ Principles that were used in designing the font:
 * Convert from strokes and objects to paths
 * Combine paths
 * Center & Align
-* Save all layers as one svg
+* Save as svg-file
 
 **FontForge:**
 * Open/Import above svg through FontForge or manually (ctrl+c & ctrl+v)
@@ -48,8 +48,7 @@ Principles that were used in testing the font:
 ==============================================
 Font has been tested by recreating Examples.odt and Examples.pdf in LibreOffice Writer Version 5.4.6.2 in Kubuntu 17.10 Artful Aardvark and 18.04 Bionic Beaver:
 * On menu click: "insert" / "special character"
-* Choose up to 16 characters per insert (can be repeated)
-* Place and align as desired
+* Place, align and color as desired
 * If required, close vertical gaps adjusting line spacing by
   * clicking on menu: "Format" / "Paragraph" and
   * select "Proportional" of ~"92%" at "Line Spacing" to reduce space between lines below zero
@@ -60,11 +59,21 @@ How to update the font when new symbols are added:
 ==================================================
 * Prepare new symbol in e.g., Inkscape
 * Open sfd file with e.g., FontForge
-* Vacate dedicated unicode allocation by moving existing symbols up the table (ctrl+x & ctrl+v)
-* Paste new symbol into dedicated, now vacated slot
+* Import svg-file into FontForge
 * Perform validation as above (missing extrema, non-integral coordinates, intersections and wrong direction)
 * If no errors are shown during validation, generate font
 
 How to test that an update has been completed correctly:
 ========================================================
-* Recreate Example.odt and Example.pdf now including the new symbol
+* Recreate Example.odt and Example.pdf with the new font version
+
+Changelog:
+========================================================
+* v2019.04: Glyphs added:
+  * Transcription end
+  * Translation end
+  * Chromosomal locus
+  * Circular plasmid
+  * Interaction nodes: association, dissociation, process
+  * readme.md updated
+ 

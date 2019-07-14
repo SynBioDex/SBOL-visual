@@ -1,11 +1,11 @@
 # Biopolymer Location
 
 ## Associated SO term(s)
-SO:0000699 (Junction, Boundary, Breakpoint)
+DNA: SO:0000699 (Junction, Boundary, Breakpoint), SO:0001236 (Base)
 
-SO:0001236 (Base)
+RNA: SO:0000699 (Junction, Boundary, Breakpoint), SO:0001236 (Base)
 
-SO:0001237 (Amino Acid)
+Protein: SO:0000699 (Junction, Boundary, Breakpoint), SO:0001237 (Amino Acid)
 
 ## Recommended Glyph and Alternates
 

@@ -1,10 +1,9 @@
-# Stop Site (Transcrition/Translation End Point)
+# Stop Site (Transcription/Translation End Point)
 
 ## Associated SO term(s)
 SO:0000616 Transcription End Site
 
-SO:0000319 Stop Codon; 
-SO:0000327 Coding End, Translation Termination Site, Translation End
+SO:0000319 Stop Codon, SO:0000327 Coding End, Translation Termination Site, Translation End
 ## Recommended Glyph and Alternates
 
 Transcription/Translation End Point is a "stem-top" glyph for describing small sites. In this system:

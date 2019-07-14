@@ -1,7 +1,7 @@
 # Macromolecule
 
-## Associated BioPAX term(s)
-Protein: http://www.biopax.org/release/biopax-level3.owl#Protein
+## Associated SBO term(s)
+SBO:0000245 Macromolecule
 
 ## Recommended Glyph and Alternates
 The macromolecule glyph is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of proteins:
@@ -17,4 +17,4 @@ An alternative is the SBGN macromolecule glyph, a rounded rectangle:
 AraC
 
 ## Notes
-It is unclear whether this should be just "Protein" or whether we also want it to be able to repesent multi-component elements like a protein composed of multiple sub-units or a complex polymer.
+Note that this also covers BioPAX term Protein: http://www.biopax.org/release/biopax-level3.owl#Protein

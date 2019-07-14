@@ -1,12 +1,11 @@
 # Cleavage Site
 
 ## Associated SO term(s)
-SO:0001956 (Protease Site)
+SO:0001688 (Restriction Enzyme Cleavage Junction), SO:0001687 (Restriction Enzyme Recognition Site)
 
 SO:0001977 (Ribonuclease Site)
 
-SO:0001688 (Restriction Enzyme Cleavage Junction), SO:0001687 (Restriction Enzyme Recognition Site)
-
+SO:0001956 (Protease Site)
 ## Recommended Glyph and Alternates
 Cleavage Site is a "stem-top" glyph for describing small sites. In this system:
 

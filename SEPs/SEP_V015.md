@@ -3,13 +3,13 @@
 | SEP | |
 | --- | --- |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** |  |
+| **Editor** | Zach Palchick |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.2 |
-| **Status** | Draft |
+| **Status** | Final |
 | **Created** | 30-Mas-2019 |
 | **Last modified** |  |
-| **Issue**         | TBD |
+| **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/62 |
 
 
 ## Abstract
