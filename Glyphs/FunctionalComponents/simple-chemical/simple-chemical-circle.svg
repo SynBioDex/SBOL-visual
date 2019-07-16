@@ -16,13 +16,13 @@
    height="0.5in"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="roundrect-specification.svg"
-   inkscape:export-filename="/Users/jakebeal/projects/SBOL/SBOLv-realizations/Glyphs/FunctionalComponents/macro-molecule/roundrect-specification.png"
+   sodipodi:docname="simple-chemical-circle.svg"
+   inkscape:export-filename="simple-chemical-circle-specification.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -37,7 +37,7 @@
      showgrid="false"
      units="in"
      inkscape:zoom="13.350176"
-     inkscape:cx="22.603028"
+     inkscape:cx="21.067468"
      inkscape:cy="27.618455"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -52,17 +52,15 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none
-      }]]></style></defs><rect
-     style="opacity:0.5;fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.49999994;stroke-miterlimit:4;stroke-dasharray:0.99999988, 0.49999994;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4159"
-     width="33.182438"
-     height="14.98043"
-     x="5.9087791"
-     y="15.000715" /><rect
-     style="opacity:1;fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4135"
-     width="31.759876"
-     height="13.857493"
-     x="6.620059"
-     y="15.571251"
-     ry="4.0074377" /></svg>
+      }]]></style></defs><path
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path4755"
+     sodipodi:type="arc"
+     sodipodi:cx="22.531046"
+     sodipodi:cy="22.45475"
+     sodipodi:rx="3.5288827"
+     sodipodi:ry="3.528882"
+     sodipodi:start="4.7398954"
+     sodipodi:end="4.7169966"
+     sodipodi:open="true"
+     d="m 22.628101,18.927203 a 3.5288827,3.528882 0 0 1 3.430991,3.604406 3.5288827,3.528882 0 0 1 -3.584707,3.451568 3.5288827,3.528882 0 0 1 -3.472033,-3.564888 3.5288827,3.528882 0 0 1 3.544954,-3.492384" /></svg>

@@ -4,17 +4,17 @@
 SBO:0000245 Macromolecule
 
 ## Recommended Glyph and Alternates
-The macromolecule glyph is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of proteins:
+The macromolecule glyph is a rounded rectangle, as used in SBGN:
 
 ![glyph specification](macromolecule-specification.png)
 
-An alternative is the SBGN macromolecule glyph, a rounded rectangle:
+A deprecated alternative is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of protein. It is now deprecated for being too similar to a yeast cell "shmoo" symbol:
 
-![glyph specification](macromolecule-sbgn-specification.png)
+![glyph specification](macromolecule-deprecated-specification.png)
 
 ## Prototypical Example
 
-AraC
+AraC protein, polymerized chitin
 
 ## Notes
-Note that this also covers BioPAX term Protein: http://www.biopax.org/release/biopax-level3.owl#Protein
+*this section deliberately blank*
