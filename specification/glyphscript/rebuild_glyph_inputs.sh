@@ -28,8 +28,6 @@ glyph_to_page Glyphs/circular-plasmid
 glyph_to_page Glyphs/cleavage-site
 glyph_to_page Glyphs/composite
 glyph_to_page Glyphs/engineered-region
-glyph_to_page Glyphs/five-prime-overhang
-glyph_to_page Glyphs/five-prime-sticky-restriction-site
 glyph_to_page Glyphs/insulator
 glyph_to_page Glyphs/intron
 glyph_to_page Glyphs/no-glyph-assigned
@@ -38,6 +36,7 @@ glyph_to_page Glyphs/omitted-detail
 glyph_to_page Glyphs/operator
 glyph_to_page Glyphs/origin-of-replication
 glyph_to_page Glyphs/origin-of-transfer
+glyph_to_page Glyphs/overhang
 glyph_to_page Glyphs/polyA
 glyph_to_page Glyphs/polypeptide-region
 glyph_to_page Glyphs/primer-binding-site
@@ -46,6 +45,7 @@ glyph_to_page Glyphs/ribosome-entry-site
 glyph_to_page Glyphs/signature
 glyph_to_page Glyphs/specific-recombination-site
 glyph_to_page Glyphs/stability-element
+glyph_to_page Glyphs/sticky-restriction-site
 glyph_to_page Glyphs/stop-site
 glyph_to_page Glyphs/terminator
 glyph_to_page Glyphs/unspecified
