@@ -1,4 +1,4 @@
-# Stop Site (Transcription/Translation End Point)
+# Stop Site
 
 ## Associated SO term(s)
 SO:0000616 Transcription End Site

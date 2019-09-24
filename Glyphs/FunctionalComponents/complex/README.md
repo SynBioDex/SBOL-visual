@@ -4,7 +4,7 @@
 SBO:0000253 Non-covalent complex
 
 ## Recommended Glyph and Alternates
-The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules of comprising the complex.  For example, a protein bound to a simple chemical, a protein bound to a guide RNA, or two proteins bound together:
+The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex.  For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):
 
 ![glyph specification](complex-ps-specification.png)
 ![glyph specification](complex-pr-specification.png)
