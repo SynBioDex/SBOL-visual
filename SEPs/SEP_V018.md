@@ -9,7 +9,7 @@
 | **Status** | Draft |
 | **Created** | 5-Oct-2019 |
 | **Last modified** | 5-Oct-2019 |
-| **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/71 |
+| **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/73 |
 
 
 ## Abstract
