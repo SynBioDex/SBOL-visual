@@ -245,7 +245,7 @@ Examples are provided in~\ref{exa:4d}.
 	\caption{Examples of use of multi-head and multi-tail arrows: 
 	(a) Repression from multiple independent sources, (b) repressor with multiple targets, 
 	(c) association of gRNA and Cas9 into an active CRISPR complex and (d) the dissociation of that complex, and
-	(e) composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
+	(e) composite edges representing two interactions: CRISPR complex formation with Cas9m from two sources, which then represses a promoter.
 	(f) Multi-head interactions, however, MUST NOT use different glyphs for different heads.}
 	\label{exa:4d}
 	\end{figure}
@@ -253,6 +253,24 @@ Examples are provided in~\ref{exa:4d}.
 \item A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+}
+
+\twotwozero{
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-stimulate.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-nodeless.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-multiarrow.pdf}}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-onearrow.pdf}}
+	\caption{Examples of edges going into process nodes: 
+	(a) gRNA stimulating the Cas9m repression process (an alternative Figure~\ref{exa:4d}(e) representation),  (b) the same but omitting the process node.
+	The process node MUST NOT be omitted when there are more (c) or less (d) than one incoming and one outgoing edge.}
+	\label{exa:4e}
+	\end{figure}
+
+\item An edge entering an edge junction may have an interaction arrow head (i.e., glyph from  \ref{apdx:sym:interaction}) to indicate the role its connected object plays in the biochemical process.
+	If there is precisely one incoming edge without a head and precisely one outgoing edge, then the process node MAY be omitted, but otherwise MUST NOT be omitted.
+	Examples are provided in~\ref{exa:4e}.
 }
 
 \end{enumerate}
