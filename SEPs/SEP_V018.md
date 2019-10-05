@@ -40,7 +40,7 @@ Section 6.4 (Interaction) of the specification will have the following item adde
 
 where Appendix A.3 is the collection of Interaction glyphs, and Figure 19 has examples of edges going into process nodes:
 
-> (a) gRNA stimulating the Cas9m repression process (an alternative Figure~\ref{exa:4d}(e) representation),  
+> (a) gRNA stimulating the dCas9 repression process (an alternative Figure~\ref{exa:4d}(e) representation),  
 > ![Example A](img/SEPV018-4e-stimulate.png)
 > (b) the same but omitting the process node.
 > ![Example B](img/SEPV018-4e-nodeless.png)
