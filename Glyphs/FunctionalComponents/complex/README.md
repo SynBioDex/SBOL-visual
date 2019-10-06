@@ -6,9 +6,13 @@ SBO:0000253 Non-covalent complex
 ## Recommended Glyph and Alternates
 The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules of comprising the complex.  For example, a protein bound to a simple chemical, a protein bound to a guide RNA, or two proteins bound together:
 
-![glyph specification](complex-ps-specification.png)
-![glyph specification](complex-pr-specification.png)
-![glyph specification](complex-pp-specification.png)
+![glyph example](complex-ps-specification.png)
+![glyph example](complex-pr-specification.png)
+![glyph example](complex-pp-specification.png)
+
+This may also be applied to show complex formation (binding) of a molecule to a nucleic acid backbone by compositing the glyph for the molecule with appropriate portion of the diagram the nucleic acid backbone.  For example, a protein binding to the promoter of a functional unit:
+
+![glyph example](complex-pdna-specification.png)
 
 An alternative is the SBGN "cornered rectangle" glyph for a complex:
 
