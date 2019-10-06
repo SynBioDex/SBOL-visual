@@ -181,7 +181,10 @@ In other words, either not a nucleic acid (e.g., proteins, small molecules) or e
 In terms of the SBOL 2 data model, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
 
 \begin{enumerate}
-\item A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box.
+\item A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box, \twotwozero{unless the diagram is showing that the molecular species binds to the nucleic acid.}
+
+\item \twotwozero{If binding is being shown, the molecular species glyph SHOULD contact an appropriate sequence feature glyph (e.g., for a binding site or restriction site) and not the backbone itself (see example in \ref{apdx:sym:species} for glyph Complex).}
+
 \item A molecular species SHOULD be represented using a glyph defined in \ref{apdx:sym:species}.  In this case, the species MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the associated \sbol{ComponentDefinition}.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:species} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
