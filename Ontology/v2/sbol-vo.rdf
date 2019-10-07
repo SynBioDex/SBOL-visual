@@ -1876,7 +1876,7 @@ Transcription/Translation End Point is a "stem-top" glyph for describing small s
   <rdfs:subClassOf rdf:resource="#ComplexGlyph"/>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex.  For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProteinGuideRnaComplexGlyph</rdfs:label>
-  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex-ps-specification.png</defaultGlyph>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex-pr-specification.png</defaultGlyph>
   <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/complex</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
 </owl:Class>
@@ -1885,7 +1885,7 @@ Transcription/Translation End Point is a "stem-top" glyph for describing small s
   <rdfs:subClassOf rdf:resource="#ComplexGlyph"/>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex.  For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProteinProteinComplexGlyph</rdfs:label>
-  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex-ps-specification.png</defaultGlyph>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex-pp-specification.png</defaultGlyph>
   <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/complex</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
 </owl:Class>
@@ -2029,7 +2029,7 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
   <rdfs:subClassOf rdf:resource="#SimpleChemicalGlyph"/>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PentagonSimpleChemicalGlyph</rdfs:label>
-  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple-chemical-triangle-specification.png</defaultGlyph>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple-chemical-pentagon-specification.png</defaultGlyph>
   <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/simple-chemical</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
 </owl:Class>
@@ -2038,7 +2038,7 @@ Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopa
   <rdfs:subClassOf rdf:resource="#SimpleChemicalGlyph"/>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HexagonSimpleChemicalGlyph</rdfs:label>
-  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple-chemical-triangle-specification.png</defaultGlyph>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple-chemical-hexagon-specification.png</defaultGlyph>
   <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/simple-chemical</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
 </owl:Class>
