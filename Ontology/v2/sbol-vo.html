@@ -1,0 +1,3465 @@
+<!-- saved from url=(0096)http://localhost:8080/lode/extract?url=https://dissys.github.io/sbol-visual-ontology/sbol-vo.rdf -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="./sbol-vo_files/owl.css" rel="stylesheet" type="text/css">
+  <link href="./sbol-vo_files/Primer.css" rel="stylesheet" type="text/css">
+  <link href="./sbol-vo_files/rec.css" rel="stylesheet" type="text/css">
+  <link href="./sbol-vo_files/extra.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="http://localhost:8080/lode/favicon.ico">
+  <script src="./sbol-vo_files/jquery.js"></script>
+  <script src="./sbol-vo_files/jquery.scrollTo.js"></script>
+  <script src="./sbol-vo_files/marked.min.js"></script>
+  <script>
+                $(document).ready(
+                    function () {
+                    	jQuery(".markdown").each(function(el){
+							jQuery(this).after(marked(jQuery(this).text())).remove()});
+                        var list = $('a[name="https://dissys.github.io/sbol-visual-ontology/sbol-vo.rdf"]');
+                        if (list.size() != 0) {
+                        	var element = list.first();
+                        	$.scrollTo(element);
+                        }
+                    });
+        </script>
+ </head>
+ <body>
+  <div class="head">
+   <dl>
+    <dt>
+     IRI:
+    </dt>
+    <dd>
+     http://sbolstandard.org/visual
+    </dd>
+   </dl>
+   <dl>
+    <dt>
+     Imported Ontologies:
+    </dt>
+    <dd>
+     <a href="https://dissys.github.io/sbol-owl/sbol.rdf">https://dissys.github.io/sbol-owl/sbol.rdf</a> (
+     <a href="http://www.essepuntato.it/lode/owlapi/https://dissys.github.io/sbol-owl/sbol.rdf">visualise it with LODE</a>)
+    </dd>
+   </dl>
+  </div>
+  <hr>
+  <div id="toc">
+   <h2>Table of Content</h2>
+   <ol>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#objectproperties">Object Properties</a></li>
+    <li><a href="#annotationproperties">Annotation Properties</a></li>
+    <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+   </ol>
+  </div>
+  <div id="classes">
+   <h2>Classes</h2>
+   <ul class="hlist">
+    <li><a href="#d4e646" title="#AptamerGlyph">AptamerGlyph</a></li>
+    <li><a href="#d4e4021" title="#AssemblyScarGlyph">AssemblyScarGlyph</a></li>
+    <li><a href="#d4e4083" title="#AssemblyScarGlyphAlternative">AssemblyScarGlyphAlternative</a></li>
+    <li><a href="#d4e891" title="#AssociationGlyph">AssociationGlyph</a></li>
+    <li><a href="#d4e1013" title="#BiopolymerLocationGlyph">BiopolymerLocationGlyph</a></li>
+    <li><a href="#d4e2708" title="#BluntRestrictionSiteGlyph">BluntRestrictionSiteGlyph</a></li>
+    <li><a href="#d4e2347" title="#CDSGlyph">CDSGlyph</a></li>
+    <li><a href="#d4e2408" title="#CDSGlyphAlternative">CDSGlyphAlternative</a></li>
+    <li><a href="#d4e707" title="#ChromosomalLocusGlyph">ChromosomalLocusGlyph</a></li>
+    <li><a href="#d4e2198" title="#CircularPlasmidGlyph">CircularPlasmidGlyph</a></li>
+    <li><a href="#d4e1603" title="#CleavageSiteGlyph">CleavageSiteGlyph</a></li>
+    <li><a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a></li>
+    <li><a href="#d4e3417" title="#ComplexGlyphAlternative">ComplexGlyphAlternative</a></li>
+    <li><a href="#d4e2259" title="#CompositeGlyph">CompositeGlyph</a></li>
+    <li><a href="#d4e249" title="#ControlGlyph">ControlGlyph</a></li>
+    <li><a href="#d4e127" title="#DegradationGlyph">DegradationGlyph</a></li>
+    <li><a href="#d4e952" title="#DissociationGlyph">DissociationGlyph</a></li>
+    <li><a href="#d4e1091" title="#DnaBiopolymerLocationGlyph">DnaBiopolymerLocationGlyph</a></li>
+    <li><a href="#d4e1290" title="#DnaBiopolymerLocationGlyphAlternative">DnaBiopolymerLocationGlyphAlternative</a></li>
+    <li><a href="#d4e1676" title="#DnaCleavageSiteGlyph">DnaCleavageSiteGlyph</a></li>
+    <li><a href="#d4e442" title="#DnaStabilityElementGlyph">DnaStabilityElementGlyph</a></li>
+    <li><a href="#d4e3212" title="#Double-StrandedNucleicAcidGlyph">Double-StrandedNucleicAcidGlyph</a></li>
+    <li><a href="#d4e3273" title="#Double-StrandedNucleicAcidGlyphAlternative">Double-StrandedNucleicAcidGlyphAlternative</a></li>
+    <li><a href="#d4e2586" title="#EngineeredRegionGlyph">EngineeredRegionGlyph</a></li>
+    <li><a href="#d4e3794" title="#FivePrimeOverhangSiteGlyph">FivePrimeOverhangSiteGlyph</a></li>
+    <li><a href="#d4e3904" title="#FivePrimeOverhangSiteGlyphAlternative">FivePrimeOverhangSiteGlyphAlternative</a></li>
+    <li><a href="#d4e1436" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a></li>
+    <li><a href="#d4e1547" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</a></li>
+    <li><a href="#d4e8" title="#Glyph">Glyph</a></li>
+    <li><a href="#d4e3686" title="#HexagonSimpleChemicalGlyph">HexagonSimpleChemicalGlyph</a></li>
+    <li><a href="#d4e65" title="#InhibitionGlyph">InhibitionGlyph</a></li>
+    <li><a href="#d4e2464" title="#InsulatorGlyph">InsulatorGlyph</a></li>
+    <li><a href="#d4e2286" title="#IntronGlyph">IntronGlyph</a></li>
+    <li><a href="#d4e3123" title="#MacromoleculeGlyph">MacromoleculeGlyph</a></li>
+    <li><a href="#d4e3184" title="#MacromoleculeGlyphAlternative">MacromoleculeGlyphAlternative</a></li>
+    <li><a href="#d4e2437" title="#NoGlyphAssignedGlyph">NoGlyphAssignedGlyph</a></li>
+    <li><a href="#d4e2036" title="#Non-CodingRNAGeneGlyph">Non-CodingRNAGeneGlyph</a></li>
+    <li><a href="#d4e2770" title="#OmittedDetailGlyph">OmittedDetailGlyph</a></li>
+    <li><a href="#d4e3050" title="#OperatorBindingSiteGlyph">OperatorBindingSiteGlyph</a></li>
+    <li><a href="#d4e1853" title="#OriginofReplicationGlyph">OriginofReplicationGlyph</a></li>
+    <li><a href="#d4e2525" title="#OriginofTransferGlyph">OriginofTransferGlyph</a></li>
+    <li><a href="#d4e3731" title="#OverhangSiteGlyph">OverhangSiteGlyph</a></li>
+    <li><a href="#d4e3665" title="#PentagonSimpleChemicalGlyph">PentagonSimpleChemicalGlyph</a></li>
+    <li><a href="#d4e830" title="#PolyASiteGlyph">PolyASiteGlyph</a></li>
+    <li><a href="#d4e2647" title="#PolypeptideRegionGlyph">PolypeptideRegionGlyph</a></li>
+    <li><a href="#d4e1914" title="#PrimerBindingSiteGlyph">PrimerBindingSiteGlyph</a></li>
+    <li><a href="#d4e310" title="#ProcessGlyph">ProcessGlyph</a></li>
+    <li><a href="#d4e3960" title="#PromoterSiteGlyph">PromoterSiteGlyph</a></li>
+    <li><a href="#d4e1224" title="#ProteinBiopolymerLocationGlyph">ProteinBiopolymerLocationGlyph</a></li>
+    <li><a href="#d4e1346" title="#ProteinBiopolymerLocationGlyphAlternative">ProteinBiopolymerLocationGlyphAlternative</a></li>
+    <li><a href="#d4e1798" title="#ProteinCleavageSiteGlyph">ProteinCleavageSiteGlyph</a></li>
+    <li><a href="#d4e3530" title="#ProteinGlyph">ProteinGlyph</a></li>
+    <li><a href="#d4e3375" title="#ProteinGuideRnaComplexGlyph">ProteinGuideRnaComplexGlyph</a></li>
+    <li><a href="#d4e3396" title="#ProteinProteinComplexGlyph">ProteinProteinComplexGlyph</a></li>
+    <li><a href="#d4e3353" title="#ProteinSmallMoleculeComplexGlyph">ProteinSmallMoleculeComplexGlyph</a></li>
+    <li><a href="#d4e519" title="#ProteinStabilityElementGlyph">ProteinStabilityElementGlyph</a></li>
+    <li><a href="#d4e585" title="#RibosomeEntrySiteGlyph">RibosomeEntrySiteGlyph</a></li>
+    <li><a href="#d4e1157" title="#RnaBiopolymerLocationGlyph">RnaBiopolymerLocationGlyph</a></li>
+    <li><a href="#d4e1318" title="#RnaBiopolymerLocationGlyphAlternative">RnaBiopolymerLocationGlyphAlternative</a></li>
+    <li><a href="#d4e1742" title="#RnaCleavageSiteGlyph">RnaCleavageSiteGlyph</a></li>
+    <li><a href="#d4e464" title="#RnaStabilityElementGlyph">RnaStabilityElementGlyph</a></li>
+    <li><a href="#d4e768" title="#SignatureGlyph">SignatureGlyph</a></li>
+    <li><a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a></li>
+    <li><a href="#d4e3707" title="#SimpleChemicalGlyphAlternative">SimpleChemicalGlyphAlternative</a></li>
+    <li><a href="#d4e3441" title="#Single-StrandedNucleicAcidGlyph">Single-StrandedNucleicAcidGlyph</a></li>
+    <li><a href="#d4e3502" title="#Single-StrandedNucleicAcidGlyphAlternative">Single-StrandedNucleicAcidGlyphAlternative</a></li>
+    <li><a href="#d4e2989" title="#SpecificRecombinationSiteGlyph">SpecificRecombinationSiteGlyph</a></li>
+    <li><a href="#d4e371" title="#StabilityElementGlyph">StabilityElementGlyph</a></li>
+    <li><a href="#d4e1374" title="#StickyEndRestrictionEnzymeCleavageSiteGlyph">StickyEndRestrictionEnzymeCleavageSiteGlyph</a></li>
+    <li><a href="#d4e188" title="#StimulationGlyph">StimulationGlyph</a></li>
+    <li><a href="#d4e2797" title="#StopSiteGlyph">StopSiteGlyph</a></li>
+    <li><a href="#d4e1975" title="#TerminatorGlyph">TerminatorGlyph</a></li>
+    <li><a href="#d4e3849" title="#ThreePrimeOverhangSiteGlyph">ThreePrimeOverhangSiteGlyph</a></li>
+    <li><a href="#d4e3932" title="#ThreePrimeOverhangSiteGlyphAlternative">ThreePrimeOverhangSiteGlyphAlternative</a></li>
+    <li><a href="#d4e1492" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a></li>
+    <li><a href="#d4e1575" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</a></li>
+    <li><a href="#d4e2868" title="#TranscriptionStopSiteGlyph">TranscriptionStopSiteGlyph</a></li>
+    <li><a href="#d4e2923" title="#TranslationStopSiteGlyph">TranslationStopSiteGlyph</a></li>
+    <li><a href="#d4e3644" title="#TriangleSimpleChemicalGlyph">TriangleSimpleChemicalGlyph</a></li>
+    <li><a href="#d4e2108" title="#UnspecifiedGlyph">UnspecifiedGlyph</a></li>
+    <li><a href="#d4e2170" title="#UnspecifiedGlyphAlternative">UnspecifiedGlyphAlternative</a></li>
+   </ul>
+   <div id="d4e646" class="entity">
+    <a name="#AptamerGlyph"></a>
+    <h3>AptamerGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #AptamerGlyph</p>
+    <div class="comment">
+     <p>The aptamer glyph is a cartoon diagram of a prototypical nucleic acid secondary structure for an aptamer:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000031">s o:0000031</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/aptamer/aptamer-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e4021" class="entity">
+    <a name="#AssemblyScarGlyph"></a>
+    <h3>AssemblyScarGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #AssemblyScarGlyph</p>
+    <div class="comment">
+     <p>The assembly scar glyph is an "equal sign" image, the pattern produced by the union of a 5' sticky end and 3' sticky end glyph. The scar will cover the backbone, creating a visual break suggesting the potential disruption associated with a scar:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001953">s o:0001953</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e4083" title="#AssemblyScarGlyphAlternative">AssemblyScarGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/assembly-scar/assembly-scar-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e4083" class="entity">
+    <a name="#AssemblyScarGlyphAlternative"></a>
+    <h3>AssemblyScarGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #AssemblyScarGlyphAlternative</p>
+    <div class="comment">
+     <p>With a double-stranded backbone:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e4021" title="#AssemblyScarGlyph">AssemblyScarGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e4021" title="#AssemblyScarGlyph">AssemblyScarGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/assembly-scar/assembly-scar-specification-doublestrand.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e891" class="entity">
+    <a name="#AssociationGlyph"></a>
+    <h3>AssociationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #AssociationGlyph</p>
+    <div class="comment">
+     <p>A circular node:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000177">s b o:0000177</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/InteractionNodes/association/association-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1013" class="entity">
+    <a name="#BiopolymerLocationGlyph"></a>
+    <h3>BiopolymerLocationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #BiopolymerLocationGlyph</p>
+    <div class="comment">
+     <p>Biopolymer Location is a "stem-top" glyph for describing small sites. In this system:</p> 
+     <ul> 
+      <li>the top glyph indicates the type of site (e.g., Biopolymer Location)</li> 
+      <li>the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)</li> 
+     </ul> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001236">s o:0001236</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001236">s o:0001236</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001237">s o:0001237</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1091" title="#DnaBiopolymerLocationGlyph">DnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1224" title="#ProteinBiopolymerLocationGlyph">ProteinBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1157" title="#RnaBiopolymerLocationGlyph">RnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/stem-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2708" class="entity">
+    <a name="#BluntRestrictionSiteGlyph"></a>
+    <h3>BluntRestrictionSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #BluntRestrictionSiteGlyph</p>
+    <div class="comment">
+     <p>The blunt restriction site glyph is an image of two brackets facing away from one another to make a smooth-edged gap:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001691">s o:0001691</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/blunt-restriction-site/blunt-restriction-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2347" class="entity">
+    <a name="#CDSGlyph"></a>
+    <h3>CDSGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #CDSGlyph</p>
+    <div class="comment">
+     <p>The coding sequence glyph is a "box" with one side bent out arrow-like to show direction:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000316">s o:0000316</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e2408" title="#CDSGlyphAlternative">CDSGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cds/cds-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2408" class="entity">
+    <a name="#CDSGlyphAlternative"></a>
+    <h3>CDSGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #CDSGlyphAlternative</p>
+    <div class="comment">
+     <p>Alternately, CDS may be represented as a block arrow:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e2347" title="#CDSGlyph">CDSGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e2347" title="#CDSGlyph">CDSGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cds/cds-arrow-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e707" class="entity">
+    <a name="#ChromosomalLocusGlyph"></a>
+    <h3>ChromosomalLocusGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ChromosomalLocusGlyph</p>
+    <div class="comment">
+     <p>The glyph to indicate integration into a chromosome is an S-shaped curve of the backbone, suggesting something that might be part of a larger looping structure:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000830">s o:0000830</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/chromosomal-locus/chromosomal-locus-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2198" class="entity">
+    <a name="#CircularPlasmidGlyph"></a>
+    <h3>CircularPlasmidGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #CircularPlasmidGlyph</p>
+    <div class="comment">
+     <p>The glyph to indicate embedding in a plasmid is a turn of the backbone indicating its circular structure:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0002211">s o:0002211</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/circular-plasmid/circular-plasmid-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1603" class="entity">
+    <a name="#CleavageSiteGlyph"></a>
+    <h3>CleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #CleavageSiteGlyph</p>
+    <div class="comment">
+     <p>Cleavage Site is a "stem-top" glyph for describing small sites. In this system:</p> 
+     <ul> 
+      <li>the top glyph indicates the type of site (e.g., Cleavage Site)</li> 
+      <li>the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)</li> 
+     </ul> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001688">s o:0001688</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001687">s o:0001687</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001977">s o:0001977</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001956">s o:0001956</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1676" title="#DnaCleavageSiteGlyph">DnaCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1798" title="#ProteinCleavageSiteGlyph">ProteinCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1742" title="#RnaCleavageSiteGlyph">RnaCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cleavage-site/stem-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3301" class="entity">
+    <a name="#ComplexGlyph"></a>
+    <h3>ComplexGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ComplexGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex. For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000253">s b o:0000253</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3417" title="#ComplexGlyphAlternative">ComplexGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3375" title="#ProteinGuideRnaComplexGlyph">ProteinGuideRnaComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3396" title="#ProteinProteinComplexGlyph">ProteinProteinComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3353" title="#ProteinSmallMoleculeComplexGlyph">ProteinSmallMoleculeComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3417" class="entity">
+    <a name="#ComplexGlyphAlternative"></a>
+    <h3>ComplexGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ComplexGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is the SBGN "cornered rectangle" glyph for a complex:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3353" title="#ProteinSmallMoleculeComplexGlyph">ProteinSmallMoleculeComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3375" title="#ProteinGuideRnaComplexGlyph">ProteinGuideRnaComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3396" title="#ProteinProteinComplexGlyph">ProteinProteinComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/complex/complex-sbgn-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2259" class="entity">
+    <a name="#CompositeGlyph"></a>
+    <h3>CompositeGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #CompositeGlyph</p>
+    <div class="comment">
+     <p>The glyph for Composite is dashed "expanding lines" connecting any "base" glyph representing the more abstract composite (e.g., Omitted Detail, or Terminator, or Promoter) to a backbone diagramming the contents of the composite. Note the bounding box is indicating the location of the base glyph, and would scale with that glyph.</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/composite/composite-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e249" class="entity">
+    <a name="#ControlGlyph"></a>
+    <h3>ControlGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ControlGlyph</p>
+    <div class="comment">
+     <p>An arrow with a diamond head:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000168">s b o:0000168</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/Interactions/control/control-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e127" class="entity">
+    <a name="#DegradationGlyph"></a>
+    <h3>DegradationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DegradationGlyph</p>
+    <div class="comment">
+     <p>Identical to the Process glyph, but with an empty set at the sink of the arrowhead:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000179">s b o:0000179</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/Interactions/degradation/degradation-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e952" class="entity">
+    <a name="#DissociationGlyph"></a>
+    <h3>DissociationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DissociationGlyph</p>
+    <div class="comment">
+     <p>An circular node inside another circle</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000180">s b o:0000180</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/InteractionNodes/dissociation/dissociation-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1091" class="entity">
+    <a name="#DnaBiopolymerLocationGlyph"></a>
+    <h3>DnaBiopolymerLocationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DnaBiopolymerLocationGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED top for Biopolymer Location is a circle, reminiscent of a pin stuck into a location (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001236">s o:0001236</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1013" title="#BiopolymerLocationGlyph">BiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1290" title="#DnaBiopolymerLocationGlyphAlternative">DnaBiopolymerLocationGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-dna-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1290" class="entity">
+    <a name="#DnaBiopolymerLocationGlyphAlternative"></a>
+    <h3>DnaBiopolymerLocationGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DnaBiopolymerLocationGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is to have "nothing" for the top, just an extended version of the stem itself (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1091" title="#DnaBiopolymerLocationGlyph">DnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e1091" title="#DnaBiopolymerLocationGlyph">DnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-dna-no-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1676" class="entity">
+    <a name="#DnaCleavageSiteGlyph"></a>
+    <h3>DnaCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DnaCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The Cleavage Site top is an "X" suggesting slicing on top of a stem connecting to the backbone at the point where cleavage will occur (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001688">s o:0001688</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001687">s o:0001687</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1603" title="#CleavageSiteGlyph">CleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cleavage-site/nuclease-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e442" class="entity">
+    <a name="#DnaStabilityElementGlyph"></a>
+    <h3>DnaStabilityElementGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #DnaStabilityElementGlyph</p>
+    <div class="comment">
+     <p>The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e371" title="#StabilityElementGlyph">StabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stability-element/dna-stability-element-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3212" class="entity">
+    <a name="#Double-StrandedNucleicAcidGlyph"></a>
+    <h3>Double-StrandedNucleicAcidGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Double-StrandedNucleicAcidGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for dsNA is a double-helix:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000251">s b o:0000251</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3273" title="#Double-StrandedNucleicAcidGlyphAlternative">Double-StrandedNucleicAcidGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/dsNA/dsNA-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3273" class="entity">
+    <a name="#Double-StrandedNucleicAcidGlyphAlternative"></a>
+    <h3>Double-StrandedNucleicAcidGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Double-StrandedNucleicAcidGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is the SBGN "nucleic acid" half-round rectangle:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3212" title="#Double-StrandedNucleicAcidGlyph">Double-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e3212" title="#Double-StrandedNucleicAcidGlyph">Double-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/dsNA/na-sbgn-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2586" class="entity">
+    <a name="#EngineeredRegionGlyph"></a>
+    <h3>EngineeredRegionGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #EngineeredRegionGlyph</p>
+    <div class="comment">
+     <p>Engineered Region is represented by a plain rectangle suggesting a blank slate to be written upon:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000804">s o:0000804</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/engineered-region/engineered-region-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3794" class="entity">
+    <a name="#FivePrimeOverhangSiteGlyph"></a>
+    <h3>FivePrimeOverhangSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #FivePrimeOverhangSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' overhang site glyph is an image of a strand of DNA extended on the 5' edge of its forward strand, and the complementary 3' Overhang Site glyph is a reflection of the 5' Overhang Site (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001932">s o:0001932</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3731" title="#OverhangSiteGlyph">OverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3904" title="#FivePrimeOverhangSiteGlyphAlternative">FivePrimeOverhangSiteGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/overhang/five-prime-overhang-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3904" class="entity">
+    <a name="#FivePrimeOverhangSiteGlyphAlternative"></a>
+    <h3>FivePrimeOverhangSiteGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #FivePrimeOverhangSiteGlyphAlternative</p>
+    <div class="comment">
+     <p>With a double-stranded backbone (in order: five-prime double stranded, three-prime double stranded):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3794" title="#FivePrimeOverhangSiteGlyph">FivePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e3794" title="#FivePrimeOverhangSiteGlyph">FivePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/overhang/five-prime-overhang-specification-doublestrand.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1436" class="entity">
+    <a name="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph"></a>
+    <h3>FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' sticky restriction site glyph is an image of the lines along which two strands of DNA will be cut into 5' sticky ends, and the complementary 3' Sticky Restriction Site glyph is a reflection of the 5' Sticky Restriction Site. Vertical position with respect to the backbone is in a break in a single backbone (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001975">s o:0001975</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1374" title="#StickyEndRestrictionEnzymeCleavageSiteGlyph">StickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1547" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/sticky-restriction-site/five-prime-sticky-restriction-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1547" class="entity">
+    <a name="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative"></a>
+    <h3>FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</p>
+    <div class="comment">
+     <p>and between strands of a double backbone (in order: five-prime double stranded, three-prime double stranded):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1436" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e1436" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/sticky-restriction-site/five-prime-sticky-restriction-site-specification-doublestrand.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e8" class="entity">
+    <a name="#Glyph"></a>
+    <h3>Glyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Glyph</p>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e646" title="#AptamerGlyph">AptamerGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e4021" title="#AssemblyScarGlyph">AssemblyScarGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e891" title="#AssociationGlyph">AssociationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1013" title="#BiopolymerLocationGlyph">BiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2708" title="#BluntRestrictionSiteGlyph">BluntRestrictionSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2347" title="#CDSGlyph">CDSGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e707" title="#ChromosomalLocusGlyph">ChromosomalLocusGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2198" title="#CircularPlasmidGlyph">CircularPlasmidGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1603" title="#CleavageSiteGlyph">CleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2259" title="#CompositeGlyph">CompositeGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e249" title="#ControlGlyph">ControlGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e127" title="#DegradationGlyph">DegradationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e952" title="#DissociationGlyph">DissociationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3212" title="#Double-StrandedNucleicAcidGlyph">Double-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2586" title="#EngineeredRegionGlyph">EngineeredRegionGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e65" title="#InhibitionGlyph">InhibitionGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2464" title="#InsulatorGlyph">InsulatorGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2286" title="#IntronGlyph">IntronGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3123" title="#MacromoleculeGlyph">MacromoleculeGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2437" title="#NoGlyphAssignedGlyph">NoGlyphAssignedGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2036" title="#Non-CodingRNAGeneGlyph">Non-CodingRNAGeneGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2770" title="#OmittedDetailGlyph">OmittedDetailGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3050" title="#OperatorBindingSiteGlyph">OperatorBindingSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1853" title="#OriginofReplicationGlyph">OriginofReplicationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2525" title="#OriginofTransferGlyph">OriginofTransferGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3731" title="#OverhangSiteGlyph">OverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e830" title="#PolyASiteGlyph">PolyASiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2647" title="#PolypeptideRegionGlyph">PolypeptideRegionGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1914" title="#PrimerBindingSiteGlyph">PrimerBindingSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e310" title="#ProcessGlyph">ProcessGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3960" title="#PromoterSiteGlyph">PromoterSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3530" title="#ProteinGlyph">ProteinGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e585" title="#RibosomeEntrySiteGlyph">RibosomeEntrySiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e768" title="#SignatureGlyph">SignatureGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3441" title="#Single-StrandedNucleicAcidGlyph">Single-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2989" title="#SpecificRecombinationSiteGlyph">SpecificRecombinationSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e371" title="#StabilityElementGlyph">StabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1374" title="#StickyEndRestrictionEnzymeCleavageSiteGlyph">StickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e188" title="#StimulationGlyph">StimulationGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2797" title="#StopSiteGlyph">StopSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1975" title="#TerminatorGlyph">TerminatorGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2108" title="#UnspecifiedGlyph">UnspecifiedGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3686" class="entity">
+    <a name="#HexagonSimpleChemicalGlyph"></a>
+    <h3>HexagonSimpleChemicalGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #HexagonSimpleChemicalGlyph</p>
+    <div class="comment">
+     <p>The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3707" title="#SimpleChemicalGlyphAlternative">SimpleChemicalGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-triangle-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e65" class="entity">
+    <a name="#InhibitionGlyph"></a>
+    <h3>InhibitionGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #InhibitionGlyph</p>
+    <div class="comment">
+     <p>An arrow whose head is a bar, suggesting blocking:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000169">s b o:0000169</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/Interactions/inhibition/inhibition-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2464" class="entity">
+    <a name="#InsulatorGlyph"></a>
+    <h3>InsulatorGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #InsulatorGlyph</p>
+    <div class="comment">
+     <p>The insulator glyph is a box inside another box that isolates it from its environment:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000627">s o:0000627</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/insulator/insulator-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2286" class="entity">
+    <a name="#IntronGlyph"></a>
+    <h3>IntronGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #IntronGlyph</p>
+    <div class="comment">
+     <p>An intron is designated by a boundaries interrupting CDS, each side having a two-triangle "torn out" edges, suggesting removal from an enclosing coding sequence:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000188">s o:0000188</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/intron/intron-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3123" class="entity">
+    <a name="#MacromoleculeGlyph"></a>
+    <h3>MacromoleculeGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #MacromoleculeGlyph</p>
+    <div class="comment">
+     <p>The macromolecule glyph is a rounded rectangle, as used in SBGN:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000245">s b o:0000245</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3184" title="#MacromoleculeGlyphAlternative">MacromoleculeGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/macromolecule/macromolecule-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3184" class="entity">
+    <a name="#MacromoleculeGlyphAlternative"></a>
+    <h3>MacromoleculeGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #MacromoleculeGlyphAlternative</p>
+    <div class="comment">
+     <p>A deprecated alternative is a diagonally offset union of a large and small circle, intended to invoke the complex shapes of protein. It is now deprecated for being too similar to a yeast cell "shmoo" symbol:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3123" title="#MacromoleculeGlyph">MacromoleculeGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e3123" title="#MacromoleculeGlyph">MacromoleculeGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/macromolecule/macromolecule-deprecated-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2437" class="entity">
+    <a name="#NoGlyphAssignedGlyph"></a>
+    <h3>NoGlyphAssignedGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #NoGlyphAssignedGlyph</p>
+    <div class="comment">
+     <p>When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.</p> 
+     <p>An alternative option is to have a bracket, suggesting information that needs to be filled in:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/no-glyph-assigned/no-glyph-assigned-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2036" class="entity">
+    <a name="#Non-CodingRNAGeneGlyph"></a>
+    <h3>Non-CodingRNAGeneGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Non-CodingRNAGeneGlyph</p>
+    <div class="comment">
+     <p>The non-coding RNA glyph is a rectangular box whose top is a single-stranded RNA "wiggle":</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001263">s o:0001263</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000834">s o:0000834</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/non-coding-rna/ncrna-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2770" class="entity">
+    <a name="#OmittedDetailGlyph"></a>
+    <h3>OmittedDetailGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #OmittedDetailGlyph</p>
+    <div class="comment">
+     <p>The Omitted Detail glyph is a break in the backbone with an ellipsis to indicate that material would normally be in that location:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/omitted-detail/omitted-detail-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3050" class="entity">
+    <a name="#OperatorBindingSiteGlyph"></a>
+    <h3>OperatorBindingSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #OperatorBindingSiteGlyph</p>
+    <div class="comment">
+     <p>The operator glyph is an open "cup" suggesting a binding location:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000057">s o:0000057</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000409">s o:0000409</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/operator/operator-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1853" class="entity">
+    <a name="#OriginofReplicationGlyph"></a>
+    <h3>OriginofReplicationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #OriginofReplicationGlyph</p>
+    <div class="comment">
+     <p>The origin of replication glyph is a circle suggesting the "bulge" opened in a piece of circular DNA when replication is beginning:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000296">s o:0000296</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/origin-of-replication/origin-of-replication-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2525" class="entity">
+    <a name="#OriginofTransferGlyph"></a>
+    <h3>OriginofTransferGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #OriginofTransferGlyph</p>
+    <div class="comment">
+     <p>The origin of transfer glyph is circular like origin of replication, but also includes an outbound arrow:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000724">s o:0000724</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/origin-of-transfer/origin-of-transfer-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3731" class="entity">
+    <a name="#OverhangSiteGlyph"></a>
+    <h3>OverhangSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #OverhangSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' overhang site glyph is an image of a strand of DNA extended on the 5' edge of its forward strand, and the complementary 3' Overhang Site glyph is a reflection of the 5' Overhang Site (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001932">s o:0001932</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001933">s o:0001933</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3794" title="#FivePrimeOverhangSiteGlyph">FivePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3849" title="#ThreePrimeOverhangSiteGlyph">ThreePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3665" class="entity">
+    <a name="#PentagonSimpleChemicalGlyph"></a>
+    <h3>PentagonSimpleChemicalGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #PentagonSimpleChemicalGlyph</p>
+    <div class="comment">
+     <p>The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3707" title="#SimpleChemicalGlyphAlternative">SimpleChemicalGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-triangle-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e830" class="entity">
+    <a name="#PolyASiteGlyph"></a>
+    <h3>PolyASiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #PolyASiteGlyph</p>
+    <div class="comment">
+     <p>The polyA site glyph is a sequence of As sitting atop the backbone:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000553">s o:0000553</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/polyA/polyA-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2647" class="entity">
+    <a name="#PolypeptideRegionGlyph"></a>
+    <h3>PolypeptideRegionGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #PolypeptideRegionGlyph</p>
+    <div class="comment">
+     <p>A polypeptide region inside a coding sequence is indicated by insertion of triangular boundaries inside of the CDS, parallel to the 3' side of the CDS. This will produce chevron segments on the 3' side and a CDS shape on the 5' side:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000839">s o:0000839</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/polypeptide-region/polypeptide-region-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1914" class="entity">
+    <a name="#PrimerBindingSiteGlyph"></a>
+    <h3>PrimerBindingSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #PrimerBindingSiteGlyph</p>
+    <div class="comment">
+     <p>The primer binding site glyph is a line with a bent end suggesting a partially complementary strand of nucleic acid attaching to the backbone:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0005850">s o:0005850</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/primer-binding-site/primer-binding-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e310" class="entity">
+    <a name="#ProcessGlyph"></a>
+    <h3>ProcessGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProcessGlyph</p>
+    <div class="comment">
+     <p>A square node:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000375">s b o:0000375</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/InteractionNodes/process/process-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3960" class="entity">
+    <a name="#PromoterSiteGlyph"></a>
+    <h3>PromoterSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #PromoterSiteGlyph</p>
+    <div class="comment">
+     <p>The promoter glyph is a bent arrow pointing forward, suggesting the action of transcription from its transcription start site:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000167">s o:0000167</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/promoter/promoter-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1224" class="entity">
+    <a name="#ProteinBiopolymerLocationGlyph"></a>
+    <h3>ProteinBiopolymerLocationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinBiopolymerLocationGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED top for Biopolymer Location is a circle, reminiscent of a pin stuck into a location (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001237">s o:0001237</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1013" title="#BiopolymerLocationGlyph">BiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1346" title="#ProteinBiopolymerLocationGlyphAlternative">ProteinBiopolymerLocationGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-protein-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1346" class="entity">
+    <a name="#ProteinBiopolymerLocationGlyphAlternative"></a>
+    <h3>ProteinBiopolymerLocationGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinBiopolymerLocationGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is to have "nothing" for the top, just an extended version of the stem itself (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1224" title="#ProteinBiopolymerLocationGlyph">ProteinBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e1224" title="#ProteinBiopolymerLocationGlyph">ProteinBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-protein-no-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1798" class="entity">
+    <a name="#ProteinCleavageSiteGlyph"></a>
+    <h3>ProteinCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The Cleavage Site top is an "X" suggesting slicing on top of a stem connecting to the backbone at the point where cleavage will occur (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001956">s o:0001956</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1603" title="#CleavageSiteGlyph">CleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cleavage-site/protease-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3530" class="entity">
+    <a name="#ProteinGlyph"></a>
+    <h3>ProteinGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinGlyph</p>
+    <div class="comment">
+     <p>The protein glyph is a "pill" shape with a rectangular body and rounded ends, representing the compact space-filling mass of many proteins:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000252">s b o:0000252</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/protein/protein-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3375" class="entity">
+    <a name="#ProteinGuideRnaComplexGlyph"></a>
+    <h3>ProteinGuideRnaComplexGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinGuideRnaComplexGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex. For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3417" title="#ComplexGlyphAlternative">ComplexGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/complex/complex-ps-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3396" class="entity">
+    <a name="#ProteinProteinComplexGlyph"></a>
+    <h3>ProteinProteinComplexGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinProteinComplexGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex. For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3417" title="#ComplexGlyphAlternative">ComplexGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/complex/complex-ps-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3353" class="entity">
+    <a name="#ProteinSmallMoleculeComplexGlyph"></a>
+    <h3>ProteinSmallMoleculeComplexGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinSmallMoleculeComplexGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecules comprising the complex. For example, a protein bound to a simple chemical, a guide RNA, or another protein (in order:protein-small molecule, protein-guide RNA, protein-protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3301" title="#ComplexGlyph">ComplexGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3417" title="#ComplexGlyphAlternative">ComplexGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/complex/complex-ps-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e519" class="entity">
+    <a name="#ProteinStabilityElementGlyph"></a>
+    <h3>ProteinStabilityElementGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProteinStabilityElementGlyph</p>
+    <div class="comment">
+     <p>The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001955">s o:0001955</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001546">s o:0001546</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e371" title="#StabilityElementGlyph">StabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stability-element/protein-stability-element-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e585" class="entity">
+    <a name="#RibosomeEntrySiteGlyph"></a>
+    <h3>RibosomeEntrySiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #RibosomeEntrySiteGlyph</p>
+    <div class="comment">
+     <p>The ribosome entry promoter glyph is a half-ovoid sitting on the backbone, suggesting an attached ribosome beginning transcription:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000139">s o:0000139</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/ribosome-entry-site/ribosome-entry-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1157" class="entity">
+    <a name="#RnaBiopolymerLocationGlyph"></a>
+    <h3>RnaBiopolymerLocationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #RnaBiopolymerLocationGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED top for Biopolymer Location is a circle, reminiscent of a pin stuck into a location (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000699">s o:0000699</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001236">s o:0001236</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1013" title="#BiopolymerLocationGlyph">BiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1318" title="#RnaBiopolymerLocationGlyphAlternative">RnaBiopolymerLocationGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-rna-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1318" class="entity">
+    <a name="#RnaBiopolymerLocationGlyphAlternative"></a>
+    <h3>RnaBiopolymerLocationGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #RnaBiopolymerLocationGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is to have "nothing" for the top, just an extended version of the stem itself (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1157" title="#RnaBiopolymerLocationGlyph">RnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e1157" title="#RnaBiopolymerLocationGlyph">RnaBiopolymerLocationGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/location/location-rna-no-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1742" class="entity">
+    <a name="#RnaCleavageSiteGlyph"></a>
+    <h3>RnaCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #RnaCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The Cleavage Site top is an "X" suggesting slicing on top of a stem connecting to the backbone at the point where cleavage will occur (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001977">s o:0001977</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1603" title="#CleavageSiteGlyph">CleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/cleavage-site/ribonuclease-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e464" class="entity">
+    <a name="#RnaStabilityElementGlyph"></a>
+    <h3>RnaStabilityElementGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #RnaStabilityElementGlyph</p>
+    <div class="comment">
+     <p>The top for a Stability Element is a pentagon suggesting the shape of a shield, on top of a stem connecting to the backbone at the point where the stability element is located (in order: DNA, RNA, Protein):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001979">s o:0001979</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e371" title="#StabilityElementGlyph">StabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stability-element/rna-stability-element-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e768" class="entity">
+    <a name="#SignatureGlyph"></a>
+    <h3>SignatureGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #SignatureGlyph</p>
+    <div class="comment">
+     <p>The signature glyph is a box sitting atop the backbone with an X and line inside it, suggesting a signature on a form:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001978">s o:0001978</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/signature/signature-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3592" class="entity">
+    <a name="#SimpleChemicalGlyph"></a>
+    <h3>SimpleChemicalGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #SimpleChemicalGlyph</p>
+    <div class="comment">
+     <p>The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000247">s b o:0000247</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3686" title="#HexagonSimpleChemicalGlyph">HexagonSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3665" title="#PentagonSimpleChemicalGlyph">PentagonSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3707" title="#SimpleChemicalGlyphAlternative">SimpleChemicalGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e3644" title="#TriangleSimpleChemicalGlyph">TriangleSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3707" class="entity">
+    <a name="#SimpleChemicalGlyphAlternative"></a>
+    <h3>SimpleChemicalGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #SimpleChemicalGlyphAlternative</p>
+    <div class="comment">
+     <p>Alternately, a simple chemical may also be represented a small circle:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3644" title="#TriangleSimpleChemicalGlyph">TriangleSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3665" title="#PentagonSimpleChemicalGlyph">PentagonSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e3686" title="#HexagonSimpleChemicalGlyph">HexagonSimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-circle-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3441" class="entity">
+    <a name="#Single-StrandedNucleicAcidGlyph"></a>
+    <h3>Single-StrandedNucleicAcidGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Single-StrandedNucleicAcidGlyph</p>
+    <div class="comment">
+     <p>The RECOMMENDED glyph for ssNA is a wiggly line:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000250">s b o:0000250</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3502" title="#Single-StrandedNucleicAcidGlyphAlternative">Single-StrandedNucleicAcidGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/ssNA/ssNA-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3502" class="entity">
+    <a name="#Single-StrandedNucleicAcidGlyphAlternative"></a>
+    <h3>Single-StrandedNucleicAcidGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #Single-StrandedNucleicAcidGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is the SBGN "nucleic acid" half-round rectangle:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3441" title="#Single-StrandedNucleicAcidGlyph">Single-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e3441" title="#Single-StrandedNucleicAcidGlyph">Single-StrandedNucleicAcidGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/ssNA/na-sbgn-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2989" class="entity">
+    <a name="#SpecificRecombinationSiteGlyph"></a>
+    <h3>SpecificRecombinationSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #SpecificRecombinationSiteGlyph</p>
+    <div class="comment">
+     <p>The specific recombination site glyph is a triangle, centered on the backbone, as has appeared in a number of recombinase circuit papers:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000299">s o:0000299</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/specific-recombination-site/specific-recombination-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e371" class="entity">
+    <a name="#StabilityElementGlyph"></a>
+    <h3>StabilityElementGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #StabilityElementGlyph</p>
+    <div class="comment">
+     <p>Stability Element is a "stem-top" glyph for describing small sites. In this system:</p> 
+     <ul> 
+      <li>the top glyph indicates the type of site (e.g., Stability Element)</li> 
+      <li>the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)</li> 
+     </ul> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001979">s o:0001979</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001955">s o:0001955</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001546">s o:0001546</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e442" title="#DnaStabilityElementGlyph">DnaStabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e519" title="#ProteinStabilityElementGlyph">ProteinStabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e464" title="#RnaStabilityElementGlyph">RnaStabilityElementGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stability-element/stem-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1374" class="entity">
+    <a name="#StickyEndRestrictionEnzymeCleavageSiteGlyph"></a>
+    <h3>StickyEndRestrictionEnzymeCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #StickyEndRestrictionEnzymeCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' sticky restriction site glyph is an image of the lines along which two strands of DNA will be cut into 5' sticky ends, and the complementary 3' Sticky Restriction Site glyph is a reflection of the 5' Sticky Restriction Site. Vertical position with respect to the backbone is in a break in a single backbone (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001975">s o:0001975</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001976">s o:0001976</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1436" title="#FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">FivePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e1492" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e188" class="entity">
+    <a name="#StimulationGlyph"></a>
+    <h3>StimulationGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #StimulationGlyph</p>
+    <div class="comment">
+     <p>An arrow with an head that is empty or of a different color than the line:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000170">s b o:0000170</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/Interactions/stimulation/stimulation-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2797" class="entity">
+    <a name="#StopSiteGlyph"></a>
+    <h3>StopSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #StopSiteGlyph</p>
+    <div class="comment">
+     <p>Transcription/Translation End Point is a "stem-top" glyph for describing small sites. In this system:</p> 
+     <ul> 
+      <li>the top glyph indicates the type of site (e.g., Biopolymer Location)</li> 
+      <li>the stem glyph indicates whether the site affects DNA, RNA, or protein (respectively: straight, wavy, or looped)</li> 
+     </ul> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000616">s o:0000616</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000319">s o:0000319</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000327">s o:0000327</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e2868" title="#TranscriptionStopSiteGlyph">TranscriptionStopSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#d4e2923" title="#TranslationStopSiteGlyph">TranslationStopSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stop-site/stem-top-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1975" class="entity">
+    <a name="#TerminatorGlyph"></a>
+    <h3>TerminatorGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #TerminatorGlyph</p>
+    <div class="comment">
+     <p>The terminator is a T sitting atop the backbone:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000141">s o:0000141</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/terminator/terminator-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3849" class="entity">
+    <a name="#ThreePrimeOverhangSiteGlyph"></a>
+    <h3>ThreePrimeOverhangSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ThreePrimeOverhangSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' overhang site glyph is an image of a strand of DNA extended on the 5' edge of its forward strand, and the complementary 3' Overhang Site glyph is a reflection of the 5' Overhang Site (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001933">s o:0001933</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3731" title="#OverhangSiteGlyph">OverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3932" title="#ThreePrimeOverhangSiteGlyphAlternative">ThreePrimeOverhangSiteGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/overhang/three-prime-overhang-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3932" class="entity">
+    <a name="#ThreePrimeOverhangSiteGlyphAlternative"></a>
+    <h3>ThreePrimeOverhangSiteGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ThreePrimeOverhangSiteGlyphAlternative</p>
+    <div class="comment">
+     <p>With a double-stranded backbone (in order: five-prime double stranded, three-prime double stranded):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3849" title="#ThreePrimeOverhangSiteGlyph">ThreePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e3849" title="#ThreePrimeOverhangSiteGlyph">ThreePrimeOverhangSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/overhang/three-prime-overhang-specification-doublestrand.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1492" class="entity">
+    <a name="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph"></a>
+    <h3>ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</p>
+    <div class="comment">
+     <p>The 5' sticky restriction site glyph is an image of the lines along which two strands of DNA will be cut into 5' sticky ends, and the complementary 3' Sticky Restriction Site glyph is a reflection of the 5' Sticky Restriction Site. Vertical position with respect to the backbone is in a break in a single backbone (in order: five-prime, three-prime):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0001976">s o:0001976</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1374" title="#StickyEndRestrictionEnzymeCleavageSiteGlyph">StickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e1575" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/sticky-restriction-site/three-prime-sticky-restriction-site-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e1575" class="entity">
+    <a name="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative"></a>
+    <h3>ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyphAlternative</p>
+    <div class="comment">
+     <p>and between strands of a double backbone (in order: five-prime double stranded, three-prime double stranded):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e1492" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e1492" title="#ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph">ThreePrimeStickyEndRestrictionEnzymeCleavageSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/sticky-restriction-site/three-prime-sticky-restriction-site-specification-doublestrand.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2868" class="entity">
+    <a name="#TranscriptionStopSiteGlyph"></a>
+    <h3>TranscriptionStopSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #TranscriptionStopSiteGlyph</p>
+    <div class="comment">
+     <p>The Transcription/Translation End Point top is an asterisk in a circle (in order: transcription, translation):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000616">s o:0000616</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e2797" title="#StopSiteGlyph">StopSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stop-site/transcription-end-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2923" class="entity">
+    <a name="#TranslationStopSiteGlyph"></a>
+    <h3>TranslationStopSiteGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #TranslationStopSiteGlyph</p>
+    <div class="comment">
+     <p>The Transcription/Translation End Point top is an asterisk in a circle (in order: transcription, translation):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000319">s o:0000319</span> 
+      <span class="logic">or</span> 
+      <span class="dotted" title="http://identifiers.org/so/SO:0000327">s o:0000327</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e2797" title="#StopSiteGlyph">StopSiteGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/stop-site/translation-end-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e3644" class="entity">
+    <a name="#TriangleSimpleChemicalGlyph"></a>
+    <h3>TriangleSimpleChemicalGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #TriangleSimpleChemicalGlyph</p>
+    <div class="comment">
+     <p>The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e3592" title="#SimpleChemicalGlyph">SimpleChemicalGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e3707" title="#SimpleChemicalGlyphAlternative">SimpleChemicalGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/simple-chemical/simple-chemical-triangle-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2108" class="entity">
+    <a name="#UnspecifiedGlyph"></a>
+    <h3>UnspecifiedGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #UnspecifiedGlyph</p>
+    <div class="comment">
+     <p>Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      is equivalent to
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup> 
+      <span class="logic">and</span> (
+      <a href="#d4e16" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span> 
+      <span class="logic">and</span> (
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000285">s b o:0000285</span>))
+     </dd>
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e8" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#d4e2170" title="#UnspecifiedGlyphAlternative">UnspecifiedGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/unspecified/replacement-glyph-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="d4e2170" class="entity">
+    <a name="#UnspecifiedGlyphAlternative"></a>
+    <h3>UnspecifiedGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #UnspecifiedGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is the SBGN "generic species" glyph, which is an ellipse:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#d4e2108" title="#UnspecifiedGlyph">UnspecifiedGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#d4e2108" title="#UnspecifiedGlyph">UnspecifiedGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="https://github.com/SynBioDex/SBOL-visual/raw/master/Glyphs/FunctionalComponents/unspecified/generic-sbgn-specification.png">
+     </dd>
+    </dl>
+   </div>
+  </div>
+  <div id="objectproperties">
+   <h2>Object Properties</h2>
+   <ul class="hlist">
+    <li><a href="#d4e22" title="#hasGlyph">hasGlyph</a></li>
+    <li><a href="#d4e47" title="#isAlternativeOf">isAlternativeOf</a></li>
+    <li><a href="#d4e16" title="#isGlyphOf">isGlyphOf</a></li>
+   </ul>
+   <div id="d4e22" class="entity">
+    <a name="#hasGlyph"></a>
+    <h3>hasGlyph<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #hasGlyph</p>
+   </div>
+   <div id="d4e47" class="entity">
+    <a name="#isAlternativeOf"></a>
+    <h3>isAlternativeOf<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #isAlternativeOf</p>
+   </div>
+   <div id="d4e16" class="entity">
+    <a name="#isGlyphOf"></a>
+    <h3>isGlyphOf<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #isGlyphOf</p>
+   </div>
+  </div>
+  <div id="annotationproperties">
+   <h2>Annotation Properties</h2>
+   <ul class="hlist">
+    <li><a href="#d4e28" title="#defaultGlyph">defaultGlyph</a></li>
+    <li><a href="#d4e35" title="#glyphDirectory">glyphDirectory</a></li>
+    <li><a href="#d4e59" title="#notes">notes</a></li>
+    <li><a href="#d4e53" title="#prototypicalExample">prototypicalExample</a></li>
+    <li><a href="#d4e41" title="#recommended">recommended</a></li>
+   </ul>
+   <div id="d4e28" class="entity">
+    <a name="#defaultGlyph"></a>
+    <h3>defaultGlyph<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #defaultGlyph</p>
+   </div>
+   <div id="d4e35" class="entity">
+    <a name="#glyphDirectory"></a>
+    <h3>glyphDirectory<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #glyphDirectory</p>
+   </div>
+   <div id="d4e59" class="entity">
+    <a name="#notes"></a>
+    <h3>notes<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #notes</p>
+   </div>
+   <div id="d4e53" class="entity">
+    <a name="#prototypicalExample"></a>
+    <h3>prototypicalExample<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #prototypicalExample</p>
+   </div>
+   <div id="d4e41" class="entity">
+    <a name="#recommended"></a>
+    <h3>recommended<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
+    <p><strong>IRI:</strong> #recommended</p>
+   </div>
+  </div>
+  <div id="namespacedeclarations">
+   <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <dl>
+    <dt>
+     <em>default namespace</em>
+    </dt>
+    <dd>
+     http://sbolstandard.org/visual#
+    </dd>
+    <dt>
+     owl
+    </dt>
+    <dd>
+     http://www.w3.org/2002/07/owl#
+    </dd>
+    <dt>
+     rdf
+    </dt>
+    <dd>
+     http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    </dd>
+    <dt>
+     rdfs
+    </dt>
+    <dd>
+     http://www.w3.org/2000/01/rdf-schema#
+    </dd>
+    <dt>
+     sbo
+    </dt>
+    <dd>
+     http://identifiers.org/sbo/
+    </dd>
+    <dt>
+     sbol-owl
+    </dt>
+    <dd>
+     https://dissys.github.io/sbol-owl/
+    </dd>
+    <dt>
+     sbolstandard-org
+    </dt>
+    <dd>
+     http://sbolstandard.org/
+    </dd>
+    <dt>
+     so
+    </dt>
+    <dd>
+     http://identifiers.org/so/
+    </dd>
+    <dt>
+     v2
+    </dt>
+    <dd>
+     http://sbols.org/v2#
+    </dd>
+    <dt>
+     xsd
+    </dt>
+    <dd>
+     http://www.w3.org/2001/XMLSchema#
+    </dd>
+   </dl>
+  </div>
+  <p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a href="http://www.essepuntato.it/">Silvio Peroni</a>.</p> 
+ </body>
+</html>
