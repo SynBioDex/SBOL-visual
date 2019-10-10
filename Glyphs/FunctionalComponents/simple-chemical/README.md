@@ -4,7 +4,7 @@
 SBO:0000247 Simple chemical
 
 ## Recommended Glyph and Alternates
-The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon:
+The simple chemical glyph is any one of three small polygonal shapes, triangle, pentagon, or hexagon (in order: triangle, pentagon, hexagon):
 
 ![glyph specification](simple-chemical-triangle-specification.png)
 ![glyph specification](simple-chemical-pentagon-specification.png)
