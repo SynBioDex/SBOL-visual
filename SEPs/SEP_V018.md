@@ -42,8 +42,10 @@ where Appendix A.3 is the collection of Interaction glyphs, and Figure 19 has ex
 
 > (a) gRNA stimulating the dCas9 repression process (an alternative Figure~\ref{exa:4d}(e) representation),  
 > ![Example A](img/SEPV018-4e-stimulate.png)
+> 
 > (b) the same but omitting the process node.
 > ![Example B](img/SEPV018-4e-nodeless.png)
+> 
 > The process node MUST NOT be omitted when there are more (c) or less (d) than one incoming and one outgoing edge.
 > ![Example C](img/SEPV018-4e-multiarrow.png)
 ![Example D](img/SEPV018-4e-onearrow.png)
