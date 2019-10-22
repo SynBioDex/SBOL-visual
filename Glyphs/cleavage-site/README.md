@@ -5,7 +5,8 @@ SO:0001688 (Restriction Enzyme Cleavage Junction), SO:0001687 (Restriction Enzym
 
 SO:0001977 (Ribonuclease Site)
 
-SO:0001956 (Protease Site)
+SO:0001956 (Protease Site), SO:0002224 (2A Self-Cleaving Peptide Region)
+
 ## Recommended Glyph and Alternates
 Cleavage Site is a "stem-top" glyph for describing small sites. In this system:
 
