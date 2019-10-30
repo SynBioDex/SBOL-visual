@@ -1,11 +1,11 @@
 # Stability Element
 
 ## Associated SO term(s)
-SO:0001955, SO:0001546 (Protein Stability Element)
+*No SO term is currently associated with DNA stability.*
 
 SO:0001979 (RNA Stability Element)
 
-*No SO term is currently associated with DNA stability.*
+SO:0001955, SO:0001546 (Protein Stability Element)
 
 ## Recommended Glyph and Alternates
 Stability Element is a "stem-top" glyph for describing small sites. In this system:
