@@ -3,6 +3,10 @@
 ## Associated SBO term(s)
 SBO:0000375 Process
 
+Head: SBO:0000011 Product
+
+Tail: SBO:0000010 Reactant, SBO:0000645 Template (Genetic Production only)
+
 ## Recommended Glyph and Alternates
 An arrow with a filled head the same color as the line:
 
