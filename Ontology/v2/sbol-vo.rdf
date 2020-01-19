@@ -3,10 +3,10 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="http://sbolstandard.org/visual"
-         xmlns="http://sbolstandard.org/visual#">
+         xml:base="http://sbols.org/visual/v2"
+         xmlns="http://sbols.org/visual/v2#">
 
-<owl:Ontology rdf:about="http://sbolstandard.org/visual">
+<owl:Ontology rdf:about="http://sbols.org/visual/v2">
   <owl:imports rdf:resource="https://dissys.github.io/sbol-owl/sbol.rdf"/>
 </owl:Ontology>
 
