@@ -3,6 +3,10 @@
 ## Associated SBO term(s)
 SBO:0000180 Dissociation
 
+Incoming: SBO:0000010 Reactant
+
+Outgoing: SBO:0000011 Product
+
 ## Recommended Glyph and Alternates
 An circular node inside another circle
 
