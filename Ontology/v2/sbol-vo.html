@@ -83,6 +83,7 @@
     <li><a href="#MacromoleculeGlyph" title="#MacromoleculeGlyph">MacromoleculeGlyph</a></li>
     <li><a href="#MacromoleculeGlyphAlternative" title="#MacromoleculeGlyphAlternative">MacromoleculeGlyphAlternative</a></li>
     <li><a href="#NoGlyphAssignedGlyph" title="#NoGlyphAssignedGlyph">NoGlyphAssignedGlyph</a></li>
+    <li><a href="#NoGlyphAssignedSpeciesGlyph" title="#NoGlyphAssignedSpeciesGlyph">NoGlyphAssignedSpeciesGlyph</a></li>
     <li><a href="#Non-CodingRNAGeneGlyph" title="#Non-CodingRNAGeneGlyph">Non-CodingRNAGeneGlyph</a></li>
     <li><a href="#OmittedDetailGlyph" title="#OmittedDetailGlyph">OmittedDetailGlyph</a></li>
     <li><a href="#OperatorBindingSiteGlyph" title="#OperatorBindingSiteGlyph">OperatorBindingSiteGlyph</a></li>
@@ -94,6 +95,7 @@
     <li><a href="#PolypeptideRegionGlyph" title="#PolypeptideRegionGlyph">PolypeptideRegionGlyph</a></li>
     <li><a href="#PrimerBindingSiteGlyph" title="#PrimerBindingSiteGlyph">PrimerBindingSiteGlyph</a></li>
     <li><a href="#ProcessGlyph" title="#ProcessGlyph">ProcessGlyph</a></li>
+    <li><a href="#ProcessNodeGlyph" title="#ProcessNodeGlyph">ProcessNodeGlyph</a></li>
     <li><a href="#PromoterSiteGlyph" title="#PromoterSiteGlyph">PromoterSiteGlyph</a></li>
     <li><a href="#ProteinBiopolymerLocationGlyph" title="#ProteinBiopolymerLocationGlyph">ProteinBiopolymerLocationGlyph</a></li>
     <li><a href="#ProteinBiopolymerLocationGlyphAlternative" title="#ProteinBiopolymerLocationGlyphAlternative">ProteinBiopolymerLocationGlyphAlternative</a></li>
@@ -128,6 +130,8 @@
     <li><a href="#TriangleSimpleChemicalGlyph" title="#TriangleSimpleChemicalGlyph">TriangleSimpleChemicalGlyph</a></li>
     <li><a href="#UnspecifiedGlyph" title="#UnspecifiedGlyph">UnspecifiedGlyph</a></li>
     <li><a href="#UnspecifiedGlyphAlternative" title="#UnspecifiedGlyphAlternative">UnspecifiedGlyphAlternative</a></li>
+    <li><a href="#UnspecifiedSpeciesGlyph" title="#UnspecifiedSpeciesGlyph">UnspecifiedSpeciesGlyph</a></li>
+    <li><a href="#UnspecifiedSpeciesGlyphAlternative" title="#UnspecifiedSpeciesGlyphAlternative">UnspecifiedSpeciesGlyphAlternative</a></li>
    </ul>
    <div id="AptamerGlyph" class="entity">
     <a name="#AptamerGlyph"></a>
@@ -1286,6 +1290,8 @@
       <sup title="class" class="type-c">c</sup>, 
       <a href="#NoGlyphAssignedGlyph" title="#NoGlyphAssignedGlyph">NoGlyphAssignedGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
+      <a href="#NoGlyphAssignedSpeciesGlyph" title="#NoGlyphAssignedSpeciesGlyph">NoGlyphAssignedSpeciesGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
       <a href="#Non-CodingRNAGeneGlyph" title="#Non-CodingRNAGeneGlyph">Non-CodingRNAGeneGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
       <a href="#OmittedDetailGlyph" title="#OmittedDetailGlyph">OmittedDetailGlyph</a>
@@ -1305,6 +1311,8 @@
       <a href="#PrimerBindingSiteGlyph" title="#PrimerBindingSiteGlyph">PrimerBindingSiteGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
       <a href="#ProcessGlyph" title="#ProcessGlyph">ProcessGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#ProcessNodeGlyph" title="#ProcessNodeGlyph">ProcessNodeGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
       <a href="#PromoterSiteGlyph" title="#PromoterSiteGlyph">PromoterSiteGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
@@ -1331,6 +1339,8 @@
       <a href="#TerminatorGlyph" title="#TerminatorGlyph">TerminatorGlyph</a>
       <sup title="class" class="type-c">c</sup>, 
       <a href="#UnspecifiedGlyph" title="#UnspecifiedGlyph">UnspecifiedGlyph</a>
+      <sup title="class" class="type-c">c</sup>, 
+      <a href="#UnspecifiedSpeciesGlyph" title="#UnspecifiedSpeciesGlyph">UnspecifiedSpeciesGlyph</a>
       <sup title="class" class="type-c">c</sup>
      </dd>
     </dl>
@@ -1554,6 +1564,30 @@
     <a name="#NoGlyphAssignedGlyph"></a>
     <h3>NoGlyphAssignedGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
     <p><strong>IRI:</strong> #NoGlyphAssignedGlyph</p>
+    <div class="comment">
+     <p>When a part has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.</p> 
+     <p>An alternative is brackets, suggesting information that needs to be filled in:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#Glyph" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/no-glyph-assigned/no-glyph-assigned-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="NoGlyphAssignedSpeciesGlyph" class="entity">
+    <a name="#NoGlyphAssignedSpeciesGlyph"></a>
+    <h3>NoGlyphAssignedSpeciesGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #NoGlyphAssignedSpeciesGlyph</p>
     <div class="comment">
      <p>When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.</p> 
      <p>An alternative option is to have a bracket, suggesting information that needs to be filled in:</p> 
@@ -1954,6 +1988,43 @@
     <a name="#ProcessGlyph"></a>
     <h3>ProcessGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
     <p><strong>IRI:</strong> #ProcessGlyph</p>
+    <div class="comment">
+     <p>An arrow with a filled head the same color as the line:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#Glyph" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#isGlyphOf" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#Interaction">interaction</span>
+     </dd>
+     <dd>
+      <a href="#isGlyphOf" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000375">s b o:0000375</span>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/Interactions/process/process-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="ProcessNodeGlyph" class="entity">
+    <a name="#ProcessNodeGlyph"></a>
+    <h3>ProcessNodeGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #ProcessNodeGlyph</p>
     <div class="comment">
      <p>A square node:</p> 
     </div>
@@ -3276,9 +3347,9 @@
       <a href="#isGlyphOf" title="#isGlyphOf">isGlyphOf</a>
       <sup title="object property" class="type-op">op</sup> 
       <span class="logic">some</span> 
-      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="dotted" title="http://sbols.org/v2#role">role</span> 
       <span class="logic">some</span> 
-      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000285">s b o:0000285</span>
+      <span class="dotted" title="http://identifiers.org/so/SO:0000110">s o:0000110</span>
      </dd>
      <dt>
       has sub-classes
@@ -3291,7 +3362,7 @@
       default glyph
      </dt>
      <dd>
-      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/FunctionalComponents/unspecified/replacement-glyph-specification.png">
+      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/unspecified/replacement-glyph-specification.png">
      </dd>
     </dl>
    </div>
@@ -3300,7 +3371,7 @@
     <h3>UnspecifiedGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
     <p><strong>IRI:</strong> #UnspecifiedGlyphAlternative</p>
     <div class="comment">
-     <p>An alternative is the SBGN "generic species" glyph, which is an ellipse:</p> 
+     <p>A half-rounded rectangle, the SBGN glyph for a nucleic acid, is an alternative:</p> 
     </div>
     <dl class="description">
      <dt>
@@ -3315,6 +3386,80 @@
       <sup title="object property" class="type-op">op</sup> 
       <span class="logic">some</span> 
       <a href="#UnspecifiedGlyph" title="#UnspecifiedGlyph">UnspecifiedGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/unspecified/halfround-rectangle-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="UnspecifiedSpeciesGlyph" class="entity">
+    <a name="#UnspecifiedSpeciesGlyph"></a>
+    <h3>UnspecifiedSpeciesGlyph<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #UnspecifiedSpeciesGlyph</p>
+    <div class="comment">
+     <p>Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#Glyph" title="#Glyph">Glyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#isGlyphOf" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#ComponentDefinition">component definition</span>
+     </dd>
+     <dd>
+      <a href="#isGlyphOf" title="#isGlyphOf">isGlyphOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://sbols.org/v2#type">type</span> 
+      <span class="logic">some</span> 
+      <span class="dotted" title="http://identifiers.org/sbo/SBO:0000285">s b o:0000285</span>
+     </dd>
+     <dt>
+      has sub-classes
+     </dt>
+     <dd>
+      <a href="#UnspecifiedSpeciesGlyphAlternative" title="#UnspecifiedSpeciesGlyphAlternative">UnspecifiedSpeciesGlyphAlternative</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dt>
+      default glyph
+     </dt>
+     <dd>
+      <img src="http://synbiodex.github.io/SBOL-visual/Glyphs/FunctionalComponents/unspecified/replacement-glyph-specification.png">
+     </dd>
+    </dl>
+   </div>
+   <div id="UnspecifiedSpeciesGlyphAlternative" class="entity">
+    <a name="#UnspecifiedSpeciesGlyphAlternative"></a>
+    <h3>UnspecifiedSpeciesGlyphAlternative<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+    <p><strong>IRI:</strong> #UnspecifiedSpeciesGlyphAlternative</p>
+    <div class="comment">
+     <p>An alternative is the SBGN "generic species" glyph, which is an ellipse:</p> 
+    </div>
+    <dl class="description">
+     <dt>
+      has super-classes
+     </dt>
+     <dd>
+      <a href="#UnspecifiedSpeciesGlyph" title="#UnspecifiedSpeciesGlyph">UnspecifiedSpeciesGlyph</a>
+      <sup title="class" class="type-c">c</sup>
+     </dd>
+     <dd>
+      <a href="#isAlternativeOf" title="#isAlternativeOf">isAlternativeOf</a>
+      <sup title="object property" class="type-op">op</sup> 
+      <span class="logic">some</span> 
+      <a href="#UnspecifiedSpeciesGlyph" title="#UnspecifiedSpeciesGlyph">UnspecifiedSpeciesGlyph</a>
       <sup title="class" class="type-c">c</sup>
      </dd>
      <dt>
