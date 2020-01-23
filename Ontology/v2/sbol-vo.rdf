@@ -3,10 +3,10 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="http://sbolstandard.org/visual"
-         xmlns="http://sbolstandard.org/visual#">
+         xml:base="http://sbols.org/visual/v2"
+         xmlns="http://sbols.org/visual/v2#">
 
-<owl:Ontology rdf:about="http://sbolstandard.org/visual">
+<owl:Ontology rdf:about="http://sbols.org/visual/v2">
   <owl:imports rdf:resource="https://dissys.github.io/sbol-owl/sbol.rdf"/>
 </owl:Ontology>
 
@@ -178,17 +178,16 @@
       </owl:someValuesFrom>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A square node:</rdfs:comment>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arrow with a filled head the same color as the line:</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProcessGlyph</rdfs:label>
   <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process-specification.png</defaultGlyph>
-  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/InteractionNodes/process</glyphDirectory>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/Interactions/process</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
-  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Association of gRNA and Cas9 to form an active CRISPR complex.</prototypicalExample>
-  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process glyph is based on the SBGN Process Description process glyph.
-
-The assocated SBO term also covers:
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Production of Green Fluorescent Protein (GFP) from the gfp Coding Sequence</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assocated SBO term also covers:
 
 - SBO:0000176 Biochemical Reaction
+- SBO:0000589 Genetic Production (source is DNAcomponent, sink is usually RNA or Macromolecule)
 - SBO:0000177 Non-covalent Binding (sink is a Complex)</notes>
 </owl:Class>
 
@@ -527,6 +526,39 @@ Examples of RECOMMENDED usage:
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
   <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dissociation of an active CRISPR complex into gRNA and Cas9.</prototypicalExample>
   <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dissociation glyph is based on the SBGN Process Description dissociation glyph.</notes>
+</owl:Class>
+
+<owl:Class rdf:about="#ProcessNodeGlyph">
+  <rdfs:subClassOf rdf:resource="#Glyph"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#isGlyphOf"/>
+      <owl:someValuesFrom rdf:resource="http://sbols.org/v2#Interaction"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#isGlyphOf"/>
+      <owl:someValuesFrom>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://sbols.org/v2#type"/>
+          <owl:someValuesFrom rdf:resource="http://identifiers.org/sbo/SBO:0000375"/>
+        </owl:Restriction>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A square node:</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProcessNodeGlyph</rdfs:label>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process-specification.png</defaultGlyph>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/InteractionNodes/process</glyphDirectory>
+  <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Association of gRNA and Cas9 to form an active CRISPR complex.</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process glyph is based on the SBGN Process Description process glyph.
+
+The assocated SBO term also covers:
+
+- SBO:0000176 Biochemical Reaction
+- SBO:0000177 Non-covalent Binding (sink is a Complex)</notes>
 </owl:Class>
 
 <owl:Class rdf:about="#BiopolymerLocationGlyph">
@@ -1149,21 +1181,20 @@ The 5' Sticky Restriction Site, 3' Sticky Restriction Site, and Blunt Restrictio
       <owl:onProperty rdf:resource="#isGlyphOf"/>
       <owl:someValuesFrom>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://sbols.org/v2#type"/>
-          <owl:someValuesFrom rdf:resource="http://identifiers.org/sbo/SBO:0000285"/>
+          <owl:onProperty rdf:resource="http://sbols.org/v2#role"/>
+          <owl:someValuesFrom rdf:resource="http://identifiers.org/so/SO:0000110"/>
         </owl:Restriction>
       </owl:someValuesFrom>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:</rdfs:comment>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnspecifiedGlyph</rdfs:label>
   <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replacement-glyph-specification.png</defaultGlyph>
-  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/unspecified</glyphDirectory>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/unspecified</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
-  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anonymous chemical species that is missing any information about its nature or intended purpose.</prototypicalExample>
-  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Unspecified glyph is intended for showing where a chemical species' type is missing (or, equivalently, given only the uninformative root role). It should never appear with well-curated designs or diagrams.
-
-Alternate BioPAX definition: PhysicalEntity: http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity</notes>
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anonymous sequence that is missing any information about its nature or intended purpose.</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Unspecified glyph is intended for showing where a sequence's role is missing (or, equivalently, given only the uninformative "Sequence Feature" root role). It should never appear with well-curated designs or diagrams.</notes>
 </owl:Class>
 
 <owl:Class rdf:about="#UnspecifiedGlyphAlternative">
@@ -1174,10 +1205,10 @@ Alternate BioPAX definition: PhysicalEntity: http://www.biopax.org/release/biopa
       <owl:someValuesFrom rdf:resource="#UnspecifiedGlyph"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative is the SBGN "generic species" glyph, which is an ellipse:</rdfs:comment>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A half-rounded rectangle, the SBGN glyph for a nucleic acid, is an alternative:</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnspecifiedGlyphAlternative</rdfs:label>
-  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">generic-sbgn-specification.png</defaultGlyph>
-  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/unspecified</glyphDirectory>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">halfround-rectangle-specification.png</defaultGlyph>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/unspecified</glyphDirectory>
 </owl:Class>
 
 <owl:Class rdf:about="#CircularPlasmidGlyph">
@@ -1311,15 +1342,18 @@ and a composite with an Engineered Region of otherwise unspecified content:
 
 <owl:Class rdf:about="#NoGlyphAssignedGlyph">
   <rdfs:subClassOf rdf:resource="#Glyph"/>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+When a part has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.
 
-An alternative option is to have a bracket, suggesting information that needs to be filled in:</rdfs:comment>
+An alternative is brackets, suggesting information that needs to be filled in:</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoGlyphAssignedGlyph</rdfs:label>
   <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-glyph-assigned-specification.png</defaultGlyph>
-  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/no-glyph-assigned</glyphDirectory>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/no-glyph-assigned</glyphDirectory>
   <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
-  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended to be used for any chemical species whose type is not covered by other SBOL Visual glyphs.</prototypicalExample>
-  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended for molecular species with a defined specific type that happens to not yet be covered by available approved glyphs (other than the root). It is more likely to appear in machine-generated diagrams than in human-generated diagrams, since humans are likely to invent and use their own glyph for the purpose.</notes>
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended to be used for any Component that is not covered by other SBOL Visual glyphs.
+
+For example, at present there is no glyph recommended for representing a transposon.</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended for constructs with a defined specific role that happens to not yet be covered by available approved glyphs (other than the root "Sequence Feature"). It is more likely to appear in machine-generated diagrams than in human-generated diagrams, since humans are likely to invent and use their own glyph for the purpose.</notes>
 </owl:Class>
 
 <owl:Class rdf:about="#InsulatorGlyph">
@@ -1882,6 +1916,63 @@ Transcription/Translation End Point is a "stem-top" glyph for describing small s
   <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To avoid confusion with circles or ellipses, the "pill" shape SHOULD be significantly longer than it is tall, emphasizing its straight sides.
 
 Alternate BioPAX definition: Protein: http://www.biopax.org/release/biopax-level3.owl#Protein</notes>
+</owl:Class>
+
+<owl:Class rdf:about="#UnspecifiedSpeciesGlyph">
+  <rdfs:subClassOf rdf:resource="#Glyph"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#isGlyphOf"/>
+      <owl:someValuesFrom rdf:resource="http://sbols.org/v2#ComponentDefinition"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#isGlyphOf"/>
+      <owl:someValuesFrom>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://sbols.org/v2#type"/>
+          <owl:someValuesFrom rdf:resource="http://identifiers.org/sbo/SBO:0000285"/>
+        </owl:Restriction>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified is RECOMMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnspecifiedSpeciesGlyph</rdfs:label>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replacement-glyph-specification.png</defaultGlyph>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/unspecified</glyphDirectory>
+  <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anonymous chemical species that is missing any information about its nature or intended purpose.</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Unspecified glyph is intended for showing where a chemical species' type is missing (or, equivalently, given only the uninformative root role). It should never appear with well-curated designs or diagrams.
+
+Alternate BioPAX definition: PhysicalEntity: http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity</notes>
+</owl:Class>
+
+<owl:Class rdf:about="#UnspecifiedSpeciesGlyphAlternative">
+  <rdfs:subClassOf rdf:resource="#UnspecifiedSpeciesGlyph"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#isAlternativeOf"/>
+      <owl:someValuesFrom rdf:resource="#UnspecifiedSpeciesGlyph"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative is the SBGN "generic species" glyph, which is an ellipse:</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnspecifiedSpeciesGlyphAlternative</rdfs:label>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">generic-sbgn-specification.png</defaultGlyph>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/unspecified</glyphDirectory>
+</owl:Class>
+
+<owl:Class rdf:about="#NoGlyphAssignedSpeciesGlyph">
+  <rdfs:subClassOf rdf:resource="#Glyph"/>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When a species has no assigned glyph it is RECOMMENDED that a user provide their own glyph. The user is also encouraged to submit the new glyph for possible adoption into the SBOLv standard.
+
+An alternative option is to have a bracket, suggesting information that needs to be filled in:</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoGlyphAssignedSpeciesGlyph</rdfs:label>
+  <defaultGlyph rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-glyph-assigned-specification.png</defaultGlyph>
+  <glyphDirectory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBOL-visual/Glyphs/FunctionalComponents/no-glyph-assigned</glyphDirectory>
+  <recommended rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</recommended>
+  <prototypicalExample rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended to be used for any chemical species whose type is not covered by other SBOL Visual glyphs.</prototypicalExample>
+  <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Glyph Assigned is intended for molecular species with a defined specific type that happens to not yet be covered by available approved glyphs (other than the root). It is more likely to appear in machine-generated diagrams than in human-generated diagrams, since humans are likely to invent and use their own glyph for the purpose.</notes>
 </owl:Class>
 
 <owl:Class rdf:about="#SimpleChemicalGlyph">
