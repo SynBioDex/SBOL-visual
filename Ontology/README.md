@@ -17,16 +17,29 @@ SBOL-VO is available as an RDF file. [Click here](http://synbiodex.github.io/SBO
 
 ## Computational access: The SBOL-VO web service (SBOL-VO-WS)
 
-**An HTTP-based glyph service**: The SBOL-VO web service(SBOL-VO-WS) has been developed to resolve SBOL-VO glyphs via an REST-based HTTP interface. The first matching glyph is returned by using a term from the SBOL-Visual Ontology, the Sequence Ontology or the Systems Biology Ontology. The `http://{SBOL-VO_WS}/glyph/{ONTOLOGY_TERM}"}` REST interface returns glyphs. The following example demonsrates retrieving the CDS glyph by either using the corresponding SBOL-VO or the Sequence Ontology term:
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/glyph/SO:0000031 
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/glyph/AptamerGlyph
-  
-**Searching for glyphs**: The SBOL-VO-WS can be used to search for glyphs using the `http://{SBOL-VO_WS}/query/{ONTOLOGY_TERM}"}` REST interface. Glyphs are searched for by using a term from the SBOL-Visual Ontology, the Sequence Ontology or the Systems Biology Ontology. Examples:
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/query/CDSGlyph 
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/query/SO:0000316
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/query/SBO:0000231
+**An HTTP-based glyph service**: The SBOL-VO web service(SBOL-VO-WS) has been developed to resolve SBOL-VO glyphs via an REST-based HTTP interface. The matching glyph is returned by using a term from the SBOL-Visual Ontology, the Sequence Ontology (SO) or the Systems Biology Ontology (SBO). The `http://{SBOL-VO-WS}/glyph/{ONTOLOGY_TERM}"}` REST interface returns glyphs. When a term from the SO or the SBO is used and there is no exact match, then a glyph is returned using the closest mathing parent term. The following example demonsrates retrieving the aptamer glyph by using the corresponding SBOL-VO or terms from the SO:
 
-**Retrieving metadata about glyphs**: The SBOL-VO-WS can also be used to retrieve metadata about SBOL Visual glyphs, using the  for glyphs using the `http://{SBOL-VO_WS}/metadata/{SBOL-VO_TERM}"}` REST interface. Examples:
-* http://iroh.scam.keele.ac.uk/sbol-visual-ws/metadata/CDSGlyph
+* <http://sbolstandard.org:8080/sbol-visual-ws/glyph/AptamerGlyph>
+* <http://sbolstandard.org:8080/sbol-visual-ws/glyph/SO:0000031> 
+* <http://sbolstandard.org:8080/sbol-visual-ws/glyph/SO:0000033>
+  
+The web service returns the default PNG images. The PNG and SVG versions can be retrieved explicitly by appending "/svg" or "/png"  to the query interface :
+* <http://sbolstandard.org:8080/sbol-visual-ws/glyph/SO:0000031/svg>
+* <http://sbolstandard.org:8080/sbol-visual-ws/glyph/SO:0000031/png>
+
+**Mapping glyphs to terms from ontologies**: Tools can also use the SBOL-VO-WS to get the mapping information and then to subsequently include glyphs, using the `http://{SBOL-VO-WS}/mapping/{ONTOLOGY_TERM}"}` interface. The mapping interface works similar to the glyph interface but it returns information in the JSON format. This interface includes information about the closest parent term, for which a glyph is assigned, and the parent term's distance to the query term. URL examples below return information about AptamerGlyph.
+* <http://sbolstandard.org:8080/sbol-visual-ws/mapping/SO:0000031>
+* <http://sbolstandard.org:8080/sbol-visual-ws/mapping/SO:0000033>
+
+
+**Searching for glyphs**: The SBOL-VO-WS can be used to search for glyphs using the `http://{SBOL-VO-WS}/query/{ONTOLOGY_TERM}"}` REST interface. This query interface is the reverse of the mapping interface and returns information about glyphs using a query term and for all its child terms. Glyphs are searched for by using a term from the SBOL-Visual Ontology, the Sequence Ontology or the Systems Biology Ontology. Examples:
+* Returning information about the CDSGlyph and CDSAlternativeGlyph terms:
+    * <http://sbolstandard.org:8080/sbol-visual-ws/query/CDSGlyph>
+    * <http://sbolstandard.org:8080/sbol-visual-ws/query/SO:0000316>
+* Returning information abut all glyphs that represent molecular interactions:
+    * <http://sbolstandard.org:8080/sbol-visual-ws/query/SBO:0000231>
+
+**Retrieving metadata about glyphs**: The SBOL-VO-WS can also be used to retrieve metadata about SBOL Visual glyphs, using the  for glyphs using the `http://{SBOL-VO-WS}/metadata/{SBOL-VO-TERM}"}` REST interface. Examples:
+* <http://sbolstandard.org:8080/sbol-visual-ws/metadata/CDSGlyph>
 
 
