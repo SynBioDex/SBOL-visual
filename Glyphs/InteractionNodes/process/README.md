@@ -3,6 +3,10 @@
 ## Associated SBO term(s)
 SBO:0000375 Process
 
+Incoming: SBO:0000010 Reactant
+
+Outgoing: SBO:0000011 Product
+
 ## Recommended Glyph and Alternates
 A square node:
 
