@@ -958,7 +958,6 @@ Package Specification Style]
 \reversemarginpar  % Want these be put on the left, not the right.
 
 \newcommand{\notice}{\marginpar{\hspace*{34pt}\raisebox{-0.5ex}{\color{black}\Large\ding{43}}}}
-\newcommand{\warning}{\marginpar{\hspace*{34pt}{\color{red}\large\danger}}}
 
 % Margin notes.
 %
