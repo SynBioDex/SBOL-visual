@@ -1,0 +1,29 @@
+name: build_specification
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+        
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@v0.2.0
+        with:
+          working_directory: specification
+          root_file: sbolvisual.tex
+
+      - name: Move PDF
+        run: mkdir -p output && cp specification/sbolvisual.pdf output
+        
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: PDF
+          path: output
