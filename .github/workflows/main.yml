@@ -13,6 +13,19 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
         
+      - name: Install dependency
+        run: |
+          cd specification/glyphscript
+          npm install markdown-pdf
+      
+      - name: Generate PDFs for glyphs
+        run: |
+          cd specification/glyphscript
+          bash rebuild_glyph_inputs.sh
+          bash rebuild_interactionglyph_inputs.sh
+          bash rebuild_interactionnodeglyph_inputs.sh
+          bash rebuild_speciesglyph_inputs.sh
+        
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@v0.2.0
         with:
