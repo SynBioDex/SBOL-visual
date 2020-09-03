@@ -28,7 +28,7 @@ Section 5.4 (Interaction) after
 
 add
 
-> If the SBOL 2 data type cannot infer directionality, an edge without arrows may be used.
+> If no directionality can be inferred from the SBOL 2 data type, an edge without arrows may be used.
 
 ## 3. Examples <a name='example'></a>
 
@@ -55,7 +55,7 @@ TBD
      href="sbolstandard.org">
     <span property="dct:title">SBOL developers</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">SEP V020</span>.
+  <span property="dct:title">SEP V021</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="US" about="sbolstandard.org">
