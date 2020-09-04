@@ -14,11 +14,11 @@
 
 ## Abstract
 
-This SEP proposes to add a non directional arrow(line) for interactions of unknown type where a directionality can't be inferred.
+This SEP proposes to add a non directional arrow(line) for interactions of unknown type, or participants with unkown role, where a directionality can't be inferred.
 
 ## 1. Rationale <a name="rationale"></a>
 
-There is currently no defined way to show an interaction where the directionality can't be inferred from the interaction type.
+There is currently no defined way to show an interaction where the directionality can't be inferred.
 
 ## 2. Specification <a name="specification"></a>
 
@@ -28,15 +28,15 @@ Section 5.4 (Interaction) after
 
 add
 
-> If no directionality can be inferred from the SBOL 2 data type, an edge without arrows may be used.
+> If no directionality can be inferred from the SBOL 2 data, an edge without arrows may be used.
 
 ## 3. Examples <a name='example'></a>
 
+In the SBOLTestSuite https://github.com/SynBioDex/SBOLTestSuite/blob/master/SBOL2/ModuleDefinitionOutput.xml both interactions have a participant of role SBO:0000598 promoter which has been made obsolete. Newer visualization tools will likely not be able to infer direction in this case, as they are expecting SBO:0000642 inhibited.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
 This change is backward compatible, as all previous diagrams are still valid with the same meaning.
-
 
 ## 5. Discussion <a name='discussion'></a>
 
