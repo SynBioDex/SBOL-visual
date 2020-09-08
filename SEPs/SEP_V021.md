@@ -14,7 +14,7 @@
 
 ## Abstract
 
-This SEP proposes to add a non directional arrow(line) for interactions of unknown type, or participants with unkown role, where a directionality can't be inferred.
+This SEP proposes a way to visualize interactions where no directionality can be inferred from either the type or participant role.
 
 ## 1. Rationale <a name="rationale"></a>
 
@@ -24,11 +24,11 @@ There is currently no defined way to show an interaction where the directionalit
 
 Section 5.4 (Interaction) after
 
-> A directed edge "arrow" attached to one or more glyphs indicates a functional interaction involving those elements. 
+> An example is provided in Figure 15.
 
 add
 
-> If no directionality can be inferred from the SBOL 2 data, an edge without arrows may be used.
+> If no directionality can be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
 
 ## 3. Examples <a name='example'></a>
 
