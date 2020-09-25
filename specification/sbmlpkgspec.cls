@@ -545,7 +545,12 @@ Package Specification Style]
     \vspace*{2em}
   \fi
   \vfill
-  \centerline{\includegraphics[width=2.0in]{\SBMLbadge}}
+  \centerline{\includegraphics[width=1.0in]{\SBMLbadge}}
+  \vfill
+  \begin{small}
+  Copyright (C) all authors listed on the front page of this document.\\
+  This work is made available under the \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International Public License}.
+  \end{small}
   \clearpage
   \endgroup
   \setcounter{footnote}{0}%
@@ -953,7 +958,6 @@ Package Specification Style]
 \reversemarginpar  % Want these be put on the left, not the right.
 
 \newcommand{\notice}{\marginpar{\hspace*{34pt}\raisebox{-0.5ex}{\color{black}\Large\ding{43}}}}
-\newcommand{\warning}{\marginpar{\hspace*{34pt}{\color{red}\large\danger}}}
 
 % Margin notes.
 %

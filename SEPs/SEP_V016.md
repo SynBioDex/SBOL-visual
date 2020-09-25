@@ -3,10 +3,10 @@
 | SEP | |
 | --- | --- |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Marta Vázquez Vilar (marvazvi@ibmcp.upv.es) |
-| **Editor** |  |
+| **Editor** |  | Hasan Baig
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.2 |
-| **Status** | Draft |
+| **Status** | Accepted (21-Sept-2019) |
 | **Created** | 13-Apr-2019 |
 | **Last modified** |  |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/63 |
