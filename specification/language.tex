@@ -270,17 +270,17 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-composite.pdf}\label{exa:compositeedge}}
 	\caption{(a) Example of interaction node with an additional role indicated by an entering arrow head:
 	association of gRNA and Cas9 inhibited by the presence of a competing gRNA.
-	(b) Composite edges representing two interactions: CRISPR complex formation with dCas9, where that complex then represses a promoter.}
+	(b) Example of a composite edge pattern representing two interactions: CRISPR complex formation with dCas9, where that complex then represses a promoter.}
 	\label{exa:4d3}
 	\end{figure}
 }
 
 
 \twothreezero{
-\item An edge entering an interaction node MAY use an \sbol{Interaction} arrow head (i.e., glyph from  \ref{apdx:sym:interaction}) to indicate a role other than Reactant (SBO:0000010) in the biochemical process.
+\item An edge with its head at an interaction node MAY use an \sbol{Interaction} arrow head to indicate a \sbol{role} other than Reactant (SBO:0000010) in the biochemical process.
 	An example is provided in~\ref{exa:nonreactant}.
 
-\item An edge exiting an interaction node MAY use an \sbol{Interaction} arrow head (i.e., glyph from  \ref{apdx:sym:interaction}) to indicate an additional \sbol{Interaction} in which this product of the biochemical process has the tail role associated with that type.
+\item An edge with its tail at an interaction node MAY use an \sbol{Interaction} arrow head to indicate an additional \sbol{Interaction} in which this product of the biochemical process has the tail \sbol{role} associated with that type.
 	An example is provided in~\ref{exa:compositeedge}.}
 
 \twothreezero{
@@ -307,7 +307,7 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	\item The tail of the ``target'' edge $E_2$ is the unspecified species $S$.
 	\item The unspecified species $S$ is the  Product (SBO:0000011) of a Process (SBO:0000375) \sbol{Interaction} whose Reactant (SBO:0000010) is the original tail of the ``target'' edge $E_2$.
 	\end{itemize}
-	Note that this applies only to heads, as an intermediate tail cannot be distinguished from multiple heads, as specified above; likewise, the connection point on the ``target'' edge MAY be a non-split portion of a multi-hear or multi-tail edge, but MUST NOT be a branch of a multi-head or multi-tail arrow.
+	Note that this applies only to heads, as an intermediate tail cannot be distinguished from multiple heads, as specified above; likewise, the connection point on the ``target'' edge MAY be a non-split portion of a multi-head or multi-tail edge, but MUST NOT be a branch of a multi-head or multi-tail arrow.
 	An edge MUST NOT be the ``target'' for more than one ``higher-level'' edge, as the expansion of such a form would be ambiguous.
 	Having a ``higher-level'' edge also be a ``target'' edge is NOT RECOMMENDED.
 	Examples are provided in~\ref{exa:4e}.
