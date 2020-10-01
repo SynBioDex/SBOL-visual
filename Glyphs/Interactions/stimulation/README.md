@@ -3,6 +3,10 @@
 ## Associated SBO term(s)
 SBO:0000170 Stimulation
 
+Head: SBO:0000643 Stimulated 
+
+Tail: SBO:0000459 Stimulator
+
 ## Recommended Glyph and Alternates
 An arrow with an head that is empty or of a different color than the line:
 
