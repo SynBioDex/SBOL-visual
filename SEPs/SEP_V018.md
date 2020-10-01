@@ -36,7 +36,7 @@ Introducing this change also requires clarifying the definition of interaction n
 
 ## 2. Specification <a name="specification"></a>
 
-In Section 5.4 (Interaction) of the specification, the following sentence defining interaction nodes will be moved from item 5.4.3 (multi-head/multi-tail edges) to item 5.4.4 (interaction nodes), along with its associated example figures:
+In Section 5.4 (Interaction) of the specification, the following sentence defining interaction nodes will be moved from item 5.4.3 (multi-head/multi-tail edges) to item 5.4.4 (interaction nodes), along with Figure 18(c) and 18(d):
 
 > A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional Interaction with type and roles set by the process glyph.
 
