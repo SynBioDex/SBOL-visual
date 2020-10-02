@@ -1,4 +1,4 @@
-# SEP V021: Use Unspecified Interaction Glyph Node for Interactions of Unknown Type
+# SEP V021: Use Unspecified Interaction Glyph Node for Interactions of Unknown Nature
 
 | SEP | |
 | --- | --- |
@@ -8,17 +8,18 @@
 | **SBOL Visual Version** | 2.2 |
 | **Status** | Draft |
 | **Created** | 3-Sep-2020 |
-| **Last modified** | 3-Sep-2020 |
+| **Last modified** | 2-Oct-2020 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/102 |
 
 
 ## Abstract
 
-This SEP proposes a way to visualize interactions where no directionality can be inferred from either the type or participant role.
+This SEP proposes a way to visualize interactions where no directionality can be inferred, or the nature of the interaction is unkown.
+It also proposes to add a new "unkown type" interaction node glyph.
 
 ## 1. Rationale <a name="rationale"></a>
 
-There is currently no defined way to show an interaction where the directionality can't be inferred.
+There is currently no defined way to show an interaction with unkown directionality or unkown nature.
 
 ## 2. Specification <a name="specification"></a>
 
@@ -28,7 +29,11 @@ Section 5.4 (Interaction) after
 
 add
 
-> If no directionality can be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
+> If the nature of the interaction can't be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
+
+Add the following image to figure 18 with the caption "Interaction of unkown nature".
+
+> ![Figure](img/SEPV021-unknownInteraction.png)
 
 ## 3. Examples <a name='example'></a>
 
