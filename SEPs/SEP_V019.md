@@ -41,9 +41,13 @@ Section 6.3 (Molecular Species) will change item 1 from:
 
 to become:
 
-> 1. A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box, unless the diagram is showing that the molecular species binds to the nucleic acid.
-> 2. If binding is being shown, the molecular species glyph SHOULD contact an appropriate sequence feature glyph (e.g., for a binding site or restriction site) and not the backbone itself (see example in Appendix A.2 for glyph Complex).
+> 1. The bounding box of a molecular species glyph MUST NOT contact any nucleic acid construct unless there is an interaction between the molecular species and the nucleic acid construct.
+> 2. If a molecular species glyph overlaps a nucleic acid construct, then the location of the overlap SHOULD correspond with the location of an interaction on the nucleic acid construct. The molecular species glyph SHOULD be visually distinct from a sequence feature glyph. This location is RECOMMENDED to be represented with a sequence feature glyph appropriate to the interaction (e.g., a binding site or restriction site). Examples are provided in Figure 15.
 
+> ![image](img/SEPV019-3-binding.png)
+> ![image](img/SEPV019-3-bindpromoter.png)
+> ![image](img/SEPV019-3-wronglocation.png)
+> Figure 15: Examples of recommended, allowed, and not recommended representation of an interaction between a molecular species and a nucleic acid construct, in this case regulation of a promoter by a transcription factor protein that binds on the 5’ side of the promoter: (a) shows the RECOMMENDED representation, (b) shows a more generic alternative, and (c) is recommended against because the location does not corresponding with the binding.
 
 ### Change to Complex Glyph
 
@@ -51,7 +55,7 @@ The Complex glyph will have the following section added:
 
 > This may also be applied to show complex formation (binding) of a molecule to a nucleic acid backbone by compositing the glyph for the molecule with appropriate portion of the diagram the nucleic acid backbone.  For example, a protein binding to the promoter of a functional unit:
 
-> ![glyph example](https://github.com/SynBioDex/SBOL-visual/raw/092c5c/Glyphs/FunctionalComponents/complex/complex-pdna-specification.png)
+> ![glyph example](https://github.com/SynBioDex/SBOL-visual/raw/6d0919e/Glyphs/FunctionalComponents/complex/complex-pdna-specification.png)
 
 
 ## 3. Examples <a name='example'></a>
@@ -66,7 +70,7 @@ This change is backward compatible, as all previous diagrams are still valid wit
 
 ## 5. Discussion <a name='discussion'></a>
 
-TBD
+Discussion resulted in clarification of the original wording.
 
 ## Copyright <a name='copyright'></a>
 
