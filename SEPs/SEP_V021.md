@@ -14,12 +14,12 @@
 
 ## Abstract
 
-This SEP proposes a way to visualize interactions where no directionality can be inferred, or the nature of the interaction is unkown.
-It also proposes to add a new "unkown type" interaction node glyph.
+This SEP proposes a way to visualize interactions where no directionality can be inferred, or the nature of the interaction is unknown.
+It also proposes to add a new "unknown type" interaction node glyph.
 
 ## 1. Rationale <a name="rationale"></a>
 
-There is currently no defined way to show an interaction with unkown directionality or unkown nature.
+There is currently no defined way to show an interaction with unknown directionality or unknown nature.
 
 ## 2. Specification <a name="specification"></a>
 
@@ -31,7 +31,7 @@ add
 
 > If the nature of the interaction can't be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
 
-Add the following image to figure 18 with the caption "Interaction of unkown nature".
+Add the following image to figure 18 with the caption "Interaction of unknown nature".
 
 > ![Figure](img/SEPV021-unknownInteraction.png)
 
