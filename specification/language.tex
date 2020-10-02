@@ -181,13 +181,28 @@ In other words, either not a nucleic acid (e.g., proteins, small molecules) or e
 In terms of the SBOL 2 data model, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
 
 \begin{enumerate}
-\item A molecular species glyph MUST NOT contact any nucleic acid backbone with any part of its bounding box, \twotwozero{unless the diagram is showing that the molecular species binds to the nucleic acid.}
-
-\item \twotwozero{If binding is being shown, the molecular species glyph SHOULD contact an appropriate sequence feature glyph (e.g., for a binding site or restriction site) and not the backbone itself (see example in \ref{apdx:sym:species} for glyph Complex).}
-
 \item A molecular species SHOULD be represented using a glyph defined in \ref{apdx:sym:species}.  In this case, the species MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the associated \sbol{ComponentDefinition}.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:species} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	
+\twothreezero{\item The bounding box of a molecular species glyph MUST NOT contact any nucleic acid construct unless there is an interaction between the molecular species and the nucleic acid construct.  
+
+\item If a molecular species glyph overlaps a nucleic acid construct, then the location of the overlap SHOULD correspond with the location of an interaction on the nucleic acid construct.
+	The molecular species glyph SHOULD be visually distinct from a sequence feature glyph.
+	This location is RECOMMENDED to be represented with a sequence feature glyph appropriate to the interaction (e.g., a binding site or restriction site). 
+	Examples are provided in \ref{exa:3}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[RECOMMENDED]{\includegraphics[scale=0.5]{figures/examples/3-binding.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.5]{figures/examples/3-bindpromoter.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.5]{figures/examples/3-wronglocation.pdf}}
+	\caption{Examples of recommended, allowed, and not recommended representation of an interaction between a molecular species and a nucleic acid construct, in this case regulation of a promoter by a transcription factor protein that binds on the 5' side of the promoter: 
+	(a) shows the RECOMMENDED representation, (b) shows a more generic alternative, and (c) is recommended against because the location does not corresponding with the binding.}
+	\label{exa:3}
+	\end{figure}
+	}
+
 \end{enumerate}
 
 
