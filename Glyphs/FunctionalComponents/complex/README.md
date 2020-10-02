@@ -10,7 +10,7 @@ The RECOMMENDED glyph for a complex is a composite of the glyphs for the molecul
 ![glyph example](complex-pr-specification.png)
 ![glyph example](complex-pp-specification.png)
 
-This may also be applied to show complex formation (binding) of a molecule to a nucleic acid backbone by compositing the glyph for the molecule with appropriate portion of the diagram the nucleic acid backbone.  For example, a protein binding to the promoter of a transcriptional unit:
+This may also be applied to show complex formation (binding) of a molecule to a nucleic acid construct by compositing the molecule glyph with the appropriate portion of the nucleic acid construct. For example, a protein binding to the promoter of a transcriptional unit:
 
 ![glyph example](complex-pdna-specification.png)
 
