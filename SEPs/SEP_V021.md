@@ -1,43 +1,50 @@
-# SEP V021: Use Unspecified Interaction Glyph Node for Interactions of Unknown Nature
+# SEP V021: Unspecified Interaction Glyph Node
 
 | SEP | |
 | --- | --- |
 | **Authors** | Logan Terry |
 | **Editor** | TBD |
 | **Type** | Specification |
-| **SBOL Visual Version** | 2.2 |
+| **SBOL Visual Version** | 2.3 |
 | **Status** | Draft |
 | **Created** | 3-Sep-2020 |
-| **Last modified** | 2-Oct-2020 |
+| **Last modified** | 3-Oct-2020 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/102 |
 
 
 ## Abstract
 
-This SEP proposes a way to visualize interactions where no directionality can be inferred, or the nature of the interaction is unknown.
-It also proposes to add a new "unknown type" interaction node glyph.
+This SEP proposes a way to visualize interactions where the nature of the interaction is unknown by adding a new "unspecified" interaction node glyph.
 
 ## 1. Rationale <a name="rationale"></a>
 
-There is currently no defined way to show an interaction with unknown directionality or unknown nature.
+There is currently no defined way to show an interaction with unknown directionality or of unknown nature.
 
 ## 2. Specification <a name="specification"></a>
 
-Section 5.4 (Interaction) after
+### New Interaction Node Glyph "Unspecified"
 
-> An example is provided in Figure 15.
+#### Unspecified SBO term(s)
+SBO:0000285 Material entity of unspecified nature
 
-add
+Incoming: SBO:0000010 Reactant
 
-> If the nature of the interaction can't be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
+#### Recommended Glyph and Alternates
+Unspecified is RECOMENDED to be represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:
 
-Add the following image to figure 18 with the caption "Interaction of unknown nature".
+![glyph specification](../Glyphs/InteractionNodes/unspecified/unspecified-glyph-specification.png)
 
-> ![Figure](img/SEPV021-unknownInteraction.png)
+#### Prototypical Example
+
+An association that is missing any information about its nature or intended purpose.
+
+#### Notes
+The unspecified glyph is based on the Unspecified Functional Component glyph. It should never appear with well-curated designs or diagrams.
+
 
 ## 3. Examples <a name='example'></a>
 
-In the SBOLTestSuite https://github.com/SynBioDex/SBOLTestSuite/blob/master/SBOL2/ModuleDefinitionOutput.xml both interactions have a participant of role SBO:0000598 promoter which has been made obsolete. Newer visualization tools will likely not be able to infer direction in this case, as they are expecting SBO:0000642 inhibited.
+See examples above.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
