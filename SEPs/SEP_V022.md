@@ -54,7 +54,7 @@ Added to notes:
 
 ![example](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/12c3edf/SEPs/img/SEPV022-example.png)
 
-Protease and spacer between two transcriptional units, forming a separation module with the preceding terminator (dashed box), with the whole construct integrated into the chromosome.
+Ribozyme and spacer between two transcriptional units, forming a separation module with the preceding terminator (dashed box), with the whole construct integrated into the chromosome.
 
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
