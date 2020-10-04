@@ -53,7 +53,7 @@ to become:
 
 The Complex glyph will have the following section added:
 
-> This may also be applied to show complex formation (binding) of a molecule to a nucleic acid backbone by compositing the glyph for the molecule with appropriate portion of the diagram the nucleic acid backbone.  For example, a protein binding to the promoter of a transcriptional unit:
+> This may also be applied to show complex formation (binding) of a molecule to a nucleic acid construct by compositing the molecule glyph with the appropriate portion of the nucleic acid construct. For example, a protein binding to the promoter of a transcriptional unit:
 
 > ![glyph example](https://github.com/SynBioDex/SBOL-visual/raw/6d0919e/Glyphs/FunctionalComponents/complex/complex-pdna-specification.png)
 

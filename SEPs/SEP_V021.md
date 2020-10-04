@@ -1,4 +1,4 @@
-# SEP V021: Add Non Directional Arrow(line) for Interactions of Unknown Type
+# SEP V021: Use Unspecified Interaction Glyph Node for Interactions of Unknown Type
 
 | SEP | |
 | --- | --- |
