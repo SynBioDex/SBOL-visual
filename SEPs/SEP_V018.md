@@ -8,7 +8,7 @@
 | **SBOL Visual Version** | 2.3 |
 | **Status** | Draft |
 | **Created** | 5-Oct-2019 |
-| **Last modified** | 29-Sept-2020 |
+| **Last modified** | 1-Oct-2020 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/73 |
 
 
