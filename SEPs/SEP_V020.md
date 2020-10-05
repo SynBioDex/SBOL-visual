@@ -21,10 +21,6 @@ This SEP proposes to recommend use of the polypeptide region for 2A sequences.
 The 2A self-cleaving peptide sequences are commonly used in making coding sequences with multiple separated products, but their mechanism is a "skip" in bond formation rather than an actual cleavage.  Thus, there has been confusion over whether they should be represented as a cleavage site or a polypeptide region. 
 This SEP proposes to clarify the situation wth an explicit recommendation that polypeptide region be used to represent 2A sequences.
 
-These sequences thus seem appropriate to represent as protein cleavage sites, but are not well-described by the Protease Site ontology term (SO:0001956).
-
-Sequence Ontology has now added a new term specifically for a 2A self-cleaving peptide region (SO:0002224).  Adding this term to the glyph will allow it to properly represent 2A sequences as well as protease targets.
-
 ## 2. Specification <a name="specification"></a>
 
 In the Cleavage Site glyph, add the following note:
