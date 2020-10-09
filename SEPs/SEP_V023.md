@@ -64,7 +64,8 @@ SEP:
   - Should contain explicit diff from draft change 
 - Open an issue, include abstract, and link in the SEP
 - Once SEP is open, close issue
-- Determining consensis and moving to a vote
+- Discuss on issue / mailing list
+- Determining consensus and moving to a vote
 - After vote succeeds
   - Bring branch up to date with develop
   - Set up pull request
