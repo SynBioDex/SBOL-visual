@@ -3,6 +3,10 @@
 ## Associated SBO term(s)
 SBO:0000168 Control
 
+Head: SBO:0000644 Modified 
+
+Tail: SBO:0000019 Modifier
+
 ## Recommended Glyph and Alternates
 An arrow with a diamond head:
 
