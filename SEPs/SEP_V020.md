@@ -27,9 +27,11 @@ In the Cleavage Site glyph, add the following note:
 
 > A 2A self-cleaving polypeptide region (SO:0002224) SHOULD NOT be represented by a protease site, as its cleavage mechanism is different. Instead, 2A sequences should be represented using the Polypeptide Region glyph (see example in its specification).
 
-In the Polypeptide Region glyph, add the following note and a corresponding example:
+In the Polypeptide Region glyph, add the following note and corresponding example:
 
 > Polypeptide region can also be used to represent regions that involve cleavage, such as a 2A self-cleaving polypeptide region (SO:0002224, a child term of SO:0000839). It is RECOMMENDED that cleavage-inducing polypeptide regions be visually distinguished from intact, e.g., through the use of dashed lines.
+
+> ![glyph example](https://github.com/SynBioDex/SBOL-visual/raw/c3ab10b/Glyphs/polypeptide-region/polypeptide-2a-example.png)
 
 
 ## 3. Examples <a name='example'></a>
