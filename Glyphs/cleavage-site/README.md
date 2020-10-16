@@ -5,7 +5,7 @@ SO:0001688 (Restriction Enzyme Cleavage Junction), SO:0001687 (Restriction Enzym
 
 SO:0001977 (Ribonuclease Site)
 
-SO:0001956 (Protease Site), SO:0002224 (2A Self-Cleaving Peptide Region)
+SO:0001956 (Protease Site)
 
 ## Recommended Glyph and Alternates
 Cleavage Site is a "stem-top" glyph for describing small sites. In this system:
@@ -33,3 +33,6 @@ The Ribonuclease Site, Protease Site, and Restriction Enzyme Recognition Site gl
 Describing a Restriction Enzyme Cleavage Site with a vertical line glyph on a DNA backbone (as done previously in SBOL Visual 1.0 via the Restriction Enzyme Recognition Site glyph) can persist in a SBOL Visual 2 diagram and still be considered compliant with SBOL Visual 2, where it is now classified as a Biopolymer Location (which is a superclass of cleavage sites). Thus, the Biopolymer Location glyph from SBOL Visual 2.0 is backwards compatible with the Restriction Enzyme Recognition Site glyph from SBOL Visual 1.0.
 
 The 5' Sticky Restriction Site, 3' Sticky Restriction Site, and Blunt Restriction Site glyphs remain unchanged, and are more specific children/derivatives of the DNA-Stem Cleavage-Top glyph.
+
+A 2A self-cleaving polypeptide region (SO:0002224) SHOULD NOT be represented by a protease site, as its cleavage mechanism is different. Instead, 2A sequences should be represented using the Polypeptide Region glyph (see example in its specification).
+
