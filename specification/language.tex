@@ -287,12 +287,12 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	\caption{Examples of allowed and forbidden use of interactions with interactions: 
 	(a) aTc inhibiting repression by TetR.
 	(b) Multiple inhibitions of an interaction with two tails.
-	(c) Interactions SHOULD NOT connect to only one hear of a multi-head or tail of a multi-tail interaction.
+	(c) Interactions SHOULD NOT connect to only one head of a multi-head or tail of a multi-tail interaction.
 	(d) interactions MUST NOT connect to the head or tail of another interaction.}
 	\label{exa:4e}
 	\end{figure}
 
-\item Edges MAY have another edge at its head or tail, indicating that the interaction has a participant that is another interaction.
+\item An edge MAY have another edge at its head or tail, indicating that the interaction has a participant that is another interaction.
 	This does not have a direct representation in the SBOL 2 data model. % but will have one in SBOL 3
 	To avoid ambiguity, an edge SHOULD NOT connect to only one head of a multi-head arrow or one tail of a multi-tail arrow, and MUST connect only to the body of the edge, not its head or tail.
 	Examples are provided in~\ref{exa:4e}.
