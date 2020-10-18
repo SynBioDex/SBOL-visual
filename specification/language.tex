@@ -270,46 +270,31 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-composite.pdf}\label{exa:compositeedge}}
 	\caption{(a) Example of interaction node with an additional role indicated by an entering arrow head:
 	association of gRNA and Cas9 inhibited by the presence of a competing gRNA.
-	(b) Example of a composite edge pattern representing two interactions: CRISPR complex formation with dCas9, where that complex then represses a promoter.}
+	(b) Example of interaction node whose product plays a role in another interaction: dCas9 and gRNA associate to form a CRISPR complex, which then represses a promoter.}
 	\label{exa:4d3}
 	\end{figure}
-}
 
-
-\twothreezero{
 \item An edge with its head at an interaction node MAY use an \sbol{Interaction} arrow head to indicate a \sbol{role} other than Reactant (SBO:0000010) in the biochemical process.
-	An example is provided in~\ref{exa:nonreactant}.
+	Likewise, an edge with its tail at an interaction node MAY use an \sbol{Interaction} arrow head to indicate the \sbol{role} played by that product of the biochemical process in another \sbol{Interaction}.
+	Examples are provided in~\ref{exa:4d3}.
 
-\item An edge with its tail at an interaction node MAY use an \sbol{Interaction} arrow head to indicate an additional \sbol{Interaction} in which this product of the biochemical process has the tail \sbol{role} associated with that type.
-	An example is provided in~\ref{exa:compositeedge}.}
-
-\twothreezero{
 	\begin{figure}[h!]
 	\centering
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-higherlevel.pdf}}\hspace{1.0cm}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-expanded.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-trunktarget.pdf}}
-	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-branchtarget.pdf}}\hspace{1.0cm}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-trunkmultitarget.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/4e-branchtarget.pdf}}\hspace{1.0cm}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-endtarget.pdf}}
-	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-multihigherlevel.pdf}}\hspace{1.0cm}
-	\subfigure[NOT RECOMMENDED]{\includegraphics[scale=0.4]{figures/examples/4e-twolevel.pdf}}
-	\caption{Examples of allowed and forbidden use of higher-level edges: 
-	(a) aTc inhibiting repression by TetR, and (b) the expanded equivalent with no higher-level edges, in which the TetR protein is explicitly represented (both diagrams labelled to show the expansion pattern). (c) A higher-level edge MAY connect to a non-split portion of a multi-head or multi-tail edge, but (d) higher-level edges MUST NOT connect to a branch of a multi-head or multi-tail edge, (e) higher-level edges MUST NOT connect to the head or tail of an edge, and (f) higher-level edges MUST NOT share a target edge. (g) A higher-level edge is NOT RECOMMENDED to also be a target of another higher-level edge.}
+	\caption{Examples of allowed and forbidden use of interactions with interactions: 
+	(a) aTc inhibiting repression by TetR.
+	(b) Multiple inhibitions of an interaction with two tails.
+	(c) Interactions SHOULD NOT connect to only one hear of a multi-head or tail of a multi-tail interaction.
+	(d) interactions MUST NOT connect to the head or tail of another interaction.}
 	\label{exa:4e}
 	\end{figure}
-}
 
-\twothreezero{
-\item The head of a ``higher-level'' directed edge $E_1$ MAY connect to an intermediate point on another ``target'' edge $E_2$, forming an ``interaction with an interaction'' pattern.
-	The ``higher-level'' edge form is equivalent to an expansion into a pattern of three interactions with an unspecified intermediate molecular species $S$, as follows:
-	\begin{itemize}
-	\item The head of the ``higher level'' edge $E_1$ is the unspecified species $S$.
-	\item The tail of the ``target'' edge $E_2$ is the unspecified species $S$.
-	\item The unspecified species $S$ is the  Product (SBO:0000011) of a Process (SBO:0000375) \sbol{Interaction} whose Reactant (SBO:0000010) is the original tail of the ``target'' edge $E_2$.
-	\end{itemize}
-	Note that this applies only to heads, as an intermediate tail cannot be distinguished from multiple heads, as specified above; likewise, the connection point on the ``target'' edge MAY be a non-split portion of a multi-head or multi-tail edge, but MUST NOT be a branch of a multi-head or multi-tail arrow.
-	An edge MUST NOT be the ``target'' for more than one ``higher-level'' edge, as the expansion of such a form would be ambiguous.
-	Having a ``higher-level'' edge also be a ``target'' edge is NOT RECOMMENDED.
+\item Edges MAY have another edge at its head or tail, indicating that the interaction has a participant that is another interaction.
+	This does not have a direct representation in the SBOL 2 data model. % but will have one in SBOL 3
+	To avoid ambiguity, an edge SHOULD NOT connect to only one head of a multi-head arrow or one tail of a multi-tail arrow, and MUST connect only to the body of the edge, not its head or tail.
 	Examples are provided in~\ref{exa:4e}.
 }
 
