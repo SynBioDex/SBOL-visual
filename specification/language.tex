@@ -231,28 +231,71 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 In this case, a split or join in an edge represents either multiple participants with the same role (e.g., a transcription factor repressing two instances of a promoter) or a biochemical process (e.g., association of an inducible protein and a small molecule to form an active complex).  
 An edge with multiple heads MUST use the same glyph for each head.
 An edge that splits or joins with no glyph at the junction represents multiple participants with the same role.
-A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an additional \sbol{Interaction} with type and roles set by the process glyph. 
 Examples are provided in~\ref{exa:4d}.
 
 	\begin{figure}[h!]
 	\centering
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-multisource.pdf}}
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-multisink.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-association.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-dissociation.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-composite.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4d-conflict.pdf}}
 	\caption{Examples of use of multi-head and multi-tail arrows: 
-	(a) Repression from multiple independent sources, (b) repressor with multiple targets, 
-	(c) association of gRNA and Cas9 into an active CRISPR complex and (d) the dissociation of that complex, and
-	(e) composite edges representing two interactions: CRISPR complex formation with Cas9 from two sources, which then represses a promoter.
-	(f) Multi-head interactions, however, MUST NOT use different glyphs for different heads.}
+	(a) Repression from multiple independent sources and (b) repressor with multiple targets.
+	(c) Multi-head interactions, however, MUST NOT use different glyphs for different heads.}
 	\label{exa:4d}
 	\end{figure}
+	}
 
-\item A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
+\twoonezero{
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-association.pdf}}\hspace{1.0cm}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-dissociation.pdf}}
+	\caption{Examples of use of interaction nodes: 
+	(a) association of gRNA and Cas9 into an active CRISPR complex and (b) the dissociation of that complex.}
+	\label{exa:4d2}
+	\end{figure}
+}
+
+\twoonezero{
+\item A glyph at the point where an edge splits or joins represents a biochemical process, i.e., an \sbol{Interaction} with type and roles set by the process glyph. 
+A biochemical process represented by a glyph at an edge junction SHOULD be represented using a glyph defined in \ref{apdx:sym:interactionnodes}. In this case, the interaction type MUST be contained within at least one of the glyph's associated terms.
 In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the \sbol{Interaction}, and that each associated \sbol{Participation} object has a \sbol{role} compatible with its position on the head or tail of the edge.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:interactionnodes} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
+	Examples are provided in~\ref{exa:4d2}.}
+
+\twothreezero{
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-nonreactant.pdf}\label{exa:nonreactant}}\hspace{1.0cm}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4d-composite.pdf}\label{exa:compositeedge}}
+	\caption{(a) Example of interaction node with an additional role indicated by an entering arrow head:
+	association of gRNA and Cas9 inhibited by the presence of a competing gRNA.
+	(b) Example of interaction node whose product plays a role in another interaction: dCas9 and gRNA associate to form a CRISPR complex, which then represses a promoter.}
+	\label{exa:4d3}
+	\end{figure}
+
+\item An edge with its head at an interaction node MAY use an \sbol{Interaction} arrow head to indicate a \sbol{role} other than Reactant (SBO:0000010) in the biochemical process.
+	Likewise, an edge with its tail at an interaction node MAY use an \sbol{Interaction} arrow head to indicate the \sbol{role} played by that product of the biochemical process in another \sbol{Interaction}.
+	Examples are provided in~\ref{exa:4d3}.
+
+	\begin{figure}[h!]
+	\centering
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-higherlevel.pdf}}\hspace{1.0cm}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/4e-trunkmultitarget.pdf}}
+	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/4e-branchtarget.pdf}}\hspace{1.0cm}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/4e-endtarget.pdf}}
+	\caption{Examples of allowed and forbidden use of interactions with interactions: 
+	(a) aTc inhibiting repression by TetR.
+	(b) Multiple inhibitions of an interaction with two tails.
+	(c) Interactions SHOULD NOT connect to only one head of a multi-head or tail of a multi-tail interaction.
+	(d) interactions MUST NOT connect to the head or tail of another interaction.}
+	\label{exa:4e}
+	\end{figure}
+
+\item An edge MAY have another edge at its head or tail, indicating that the interaction has a participant that is another interaction.
+	This does not have a direct representation in the SBOL 2 data model. % but will have one in SBOL 3
+	To avoid ambiguity, an edge SHOULD NOT connect to only one head of a multi-head arrow or one tail of a multi-tail arrow, and MUST connect only to the body of the edge, not its head or tail.
+	Examples are provided in~\ref{exa:4e}.
 }
 
 \end{enumerate}
@@ -329,7 +372,7 @@ A port SHOULD NOT both have interactions both connecting to it and crossing the 
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-mixed.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-disconnected.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-evaded.pdf}}
-	\caption{Examples of recommended and problematic module ports: (a) port on a black-box module, (b) ports connected to module internals via mappings, (c) boundary-crossing interaction passing through a port, (d) diagrams SHOULD NOT mix mappings and interactions on a give port, (e) ports MUST NOT be disconnected from their associated glyphs, and (f) if a port exists, interactions with that port MUST NOT cross the boundary at any other location.}
+	\caption{Examples of recommended and problematic module ports: (a) port on a black-box module, (b) ports connected to module internals via mappings, (c) boundary-crossing interaction passing through a port, (d) diagrams SHOULD NOT mix mappings and interactions on a given port, (e) ports MUST NOT be disconnected from their associated glyphs, and (f) if a port exists, interactions with that port MUST NOT cross the boundary at any other location.}
 	\label{exa:moduleD}
 	\end{figure}
 
