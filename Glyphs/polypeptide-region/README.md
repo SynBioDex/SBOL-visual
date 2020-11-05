@@ -22,4 +22,6 @@ This glyph is intended to be used in composition or superposition with the glyph
 ![example of usage](polypeptide-region-example.png)
 
 ## Notes
-*This section left deliberately blank*
+Polypeptide region can also be used to represent regions that involve cleavage, such as a 2A self-cleaving polypeptide region (SO:0002224, a child term of SO:0000839). It is RECOMMENDED that cleavage-inducing polypeptide regions be visually distinguished from intact, e.g., through the use of dashed lines.
+
+![example of usage](polypeptide-2a-example.png)
