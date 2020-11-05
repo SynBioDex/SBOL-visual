@@ -1,38 +1,51 @@
-# SEP V021: Add Non Directional Arrow(line) for Interactions of Unknown Type
+# SEP V021: Unspecified Interaction Glyph Node
 
 | SEP | |
 | --- | --- |
 | **Authors** | Logan Terry |
 | **Editor** | TBD |
 | **Type** | Specification |
-| **SBOL Visual Version** | 2.2 |
+| **SBOL Visual Version** | 2.3 |
 | **Status** | Draft |
 | **Created** | 3-Sep-2020 |
-| **Last modified** | 3-Sep-2020 |
+| **Last modified** | 3-Oct-2020 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/102 |
 
 
 ## Abstract
 
-This SEP proposes a way to visualize interactions where no directionality can be inferred from either the type or participant role.
+This SEP proposes a way to visualize interactions where the nature of the interaction is unknown by adding a new "unspecified" interaction node glyph.
 
 ## 1. Rationale <a name="rationale"></a>
 
-There is currently no defined way to show an interaction where the directionality can't be inferred.
+There is currently no defined way to show an interaction with unknown directionality or of unknown nature.
 
 ## 2. Specification <a name="specification"></a>
 
-Section 5.4 (Interaction) after
+### New Interaction Node Glyph "Unspecified"
 
-> An example is provided in Figure 15.
+#### Unspecified SBO term(s)
+SBO:0000231 occurring entity representation
 
-add
+Incoming: SBO:0000003 Participant Role
 
-> If no directionality can be inferred from the SBOL 2 data, an edge with a "unspecified" interaction node may be used.
+#### Recommended Glyph and Alternates
+Unspecified is represented by the unicode "replacement character" glyph, indicating a missing or invalid symbol:
+
+![glyph specification](../Glyphs/InteractionNodes/unspecified/unspecified-glyph-specification.png)
+
+#### Prototypical Example
+
+An interaction that is missing any information about its nature or intended purpose.
+
+#### Notes
+Note that there are no outgoing edges for the Unspecified interaction, because there is no difference in roles to indicate.
+
+The Unspecified glyph is intended for showing where information about an interaction is missing. It should not generally appear with well-curated designs or diagrams.
 
 ## 3. Examples <a name='example'></a>
 
-In the SBOLTestSuite https://github.com/SynBioDex/SBOLTestSuite/blob/master/SBOL2/ModuleDefinitionOutput.xml both interactions have a participant of role SBO:0000598 promoter which has been made obsolete. Newer visualization tools will likely not be able to infer direction in this case, as they are expecting SBO:0000642 inhibited.
+See examples above.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
