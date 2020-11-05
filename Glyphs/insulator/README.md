@@ -13,4 +13,5 @@ The insulator glyph is a box inside another box that isolates it from its enviro
 RiboJ
 
 ## Notes
-*this section deliberately blank*
+
+This glyph is deprecated in favor of inert DNA spacer.
