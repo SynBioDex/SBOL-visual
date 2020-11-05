@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 44.999998 44.999998" version="1.1" x="0px" y="0px" width="0.5in" height="0.5in" id="svg2" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs4">
+    <style type="text/css" id="style6">
+      path,circle {
+        stroke:#000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none
+      }</style>
+  </defs>
+  <circle cx="22.499998" cy="22.499998" r="12" id="circle8" style="stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-width: 3px;" x1="14.045" y1="14.045" x2="30.955" y2="30.955"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-width: 3px;" x1="13.896" y1="31.104" x2="31.104" y2="13.896"/>
+</svg>
