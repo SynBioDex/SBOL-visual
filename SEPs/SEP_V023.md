@@ -15,17 +15,74 @@
 
 This SEP codifies expectations about how to propose and implement changes in SBOL Visual.
 
-## 1. Rationale <a name="rationale"></a>
+## Table of Contents
+- [1. Rationale](#rationale)
+- [2. Catalog of SBOL Visual Content](#content)
+  - [2.1 Primary Content](#primary)
+  - [2.2 Derived Content](#derived)
+- [3. Specification Change Workflow](#workflow)
+  - [3.1 Pre-SEP](#preSEP)
+  - [3.2 SEP](#SEP)
+  - [3.3 Specification Releases](#release)
+  - [3.4 Derivative Material](#derivativeupdate)
+- [4. Backwards Compatibility](#compatibility)
+- [5. Discussion](#discussion)
+- [Copyright](#copyright)
+
+## <a name="rationale"></a> 1. Rationale 
 
 SBOL Visual has developed a workflow that supports the following goals:
 
- - Specification changes are developed in complete implementation detail before being put to a vote.
- - Glyphs and the specification are kept synchronized
+ - Specification changes are developed with all information required for implementation before being put to a vote.
+ - Glyphs and the specification are kept synchronized.
  - Changes can be deployed for pre-release immediately after adoption by vote.
- - Specification releases can be deployed quickly and coherently
+ - Specification releases can be deployed quickly and coherently.
 
 This workflow has not previously been documented, however, making it harder for new contributors.  The workflow also does not yet incorporate all of the key artifacts linked to the specification.  In particular, the workflow also needs to be extended to either embrace or deprecate the following:
 
+Finally, where possible the workflow should ensure that artifacts become marked with version and timestamp and can be automatically validated. Need to also make certain that old resources and pre-release resources are accessible in at least some form.
+
+The goal of this document is to provide a well-defined workflow that addresses all of these needs.
+
+Once adopted, this workflow will be added to the repository and linked in "How to contribute" material on the website and top-level README.
+
+
+## <a name="content"></a> 2. Catalog of SBOL Visual Content
+
+### <a name="repository"></a> 2.1. Repository Structure
+
+The SBOL Visual repository should contain all of the maintained content for the SBOL Visual standard.
+
+This content is broken into four major subsets:
+
+- Primary content: _this is the "meat" of the specification_
+  - Specification: the core document, including pages for each glyph
+  - Glyphs: each glyph is in its own subdirectory containing
+     - A README file providing its name, ontology term(s), glyph description, examples, and notes
+     - An SVG file for the glyph.
+     - An SVG "specification" file indicating bounding box, recommended alignment, and interior.
+     - A PDF export of the glyph SVG, and a PNG export of the specification SVG
+
+- Metacontent:
+  - SEPs: "SBOL enhancement proposals" for improving the specification
+  - Bibliography: _does not currently exist; needs to be created, and also mined for good examples for the website._
+
+- Derivative content:
+  - Ontology (privileged: must pass validation before vote)
+  - Glyph page PDFs
+  - Font
+  - Ontology HTML & webservice
+  - Website materials:
+    - Training slides
+    - Samplers
+    - Glyph collection zips (github binary release via github action?)
+    - Examples from specification & training
+- Scripting:
+  - glyphpage
+  - ontology transformation (external)
+
+<!--
+Things to focus or deprecate:
  - ontology
  - ontology web service
  - font
@@ -35,42 +92,11 @@ This workflow has not previously been documented, however, making it harder for 
  - parametric glyphs (once available)
  - SEP summary catalog (nice-to-have)
  - GraphViz (SBOL Visual 1 - deprecate, since GraphViz can use SVGs)
-
-Finally, where possible the workflow should ensure that artifacts become marked with version and timestamp and can be automatically validated. Need to also make certain that old resources and pre-release resources are accessible in at least some form.
-
-The goal of this document is to provide a well-defined workflow that addresses all of these needs.
+-->
 
 
-## 2. Specification Change Workflow <a name="specification"></a>
-
-Advertising "How to contribute":
-- update the website based on this
-- point to this SEP in the README for the repository
-
-
-Repository structure:
-
-- Content
-  - Primary:
-    - Specification
-    - Glyphs
-  - Metacontent:
-    - SEPs
-    - Bibliography (bibtex?)
-      - Good examples for website
-  - Derivative:
-    - Ontology (privileged: must pass validation before vote)
-    - Glyph page PDFs
-    - Font
-    - Ontology HTML & webservice
-    - Website materials:
-      - Training slides
-      - Samplers
-      - Glyph collection zips (github binary release via github action?)
-      - Examples from specification & training
-  - Scripting:
-    - glyphpage
-    - ontology transformation (external)
+### <a name="derived"></a> 2.2. Derived Content
+### <a name="branches"></a> 2.3. Branches
 
 - Branches (git-flow pattern)
   - master: releases, SEPs
@@ -79,11 +105,16 @@ Repository structure:
   - all changes to the primary content go through pull requests
 
 
+## <a name='workflow'></a> 3. Specification Change Workflow
+### <a name='preSEP'></a> 3.1 Pre-SEP
+
 Pre-SEP:
 
 - Open issue
 - Discuss on issue / mailing list
 - How to decide when it's time for an SEP - when a coherent concrete proposal is possible
+
+### <a name='SEP'></a> 3.2 SEP
 
 SEP:
 
@@ -113,6 +144,8 @@ SEP:
   - SEP, Draft, ready for vote, final, accepted/rejected/withdrawn
   - Nothing has yet been rejected, so we'll not worry about that case until it happens
 
+### <a name='release'></a> 3.3 Specification Releases
+
 Specification releases:
 
 - When to cut a release - typically yearly, paced by the JIB special issue
@@ -128,6 +161,10 @@ Specification releases:
     - Make sure that automation produce all derived materials (include website updates)
   - Merge master back into develop, increment version and mark as pre-release (look at http://danielkummer.github.io/git-flow-cheatsheet/ to figure out a better approach)
 - Git automatically maintains all old release & pre-release information that lives in the repository; non-repository derived resources need to be handled separately
+
+### <a name='derivativeupdate'></a> 3.4 Derivative Material
+
+
 
 Derivative material (and maintaining access to old releases):
 
@@ -147,20 +184,15 @@ Derivative material (and maintaining access to old releases):
 - Font
 
 
-## 3. Examples <a name='example'></a>
-
-See examples above.
-
-
-## 4. Backwards Compatibility <a name='compatibility'></a>
+## <a name='compatibility'></a> 4. Backwards Compatibility
 
 No workflow was previously codified, so there can be no conflict.
 
-## 5. Discussion <a name='discussion'></a>
+## <a name='discussion'></a> 5. Discussion
 
 TBD
 
-## Copyright <a name='copyright'></a>
+## <a name='copyright'></a> Copyright
 
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
