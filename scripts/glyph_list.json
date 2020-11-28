@@ -4,37 +4,37 @@
     "output": "glyphs.tex",
     "dir": "",
     "glyphs": [
-      "aptamer",
-      "assembly-scar",
-      "blunt-restriction-site",
-      "cds",
-      "chromosomal-locus",
-      "circular-plasmid",
-      "cleavage-site",
-      "composite",
-      "engineered-region",
-      "insulator",
-      "intron",
-      "location",
-      "no-glyph-assigned",
-      "non-coding-rna",
-      "omitted-detail",
-      "operator",
-      "origin-of-replication",
-      "origin-of-transfer",
-      "overhang",
-      "polyA",
-      "polypeptide-region",
-      "primer-binding-site",
-      "promoter",
-      "ribosome-entry-site",
-      "signature",
-      "specific-recombination-site",
-      "stability-element",
-      "sticky-restriction-site",
-      "stop-site",
-      "terminator",
-      "unspecified"
+      {"lastEdited": "", "name": "aptamer"},
+      {"lastEdited": "", "name": "assembly-scar"},
+      {"lastEdited": "", "name": "blunt-restriction-site"},
+      {"lastEdited": "", "name": "cds"},
+      {"lastEdited": "\\twoonezeronopage", "name": "chromosomal-locus"},
+      {"lastEdited": "\\twoonezeronopage", "name": "circular-plasmid"},
+      {"lastEdited": "", "name": "cleavage-site"},
+      {"lastEdited": "", "name": "composite"},
+      {"lastEdited": "", "name": "engineered-region"},
+      {"lastEdited": "", "name": "insulator"},
+      {"lastEdited": "\\twotwozeronopage", "name": "intron"},
+      {"lastEdited": "", "name": "location"},
+      {"lastEdited": "", "name": "no-glyph-assigned"},
+      {"lastEdited": "", "name": "non-coding-rna"},
+      {"lastEdited": "", "name": "omitted-detail"},
+      {"lastEdited": "", "name": "operator"},
+      {"lastEdited": "\\twotwozeronopage", "name": "origin-of-replication"},
+      {"lastEdited": "", "name": "origin-of-transfer"},
+      {"lastEdited": "", "name": "overhang"},
+      {"lastEdited": "", "name": "polyA"},
+      {"lastEdited": "\\twotwozeronopage", "name": "polypeptide-region"},
+      {"lastEdited": "", "name": "primer-binding-site"},
+      {"lastEdited": "", "name": "promoter"},
+      {"lastEdited": "", "name": "ribosome-entry-site"},
+      {"lastEdited": "", "name": "signature"},
+      {"lastEdited": "", "name": "specific-recombination-site"},
+      {"lastEdited": "", "name": "stability-element"},
+      {"lastEdited": "", "name": "sticky-restriction-site"},
+      {"lastEdited": "\\twotwozeronopage", "name": "stop-site"},
+      {"lastEdited": "", "name": "terminator"},
+      {"lastEdited": "", "name": "unspecified"}
     ]
   },
   {
@@ -42,11 +42,11 @@
     "output": "interactionglyphs.tex",
     "dir": "Interactions",
     "glyphs": [
-      "control",
-      "degradation",
-      "inhibition",
-      "process",
-      "stimulation"
+      {"lastEdited": "\\twotwozeronopage", "name": "control"},
+      {"lastEdited": "\\twotwozeronopage", "name": "degradation"},
+      {"lastEdited": "\\twotwozeronopage", "name": "inhibition"},
+      {"lastEdited": "\\twotwozeronopage", "name": "process"},
+      {"lastEdited": "\\twotwozeronopage", "name": "stimulation"}
     ]
   },
   {
@@ -54,9 +54,9 @@
     "output": "interactionnodeglyphs.tex",
     "dir": "InteractionNodes",
     "glyphs": [
-      "association",
-      "dissociation",
-      "process"
+      {"lastEdited": "\\twotwozeronopage", "name":  "association"},
+      {"lastEdited": "\\twotwozeronopage", "name": "dissociation"},
+      {"lastEdited": "\\twotwozeronopage", "name": "process"}
     ]
   },
   {
@@ -64,14 +64,14 @@
     "output": "speciesglyphs.tex",
     "dir": "FunctionalComponents",
     "glyphs": [
-      "complex",
-      "dsNA",
-      "macromolecule",
-      "no-glyph-assigned",
-      "protein",
-      "simple-chemical",
-      "ssNA",
-      "unspecified"
+      {"lastEdited": "\\twotwozeronopage", "name": "complex"},
+      {"lastEdited": "\\twotwozeronopage", "name": "dsNA"},
+      {"lastEdited": "\\twotwozeronopage", "name": "macromolecule"},
+      {"lastEdited": "\\twotwozeronopage", "name": "no-glyph-assigned"},
+      {"lastEdited": "\\twotwozeronopage", "name": "protein"},
+      {"lastEdited": "\\twotwozeronopage", "name": "simple-chemical"},
+      {"lastEdited": "\\twotwozeronopage", "name": "ssNA"},
+      {"lastEdited": "\\twotwozeronopage", "name": "unspecified"}
     ]
   }
 ]

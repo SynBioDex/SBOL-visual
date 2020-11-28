@@ -104,7 +104,8 @@ initial_path = os.getcwd()
 for glyph_category in data:
 
     glyph_svgs = []
-    for glyph_name in glyph_category["glyphs"]:
+    for glyph in glyph_category["glyphs"]:
+        glyph_name = glyph["name"]
 
         glyph_dir = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name)
         svg_path = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name, f"{glyph_name}.svg")
