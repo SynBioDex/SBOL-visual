@@ -1,0 +1,77 @@
+[
+  {
+    "type": " Functional Components",
+    "output": "glyphs.tex",
+    "dir": "",
+    "glyphs": [
+      "aptamer",
+      "assembly-scar",
+      "blunt-restriction-site",
+      "cds",
+      "chromosomal-locus",
+      "circular-plasmid",
+      "cleavage-site",
+      "composite",
+      "engineered-region",
+      "insulator",
+      "intron",
+      "location",
+      "no-glyph-assigned",
+      "non-coding-rna",
+      "omitted-detail",
+      "operator",
+      "origin-of-replication",
+      "origin-of-transfer",
+      "overhang",
+      "polyA",
+      "polypeptide-region",
+      "primer-binding-site",
+      "promoter",
+      "ribosome-entry-site",
+      "signature",
+      "specific-recombination-site",
+      "stability-element",
+      "sticky-restriction-site",
+      "stop-site",
+      "terminator",
+      "unspecified"
+    ]
+  },
+  {
+    "type": "Interactions",
+    "output": "interactionglyphs.tex",
+    "dir": "Interactions",
+    "glyphs": [
+      "control",
+      "degradation",
+      "inhibition",
+      "process",
+      "stimulation"
+    ]
+  },
+  {
+    "type": "Interaction Nodes",
+    "output": "interactionnodeglyphs.tex",
+    "dir": "InteractionNodes",
+    "glyphs": [
+      "association",
+      "dissociation",
+      "process"
+    ]
+  },
+  {
+    "type": "Species",
+    "output": "speciesglyphs.tex",
+    "dir": "FunctionalComponents",
+    "glyphs": [
+      "complex",
+      "dsNA",
+      "macromolecule",
+      "no-glyph-assigned",
+      "protein",
+      "simple-chemical",
+      "ssNA",
+      "unspecified"
+    ]
+  }
+]
