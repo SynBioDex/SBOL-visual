@@ -1,0 +1,22 @@
+name: create_sep_table
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  create_sep_table:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+
+      - name: Update SEP Table
+        run: python3 scripts/generate_table.py
+
+      - name: Commit SEP table
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add SEPs/summary.csv
+          git commit -m "Auto-update SEPs/summary.csv"
