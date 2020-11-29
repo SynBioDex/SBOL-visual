@@ -1,6 +1,6 @@
 [
   {
-    "type": " Functional Components",
+    "type": "Functional Components",
     "output": "glyphs.tex",
     "dir": "",
     "glyphs": [
@@ -8,23 +8,23 @@
       {"lastEdited": "", "name": "assembly-scar"},
       {"lastEdited": "", "name": "blunt-restriction-site"},
       {"lastEdited": "", "name": "cds"},
-      {"lastEdited": "\\twoonezeronopage", "name": "chromosomal-locus"},
-      {"lastEdited": "\\twoonezeronopage", "name": "circular-plasmid"},
+      {"lastEdited": "2.1.0", "name": "chromosomal-locus"},
+      {"lastEdited": "2.1.0", "name": "circular-plasmid"},
       {"lastEdited": "", "name": "cleavage-site"},
       {"lastEdited": "", "name": "composite"},
       {"lastEdited": "", "name": "engineered-region"},
       {"lastEdited": "", "name": "insulator"},
-      {"lastEdited": "\\twotwozeronopage", "name": "intron"},
+      {"lastEdited": "2.2.0", "name": "intron"},
       {"lastEdited": "", "name": "location"},
       {"lastEdited": "", "name": "no-glyph-assigned"},
       {"lastEdited": "", "name": "non-coding-rna"},
       {"lastEdited": "", "name": "omitted-detail"},
       {"lastEdited": "", "name": "operator"},
-      {"lastEdited": "\\twotwozeronopage", "name": "origin-of-replication"},
+      {"lastEdited": "2.1.0", "name": "origin-of-replication"},
       {"lastEdited": "", "name": "origin-of-transfer"},
       {"lastEdited": "", "name": "overhang"},
       {"lastEdited": "", "name": "polyA"},
-      {"lastEdited": "\\twotwozeronopage", "name": "polypeptide-region"},
+      {"lastEdited": "2.2.0", "name": "polypeptide-region"},
       {"lastEdited": "", "name": "primer-binding-site"},
       {"lastEdited": "", "name": "promoter"},
       {"lastEdited": "", "name": "ribosome-entry-site"},
@@ -32,7 +32,7 @@
       {"lastEdited": "", "name": "specific-recombination-site"},
       {"lastEdited": "", "name": "stability-element"},
       {"lastEdited": "", "name": "sticky-restriction-site"},
-      {"lastEdited": "\\twotwozeronopage", "name": "stop-site"},
+      {"lastEdited": "2.1.0", "name": "stop-site"},
       {"lastEdited": "", "name": "terminator"},
       {"lastEdited": "", "name": "unspecified"}
     ]
@@ -42,11 +42,11 @@
     "output": "interactionglyphs.tex",
     "dir": "Interactions",
     "glyphs": [
-      {"lastEdited": "\\twotwozeronopage", "name": "control"},
-      {"lastEdited": "\\twotwozeronopage", "name": "degradation"},
-      {"lastEdited": "\\twotwozeronopage", "name": "inhibition"},
-      {"lastEdited": "\\twotwozeronopage", "name": "process"},
-      {"lastEdited": "\\twotwozeronopage", "name": "stimulation"}
+      {"lastEdited": "2.2.0", "name": "control"},
+      {"lastEdited": "2.2.0", "name": "degradation"},
+      {"lastEdited": "2.2.0", "name": "inhibition"},
+      {"lastEdited": "2.2.0", "name": "process"},
+      {"lastEdited": "2.2.0", "name": "stimulation"}
     ]
   },
   {
@@ -54,9 +54,9 @@
     "output": "interactionnodeglyphs.tex",
     "dir": "InteractionNodes",
     "glyphs": [
-      {"lastEdited": "\\twotwozeronopage", "name":  "association"},
-      {"lastEdited": "\\twotwozeronopage", "name": "dissociation"},
-      {"lastEdited": "\\twotwozeronopage", "name": "process"}
+      {"lastEdited": "2.2.0", "name":  "association"},
+      {"lastEdited": "2.2.0", "name": "dissociation"},
+      {"lastEdited": "2.2.0", "name": "process"}
     ]
   },
   {
@@ -64,14 +64,14 @@
     "output": "speciesglyphs.tex",
     "dir": "FunctionalComponents",
     "glyphs": [
-      {"lastEdited": "\\twotwozeronopage", "name": "complex"},
-      {"lastEdited": "\\twotwozeronopage", "name": "dsNA"},
-      {"lastEdited": "\\twotwozeronopage", "name": "macromolecule"},
-      {"lastEdited": "\\twotwozeronopage", "name": "no-glyph-assigned"},
-      {"lastEdited": "\\twotwozeronopage", "name": "protein"},
-      {"lastEdited": "\\twotwozeronopage", "name": "simple-chemical"},
-      {"lastEdited": "\\twotwozeronopage", "name": "ssNA"},
-      {"lastEdited": "\\twotwozeronopage", "name": "unspecified"}
+      {"lastEdited": "2.2.0", "name": "complex"},
+      {"lastEdited": "2.2.0", "name": "dsNA"},
+      {"lastEdited": "2.2.0", "name": "macromolecule"},
+      {"lastEdited": "2.2.0", "name": "no-glyph-assigned"},
+      {"lastEdited": "2.2.0", "name": "protein"},
+      {"lastEdited": "2.2.0", "name": "simple-chemical"},
+      {"lastEdited": "2.2.0", "name": "ssNA"},
+      {"lastEdited": "2.2.0", "name": "unspecified"}
     ]
   }
 ]

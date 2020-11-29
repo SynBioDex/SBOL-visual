@@ -14,6 +14,11 @@ definitions_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 
 initial_path = os.getcwd()
 
+version_macros = {
+    "2.1.0": "\\twoonezeronopage",
+    "2.2.0": "\\twotwozeronopage"
+}
+
 for glyph_category in data:
 
     # Generate individual PDF files for each glyph
@@ -42,7 +47,7 @@ for glyph_category in data:
             glyph_name = glyph["name"]
 
             if glyph["lastEdited"]:
-                output_file.write(glyph["lastEdited"] + "{\n")
+                output_file.write(version_macros[glyph["lastEdited"]] + "{\n")
 
             relative_pdf_path = os.path.join("glyphscript", "Glyphs", glyph_category["dir"], glyph_name + ".pdf")
             output_file.write("\\includepdf[pagecommand={},pages={1-}]{%s}\n" % relative_pdf_path)
