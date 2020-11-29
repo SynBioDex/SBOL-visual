@@ -64,3 +64,42 @@ jobs:
           git config --local user.name "GitHub Action"
           git add sampler/
           git commit -m "Automatically re-generate sampler"
+
+  build_glph_zipfiles:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install libcairo2-dev build-essential python3-setuptools
+          cd scripts
+          pip3 install -r requirements.txt
+
+      - name: Make directories
+        run: |
+          mkdir -p glyph_collections/svg
+          mkdir -p glyph_collections/pdf
+          mkdir -p glyph_collections/png
+
+      - name: Make collections of glyphs
+        run: python3 scripts/collate_glyphs.py
+
+      - name: Upload zipfile of SVGs
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: SVG Glyphs
+          path: glyph_collections/svg
+
+      - name: Upload zipfile of SVGs
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: SVG Glyphs
+          path: glyph_collections/pdf
+
+      - name: Upload zipfile of SVGs
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: SVG Glyphs
+          path: glyph_collections/png
