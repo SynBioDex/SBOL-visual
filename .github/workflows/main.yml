@@ -13,18 +13,16 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
         
-      - name: Install dependency
+      - name: Install dependencies
         run: |
           cd specification/glyphscript
           npm install markdown-pdf
+          apt-get install libcairo2-dev build-essential
+          cd ../scripts
+          pip install -r requirements.txt
       
       - name: Generate PDFs for glyphs
-        run: |
-          cd specification/glyphscript
-          bash rebuild_glyph_inputs.sh
-          bash rebuild_interactionglyph_inputs.sh
-          bash rebuild_interactionnodeglyph_inputs.sh
-          bash rebuild_speciesglyph_inputs.sh
+        run: python3 scripts/rebuild_glyphs.py
         
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@v0.2.0
@@ -34,9 +32,15 @@ jobs:
 
       - name: Move PDF
         run: mkdir -p output && cp specification/sbolvisual.pdf output
-        
-      - name: Upload artifact
+
+      - name: Upload PDF as artifact
         uses: actions/upload-artifact@v1.0.0
         with:
           name: PDF
           path: output
+
+      - name: Upload samplers as artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: samplers
+          path: sampler
