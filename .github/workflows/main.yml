@@ -56,3 +56,11 @@ jobs:
         with:
           name: samplers
           path: sampler
+
+      - name: Commit sampler file
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add sampler/
+          git commit -m "Automatically re-generate sampler"
