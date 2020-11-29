@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install libcairo2-dev build-essential
-          cd ../scripts
+          cd scripts
           pip install -r requirements.txt
 
       - name: Build samplers
