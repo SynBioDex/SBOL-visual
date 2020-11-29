@@ -44,7 +44,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get install libcairo2-dev build-essential
+          sudo apt-get install libcairo2-dev build-essential python3-setuptools
           cd scripts
           pip3 install -r requirements.txt
 
