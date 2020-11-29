@@ -37,7 +37,7 @@ jobs:
           path: output
 
   build_sampler:
-    - runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
