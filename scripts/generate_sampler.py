@@ -99,7 +99,7 @@ with open(os.path.join(script_dir, "glyph_list.json")) as fp:
 
 definitions_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 
-initial_path = os.getcwd()
+output_dir = os.path.abspath(os.path.join(script_dir, os.pardir, "sampler"))
 
 for glyph_category in data:
 
@@ -125,9 +125,9 @@ for glyph_category in data:
 
     grid = create_glyph_grid(glyph_svgs, title_string=glyph_category["type"])
     grid_svg_string = ET.tostring(grid, encoding="unicode")
-    with open(f"{glyph_category['type']}.svg", 'w') as f:
+
+    with open(os.path.join(output_dir, f"{glyph_category['type']}.svg"), 'w') as f:
         f.write(grid_svg_string)
 
-    output_dir = os.getcwd()
     convert_svg(grid_svg_string, output_dir, glyph_category['type'])
 
