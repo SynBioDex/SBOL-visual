@@ -92,14 +92,14 @@ jobs:
           name: SVG Glyphs
           path: glyph_collections/svg
 
-      - name: Upload zipfile of SVGs
+      - name: Upload zipfile of PDFs
         uses: actions/upload-artifact@v1.0.0
         with:
-          name: SVG Glyphs
+          name: PDF Glyphs
           path: glyph_collections/pdf
 
-      - name: Upload zipfile of SVGs
+      - name: Upload zipfile of PNGs
         uses: actions/upload-artifact@v1.0.0
         with:
-          name: SVG Glyphs
+          name: PNG Glyphs
           path: glyph_collections/png
