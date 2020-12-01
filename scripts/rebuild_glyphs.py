@@ -29,10 +29,15 @@ for glyph_category in data:
         readme_dir = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name)
         readme_file = os.path.join(readme_dir, "README.md")
 
-        # path to output PDF relative to this script
+        # absolute path to output PDF
         pdf_name = os.path.abspath(os.path.join(script_dir, os.path.pardir, "specification", "glyphscript", "Glyphs", glyph_category["dir"], glyph_name + ".pdf"))
 
         if os.path.exists(readme_file):
+
+            # Skip PDF generation if PDF has been modified more recently than the dir containing README & image files
+            if os.path.exists(pdf_name) and os.path.getmtime(pdf_name) > os.path.getmtime(readme_dir):
+                continue
+
             # We need to change directory so that the relative paths to images used in README.md work correctly
             os.chdir(readme_dir)
             os.system(f"{cmd_path} README.md --out {pdf_name}")
