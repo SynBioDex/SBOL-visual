@@ -19,6 +19,8 @@ output_dir = os.path.abspath(os.path.join(script_dir, os.pardir, "glyph_collecti
 for glyph_category in data:
 
     glyph_svgs = []
+    processed_svg_filenames = []
+    processed_pdf_filenames = []
     for glyph in glyph_category["glyphs"]:
         glyph_name = glyph["name"]
 
@@ -27,10 +29,18 @@ for glyph_category in data:
         for filename in os.listdir(glyph_dir):
 
             if filename.endswith("pdf") and "-specification" not in filename and "-example" not in filename:
+                if filename in processed_pdf_filenames:
+                    print(f"WARNING: a PDF file named {filename} has already been encountered")
+                processed_pdf_filenames.append(filename)
+
                 image_path = os.path.join(glyph_dir, filename)
                 shutil.copy(image_path, os.path.join(output_dir, "pdf", filename))
 
             if filename.endswith("svg") and "-specification" not in filename and "-example" not in filename:
+                if filename in processed_svg_filenames:
+                    print(f"WARNING: an SVG file named {filename} has already been encountered")
+                processed_svg_filenames.append(filename)
+
                 image_path = os.path.join(glyph_dir, filename)
                 shutil.copy(image_path, os.path.join(output_dir, "svg", filename))
 
