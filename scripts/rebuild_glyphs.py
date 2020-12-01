@@ -16,7 +16,8 @@ initial_path = os.getcwd()
 
 version_macros = {
     "2.1.0": "\\twoonezeronopage",
-    "2.2.0": "\\twotwozeronopage"
+    "2.2.0": "\\twotwozeronopage",
+    "2.3.0": "\\twothreezeronopage"
 }
 
 for glyph_category in data:

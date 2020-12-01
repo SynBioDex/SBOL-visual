@@ -10,10 +10,11 @@
       {"lastEdited": "", "name": "cds"},
       {"lastEdited": "2.1.0", "name": "chromosomal-locus"},
       {"lastEdited": "2.1.0", "name": "circular-plasmid"},
-      {"lastEdited": "", "name": "cleavage-site"},
+      {"lastEdited": "2.3.0", "name": "cleavage-site"},
       {"lastEdited": "", "name": "composite"},
       {"lastEdited": "", "name": "engineered-region"},
-      {"lastEdited": "", "name": "insulator"},
+      {"lastEdited": "2.3.0", "name": "inert-dna-spacer"},
+      {"lastEdited": "2.3.0", "name": "insulator"},
       {"lastEdited": "2.2.0", "name": "intron"},
       {"lastEdited": "", "name": "location"},
       {"lastEdited": "", "name": "no-glyph-assigned"},
@@ -24,7 +25,7 @@
       {"lastEdited": "", "name": "origin-of-transfer"},
       {"lastEdited": "", "name": "overhang"},
       {"lastEdited": "", "name": "polyA"},
-      {"lastEdited": "2.2.0", "name": "polypeptide-region"},
+      {"lastEdited": "2.3.0", "name": "polypeptide-region"},
       {"lastEdited": "", "name": "primer-binding-site"},
       {"lastEdited": "", "name": "promoter"},
       {"lastEdited": "", "name": "ribosome-entry-site"},
@@ -56,7 +57,8 @@
     "glyphs": [
       {"lastEdited": "2.2.0", "name":  "association"},
       {"lastEdited": "2.2.0", "name": "dissociation"},
-      {"lastEdited": "2.2.0", "name": "process"}
+      {"lastEdited": "2.2.0", "name": "process"},
+      {"lastEdited": "2.3.0", "name": "unspecified"}
     ]
   },
   {
@@ -64,7 +66,7 @@
     "output": "speciesglyphs.tex",
     "dir": "FunctionalComponents",
     "glyphs": [
-      {"lastEdited": "2.2.0", "name": "complex"},
+      {"lastEdited": "2.3.0", "name": "complex"},
       {"lastEdited": "2.2.0", "name": "dsNA"},
       {"lastEdited": "2.2.0", "name": "macromolecule"},
       {"lastEdited": "2.2.0", "name": "no-glyph-assigned"},
