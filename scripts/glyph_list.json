@@ -1,6 +1,6 @@
 [
   {
-    "type": "Functional Components",
+    "type": "Sequence Features",
     "output": "glyphs.tex",
     "dir": "",
     "glyphs": [
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "type": "Species",
+    "type": "Molecular Species",
     "output": "speciesglyphs.tex",
     "dir": "FunctionalComponents",
     "glyphs": [
