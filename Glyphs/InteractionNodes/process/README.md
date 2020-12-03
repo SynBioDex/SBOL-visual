@@ -14,7 +14,7 @@ A square node:
 
 ## Prototypical Example
 
-Association of gRNA and Cas9 to form an active CRISPR complex.
+Reaction process of citrate and aconitase to produce cis-aconitate.
 
 ## Notes
 The process glyph is based on the SBGN Process Description process glyph.
@@ -23,3 +23,8 @@ The assocated SBO term also covers:
 
 - SBO:0000176 Biochemical Reaction
 - SBO:0000177 Non-covalent Binding (sink is a Complex)
+
+Examples of RECOMMENDED usage:
+
+- Biochemical reaction process of the reactant citrate and the catalyst aconitase to produce the product cis-aconitate.
+<img src="https://github.com/SynBioDex/SBOL-visual/blob/issue111/Glyphs/InteractionNodes/process/process-example.png" height="300" />

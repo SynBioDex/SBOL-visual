@@ -7,8 +7,8 @@
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.3 |
 | **Status** | Draft |
-| **Created** | 7-Oct-2020 |
-| **Last modified** | 7-Sept-2020 |
+| **Created** | 7-Sept-2020 |
+| **Last modified** | 2-Oct-2020 |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/103 |
 
 
@@ -52,7 +52,9 @@ Added to notes:
 
 ## 3. Examples <a name='example'></a>
 
-See examples above.
+![example](https://raw.githubusercontent.com/SynBioDex/SBOL-visual/12c3edf/SEPs/img/SEPV022-example.png)
+
+Ribozyme and spacer between two transcriptional units, forming a separation module with the preceding terminator (dashed box), with the whole construct integrated into the chromosome.
 
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
