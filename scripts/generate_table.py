@@ -47,7 +47,7 @@ for file_name in os.listdir(sep_dir):
 
 data.sort(key=lambda x: x['SEP'])
 
-fieldnames = ["SEP", "Type", "SBOL Version", "Status", "Issue", "Title", "Replaces",  "Created", "Last modified",
+fieldnames = ["SEP", "Type", "SBOL Visual Version", "Status", "Issue", "Title", "Replaces",  "Created", "Last modified",
               "Editor",  "Authors"]
 
 with open(os.path.join(sep_dir, 'summary.csv'), 'w') as csvfile:
