@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Introns and Polypeptide Regions |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Marta Vázquez Vilar (marvazvi@ibmcp.upv.es) |
 | **Editor** |  | Hasan Baig
 | **Type** | Specification |

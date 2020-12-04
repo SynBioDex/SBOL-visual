@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Allow Complex to Include DNA Backbone |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), John Sexton |
 | **Editor** | TBD |
 | **Type** | Specification |

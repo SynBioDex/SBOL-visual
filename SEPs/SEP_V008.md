@@ -1,9 +1,10 @@
 # SEP V008: Functional Component Glyphs
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Functional Component Glyphs |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.0 |
 | **Status** | Accepted |

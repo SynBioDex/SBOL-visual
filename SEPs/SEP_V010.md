@@ -1,9 +1,10 @@
 # SEP V010: Arrows
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Bounding box, interior, backbone alignment |
 | **Authors** | Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof, Jacob Beal |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.0 |
 | **Status** | Accepted |

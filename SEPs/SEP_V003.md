@@ -1,9 +1,10 @@
 # SEP V003: Distinguished Unknowns
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Distinguished Unknowns |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |

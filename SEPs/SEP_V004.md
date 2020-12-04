@@ -1,9 +1,10 @@
 # SEP V004: New Glyph Collection
 
-| SEP | <leave empty> |
+| SEP |  |
 | --- | --- |
+| **Title** | New Glyph Collection |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |

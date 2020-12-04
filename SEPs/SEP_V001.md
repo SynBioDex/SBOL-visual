@@ -1,9 +1,10 @@
 # SEP V001: Bounding box, interior, backbone alignment, and relative scale
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Bounding box, interior, backbone alignment |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |

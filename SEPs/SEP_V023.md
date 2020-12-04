@@ -2,13 +2,14 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | SBOL Visual specification change workflow |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
 | **Editor** | TBD |
 | **Type** | Process |
 | **Status** | Draft |
 | **Created** | 9-Oct-2020 |
 | **Last modified** | 23-Nov-2020 |
-| **Issue**         | TBD |
+| **Issue** | [#109](https://github.com/SynBioDex/SBOL-visual/issues/109) |
 
 
 ## Abstract
