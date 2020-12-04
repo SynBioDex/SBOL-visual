@@ -175,6 +175,26 @@
 \cbend
 }
 
+\newcommand{\twofourzero}[1]{%
+\cbcolor{cyan}
+\cbstart%
+{\color{cyan}%
+\version{cyan}{2.4.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twofourzeronopage}[1]{%
+\cbcolor{cyan}
+\cbstart%
+{\color{cyan}%
+#1
+}
+\cbend
+}
+
 
 % -----------------------------------------------------------------------------
 % Start of document
@@ -183,11 +203,11 @@
 \begin{document}
 
 \packageTitle{\latex Class for SBML Package Specifications}
-\packageVersion{Version 2.3}
-\packageVersionDate{December 4th, 2020}
+\packageVersion{Version 2.4-alpha}
+\packageVersionDate{TBD}
 
 % BBF RFC \rfcnum{}: 
-\title{Synthetic Biology Open \\Language Visual (SBOL Visual) Version~2.3}
+\title{Synthetic Biology Open \\Language Visual (SBOL Visual) Version~2.4-alpha}
 
 
 \author{{\bf Editors:}\hfil\\
