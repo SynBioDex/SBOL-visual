@@ -1,0 +1,24 @@
+SEP,Type,SBOL Version,Status,Issue,Title,Replaces,Created,Last modified,Editor,Authors
+v001,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/4,,,01-Jul-2017,03-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
+v002,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/5,,,21-Jul-2017,<leave empty if this is the first submission>,,Jacob Beal (jakebeal@ieee.org)
+v003,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/6,,,21-Jul-2017,17-Aug-2017,,Jacob Beal (jakebeal@ieee.org)
+v004,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/8,,,22-Aug-2017,18-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
+v005,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/9,,,30-Aug-2017,17-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
+v006,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/11,,,14-Sep-2017,Never,,"Jacob Beal (jakebeal@ieee.org), Chris Myers"
+v007,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/12,,,17-Sep-2017,12-Nov-2017,,Jacob Beal (jakebeal@ieee.org)
+v008,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/13,,,25-Sep-2017,26-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
+v009,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/16,,,7-Oct-2017,Never,,"Jacob Beal (jakebeal@ieee.org), Chris Myers, John Sexton"
+v010,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/17,,,10-Oct-2017,19-Oct-2017,,"Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof, Jacob Beal"
+v011,Specification,,Draft,,,,12-Apr-2018,12-Apr-2018,,"Angel Goni Moreno, Shyam Bhakta, Jacob Beal, John Sexton, Sebastian Castillo-Hair"
+v012,Specification,,Draft,,,,07-Apr-2018,19-Apr-2018,,"Thomas Gorochowski, John Sexton, Jacob Beal"
+v013,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/47,,,23-Aug-2018,4-Nov-2018,,"Thomas Gorochowski, Jacob Beal"
+v014,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/48,,,18-Jul-2018,4-Nov-2018,,"James Scott-Brown (james@jamesscottbrown.com), Jacob Beal"
+v015,Specification,,Final,https://github.com/SynBioDex/SBOL-visual/issues/62,,,30-Mas-2019,,Zach Palchick,Jacob Beal (jakebeal@ieee.org)
+v016,Specification,,Accepted (21-Sept-2019),https://github.com/SynBioDex/SBOL-visual/issues/63,,,13-Apr-2019,,,"Jacob Beal (jakebeal@ieee.org), Marta Vázquez Vilar (marvazvi@ibmcp.upv.es)"
+v017,Specification,,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/67,,,1-June-2019,11-July-2019,Zach Palchick,Jacob Beal (jakebeal@ieee.org)
+v018,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/73,,,5-Oct-2019,18-Oct-2020,TBD,Jacob Beal (jakebeal@ieee.org)
+v019,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/74,,,6-Oct-2019,2-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), John Sexton"
+v020,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/78,,,22-Oct-2019,5-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta"
+v021,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/102,,,3-Sep-2020,3-Oct-2020,TBD,Logan Terry
+v022,Specification,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/103,,,7-Sept-2020,2-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta, John Sexton"
+v023,Process,,Draft,TBD,,,9-Oct-2020,23-Nov-2020,TBD,Jacob Beal (jakebeal@ieee.org)
