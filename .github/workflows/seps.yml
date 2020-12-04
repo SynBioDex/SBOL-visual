@@ -19,7 +19,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add SEPs/summary.csv
-          git commit -m "Auto-update SEPs/summary.csv"
+          git diff-index --quiet HEAD || git commit -m "Auto-update SEPs/summary.csv"
               
       - name: Push changes
         uses: ad-m/github-push-action@master
