@@ -66,6 +66,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate sampler"
           
       - name: Push changes
+        if: ${{ github.event_name == 'push' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
