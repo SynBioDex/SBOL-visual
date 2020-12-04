@@ -190,8 +190,9 @@ Specification releases are typically yearly, paced by the timing of the [Journal
 
 - **Making a release:** A release should be produced via the following steps:
   1. Make a release branch (`release-X.X.X`) from `develop`.
-  2. Update the release number in `master`.
+  2. Update the release number in `release-X.X.X`.
   3. Make sure that pre-release derivative content is updated.
+  4. Update the "Relation to other standards" section to add the new release.
   4. Merge the release branch into `master` and `develop`.
   5. Cut a release from `master` via GitHub, describing with a (manual) summary of the approved SEPs newly included. SEP abstracts are a good source for this content.
   6. Make sure that post-release derivative content is updated.
@@ -205,7 +206,7 @@ Note that git automatically maintains all old release and pre-release informatio
 Different pieces of derivative content need to be updated at different times in the workflow.
 
 - **On merge to `develop`:**
-  - Ontologym, Ontology HTML & webservice (as pre-release) _Implement once [Issue #116](https://github.com/SynBioDex/SBOL-visual/issues/116) is completed._
+  - Ontology, Ontology HTML & webservice (as pre-release) _Implement once [Issue #116](https://github.com/SynBioDex/SBOL-visual/issues/116) is completed._
 - **Before specification release**
   - Specification glyph pages: _should be automated in the future_
      - In the `specification/glyphscript` subdirectory, add new glyphs to the appropriate `.tex` list, then run `glyph-to-page` on all new or changed glyphs.
