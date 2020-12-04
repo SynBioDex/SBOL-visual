@@ -127,12 +127,12 @@ for glyph_category in data:
     grid = create_glyph_grid(glyph_svgs, title_string=glyph_category["type"])
     grid_svg_string = ET.tostring(grid, encoding="unicode")
 
-    svg_name = f"{glyph_category['type']}.svg"
-    with open(os.path.join(output_dir, svg_name), 'w') as f:
+    svg_path = os.path.join(output_dir, f"{glyph_category['type']}.svg")
+    with open(svg_path, 'w') as f:
         f.write(grid_svg_string)
 
     # Return code is 1 if changed, and 0 if unchanged
-    changed = subprocess.call(['git', 'diff', '--quiet', 'HEAD', f"../sampler/{svg_name}"])
+    changed = subprocess.call(['git', 'diff', '--quiet', 'HEAD', svg_path])
     if changed:
         convert_svg(grid_svg_string, output_dir, glyph_category['type'])
 
