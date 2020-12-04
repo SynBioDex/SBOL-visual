@@ -421,6 +421,7 @@ Package Specification Style]
   \vspace*{-1em}
   {\large SBML Level 3 Package Specification}\\[2em]
   \fi
+  \vspace{-1cm}% % Kludge to raise title in the face of a too-long author list
   \scalebox{1}[0.9]{%
     \fcolorbox{black}{mediumgray}{%
       \begin{minipage}{\textwidth - 7pt}%
