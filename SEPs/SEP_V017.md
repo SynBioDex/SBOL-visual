@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Protein, Macromolecule, and Alternative Simple Chemicals |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
 | **Editor** | Zach Palchick |
 | **Type** | Specification |

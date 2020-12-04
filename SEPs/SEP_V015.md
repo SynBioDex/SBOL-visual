@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Change BioPAX to SBO |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
 | **Editor** | Zach Palchick |
 | **Type** | Specification |

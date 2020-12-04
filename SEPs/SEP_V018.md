@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Interactions with Interaction Nodes |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
 | **Editor** | TBD |
 | **Type** | Specification |

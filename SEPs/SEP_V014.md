@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Modules and MapsTo |
 | **Authors** | James Scott-Brown (james@jamesscottbrown.com), Jacob Beal |
 | **Editor** |  |
 | **Type** | Specification |

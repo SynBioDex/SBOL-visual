@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Unspecified Interaction Glyph Node |
 | **Authors** | Logan Terry |
 | **Editor** | TBD |
 | **Type** | Specification |

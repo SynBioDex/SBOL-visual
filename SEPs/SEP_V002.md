@@ -1,14 +1,15 @@
 # SEP V002: Alternative Glyphs
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Alternative Glyphs |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |
 | **Created** | 21-Jul-2017 |
-| **Last modified** | <leave empty if this is the first submission> |
+| **Last modified** |  |
 | **Issue**         | [#5](https://github.com/SynBioDex/SBOL-visual/issues/5) |
 
 ## Abstract
