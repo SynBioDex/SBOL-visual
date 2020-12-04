@@ -15,7 +15,6 @@ jobs:
         
       - name: Install dependencies
         run: |
-          cd specification/glyphscript
           npm install markdown-pdf
 
       - name: Generate PDFs for glyphs
