@@ -1,20 +1,9 @@
 
-inert DNA spacer
-
 intron
-
-polypeptide-region  [need to think about composability]
-
-More stem-based glyphs:
-    stop-site
-    location
 
 Backbone modifiers:
     chromosomal-locus
     circular-plasmid
-
-
-
 
 complex
 dsNA

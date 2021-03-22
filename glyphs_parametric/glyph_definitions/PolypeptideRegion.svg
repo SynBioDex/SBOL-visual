@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="CDS" soterms="SO:0000316" parametric:defaults="arrowbody_height=15;arrowhead_width=8;width=30;height=15">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height/2}" y="-7.5" parametric:width="{width}" width="30" parametric:height="{height}" height="15" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,0 L30,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="cds" parametric:d="M{0},{0}
+ L{0},{-arrowbody_height/2}
+ L{width - arrowhead_width},{-arrowbody_height/2}
+ L{width - arrowhead_width},{-height/2}
+ L{width},{0}
+ L{width - arrowhead_width},{height/2}
+ L{width - arrowhead_width},{arrowbody_height/2}
+ L{0},{arrowbody_height/2} Z" d="M0,0 L0,-7.5 L22.0,-7.5 L22.0,-7.5 L30.0,0 L22.0,7.5 L22.0,7.5 L0,7.5 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+<path class="filled-path" id="internal" parametric:d="M{0+0.25*(width - arrowhead_width)+arrowhead_width},{0}
+ L{0+0.25*(width - arrowhead_width)},{-arrowbody_height/2}
+ L{0.6*(width - arrowhead_width)},{-arrowbody_height/2}
+ L{0.6*(width - arrowhead_width)+arrowhead_width},{0}
+ L{0.6*(width - arrowhead_width)},{arrowbody_height/2}
+ L{0+0.25*(width - arrowhead_width)},{arrowbody_height/2} Z" d="M13.5,0 L5.5,-7.5 L13.2,-7.5 L21.2,0 L13.2,7.5 L5.5,7.5 Z" style="fill:rgb(180,180,180);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+</svg>

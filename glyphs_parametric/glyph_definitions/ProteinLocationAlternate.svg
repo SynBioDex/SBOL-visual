@@ -1,23 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1"
-     width="100" height="100" glyphtype="Protein Cleavage Site" soterms="SO:0001956"
+     width="100" height="100" glyphtype="Protein Location" soterms="SO:0001237,SO:0000699"
      parametric:defaults="height=16;width=6">
 
     <rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height}" y="-16" parametric:width="{width}" width="6" parametric:height="{height}" height="16" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
 
     <path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,0 L6,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
 
-
     <path class="unfilled-path" id="location-stem-path"
           style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round"
           parametric:d="m {width/2},{-height + width/2} c {width/2},-2 {width/2},{2 + (height - width/2)/3} -0,{ (height - width/2)/3} {width/2},-2 {width/2},{2 + (height - width/2)/3} 0,{(height - width/2)/3} {width/2},-2 {width/2},{2 + (height - width/2)/3} -0,{ (height - width/2)/3}"
           d="m 3.0,-13.0 c 3.0,-2 3.0,6.33333333333 -0,4.33333333333 3.0,-2 3.0,6.33333333333 0,4.33333333333 3.0,-2 3.0,6.33333333333 -0,4.33333333333"/>
-
-
-    <path class="unfilled-path" id="location-top-path" parametric:d="M{0},{-height} L{width},{-height+width}"
-          d="M0,-16.0 L6.0,-10.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round"/>
-
-    <path class="unfilled-path" id="location-top-path" parametric:d="M{0},{-height+width} L{width},{-height}"
-          d="M0,-10.0 L6.0,-16.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round"/>
-
 
 </svg>

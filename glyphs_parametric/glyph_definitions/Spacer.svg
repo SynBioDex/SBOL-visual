@@ -1,13 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Aptamer" soterms="SO:0000031" parametric:defaults="width=10">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="InertDNASpacer" soterms="SO:0002223" parametric:defaults="width=10;height=10">
 
-<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-0.5*width}" y="17.0" parametric:width="{width}" width="14" parametric:height="{width}" height="16" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height/2}" y="-6" parametric:width="{width}" width="12" parametric:height="{height}" height="12" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
 
-<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L14,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,0 L12,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
 
-<path class="filled-path" id="spacer-circle-path" parametric:d="M{0},{0} C{0},{-0.666666666666667*width} {width},{-0.666666666666667*width} {width},{0} C{width},{0.666666666666667*width} {0},{0.666666666666667*width} {0},{0} Z" d="M2,25 C2,18.333333333333332 12,18.333333333333332 12,25 C12,31.666666666666668 2,31.666666666666668 2,25 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+<path class="filled-path" id="spacer-circle-path" parametric:d="M0,0 
+C0,{-(width/1.5)} {width},{-(width/1.5)} {width},0 
+C{width},{(width/1.5)} 0,{(width/1.5)} 0,0 Z"  d="M0,0 C0,-8.0 12.0,-8.0 12.0,0 C12.0,8.0 0,8.0 0,0 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
 
-<path class="unfilled-path" id="spacer-cross1-path" parametric:d="M{0.8334690308261309*width},{-0.3725565802396744*width} L{0.1665309691738691*width},{0.3725565802396744*width}" d="M10.33469030826131,21.274434197603256 L3.6653096917386905,28.725565802396744" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+<path class="unfilled-path" 
+      id="spacer-cross1-path" 
+      parametric:d="M{((width*0.5)-((width*0.5)*-0.6669380616522619))},{-((width*0.5)*0.7451131604793488)} L{(width*0.5)+((width*0.5)*-0.6669380616522619)},{((width*0.5)*0.7451131604793488)}" 
+      d="M10.0016283699,-4.47067896288 L1.99837163009,4.47067896288" 
+      style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
 
-<path class="unfilled-path" id="spacer-cross2-path" parametric:d="M{0.8334690308261309*width},{0.3725565802396744*width} L{0.1665309691738691*width},{-0.3725565802396744*width}" d="M10.33469030826131,28.725565802396744 L3.6653096917386905,21.274434197603256" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+<path class="unfilled-path" 
+      id="spacer-cross2-path" 
+      parametric:d="M{((width*0.5)-((width*0.5)*-0.6669380616522619))},{((width*0.5)*0.7451131604793488)} L{(width*0.5)+((width*0.5)*-0.6669380616522619)},{-((width*0.5)*0.7451131604793488)}" 
+      d="M10.0016283699,4.47067896288 L1.99837163009,-4.47067896288" 
+      style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
 
 </svg>
+

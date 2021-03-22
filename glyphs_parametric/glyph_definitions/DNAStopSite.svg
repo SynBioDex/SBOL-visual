@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="DNA Stop Site" soterms="SO:0000616" parametric:defaults="height=16;width=6">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height}" y="-16" parametric:width="{width}" width="6" parametric:height="{height}" height="16" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+    <path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,0 L6,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="location-top-path"
+          parametric:d="M{0},{-height + width - 0.5*width} C{0},{-height + width - 1.16666666666667*width} {width},{-height + width - 1.16666666666667*width} {width},{-height + width - 0.5*width} C{width},{-height + width + 0.166666666666667*width} {0},{-height + width + 0.166666666666667*width} {0},{-height + width - 0.5*width} Z"
+          d="M0,-13.0 C0,-17.0 6.0,-17.0 6.0,-13.0 C6.0,-9.0 0,-9.0 0,-13.0 Z"
+          style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt"/>
+
+<path class="unfilled-path" id="location-stem-path" parametric:d="M{0.5*width},{0} L{0.5*width},{-height + width}" d="M3.0,0 L3.0,-10.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+
+<path class="unfilled-path" id="star-1" parametric:d="M{(0.5*width)},{-height+(0.5*width)} L{(0.5*width)+(0.58778525229*(0.2*width))},{(-height+(0.5*width))+(0.80901699437*(0.2*width))}" d="M3.0,-13.0 L3.70534230275,-12.0291796068" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="star-2" parametric:d="M{(0.5*width)},{-height+(0.5*width)} L{(0.5*width)+(0.95105651629*(0.2*width))},{(-height+(0.5*width))+(-0.30901699437*(0.2*width))}" d="M3.0,-13.0 L4.14126781955,-13.3708203932" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="star-3" parametric:d="M{(0.5*width)},{-height+(0.5*width)} L{(0.5*width)+(0.0*(0.2*width))},{(-height+(0.5*width))+(-1.0*(0.2*width))}" d="M3.0,-13.0 L3.0,-14.2" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="star-4" parametric:d="M{(0.5*width)},{-height+(0.5*width)} L{(0.5*width)+(-0.95105651629*(0.2*width))},{(-height+(0.5*width))+(-0.30901699437*(0.2*width))}" d="M3.0,-13.0 L1.85873218045,-13.3708203932" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="star-5" parametric:d="M{(0.5*width)},{-height+(0.5*width)} L{(0.5*width)+(-0.58778525229*(0.2*width))},{(-height+(0.5*width))+(0.80901699437*(0.2*width))}" d="M3.0,-13.0 L2.29465769725,-12.0291796068" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+</svg>
