@@ -25,4 +25,3 @@ It is RECOMMENDED that labels should be placed outside of the shapes rather than
 
 To avoid confusion with pills or ellipses, when the small circle alternative glyph is used, it SHOULD be significantly smaller than other types of molecular species glyphs, as indicated by the recommended scale of the glyph.
 
-Alternate BioPAX definition: Small Molecule: http://www.biopax.org/release/biopax-level3.owl#SmallMolecule

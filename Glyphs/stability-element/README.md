@@ -28,7 +28,7 @@ PEST tag, 3’ Hairpin
 ## Notes
 RNA Stability Element glyph was previously also associated with SO:0001957, but that SO term has been declared obsolete in Sequence Ontology.
 
-This glyph is not backwards compatible with SBOL Visual 1.0.
+This glyph is not backwards compatible with SBOL Visual 1.
 
 Despite both being stem-top glyphs, Biopolymer Location is not a parent to Stability Element, since the length of a Stability Element is typically multiple bases / amino acids.
 

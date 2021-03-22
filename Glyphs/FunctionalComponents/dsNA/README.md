@@ -17,4 +17,4 @@ An alternative is the SBGN "nucleic acid" half-round rectangle:
 DNA fragment during assembly
 
 ## Notes
-Alternate BioPAX definition: Dna: http://www.biopax.org/release/biopax-level3.owl#Dna
+*this section deliberately blank*

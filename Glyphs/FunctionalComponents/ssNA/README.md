@@ -17,4 +17,4 @@ An alternative is the SBGN "nucleic acid" half-round rectangle:
 mRNA, gRNA, siRNA
 
 ## Notes
-Alternate BioPAX definition: Rna: http://www.biopax.org/release/biopax-level3.owl#Rna
+*this section deliberately blank*

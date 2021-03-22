@@ -23,4 +23,4 @@ An alternative is the SBGN "cornered rectangle" glyph for a complex:
 Arabinose bound to AraC
 
 ## Notes
-Alternate BioPAX definition: Complex: http://www.biopax.org/release/biopax-level3.owl#Complex
+*this section deliberately blank*
