@@ -1,14 +1,15 @@
 # SEP V006: No Glyph Assigned
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | No Glyph Assigned |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Chris Myers |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |
 | **Created** | 14-Sep-2017 |
-| **Last modified** | Never |
+| **Last modified** | |
 | **Issue**         | [#11](https://github.com/SynBioDex/SBOL-visual/issues/11) |
 
 ## Abstract

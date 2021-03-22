@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Inert DNA spacer |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Shyam Bhakta, John Sexton |
 | **Editor** | TBD |
 | **Type** | Specification |

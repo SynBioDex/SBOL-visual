@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Multi-source and multi-target arrows |
 | **Authors** | Thomas Gorochowski, Jacob Beal |
 | **Editor** |  |
 | **Type** | Specification |
@@ -9,7 +10,7 @@
 | **Status** | Draft |
 | **Created** | 23-Aug-2018 |
 | **Last modified** | 4-Nov-2018 |
-| **Issue**         | [#47](https://github.com/SynBioDex/SBOL-visual/issues/47) |
+| **Issue** | [#47](https://github.com/SynBioDex/SBOL-visual/issues/47) |
 
 ## Abstract
 

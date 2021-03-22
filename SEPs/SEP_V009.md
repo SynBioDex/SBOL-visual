@@ -1,14 +1,15 @@
 # SEP V009: Engineered Region vs. Composite
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Engineered Region vs. Composite |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Chris Myers, John Sexton |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |
 | **Created** | 7-Oct-2017 |
-| **Last modified** | Never |
+| **Last modified** | |
 | **Issue**       | [#16](https://github.com/SynBioDex/SBOL-visual/issues/16) |
 
 ## Abstract

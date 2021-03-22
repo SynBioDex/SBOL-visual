@@ -1,14 +1,16 @@
 # SEP V012: Transcription and translation end points
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Transcription and translation end points |
 | **Authors** | Thomas Gorochowski, John Sexton, Jacob Beal |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 07-Apr-2018 |
 | **Last modified** | 19-Apr-2018 |
+| **Issue** | [#41](https://github.com/SynBioDex/SBOL-visual/issues/41) |
 
 ## Abstract
 

@@ -15,7 +15,6 @@ jobs:
         
       - name: Install dependencies
         run: |
-          cd specification/glyphscript
           npm install markdown-pdf
 
       - name: Generate PDFs for glyphs
@@ -63,7 +62,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add sampler/
-          git commit -m "Automatically re-generate sampler"
+          git diff-index --quiet HEAD || git commit -m "Automatically re-generate sampler"
+          
+      - name: Push changes
+        if: ${{ github.event_name == 'push' }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   build_glph_zipfiles:
       runs-on: ubuntu-latest

@@ -1,9 +1,10 @@
 # SEP V007: Stem-Top Glyphs
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Stem-Top Glyphs |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 1.1 |
 | **Status** | Accepted |

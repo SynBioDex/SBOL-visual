@@ -1,14 +1,16 @@
 # SEP V011: Genomic Context
 
-| SEP | <leave empty> |
+| SEP | |
 | --- | --- |
+| **Title** | Genomic Context |
 | **Authors** | Angel Goni Moreno, Shyam Bhakta, Jacob Beal, John Sexton, Sebastian Castillo-Hair |
-| **Editor** | <leave empty> |
+| **Editor** | |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.1 |
 | **Status** | Draft |
 | **Created** | 12-Apr-2018 |
 | **Last modified** | 12-Apr-2018 |
+| **Issue** | [#40](https://github.com/SynBioDex/SBOL-visual/issues/40) |
 
 ## Abstract
 

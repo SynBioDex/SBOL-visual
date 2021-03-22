@@ -2,13 +2,14 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | SBOL Visual specification change workflow |
 | **Authors** | Jacob Beal (jakebeal@ieee.org) |
 | **Editor** | TBD |
 | **Type** | Process |
 | **Status** | Draft |
 | **Created** | 9-Oct-2020 |
 | **Last modified** | 23-Nov-2020 |
-| **Issue**         | TBD |
+| **Issue** | [#109](https://github.com/SynBioDex/SBOL-visual/issues/109) |
 
 
 ## Abstract
@@ -180,9 +181,9 @@ Non-SEP changes follow essentially the same workflow as actually implementing an
 
 - **Version Numbers:** Releases are numbered following [semantic versioning](https://semver.org/).
 Specification releases are typically yearly, paced by the timing of the [Journal of Integrative Bioinformatics](https://www.degruyter.com/view/journals/jib/jib-overview.xml) special issue on specifications. 
-  - Major versions are likely to happen only in connection with a major version change in the SBOL data model.
-  - Minor versions incorporate all SEPs that have been approved and incorporated since the last release.
-  - Patch versions should be released if no SEPs have been approved in the past (approximate) year, but significant non-SEP changes have been made.  Patch versions should not be submitted for journal publication.
+  - Major versions are likely to happen only in connection with a major version change in the SBOL data model. Author list resets at a major version.
+  - Minor versions incorporate all SEPs that have been approved and incorporated since the last release.  Minor versions retain all authors of the prior version.
+  - Patch versions should be released if no SEPs have been approved in the past (approximate) year, but significant non-SEP changes have been made. Patch versions should not be submitted for journal publication.
 
 - **Relationship to SBOL data model:**
   - The specification should make an explicit statement of the SBOL data model specification version it supports.
@@ -190,13 +191,15 @@ Specification releases are typically yearly, paced by the timing of the [Journal
 
 - **Making a release:** A release should be produced via the following steps:
   1. Make a release branch (`release-X.X.X`) from `develop`.
-  2. Update the release number in `master`.
+  2. Update the release number in `release-X.X.X`.
   3. Make sure that pre-release derivative content is updated.
-  4. Merge the release branch into `master` and `develop`.
-  5. Cut a release from `master` via GitHub, describing with a (manual) summary of the approved SEPs newly included. SEP abstracts are a good source for this content.
-  6. Make sure that post-release derivative content is updated.
-  7. Increment the version number in `develop` and mark as pre-release.
-  8. Delete the now-obsolete release branch.
+  4. Make sure authors are correct, including checking that editors and chair are current.
+  5. Update the "Relation to other standards" section to add the new release.
+  6. Merge the release branch into `master` and `develop`.
+  7. Cut a release from `master` via GitHub, describing with a (manual) summary of the approved SEPs newly included. SEP abstracts are a good source for this content.
+  8. Make sure that post-release derivative content is updated.
+  9. Increment the version number in `develop` and mark as pre-release.
+  10. Delete the now-obsolete release branch.
 
 Note that git automatically maintains all old release and pre-release information that lives in the repository; non-repository derived resources need to be handled separately.
 
@@ -205,7 +208,7 @@ Note that git automatically maintains all old release and pre-release informatio
 Different pieces of derivative content need to be updated at different times in the workflow.
 
 - **On merge to `develop`:**
-  - Ontologym, Ontology HTML & webservice (as pre-release) _Implement once [Issue #116](https://github.com/SynBioDex/SBOL-visual/issues/116) is completed._
+  - Ontology, Ontology HTML & webservice (as pre-release) _Implement once [Issue #116](https://github.com/SynBioDex/SBOL-visual/issues/116) is completed._
 - **Before specification release**
   - Specification glyph pages: _should be automated in the future_
      - In the `specification/glyphscript` subdirectory, add new glyphs to the appropriate `.tex` list, then run `glyph-to-page` on all new or changed glyphs.

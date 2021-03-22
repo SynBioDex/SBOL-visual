@@ -2,6 +2,7 @@
 
 | SEP | |
 | --- | --- |
+| **Title** | Recommend use of polypeptide region for 2A Sequences |
 | **Authors** | Jacob Beal (jakebeal@ieee.org), Shyam Bhakta |
 | **Editor** | TBD |
 | **Type** | Specification |
