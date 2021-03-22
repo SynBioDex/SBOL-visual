@@ -4,38 +4,38 @@
     "output": "glyphs.tex",
     "dir": "",
     "glyphs": [
-      {"lastEdited": "", "name": "aptamer"},
-      {"lastEdited": "", "name": "assembly-scar"},
-      {"lastEdited": "", "name": "blunt-restriction-site"},
-      {"lastEdited": "", "name": "cds"},
-      {"lastEdited": "2.1.0", "name": "chromosomal-locus"},
-      {"lastEdited": "2.1.0", "name": "circular-plasmid"},
-      {"lastEdited": "2.3.0", "name": "cleavage-site"},
-      {"lastEdited": "", "name": "composite"},
-      {"lastEdited": "", "name": "engineered-region"},
-      {"lastEdited": "2.3.0", "name": "inert-dna-spacer"},
-      {"lastEdited": "2.3.0", "name": "insulator"},
-      {"lastEdited": "2.2.0", "name": "intron"},
-      {"lastEdited": "", "name": "location"},
-      {"lastEdited": "", "name": "no-glyph-assigned"},
-      {"lastEdited": "", "name": "non-coding-rna"},
-      {"lastEdited": "", "name": "omitted-detail"},
-      {"lastEdited": "", "name": "operator"},
-      {"lastEdited": "2.1.0", "name": "origin-of-replication"},
-      {"lastEdited": "", "name": "origin-of-transfer"},
-      {"lastEdited": "", "name": "overhang"},
-      {"lastEdited": "", "name": "polyA"},
-      {"lastEdited": "2.3.0", "name": "polypeptide-region"},
-      {"lastEdited": "", "name": "primer-binding-site"},
-      {"lastEdited": "", "name": "promoter"},
-      {"lastEdited": "", "name": "ribosome-entry-site"},
-      {"lastEdited": "", "name": "signature"},
-      {"lastEdited": "", "name": "specific-recombination-site"},
-      {"lastEdited": "", "name": "stability-element"},
-      {"lastEdited": "", "name": "sticky-restriction-site"},
-      {"lastEdited": "2.1.0", "name": "stop-site"},
-      {"lastEdited": "", "name": "terminator"},
-      {"lastEdited": "", "name": "unspecified"}
+      {"lastEdited": "", "name": "aptamer", "displayName": "Aptamer"},
+      {"lastEdited": "", "name": "assembly-scar",  "displayName": "Assembly Scar" },
+      {"lastEdited": "", "name": "blunt-restriction-site",  "displayName": "Blunt Restriction Site"},
+      {"lastEdited": "", "name": "cds", "displayName": "CDS"},
+      {"lastEdited": "2.1.0", "name": "chromosomal-locus", "displayName": "Chromosomal Locus"},
+      {"lastEdited": "2.1.0", "name": "circular-plasmid", "displayName": "Circular Plasmid"},
+      {"lastEdited": "2.3.0", "name": "cleavage-site",  "displayName": "Cleavage Site"},
+      {"lastEdited": "", "name": "composite", "displayName": "Composite"},
+      {"lastEdited": "", "name": "engineered-region",  "displayName": "Engineered Region"},
+      {"lastEdited": "2.3.0", "name": "inert-dna-spacer", "displayName": "Inert DNA Spacer"},
+      {"lastEdited": "2.3.0", "name": "insulator", "displayName": "Insulator"},
+      {"lastEdited": "2.2.0", "name": "intron",  "displayName": "Intron"},
+      {"lastEdited": "", "name": "location", "displayName": "Location"},
+      {"lastEdited": "", "name": "no-glyph-assigned", "displayName": "No Glyph Assigned"},
+      {"lastEdited": "", "name": "non-coding-rna", "displayName": "Non-coding RNA"},
+      {"lastEdited": "", "name": "omitted-detail", "displayName": "Omitted Detail"},
+      {"lastEdited": "", "name": "operator", "displayName": "Operator"},
+      {"lastEdited": "2.1.0", "name": "origin-of-replication", "displayName": "Origin of Replication"},
+      {"lastEdited": "", "name": "origin-of-transfer", "displayName": "Origin of Transfer"},
+      {"lastEdited": "", "name": "overhang",  "displayName": "Overhang"},
+      {"lastEdited": "", "name": "polyA", "displayName": "PolyA Site" },
+      {"lastEdited": "2.3.0", "name": "polypeptide-region", "displayName": "Polypeptide Region"},
+      {"lastEdited": "", "name": "primer-binding-site", "displayName": "Primer Binding Site"},
+      {"lastEdited": "", "name": "promoter", "displayName": "Promoter"},
+      {"lastEdited": "", "name": "ribosome-entry-site", "displayName": "Ribosome Entry Site"},
+      {"lastEdited": "", "name": "signature", "displayName": "Signature"},
+      {"lastEdited": "", "name": "specific-recombination-site", "displayName": "Specific Recombination Site"},
+      {"lastEdited": "", "name": "stability-element", "displayName": "Stability Element"},
+      {"lastEdited": "", "name": "sticky-restriction-site", "displayName": "Sticky Restriction Site"},
+      {"lastEdited": "2.1.0", "name": "stop-site", "displayName": "Stop Site"},
+      {"lastEdited": "", "name": "terminator", "displayName": "Terminator"},
+      {"lastEdited": "", "name": "unspecified", "displayName": "Unspecified"}
     ]
   },
   {
@@ -43,11 +43,11 @@
     "output": "interactionglyphs.tex",
     "dir": "Interactions",
     "glyphs": [
-      {"lastEdited": "2.2.0", "name": "control"},
-      {"lastEdited": "2.2.0", "name": "degradation"},
-      {"lastEdited": "2.2.0", "name": "inhibition"},
-      {"lastEdited": "2.2.0", "name": "process"},
-      {"lastEdited": "2.2.0", "name": "stimulation"}
+      {"lastEdited": "2.2.0", "name": "control", "displayName": "Control"},
+      {"lastEdited": "2.2.0", "name": "degradation", "displayName": "Degradation"},
+      {"lastEdited": "2.2.0", "name": "inhibition", "displayName": "Inhibition"},
+      {"lastEdited": "2.2.0", "name": "process", "displayName": "Process"},
+      {"lastEdited": "2.2.0", "name": "stimulation", "displayName": "Stimulation"}
     ]
   },
   {
@@ -55,10 +55,10 @@
     "output": "interactionnodeglyphs.tex",
     "dir": "InteractionNodes",
     "glyphs": [
-      {"lastEdited": "2.2.0", "name":  "association"},
-      {"lastEdited": "2.2.0", "name": "dissociation"},
-      {"lastEdited": "2.2.0", "name": "process"},
-      {"lastEdited": "2.3.0", "name": "unspecified"}
+      {"lastEdited": "2.2.0", "name":  "association", "displayName": "Association"},
+      {"lastEdited": "2.2.0", "name": "dissociation", "displayName": "Dissociation"},
+      {"lastEdited": "2.2.0", "name": "process", "displayName": "Process"},
+      {"lastEdited": "2.3.0", "name": "unspecified", "displayName": "Unspecified"}
     ]
   },
   {
@@ -66,14 +66,14 @@
     "output": "speciesglyphs.tex",
     "dir": "FunctionalComponents",
     "glyphs": [
-      {"lastEdited": "2.3.0", "name": "complex"},
-      {"lastEdited": "2.2.0", "name": "dsNA"},
-      {"lastEdited": "2.2.0", "name": "macromolecule"},
-      {"lastEdited": "2.2.0", "name": "no-glyph-assigned"},
-      {"lastEdited": "2.2.0", "name": "protein"},
-      {"lastEdited": "2.2.0", "name": "simple-chemical"},
-      {"lastEdited": "2.2.0", "name": "ssNA"},
-      {"lastEdited": "2.2.0", "name": "unspecified"}
+      {"lastEdited": "2.3.0", "name": "complex", "displayName": "Complex"},
+      {"lastEdited": "2.2.0", "name": "dsNA", "displayName": "Double-Stranded Nucleic Acid"},
+      {"lastEdited": "2.2.0", "name": "macromolecule", "displayName": "Macromolecule"},
+      {"lastEdited": "2.2.0", "name": "no-glyph-assigned", "displayName": "No Glyph Assigned"},
+      {"lastEdited": "2.2.0", "name": "protein", "displayName": "Protein"},
+      {"lastEdited": "2.2.0", "name": "simple-chemical", "displayName":"Simple Chemical"},
+      {"lastEdited": "2.2.0", "name": "ssNA", "displayName": "Single-Stranded Nucleic Acid"},
+      {"lastEdited": "2.2.0", "name": "unspecified", "displayName":  "Unspecified"}
     ]
   }
 ]

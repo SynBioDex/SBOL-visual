@@ -48,6 +48,8 @@ def create_glyph_grid(glyphs, title_string="Title"):
     i = 0
     for g in glyphs:
         glyph_name = g["name"]
+        glyph_display_name = g["displayName"]
+
         glyph = g["svg"]
 
         column = i % num_columns
@@ -71,7 +73,7 @@ def create_glyph_grid(glyphs, title_string="Title"):
         inner_group.attrib['transform'] = f"translate(60, {20})"
 
         title = ET.SubElement(group, 'text')
-        title.text = glyph_name.title()
+        title.text = glyph_display_name
         title.attrib['font-size'] = "12"
         title.attrib['y'] = str(glyph_width / 2)
 
@@ -107,6 +109,7 @@ for glyph_category in data:
     glyph_svgs = []
     for glyph in glyph_category["glyphs"]:
         glyph_name = glyph["name"]
+        glyph_display_name = glyph["displayName"]
 
         glyph_dir = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name)
         svg_path = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name, f"{glyph_name}.svg")
@@ -121,7 +124,7 @@ for glyph_category in data:
                 ET.register_namespace("", "http://www.w3.org/2000/svg")
                 svg_tree = tree.getroot()
 
-                glyph_svgs.append({"svg": copy.deepcopy(svg_tree), "name": glyph_name})
+                glyph_svgs.append({"svg": copy.deepcopy(svg_tree), "name": glyph_name, "displayName": glyph_display_name})
                 print(f"Added: {filename}")
 
     grid = create_glyph_grid(glyph_svgs, title_string=glyph_category["type"])
