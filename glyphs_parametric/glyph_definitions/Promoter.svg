@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Promoter" soterms="SO:0000167" parametric:defaults="arrowbody_height=10;arrowhead_width=10;width=30;height=25">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-arrowbody_height - height}" y="3" parametric:width="{width}" width="19" parametric:height="{arrowbody_height + height}" height="25" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L19,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="unfilled-path" id="promoter-body" parametric:d="M{0},{0} L{0},{-height +arrowbody_height/2} L{width},{-height +arrowbody_height/2}" d="M2,25 L2,10 L17,10" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="promoter-head" parametric:d="M{arrowhead_width},{-height} L{width},{-height + arrowbody_height/2} L{arrowhead_width},{-height + arrowbody_height}" d="M13,6 L17,10 L13,14" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+</svg>

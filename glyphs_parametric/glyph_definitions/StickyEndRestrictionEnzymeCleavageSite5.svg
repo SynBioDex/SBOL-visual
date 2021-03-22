@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="5' Sticky Restriction Site" soterms="SO:0001975" parametric:defaults="height=8;width=15">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-0.5*height}" y="18.0" parametric:width="{width}" width="19" parametric:height="{height}" height="14" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L19,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-background-path" id="sticky-restriction-site-background" parametric:d="M{0},{-0.5*height} L{width},{-0.5*height} L{width},{0.5*height} L{0},{0.5*height} Z" d="M2,21.0 L17,18.0 L17,29.0 L2,29.0 Z" style="fill:rgb(255,255,255);fill-rule:nonzero;stroke:none" />
+
+<path class="unfilled-path" id="sticky-restriction-site-path" parametric:d="M{0.15*width},{-0.5*height} L{0.15*width},{0} L{0.85*width},{0} L{0.85*width},{0.5*height}" d="M4.25,21.0 L4.25,25 L14.75,25 L14.75,29.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+</svg>

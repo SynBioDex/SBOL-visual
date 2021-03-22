@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="30" height="30" glyphtype="Signature" soterms="SO:0001978" parametric:defaults="height=10;width=20">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height}" y="12" parametric:width="{width}" width="24" parametric:height="{height}" height="16" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L24,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="signature-box-path" parametric:d="M{0},{-height} L{width},{-height} L{width},{0} {0},{0} Z" d="M2,15 L22,15 L22,25 2,25 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+<path class="unfilled-path" id="signature-cross-path1" parametric:d="M{0.3*height},{-0.7*height} L{0.7*height},{-0.3*height}" d="M5.0,18.0 L9.0,22.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="signature-cross-path2" parametric:d="M{0.3*height},{-0.3*height} L{0.7*height},{-0.7*height}" d="M5.0,22.0 L9.0,18.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="signature-line-path" parametric:d="M{height},{-0.3*height} L{-0.3*height + width},{-0.3*height}" d="M12,22.0 L19.0,22.0" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+</svg>

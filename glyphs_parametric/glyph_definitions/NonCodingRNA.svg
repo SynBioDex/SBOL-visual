@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Spacer" soterms="" parametric:defaults="height=12;width=20">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height}" y="10" parametric:width="{width}" width="24" parametric:height="{height}" height="18" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L24,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="non-coding-rna-path" parametric:d="M{0},{0} L{0},{-0.7*height} C{0.15*width},{-1.2*height} {0.18*width},{-0.1*height} {0.333333333333333*width},{-0.7*height} C{0.483333333333333*width},{-1.2*height} {0.513333333333333*width},{-0.1*height} {0.666666666666667*width},{-0.7*height} C{0.816666666666667*width},{-1.2*height} {0.846666666666667*width},{-0.1*height} {1.0*width},{-0.7*height} L{width},{0} Z" d="M2,25 L2,16.6 C5.0,10.600000000000001 5.6,23.8 8.666666666666666,16.6 C11.666666666666666,10.600000000000001 12.266666666666666,23.8 15.333333333333332,16.6 C18.333333333333332,10.600000000000001 18.933333333333334,23.8 22.0,16.6 L22,25 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+</svg>

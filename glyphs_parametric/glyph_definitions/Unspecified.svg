@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Unspecified" soterms="SO:0000110" parametric:defaults="width=15">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-0.5*width}" y="14.5" parametric:width="{width}" width="19" parametric:height="{width}" height="21" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L19,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="unspecified-boundry" parametric:d="M{0},{0} L{0.5*width},{-0.5*width} L{width},{0} L{0.5*width},{0.5*width} Z" d="M2,25 L9.5,17.5 L17,25 L9.5,32.5 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+<path class="unfilled-path" id="unspecified-question-mark" parametric:d="M{0.35*width},{-0.06*width} C{0.35*width},{-0.23*width} {0.75*width},{-0.23*width} {0.65*width},{0.01*width} C{0.65*width},{0.05*width} {0.5*width},{0.01*width} {0.5*width},{0.15*width}" d="M7.25,24.1 C7.25,21.55 13.25,21.55 11.75,25.15 C11.75,25.75 9.5,25.15 9.5,27.25" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+<path class="unfilled-path" id="unspecified-question-mark-point" parametric:d="M{0.5*width},{0.27*width} L{0.5*width},{0.27*width}" d="M9.5,29.05 L9.5,29.05" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round" />
+
+</svg>

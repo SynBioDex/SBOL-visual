@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1"
+     width="100" height="100" glyphtype="RNA Cleavage Site" soterms="SO:0001688,SO:0001687,SO:0001977"
+     parametric:defaults="height=16;width=6">
+
+    <rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height}" y="6"
+          parametric:width="{width}" width="10" parametric:height="{height}" height="22"
+          style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8"/>
+
+    <path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L10,25" parametric:y="{0}"
+          style="fill:none;stroke:black;stroke-width:1pt"/>
+
+    <path id="location-stem-path-1"
+          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+          class="unfilled-path"
+          parametric:d="m {0.5*width}, {- 2*(height-width/2)/3} c {(height-width/2)/6},{-(height-width/2)/6} {-(height-width/2)/6},{-(height-width/2)/6} 0,{-(height-width/2)/3}"/>
+
+    <path id="location-stem-path-2"
+          parametric:d="m {0.5*width}, {- (height-width/2)/3} c {(height-width/2)/6},{-(height-width/2)/6} {-(height-width/2)/6},{-(height-width/2)/6} 0,{-(height-width/2)/3}"
+          class="unfilled-path"
+          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+    />
+
+    <path id="location-stem-path-2"
+          parametric:d="m {0.5*width}, {0} c {(height-width/2)/6},{-(height-width/2)/6} {-(height-width/2)/6},{-(height-width/2)/6} 0,{-(height-width/2)/3}"
+          class="unfilled-path"
+          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+    />
+
+
+    <path class="unfilled-path" id="location-top-path" parametric:d="M{0},{-height} L{width},{-height+width}"
+          d="M2,9 L8,15" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round"/>
+
+    <path class="unfilled-path" id="location-top-path" parametric:d="M{0},{-height+width} L{width},{-height}"
+          d="M2,15 L8,9" style="fill:none;stroke:black;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round"/>
+
+
+</svg>
