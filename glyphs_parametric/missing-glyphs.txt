@@ -1,13 +1,10 @@
 
 DNA COMPONENTS:
-intron
+intron - **to discuss**
 
 
 FUNCTIONAL COMPONENTS:
-complex
 dsNA
-ssNA
-unspecified
 
 
 LINKS (optional):
