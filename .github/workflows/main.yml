@@ -136,7 +136,7 @@ jobs:
           cd SBOL-visual/specification/figures/apdx-examples/
           pwd
           ls -al
-          for file in *.pdf; do convert $file -background white  "./pngversions/`basename $file .pdf`.png"; done
+          for file in *.pdf; do convert $file -background white -flatten "./pngversions/`basename $file .pdf`.png"; done
 
       - name: Generate markdown glyph examples page
         run: |
