@@ -1,0 +1,136 @@
+[
+  {
+    "fileName": "apdx-exa1.pdf",
+    "label": "f:apdx:exa1",
+    "caption": "DNA sequence for a functional unit in which the pTet promoter and an anonymous ribosome entry site regulate expression of a coding sequence for GFP, ended by a terminator."
+  },
+  {
+    "fileName": "apdx-exa2.pdf",
+    "label": "f:apdx:exa2",
+    "caption": "The same functional unit as in \\ref{f:apdx:exa1}, with additional assembly-focused information: there is a 5' overhang before the promoter, a 3' overhand after the terminator, and an assembly scar between the promoter and the ribosome entry site left over from a prior step of assembly."
+  },
+  {
+    "fileName": "apdx-exa3.pdf",
+    "label": "f:apdx:exa3",
+    "caption": "Promoter pTet stored in a circular plasmid. The promoter is prepared for being cut out of the plasmid: it is preceded by a 5' sticky end restriction site and followed by a 3' stick end restriction site.  In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
+  },
+  {
+    "fileName": "apdx-exa4.pdf",
+    "label": "f:apdx:exa4",
+    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that the restriction sites before and after the promoter are blunt-end."
+  },
+  {
+    "fileName": "apdx-exa5.pdf",
+    "label": "f:apdx:exa5",
+    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that the cut structure of the restriction sites before and after the promoter is not specified."
+  },
+  {
+    "fileName": "apdx-exa6.pdf",
+    "label": "f:apdx:exa6",
+    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that there is a ribonuclease site after the promoter rather than restriction sites flanking it."
+  },
+  {
+    "fileName": "apdx-exa7.pdf",
+    "label": "f:apdx:exa7",
+    "caption": "Detailed design of a promoter, in which the transcription start site is preceded by two operator sites where regulators bind, and the whole is flanked by insulators."
+  },
+  {
+    "fileName": "apdx-exa8.pdf",
+    "label": "f:apdx:exa8",
+    "caption": "Promoter regulating the production of an engineered composite sequence that includes RNA and protein stability elements at its 3' end, as well as an internal site for protease cleavage, as well as the expansion of the composite to show it contains a ribosome entry site. coding sequence, and other omitted details.  Single residue locations of interest are indicated for the DNA (before the promoter), RNA (after the ribosome entry site), and protein (in the CDS)."
+  },
+  {
+    "fileName": "apdx-exa9.pdf",
+    "label": "f:apdx:exa9",
+    "caption": "DNA sequence with three primer binding sites."
+  },
+  {
+    "fileName": "apdx-exa10.pdf",
+    "label": "f:apdx:exa10",
+    "caption": "The same functional unit as in \\ref{f:apdx:exa1}, except that information about the CDS is missing, leaving it to fall back on the default unspecified glyph."
+  },
+  {
+    "fileName": "apdx-exa11.pdf",
+    "label": "f:apdx:exa11",
+    "caption": "Promoter regulating the expression of GFP, which is also regulated by an aptamer between it and the poly-A tail of the transcript. The promoter can be cut out by a pair of recombinase target sites, which are acted on by the Flp protein.  The whole construct is stored in a circular plasmid with an origin of replication and also an origin of transfer.",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa12.pdf",
+    "label": "f:apdx:exa12",
+    "caption": "Promoter stimulated by the CDS that it regulates."
+  },
+  {
+    "fileName": "apdx-exa13.pdf",
+    "label": "f:apdx:exa13",
+    "caption": "Constitutive production of TetR, except that information about the protein is missing, leaving it as the default unspecified glyph. TetR represses the pTet promoter, which is regulating production of GFP.  The diagram of GFP production explicitly includes the intermediate mRNA and the degradation of both the mRNA and protein products.",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa14.pdf",
+    "label": "f:apdx:exa14",
+    "caption": "Phosphorylation of an inactive transcription factor (produced by two different CDSs) by a kinase to form an active transcriptional activator, which then stimulates a promoter.",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa15.pdf",
+    "label": "f:apdx:exa15",
+    "lastEdited": "2.3.0",
+    "caption": "Ribozyme and spacer between two transcriptional units, forming a separation module with the preceding terminator (dashed box), with the whole construct integrated into the chromosome."
+  },
+  {
+    "fileName": "apdx-exa16-circular-plasmid-example.pdf",
+    "label": "f:apdx:exa16",
+    "caption": "A circular plasmid containing a functional unit consisting of promoter, ribosome entry site, CDS, and terminator.",
+    "scale": "1.0",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa17-chromosomal-locus-example.pdf",
+    "label": "f:apdx:exa17",
+    "caption": "A functional unit consisting of promoter, ribosome entry site, CDS, and terminator, all integrated together into the chromosome.",
+    "scale": "1.0",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa18-chromosomal-locus-example2.pdf",
+    "label": "f:apdx:exa18",
+    "caption": "Two functional units, one integrated into the amyE locus, another integrated into the ganA locus.",
+    "scale": "1.0",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa19-stop-sites.pdf",
+    "label": "f:apdx:exa19",
+    "caption": "Coding sequence marking the stop codon at its end and transcriptional end site farther down the sequence.",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa20-intron.pdf",
+    "label": "f:apdx:exa20",
+    "caption": "A coding sequence with three domains: an N-tag (blue), C-tag (yellow), and internal region (red) interrupted by an intron that includes a gRNA non-coding RNA sequence (green).",
+    "scale": "1.0",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa21-polypeptide-region.pdf",
+    "label": "f:apdx:exa21",
+    "caption": "A coding sequence with three designated domains, an N-tag (blue), C-tag (yellow), and internal region (red).",
+    "scale": "1.0",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa22.pdf",
+    "label": "f:apdx:exa22",
+    "caption": "The AraC protein and arabinose associating into a complex that activates the pBAD promoter.",
+    "scale": "0.75",
+    "lastEdited": "2.3.0"
+  },
+  {
+    "fileName": "apdx-exa23-bicistronic.pdf",
+    "label": "f:apdx:exa23",
+    "caption": "Bicistronic expression of both GFP and RFP from a signal coding sequence, by means of a 2A self-cleaving polypeptide region.",
+    "scale": "0.75",
+    "lastEdited": "2.3.0"
+  }
+]
