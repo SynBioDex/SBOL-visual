@@ -79,7 +79,7 @@ def generate_md(figures):
         for figure in figures:
             # TODO: convert image and move to correct folder
             # TODO: print to a different folder
-            src = "SBOLVisualSpecExamples/" + figure["fileName"]
+            src = "SBOLVisualSpecExamples/" + figure["fileName"].replace('.pdf', '.png')
             title = figure["caption"]
             fp.write('{{< figure library="true" src="%s" title="%s" lightbox="true" width="%s" >}}\n\n' % (src, title, width))
 
