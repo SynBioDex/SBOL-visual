@@ -1,0 +1,50 @@
+name: build_specification
+
+on: workflow_dispatch
+
+jobs:
+  specification_examples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+        with:
+          path: SBOL-visual
+
+      - name: Checkout website repo
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          repository: SynBioDex/SbolStandardWebsite
+          path: SbolStandardWebsite
+
+      - name: Generate PNG versions of example diagrams
+        run: |
+          sudo apt-get update && sudo apt-get install ghostscript
+          sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
+          cd SBOL-visual/specification/figures/apdx-examples/
+          pwd
+          ls -al
+          for file in *.pdf; do convert $file -background white -flatten "./pngversions/`basename $file .pdf`.png"; done
+
+      - name: Generate markdown glyph examples page
+        run: |
+          cd SBOL-visual/scripts
+          python3 generate_examples_appendix.py
+
+      - name: Copy generated files to website repo
+        run: |
+          cd SBOL-visual
+          cp scripts/examples.md ../SbolStandardWebsite/content/visual-spec-examples/_index.md
+          cp -r specification/figures/apdx-examples/pngversions/* ../SbolStandardWebsite/static/media/SBOLVisualSpecExamples
+
+      - name: Commit and push to website repo
+        if: ${{ github.event_name == 'push' }}
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          cd SbolStandardWebsite
+          git config --global user.email "github-action@example.com"
+          git config --global user.name "Specification Examples Github Action"
+          git add .
+          git diff-index --quiet HEAD || (git commit -m "Automatically re-generate specification examples" && git push origin master)
