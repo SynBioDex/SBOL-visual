@@ -164,6 +164,6 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-        cd SbolStandardWebsite
-        git add .
-        git diff-index --quiet HEAD || (git commit -m "Automatically re-generate specification examples" && git push origin master)
+          cd SbolStandardWebsite
+          git add .
+          git diff-index --quiet HEAD || (git commit -m "Automatically re-generate specification examples" && git push origin master)
