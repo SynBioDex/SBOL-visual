@@ -1,22 +1,16 @@
 
+DNA COMPONENTS:
 intron
 
+
+FUNCTIONAL COMPONENTS:
 complex
 dsNA
-macromolecule
-no-glyph-assigned
-protein
-simple-chemical
 ssNA
 unspecified
 
 
-
-
-
-
-
-
+LINKS (optional):
 association
 dissociation
 process
