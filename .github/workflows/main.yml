@@ -149,21 +149,9 @@ jobs:
           cp -r specification/figures/apdx-examples/pngversions/* ../SbolStandardWebsite/static/media/SBOLVisualSpecExamples
 
       - name: Setup SSH agent
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-          echo "{{ secrets.GH_DEPLOY_KEY }}" > ~/.ssh/.id_rsa
-          cat ~/.ssh/.id_rsa | wc -l
-          sed -i -e "s#\\\\n#\n#g" ~/.ssh/.id_rsa
-          cat ~/.ssh/.id_rsa | wc -l
-          chmod 0600 ~/.ssh/.id_rsa
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add ~/.ssh/.id_rsa
-          # chmod 0600 .github/workflows/secrets/id_rsa
-          # ssh-add .github/workflows/secrets/id_rsa
+        uses: webfactory/ssh-agent@v0.5.1
+        with:
+            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Commit and push to website repo
         if: ${{ github.event_name == 'push' }}
