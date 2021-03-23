@@ -2,25 +2,35 @@
 \section{SBOL Glyphs}\label{sec:glyphs}
 % -----------------------------------------------------------------------------
 
-\todo[inline]{Update language to SBOL 3.0}
-
 A glyph is a visual symbol used to represent an element in an SBOL Visual diagram.
 All of the currently defined glyphs are collected in \ref{apdx:symbols}.
 %
 This section explains how glyphs are specified and how to add new glyphs.
 
 Each SBOL glyph is defined by association with ontology terms, and can be used to represent any diagram element that is well-described by that term.
-Currently there are three classes of glyphs, each associated with a different ontology and different class in the SBOL 2 data model:
+Currently there are four classes of glyphs, each associated with an ontology and a class in the SBOL 3 data model:
 \begin{itemize}
-\item {\bf Sequence Feature Glyphs} describe features of nucleic acid sequences. They are associated with Sequence Ontology terms.
-For the SBOL 2 data model, this is formally defined as any \sbol{Component} with a compatible term within its associated \sbol{roles},
+\item {\bf Sequence Feature Glyphs} describe features of nucleic acid sequences. 
+They are associated with Sequence Ontology terms.
+For the SBOL 3 data model, this is formally defined as any \sbol{Feature} with a compatible term within its associated \sbol{roles},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
-\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. They are associated with Systems Biology Ontology terms.  For the SBOL 2 data model, this is formally defined as any \sbol{FunctionalComponent} with a compatible term within its associated \sbol{types},
+
+\item {\bf Molecular Species Glyphs} represent any class of molecule whose detailed structure is not being shown using sequence feature glyphs. 
+They are associated with Systems Biology Ontology terms. 
+ For the SBOL 3 data model, this is formally defined as any \sbol{Feature} with a compatible term within its associated \sbol{types},
  i.e., one that is equal to or a child of at least one term associated with the glyph.
-\item {\bf Interaction Glyphs} are ``arrows'' indicating functional relationships between sequence features, molecular species, and/or other relationships. They are associated with Systems Biology Ontology terms.
-For the SBOL 2 data model, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
+
+\item {\bf Interaction Glyphs} are ``arrows'' indicating functional relationships between sequence features, molecular species, and/or other relationships. 
+They are associated with Systems Biology Ontology terms.
+For the SBOL 3 data model, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
  i.e., one that is equal to or a child of at least one term associated with the glyph, 
  and with a compatible \sbol{Participation} at the head and tail of the arrow.
+
+\item {\bf Interaction Node Glyphs} are placed at the junctions of edges to represent biochemical processes.
+They are associated with Systems Biology Ontology terms.
+For the SBOL 3 data model, this is formally defined as any \sbol{Interaction} with a compatible term within its \sbol{types},
+ i.e., one that is equal to or a child of at least one term associated with the glyph, 
+ and with a compatible \sbol{Participation} on the incoming and outgoing edges of the glyph
  \end{itemize}
  
 More than one glyph may share the same definition: in this case, these glyphs form a family of variants, of which precisely one MUST be designated as the RECOMMENDED glyph, which is to be used unless there are strong reasons to prefer an alternative variant.
@@ -41,7 +51,13 @@ Likewise, a CDS may be represented by either a pentagonal glyph or an arrow glyp
 \label{f:glyphalternatives}
 \end{figure}
 
+Finally, note that the mapping from data model to glyph is not one-to-one: many SBOL 3 data model constructs can, at least in theory, be represented visually in multiple different ways. 
+For example, a DNA construct carrying a heterologous gene could be represented by the molecular species glyph for a double-stranded nucleic acid, the sequence feature glyph for an engineered construct, or a series of sequence feature glyphs showing the internal structure of the gene.
+This ambiguity is deliberate allowing diagrams to select an appropriate level of detail for the information that a diagram is intended to convey.
+
 \subsection{Requirements for Glyphs}
+
+\todo[inline]{Do we need to add to these for parametric?}
 
 A number of requirements are placed on all SBOL Visual glyphs in order to
 ensure both the clarity of diagrams and the ease with which they can
@@ -63,7 +79,7 @@ In addition, some requirements apply only to certain classes of glyphs:
 \item A sequence feature or molecular species glyph specification MUST include a rectangular bounding box indicating its extent in space.
 \item A sequence feature glyph specification MUST include exactly one horizontal rule for its RECOMMENDED vertical alignment with the nucleic acid backbone.
 \item A sequence feature glyph SHOULD be asymmetric on the horizontal axis. Vertical asymmetry is also preferred when possible.
-\item If a sequence feature glyph can represent components of highly variable size or structural complexity, the glyph SHOULD be able to be scaled horizontally to indicate relative property value.
+\item If a sequence feature glyph can represent components of highly variable size or structural complexity, the glyph SHOULD be able to be scaled horizontally to indicate relative scale.
 \end{enumerate}
 
 \ref{f:specexample} shows examples of compliant glyph specification.
@@ -83,6 +99,7 @@ SBOL Visual aims to allow as much flexibility and freedom as possible in how dia
 To this end, a number of aspects of presentation are generally reserved for the communication of other types of information by the creator of a diagram.
 %
 When using a glyph in a diagram, the following choices in glyph presentation are thus explicitly intended to be alterable:
+\todo[inline]{Do we need to add to these for parametric?}
 \begin{enumerate}
 \item The lines of a glyph MAY be given any line thickness and style
 \item The interior of a glyph MAY be given any fill color, as long as the choice of fill does not interfere with recognizing the glyph.
