@@ -130,6 +130,7 @@ jobs:
 
       - name: Generate PNG versions of example diagrams
         run: |
+          sudo apt-get update && sudo apt-get install ghostscript
           sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
           cd SBOL-visual/specification/figures/apdx-examples/
           pwd
