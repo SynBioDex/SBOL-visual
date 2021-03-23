@@ -125,6 +125,7 @@ jobs:
       - name: Checkout website repo
         uses: actions/checkout@v2
         with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           repository: SynBioDex/SbolStandardWebsite
           path: SbolStandardWebsite
 
@@ -147,11 +148,6 @@ jobs:
           cd SBOL-visual
           cp scripts/examples.md ../SbolStandardWebsite/content/visual-spec-examples/_index.md
           cp -r specification/figures/apdx-examples/pngversions/* ../SbolStandardWebsite/static/media/SBOLVisualSpecExamples
-
-      - name: Setup SSH agent
-        uses: webfactory/ssh-agent@v0.5.1
-        with:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Commit and push to website repo
         if: ${{ github.event_name == 'push' }}
