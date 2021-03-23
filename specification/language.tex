@@ -5,19 +5,18 @@
 
 \todo[inline]{Update language to SBOL 3.0}
 
-An SBOL Visual diagram represents information about the structure of a nucleic acid design and its associated molecular species and interactions.
-%
+An SBOL Visual diagram represents information about the structure of a biological design.
+SBOL Visual is particularly concerned with enabling clear communication about the structure of nucleic acid designs, though there is no requirement that a diagram include such.
+
 If desired, an SBOL Visual diagram may also be associated with a machine-interpretable model (e.g., in SBOL, GenBank, or SBML format).
-In this document we describe the association for the SBOL 2 data model, which provides a formal semantic grounding for all elements of an SBOL Visual diagram, but equivalent associations may be made between diagram elements and other models.
+In this document we describe the association with the SBOL 3 data mode~\citep{SBOL3_0}l, which provides a formal semantic grounding for all elements of an SBOL Visual diagram, but equivalent associations may be made between diagram elements and other models.
 %
-In terms of the SBOL 2 data model, the description of a nucleic acid design is formally defined as a representation of a \sbol{ComponentDefinition} with a nucleic acid \sbol{type}, the \sbol{Component} and \sbol{SequenceAnnotation} objects describing the features and sub-structure of the design, and \sbol{SequenceConstraint} information on the relative positions of such elements.
-%
-The description of interactions between some number of nucleic acid designs and other molecular species is formally defined as a representation of a \sbol{ModuleDefinition}, the \sbol{FunctionalComponent} objects describing the nucleic acid designs and other molecular species, and the \sbol{Interaction} and \sbol{Participation} objects describing their functional relationships.
+In terms of the SBOL 3 data model, the description of a nucleic acid design is formally defined as a representation of a \sbol{Component}, the \sbol{Feature} objects describing its design, the \sbol{Interaction} and \sbol{Participation} objects describing their functional relationships, and the \sbol{Constraint} objects describing relationships of relative location, orientation, topology, and identity.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{figures/SBOLsyntax.pdf}
-\caption{Generic syntax of SBOL Visual 2:  
+\caption{Generic syntax of SBOL Visual 3:  
 a diagram for a nucleic acid construct is based around a backbone line, its structure specified by the sequence of attached sequence feature glyphs.  
 Strand can optionally be indicated by placing a glyph above or below the backbone.  
 Other molecular species are indicated by glyphs not in contact with any backbone.
@@ -43,10 +42,20 @@ Full details of this specification are provided in the remainder of this section
 \label{s:lang:backbone}
 
 A diagram for a nucleic acid construct is based around a single or double line, representing the nucleic acid backbone. 
-Information about features of the construct can then be represented by attaching nucleic acid glyphs to the backbone, as defined below in \ref{s:lang:nacomponent}.
-%
-In terms of the SBOL 2 data model, the backbone represents a \sbol{ComponentDefinition} with a nucleic acid \sbol{type} (e.g., DNA, RNA), and the features represent \sbol{Component} and \sbol{SequenceAnnotation} members of the \sbol{ComponentDefinition}.
+Information about features of the construct can then be represented by attaching sequence feature glyphs to the backbone, as defined below in \ref{s:lang:nacomponent}.
 
+In terms of the SBOL 3 data model, the backbone represents any clustering of \sbol{Feature} objects that describe the structure of a single nucleic acid construct. 
+In particular, a two \sbol{Feature} objects MAY be placed together on a nucleic acid backbone if:
+\begin{itemize}
+\item both \sbol{Feature} objects are children of the same \sbol{Component} with a nucleic acid \sbol{type} (e.g., DNA, RNA), or
+\item both \sbol{Feature} objects have a \sbol{Location} on the same nucleic acid \sbol{Sequence}, or
+\item the two \sbol{Feature} objects are linked together by a \sbol{Constraint} relation indicating their relative sequence location or orientation.
+\end{itemize}
+If two \sbol{Feature} objects do not have any such relation or chain of relations through other \sbol{Feature} objects, then they MUST NOT be placed on the same backbone.
+
+\todo[inline]{Make sure this gets extended correctly for subcomponent in the module section}
+
+The rules for use of nucleic acid backbones in diagrams are:
 \begin{enumerate}
 \item Lines in some cases indicate strand count. 
 	A double-stranded region of the nucleic acid construct MAY use either a single or double line for the backbone.  
@@ -93,13 +102,13 @@ In terms of the SBOL 2 data model, the backbone represents a \sbol{ComponentDefi
 \end{enumerate}
 
 
-\subsection{Nucleic Acid Sequence Features}
+\subsection{Sequence Features}
 \label{s:lang:nacomponent}
 
-A glyph in contact with a nucleic acid backbone indicates a feature of the nucleic acid sequence.
+A sequence feature glyph in contact with a nucleic acid backbone indicates a feature of the nucleic acid sequence.
 % 
-In terms of the SBOL 2 data model, this is either a \sbol{SequenceFeature} or a \sbol{Component} with a nucleic acid \sbol{type} that is contained within the \sbol{ComponentDefinition} associated with that nucleic acid backbone.
-The \sbol{Component} may be contained either directly, as one of the \sbol{components} of the \sbol{ComponentDefinition}, or recursively through a sequence of such containments.
+In terms of the SBOL 3 data model, this is a \sbol{Feature} with a nucleic acid \sbol{type} that is associated with that nucleic acid backbone by the clustering rules given in~\ref{s:lang:backbone}.
+The \sbol{Feature} may be contained either directly, as one of the children of the \sbol{Component} represented by the diagram, or recursively through a sequence of \sbol{SubComponent} relationships.
 
 \begin{enumerate}
 \item Every feature glyph MUST have its bounding box in contact with the backbone for the nucleic acid construct it describes. 
@@ -136,7 +145,7 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\end{figure} 
 
 \item Nucleic acid features in a sequential relationship SHOULD be drawn from 5' left to 3' right on the inline strand and from 5' right to 3' left on the reverse complement strand.
-	In terms of the SBOL 2 data model, this indicates a \sbol{SequenceConstraint} on the relative ordering of two features.
+	In terms of the SBOL 3 data model, this indicates a \sbol{Constraint} on the relative ordering of two features.
 
 \item Nucleic acid features that do not overlap in their locations SHOULD NOT have glyphs whose bounding boxes overlap.
 	An example is provided in~\ref{exa:2d}.
@@ -160,7 +169,7 @@ The placement of the glyph SHOULD follow the recommendation for backbone alignme
 	\end{figure}
 
 \item A nucleic acid feature SHOULD be represented using a glyph defined in \ref{apdx:sym:feature}.  In this case, the feature MUST be contained within at least one of the glyph's associated terms.
-In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{roles} for the \sbol{Component} or its associated \sbol{ComponentDefinition}.
+In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{roles} for the \sbol{Feature} or its associated \sbol{Component} if it is a \sbol{SubComponent}.
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:feature} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 	Examples are provided in~\ref{exa:2f}.
 	\begin{figure}[h!]
@@ -169,13 +178,16 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 	\subfigure[MAY]{\includegraphics[scale=0.5]{figures/examples/2f-custom.pdf}}
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.5]{figures/examples/2f-generic.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.5]{figures/examples/2f-conflict.pdf}}
-	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{ComponentDefinition} comprising a sequence of promoter, ribosome entry site, CDS, and terminator: (a) is RECOMMENDED because it uses the preferred variant of the most specific defined glyphs, (b) is allowed because it uses some novel custom non-conflicting symbol, not matching any glyph defined in this document, to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs, and (d) is forbidden because it use a promoter symbol to represent the terminator.}
+	\caption{Examples of recommended, allowed, and forbidden representation of a \sbol{Component} comprising a sequence of promoter, ribosome entry site, CDS, and terminator: (a) is RECOMMENDED because it uses the preferred variant of the most specific defined glyphs, (b) is allowed because it uses some novel custom non-conflicting symbol, not matching any glyph defined in this document, to encode more specific information about the particular CDS, (c) is recommended against because it uses less specific glyphs, and (d) is forbidden because it use a promoter symbol to represent the terminator.}
 	\label{exa:2f}
 	\end{figure}
 \end{enumerate}
 
 
 \subsection{Molecular Species}
+
+\todo[inline]{Start here}
+
 A glyph that is not in contact with any backbone represents any class of molecule whose detailed structure is not being shown using sequence feature glyphs.
 In other words, either not a nucleic acid (e.g., proteins, small molecules) or else an ``uninteresting'' nucleic acid (e.g., showing a transcribed mRNA, but not the features of its sequence).
 In terms of the SBOL 2 data model, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
