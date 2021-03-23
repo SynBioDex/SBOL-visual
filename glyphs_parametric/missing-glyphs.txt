@@ -1,10 +1,6 @@
 
 intron
 
-Backbone modifiers:
-    chromosomal-locus
-    circular-plasmid
-
 complex
 dsNA
 macromolecule
@@ -13,6 +9,13 @@ protein
 simple-chemical
 ssNA
 unspecified
+
+
+
+
+
+
+
 
 association
 dissociation
