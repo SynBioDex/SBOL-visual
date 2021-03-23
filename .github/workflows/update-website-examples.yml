@@ -1,4 +1,4 @@
-name: build_specification
+name: update_website_specification_examples
 
 on: workflow_dispatch
 
