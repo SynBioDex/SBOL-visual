@@ -67,7 +67,7 @@ def generate_md(figures):
     header:
       caption: ""
       image: ""
-    ---
+---
 
 """)
 
