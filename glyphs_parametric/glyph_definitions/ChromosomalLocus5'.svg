@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Chromosome Part 3' End" soterms="SO:0000830" parametric:defaults="height=10;width=20">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="0" x="0" parametric:y="0" y="0" parametric:width="{-width}" width="-20" parametric:height="{height}" height="10" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+    <path class="baseline" id="baseline" parametric:d="M{0},{0} L{0},{0}" d="M0,0 L0,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="chromosome-part-end"
+          parametric:d="M0,0 C{-width},0 {-width},{height/2.0} {-width*0.5},{height/2.0} C0,{height/2.0} 0,{height} {-width},{height}"
+          d="M0,0 C-20.0,0 -20.0,5.0 -10.0,5.0 C0,5.0 0,10.0 -20.0,10.0"
+          style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt"/>
+
+</svg>
