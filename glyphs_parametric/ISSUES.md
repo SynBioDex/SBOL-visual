@@ -13,3 +13,5 @@
 6. "No Glyph Assigned" & "Unspecified" – these already exists as sequence features. Should they just be copied? Should we have glyphs defined in two places? Can we merely symlink somehow to reduce maintenance?
 
 7. ssNA and dsNA should be able to be concatenated to create longer versions of the symbol. A small 2 element part should be provided as symbol ensuring proper alignment of baselines will enable correct joining of symbols. See ssNA and dsNA for an example where this works.
+
+8. Defaults are all shot... Need to generate them and tweak to perfection.
