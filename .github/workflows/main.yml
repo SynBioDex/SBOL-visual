@@ -156,7 +156,9 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
           echo "{{ secrets.GH_DEPLOY_KEY }}" > ~/.ssh/.id_rsa
+          cat ~/.ssh/.id_rsa | wc -l
           sed -i -e "s#\\\\n#\n#g" ~/.ssh/.id_rsa
+          cat ~/.ssh/.id_rsa | wc -l
           chmod 0600 ~/.ssh/.id_rsa
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add ~/.ssh/.id_rsa
