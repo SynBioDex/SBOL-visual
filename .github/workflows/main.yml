@@ -159,5 +159,7 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           cd SbolStandardWebsite
+          git config --global user.email "github-action@example.com"
+          git config --global user.name "Specification Examples Github Action"
           git add .
           git diff-index --quiet HEAD || (git commit -m "Automatically re-generate specification examples" && git push origin master)
