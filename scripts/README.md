@@ -16,9 +16,13 @@ The PDF files for individual glyphs are generated as intermediates when building
  You can generate them manually using:
  
  ```bash
- cd scripts
 npm install markdown-pdf
-python3 rebuild_glyphs.py
+python3 scripts/rebuild_glyphs.py
 ```
+
+If you do this manually, the first run of this script will regenerate all PDFs (not just those for glyphs that have been modified), unless you used a tool like [`git-restore-mtime`](https://github.com/MestreLion/git-tools#git-restore-mtime) to set the `mtime` of each file to the time when they were last modified, rather than the time that they were checked-out using Git.
+
+Note that npm can install packages either globally (if the `-g` argument is provided) or locally.
+The `rebuild_glyphs.py` script expects `markdown-pdf` to be installed in the top-level of the repository.
 
 This should regenerate only the updated PDFs in specifications/glyphscript/Glyphs/, and update the .tex files in specifications/glyphscript/.

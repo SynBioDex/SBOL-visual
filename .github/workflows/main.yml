@@ -18,11 +18,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd specification/glyphscript
           npm install markdown-pdf
 
       - name: Generate PDFs for glyphs
         run: python3 scripts/rebuild_glyphs.py
+
+      - name: Generate tex file for examples appendix
+        run: |
+          cd scripts
+          python3 generate_examples_appendix.py
 
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@v0.2.0
