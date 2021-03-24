@@ -3,8 +3,6 @@
 \label{sec:language}
 % % -----------------------------------------------------------------------------
 
-\todo[inline]{Update language to SBOL 3.0}
-
 An SBOL Visual diagram represents information about the structure of a biological design.
 SBOL Visual is particularly concerned with enabling clear communication about the structure of nucleic acid designs, though there is no requirement that a diagram include such.
 
@@ -52,8 +50,6 @@ In particular, a two \sbol{Feature} objects MAY be placed together on a nucleic 
 \item the two \sbol{Feature} objects are linked together by a \sbol{Constraint} relation indicating their relative sequence location or orientation.
 \end{itemize}
 If two \sbol{Feature} objects do not have any such relation or chain of relations through other \sbol{Feature} objects, then they MUST NOT be placed on the same backbone.
-
-\todo[inline]{Make sure this gets extended correctly for subcomponent in the module section}
 
 The rules for use of nucleic acid backbones in diagrams are:
 \begin{enumerate}
@@ -186,15 +182,13 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 
 \subsection{Molecular Species}
 
-\todo[inline]{Start here}
-
 A glyph that is not in contact with any backbone represents any class of molecule whose detailed structure is not being shown using sequence feature glyphs.
 In other words, either not a nucleic acid (e.g., proteins, small molecules) or else an ``uninteresting'' nucleic acid (e.g., showing a transcribed mRNA, but not the features of its sequence).
-In terms of the SBOL 2 data model, this is a \sbol{FunctionalComponent} that is contained within a \sbol{ModuleDefinition} implicit in the diagram.
+In terms of the SBOL 3 data model, these are also \sbol{Feature} objects contained within the overall \sbol{Component} for the diagram.
 
 \begin{enumerate}
-\item A molecular species SHOULD be represented using a glyph defined in \ref{apdx:sym:species}.  In this case, the species MUST be contained within at least one of the glyph's associated terms.
-In terms of the SBOL 2 data model, this means the glyph is equal to or a parent of at least one of the \sbol{types} for the associated \sbol{ComponentDefinition}.
+\item A molecular species SHOULD be represented using a glyph defined in \ref{apdx:sym:species}.  In this case, the species MUST be contained within at least one of the glyph's associated SBO terms.
+In terms of the SBOL 3 data model, this means the SBO term for the glyph is equal to or a parent of at least one of the \sbol{types} for the associated \sbol{Feature} or its type-defining referent (i.e., the \sbol{Component} linked by \sbol{instanceOf} for a \sbol{SubComponent} or the type associated with the linked \sbol{Feature} for a \sbol{ComponentReference}).
 	Moreover, the glyph used SHOULD be the RECOMMENDED variant of the most specific applicable glyph.  Note that novel glyphs not defined in \ref{apdx:sym:species} MAY be used, but SHOULD be proposed for adoption as described in \ref{sec:extension}.
 	
 \item The bounding box of a molecular species glyph MUST NOT contact any nucleic acid construct unless there is an interaction between the molecular species and the nucleic acid construct.  
@@ -217,7 +211,7 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 \end{enumerate}
 
 
-\subsection{Interaction}
+\subsection{Interactions}
 
 A directed edge ``arrow'' attached to one or more glyphs indicates a functional interaction involving those elements.
 The roles of the elements is indicated by their position at the head or tail of the edge.
@@ -322,16 +316,16 @@ In terms of the SBOL 2 data model, this means the glyph is equal to or a parent 
 
 \end{enumerate}
 
-\subsection{Modules}
+\subsection{Subsystems}
 
-A module within a system MAY be represented by a visual boundary in the form of closed polygon or closed curve.
-Everything inside of the boundary is part of the module, and everything outside of the boundary is not part of the module; only certain diagram elements are allowed to cross a boundary, as defined below.
-In terms of the SBOL 2 data model, the line represents a \sbol{Module} included within the \sbol{ModuleDefinition} represented by the surrounding diagram, and boundary-crossing elements define \sbol{MapsTo} relationships.
-Note that the internals of a module need not be shown: some details can be omitted or a module can even be a ``black box'' with no internal structure at all being shown.
+A distinguished subsystem within a system MAY be represented by a visual boundary in the form of closed polygon or closed curve.
+Everything inside of the boundary is part of the subsystem, and everything outside of the boundary is not part of the subsystem; only certain diagram elements are allowed to cross a boundary, as defined below.
+In terms of the SBOL 3 data model, the line represents a \sbol{SubComponent} included within the \sbol{Component} represented by the surrounding diagram, and boundary-crossing elements define \sbol{ComponentReference} relationships.
+Note that the internals of a subsystem need not be shown: some details can be omitted or a subsystem can even be a ``black box'' with no internal structure at all being shown.
 
 \begin{enumerate}
-\item The boundary of module SHOULD should be a rectangle or rounded rectangle. Boundary sides SHOULD be oriented vertically and horizontally.  
-	It is RECOMMENDED that a module be made visually distinct by making it larger than other glyphs and with a different line style.
+\item The boundary of subsystem SHOULD should be a rectangle or rounded rectangle. Boundary sides SHOULD be oriented vertically and horizontally.  
+	It is RECOMMENDED that a subsystem be made visually distinct by making it larger than other glyphs and with a different line style.
 	Examples are provided in~\ref{exa:moduleA}.
 
 	\begin{figure}[h!]
@@ -340,60 +334,58 @@ Note that the internals of a module need not be shown: some details can be omitt
 	\subfigure[SHOULD]{\includegraphics[scale=0.4]{figures/examples/moduleA-roundrect.pdf}}
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nonrect.pdf}}
 	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleA-nondistinct.pdf}}
-	\caption{Examples of recommended and problematic module boundaries: (a) two modules with visually distinct rectangular borders, (b) shows the same modules but with rounded rectangles and the second being a ``black box'' module with no internal structure shown, (c) shows modules with non-rectilinear borders, and (d) shows a black-box module that is not visually distinct from a sequence feature glyph.}
+	\caption{Examples of recommended and problematic subsystem boundaries: (a) two subsystems with visually distinct rectangular borders, (b) shows the same subsystems but with rounded rectangles and the second being a ``black box'' subsystem with no internal structure shown, (c) shows subsystems with non-rectilinear borders, and (d) shows a black-box subsystem that is not visually distinct from a sequence feature glyph.}
 	\label{exa:moduleA}
 	\end{figure}
 
-\item An undirected edge (i.e., having no ``arrow head'') that crosses the boundary of a module represents a mapping associating the diagram elements that it links. 
-Glyphs associated by a mapping MUST either be sequence features, molecular species, or module ports (see below), and must be of compatible types.
-In terms of the SBOL 2 data model, the line represents a \sbol{MapsTo} relationship between a \sbol{FunctionalComponent} in the \sbol{ModuleDefinition} and another \sbol{FunctionalComponent} in the definition of the \sbol{Module}.
-	Mapping edges SHOULD be made visually distinct from other lines in the same diagram, and it is RECOMMENDED that this distinction be made using dashed lines to represent mapping edges.
-	Examples are provided in~\ref{exa:moduleB}.
+\todo[inline]{Update language to SBOL 3.0: equality constraint, and if it crosses a module boundary, then it implies a ComponentReference. Move constraints to their own section}
 
-	\begin{figure}[h!]
-	\centering
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleB-mapping.pdf}}
-	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-nondistinct.pdf}}
-	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleB-incompatible.pdf}}
-	\caption{Examples of recommended and problematic mappings: (a) mapping showing that the promoter inside the module on the left is also used in the construct on the right, (b) mapping is not visually distinct from nucleic acid backbone, (c) mapping cannot identify a promoter with a macromolecule species.}
-	\label{exa:moduleB}
-	\end{figure}
+\todo[inline]{Update: add SBOL3 for the mapping of backbone. Interaction crossing represents a ComponentReference}
+\item Glyphs for sequence features and molecular species MUST NOT intersect with the boundary of a subsystem.
+	An example is provided in~\ref{exa:moduleC}(a).
 
-\item Glyphs for sequence features and molecular species MUST NOT intersect with the boundary of a module.
-	A nucleic acid backbone MAY cross the boundary of a module. This represents an implicit mapping between the region of the nucleic acid construct contained within the module and a compatible region of the larger construct represented in the enclosing system.
-	An interaction edge MAY cross the boundary of a module. This represents an interaction in the enclosing system plus an implicit mapping between the component inside of the module and a compatible instance in the enclosing system.
-	Examples are provided in~\ref{exa:moduleC}.
+\item A nucleic acid backbone MAY cross the boundary of a subsystem. This represents an identification of the region of the nucleic acid construct contained within the subsystem and a compatible region of the larger construct represented in the enclosing system.
+	In terms of the SBOL 3 data model, a nucleic acid backbone crossing a subsystem boundary represents the existence of  \sbol{Constraint} or \sbol{Location} objects in the enclosing \sbol{Component} that indicate that the nucleic acid sequence in the \sbol{SubComponent} is adjacent to the connected portions of nucleic acid sequence in the larger \sbol{Component}.
+	Examples are provided in~\ref{exa:moduleC}(b).
+	
+\item An interaction edge MAY cross the boundary of a subsystem. This represents an interaction in the enclosing system that references the connected feature in the subsystem.
+	In terms of the SBOL 3 data model, an interaction edge crossing a subsystem boundary represents an \sbol{Interaction} in the enclosing \sbol{Component} with a \sbol{Participation} that is a \sbol{ComponentReference} to the indicated \sbol{Feature} in the \sbol{SubComponent}.
+	Examples are provided in~\ref{exa:moduleC}(c).
 
 	\begin{figure}[h!]
 	\centering
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleC-badcrossing.pdf}}\\
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-backbone.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-interaction.pdf}}
-	\caption{Examples of recommended and problematic boundary intersections: (a) sequence feature and molecular species glyphs MUST NOT intersect a module boundary, (b) implicit mapping from the promoter in the left module and the regulated elements in the right module to a nucleic acid construct ordering both into a complete functional unit, (c) implicit mapping from the CDS in the left module and the promoter in the right module to instances in the complete system in which the CDS inhibits the promoter (presumably by a repressor product).}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-backbone1.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-backbone2.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-interaction1.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleC-interaction2.pdf}}
+	\caption{Examples of recommended and problematic boundary intersections: 
+	(a) sequence feature and molecular species glyphs MUST NOT intersect a subsystem boundary, 
+	(b) the repressed promoter and the regulated sequence elements in the subsystem are ordered to form a nucleic acid construct implementing a complete functional unit, 
+	(c) the promoter in the left subsystem and the regulated elements in the right subsystem are ordered to form a nucleic acid construct implementing a complete functional unit, 
+	(d) Interaction in which the CDS inhibits the promoter in the subsystem (presumably via a repressor product), 
+	(e) Interaction in which the CDS in the left subsystem inhibits the promoter in the right subsystem (presumably via a repressor product).}
 	\label{exa:moduleC}
 	\end{figure}
 
 
-\item Small rectangles MAY be drawn on the outside of the module boundary to represent input/output ports.
-In terms of the SBOL 2 data model, each rectangle is associated with a \sbol{FunctionalComponent} with a \sbol{direction} property that is \sbol{in}, \sbol{out}, or \sbol{inout}.
-A port may be connected to an interaction edge head or tail to represent interactions with its associated component. 
-%
-If both a port and a glyph for its associated component are present in a diagram, then they MUST be visually connected, either explicitly by means of a mapping or implicitly by an interaction that passes through the port rectangle.
-Likewise, mappings and interactions with the associated component MUST NOT cross the boundary except through the port.
-%
-A port SHOULD NOT both have interactions both connecting to it and crossing the boundary across it.
+\item Small rectangles MAY be drawn on the outside of the subsystem boundary to represent its intended interface.
+In terms of the SBOL 3 data model, these represent the \sbol{Interface} for the \sbol{SubComponent}, with each rectangle associated with a \sbol{Feature} designated as an \sbol{input}, \sbol{output}, or \sbol{nondirectional} element of the interface.
+	An interface rectangle may be connected to an interaction edge head or tail to represent interactions with its associated feature. 
+	If both an interface rectangle and a glyph for its associated feature are present in a diagram, then any interaction with the feature from outside of the subsystem MUST both pass through the interface rectangle and connect with the glyph.
+	An interaction with a feature that does not pass through an interface rectangle then MAY be used to represent an unintended interaction with a non-interface element of the subsystem.
 	Examples are provided in~\ref{exa:moduleD}.
 % How do we show direction on a port?  We can't, really.
 
 	\begin{figure}[h!]
 	\centering
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-blackbox.pdf}}
-	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-mappings.pdf}}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-blackbox.pdf}}\hspace{1.0cm}
+	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-interaction-blackbox.pdf}}
 	\subfigure[MAY]{\includegraphics[scale=0.4]{figures/examples/moduleD-interactions.pdf}}
-	\subfigure[SHOULD NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-mixed.pdf}}
-	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-disconnected.pdf}}
+	\subfigure[MAY (unintended interaction)]{\includegraphics[scale=0.4]{figures/examples/moduleD-unintended.pdf}}
 	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-evaded.pdf}}
-	\caption{Examples of recommended and problematic module ports: (a) port on a black-box module, (b) ports connected to module internals via mappings, (c) boundary-crossing interaction passing through a port, (d) diagrams SHOULD NOT mix mappings and interactions on a given port, (e) ports MUST NOT be disconnected from their associated glyphs, and (f) if a port exists, interactions with that port MUST NOT cross the boundary at any other location.}
+	\subfigure[MUST NOT]{\includegraphics[scale=0.4]{figures/examples/moduleD-whitebox-fail.pdf}}
+	\caption{Examples of recommended and problematic subsystem interfaces: (a) interface on a black-box subsystem, (b) interaction with a black-box interface, (c) boundary-crossing interaction passing through an interface, (d) unintended interaction with a non-interface element, but (e) interactions with features in the interface must pass through the interface rectangle and (f) when the subsystem is shown, interactions MUST NOT terminate at the interface}
 	\label{exa:moduleD}
 	\end{figure}
 
@@ -401,7 +393,7 @@ A port SHOULD NOT both have interactions both connecting to it and crossing the 
 
 
 \subsection{Labels}
-The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of the SBOL 2 data model, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
+The name of any object in a diagram is RECOMMENDED to be displayed as text within, adjacent to, or otherwise clearly visually connected to the object's associated glyph.  In terms of the SBOL 3 data model, this is the \sbol{name} property, and if no \sbol{name} is supplied then the \sbol{displayId} MAY be used instead.
 Examples are provided in~\ref{exa:5}.
 
 	\begin{figure}[h!]
