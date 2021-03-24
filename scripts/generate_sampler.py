@@ -126,7 +126,7 @@ for glyph_category in data:
         svg_path = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name, f"{glyph_name}.svg")
 
         # list svg files in dir, which don't end in
-        for filename in os.listdir(glyph_dir):
+        for filename in sorted(os.listdir(glyph_dir)):
 
             if ".svg" in filename and "-specification" not in filename and "-example" not in filename:
                 svg_path = os.path.join(glyph_dir, filename)
