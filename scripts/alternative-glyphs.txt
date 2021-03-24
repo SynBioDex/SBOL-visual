@@ -1,0 +1,11 @@
+cds-arrow
+location-dna-no-top
+location-rna-no-top
+location-protein-no-top
+halfround-rectangle
+complex-sbgn
+na-sbgn
+no-glyph-assigned
+simple-chemical-circle
+na-sbgn
+halfround-rectangle
