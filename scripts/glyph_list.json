@@ -2,7 +2,7 @@
   {
     "type": "Sequence Features",
     "output": "glyphs.tex",
-    "dir": "",
+    "dir": "SequenceFeatures",
     "glyphs": [
       {"lastEdited": "", "name": "aptamer", "displayName": "Aptamer"},
       {"lastEdited": "", "name": "assembly-scar",  "displayName": "Assembly Scar" },
