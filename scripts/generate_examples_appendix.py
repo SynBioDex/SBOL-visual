@@ -1,17 +1,8 @@
 import json
 
 
-# TODO: generate HTMl - with PDF images converted to a web-format
-# for example of checking out website repo: https://github.com/actions/checkout#checkout-multiple-repos-side-by-side
-# TODO: generate LaTeX
-
-#for figure in figures:
-#    print(f"<img src=' />")
-
-
 def generate_latex(figures):
     version_macros = {
-        "2.3.0": "\\twothreezero"
     }
 
     with open("../specification/apdx-examples.tex", "w") as fp:
@@ -71,11 +62,7 @@ def generate_md(figures):
 
 """)
 
-        # template based on https://github.com/SynBioDex/SbolStandardWebsite/blob/master/content/visual-examples/_index.md
-        src = "SBOLVisualSpecExamples/example1-1.jpg"   # corresponds to files in SbolStandardWebsite/static/media/SBOLVisualSpecExamples
-        title = "Example 1: Promoter stimulated by CDS"
         width = "470"
-
         for figure in figures:
             # TODO: convert image and move to correct folder
             # TODO: print to a different folder
@@ -90,8 +77,3 @@ with open("./example-figures.json") as fp:
 
     generate_latex(figures)
     generate_md(figures)
-
-
-# for file in *.pdf; do convert $file "./pngversions/`basename $file .pdf`.png"; done
-
-
