@@ -63,7 +63,7 @@
   {
     "type": "Molecular Species",
     "output": "speciesglyphs.tex",
-    "dir": "FunctionalComponents",
+    "dir": "MolecularSpecies",
     "glyphs": [
       {"lastEdited": "2.3.0", "name": "complex", "displayName": "Complex"},
       {"lastEdited": "2.2.0", "name": "dsNA", "displayName": "Double-Stranded Nucleic Acid"},
