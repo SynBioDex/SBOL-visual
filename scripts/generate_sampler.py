@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from cairosvg import svg2png, svg2pdf
 
 
-def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
+def create_glyph_grid(glyphs, title_string="Title"):
     x_padding = 10
     y_padding = 10
     glyph_width = 170
@@ -24,7 +24,7 @@ def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
 
     svg_height = num_rows * glyph_height + (num_rows + 1) * y_padding + title_space
 
-    print(f"{title_string}: creating grid of {len(glyphs)} glyphs")
+    print(f"Creating grid of {len(glyphs)} glyphs")
 
     svg = ET.Element('svg')
     svg.attrib['width'] = str(svg_width)
@@ -48,9 +48,6 @@ def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
     i = 0
     for g in glyphs:
         glyph_name = g["name"]
-        glyph_display_name = g["displayName"]
-        glyph_filename = g["fileName"].replace('.svg', '')
-
         glyph = g["svg"]
 
         column = i % num_columns
@@ -74,14 +71,9 @@ def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
         inner_group.attrib['transform'] = f"translate(60, {20})"
 
         title = ET.SubElement(group, 'text')
-        title.text = glyph_display_name
-        title.attrib['font-size'] = "8pt"
+        title.text = glyph_name.title()
+        title.attrib['font-size'] = "12"
         title.attrib['y'] = str(glyph_width / 2)
-
-        if glyph_filename in alternative_glyph_names:
-            title.attrib['font-style'] = 'italic'
-            title.attrib['font-style'] = 'bold'
-            rect.attrib['fill'] = 'lightgrey'
 
         title.attrib['text-anchor'] = "middle"
         title.attrib['x'] = str(glyph_width / 2)
@@ -106,9 +98,6 @@ cmd_path = os.path.abspath(os.path.join(script_dir, os.pardir, "node_modules", "
 with open(os.path.join(script_dir, "glyph_list.json")) as fp:
     data = json.load(fp)
 
-with open(os.path.join(script_dir, "alternative-glyphs.txt")) as fp:
-    alternative_glyph_names = fp.read().split('\n')
-
 definitions_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 
 output_dir = os.path.abspath(os.path.join(script_dir, os.pardir, "sampler"))
@@ -118,13 +107,12 @@ for glyph_category in data:
     glyph_svgs = []
     for glyph in glyph_category["glyphs"]:
         glyph_name = glyph["name"]
-        glyph_display_name = glyph["displayName"]
 
         glyph_dir = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name)
         svg_path = os.path.join(definitions_dir, 'Glyphs', glyph_category["dir"], glyph_name, f"{glyph_name}.svg")
 
         # list svg files in dir, which don't end in
-        for filename in sorted(os.listdir(glyph_dir)):
+        for filename in os.listdir(glyph_dir):
 
             if ".svg" in filename and "-specification" not in filename and "-example" not in filename:
                 svg_path = os.path.join(glyph_dir, filename)
@@ -133,9 +121,10 @@ for glyph_category in data:
                 ET.register_namespace("", "http://www.w3.org/2000/svg")
                 svg_tree = tree.getroot()
 
-                glyph_svgs.append({"svg": copy.deepcopy(svg_tree), "name": glyph_name, "displayName": glyph_display_name, "fileName": filename})
+                glyph_svgs.append({"svg": copy.deepcopy(svg_tree), "name": glyph_name})
+                print(f"Added: {filename}")
 
-    grid = create_glyph_grid(glyph_svgs, alternative_glyph_names, title_string=glyph_category["type"])
+    grid = create_glyph_grid(glyph_svgs, title_string=glyph_category["type"])
     grid_svg_string = ET.tostring(grid, encoding="unicode")
 
     svg_path = os.path.join(output_dir, f"{glyph_category['type']}.svg")

@@ -4,16 +4,6 @@
 ##########
 .ipynb_checkpoints
 
-## Script local installs
-node_modules
-package-lock.json
-package.json
-
-## Build artifacts
-specification/sbolvisual.cb2
-specification/sbolvisual.cb
-specification/sbolvisual.pdf
-
 ######################
 # Windows
 ######################
@@ -37,3 +27,5 @@ Desktop.ini
 **.xls
 **.doc
 
+sbolvisual.cb2
+sbolvisual.cb

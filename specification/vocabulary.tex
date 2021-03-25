@@ -18,42 +18,61 @@ In particular, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT
 
 \subsection{SBOL Class Names}
 
-The definition of SBOL Visual references several SBOL classes, which are defined as listed here.  For full definitions and explanations, see the SBOL 3.0 data model~\citep{SBOL3_0}.
+The definition of SBOL Visual references several SBOL classes, which are defined as listed here.  For full definitions and explanations, see BBF RFC 112, describing the SBOL 2.1 data model.
+
+\begin{description}
+
+%\item \emph{\sbol{Collection}}:
+%Represents a user-defined container for organizing a group of SBOL objects.
+
+\item \emph{\sbol{ComponentDefinition}}: Describes the structure of designed entities, such as DNA, RNA, and proteins, as well as other entities they interact with, such as small molecules or environmental properties.
 
 \begin{itemize}
-% Not including: Identified, TopLevel, Sequence
-
-\item \emph{\sbol{Component}}: Describes the structure of designed entities, such as DNA, RNA, and proteins, as well as other entities they interact with, such as small molecules or environmental properties, and the functional relationships and constraints relating these elements.
-
-\item \emph{\sbol{Feature}}:
-Represents a specific occurrence or instance of an entity within the design of a \sbol{Component}, such as a promoter in a genetic construct or an enzyme within a synthesis reaction network.
-
-\item \emph{\sbol{SubComponent}}:
-A type of \sbol{Feature} that indicates the inclusion of a potentially complicated sub-construct or sub-system within the design of a \sbol{Component}. For example, a \sbol{SubComponent} might represent one gene (with all its attendant complexity) within a multi-gene design or might represent a set of linked reactions within a larger metabolic network.
-
-\item \emph{\sbol{ComponentReference}}:
-A type of \sbol{Feature} that is defined by reference to another \sbol{Feature} in a \sbol{SubComponent}. For example, a \sbol{ComponentReference} might be used to indicate a regulation of the promoter in a functional component design included as a \sbol{SubComponent} or a reaction involving the product of a reaction network included as a \sbol{SubComponent}.
-
-% Not including: LocalSubComponent, ExternallyDefined, SequenceFeature
+\item \emph{\sbol{Component}}:
+Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ComponentDefinition}. Represents a specific occurrence or instance of an entity within the design of a more complex entity. Because the same definition might appear in  multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ComponentDefinition}s, and each such parent-child link requires its own, distinct \sbol{Component}.
 
 \item \emph{\sbol{Location}}:
 Specifies the base coordinates and orientation of a genetic feature on a DNA or RNA molecule or a residue or site on another sequential macromolecule such as a protein.
 
-% Not including: Location sub-classes
+\item \emph{\sbol{SequenceAnnotation}}:
+Describes the \sbol{Location} of a notable sub-sequence found within the \sbol{Sequence} of a \sbol{ComponentDefinition}. Can also link to and effectively position a child \sbol{Component}.
 
-\item \emph{\sbol{Constraint}}:
-Describes the relative spatial position, sequence orientation, topological relationship, or identity relationship of two \sbol{Feature} objects that are contained within the same \sbol{Component}.
+\item \emph{\sbol{SequenceConstraint}}:
+Describes the relative spatial position and orientation of two \sbol{Component} objects that are contained within the same \sbol{ComponentDefinition}.
+\end{itemize}
+
+%\item \emph{\sbol{GenericTopLevel}}:
+%Represents a data container that can contain custom data added by user applications.
+
+%\item \emph{\sbol{Model}}:
+%Links to quantitative or qualitative computational models that might be used to predict the functional behavior of a biological design.
+
+\item \emph{\sbol{ModuleDefinition}}:
+Describes a ``system'' design as a collection of biological components and their functional relationships.
+
+\begin{itemize}
+\item \emph{\sbol{FunctionalComponent}}:
+Pointer class. Incorporates a child \sbol{ComponentDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of an entity within the design of a system. Because the same definition might appear in multiple designs or multiple times in a single design, a single \sbol{ComponentDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{FunctionalComponent}.
 
 \item \emph{\sbol{Interaction}}:
-Describes a functional relationship between \sbol{Feature} objects, such as regulatory activation or repression, or a biological process such as transcription or translation.
+Describes a functional relationship between biological entities, such as regulatory activation or repression, or a biological process such as transcription or translation.
+
+\twoonezero{
+\item \emph{\sbol{MapsTo}}:
+When a design (\sbol{ComponentDefinition} or \sbol{ModuleDefinition}) includes another design as a sub-design, the parent design might need to refer to a \sbol{ComponentInstance} (either a \sbol{Component} or \sbol{FunctionalComponent}) in the sub-design.
+In this case, a \sbol{MapsTo} needs to be added to the instance for the sub-design, and this \sbol{MapsTo} needs to link between the \sbol{ComponentInstance} in the sub-design and a \sbol{ComponentInstance} in the parent design.
+
+\item \emph{\sbol{Module}}:
+Pointer class. Incorporates a child \sbol{ModuleDefinition} \textit{by reference} into exactly one parent \sbol{ModuleDefinition}. Represents a specific occurrence or instance of a subsystem within the design of a larger system. Because the same definition in multiple designs or multiple times in a single design, a single \sbol{ModuleDefinition} can have zero or more parent \sbol{ModuleDefinition}s, and each such parent-child link requires its own, distinct \sbol{Module}.
+}
 
 \item \emph{\sbol{Participation}}:
-Describes the role that a \sbol{Feature} plays in an \sbol{Interaction}.
+Describes the role that a \sbol{FunctionalComponent} plays in an \sbol{Interaction}.
 For example, a transcription factor might participate in an \sbol{Interaction} as a repressor or as an activator.
 
-\item \emph{\sbol{Interface}}:
-Describes the intended interface for a \sbol{Component} by designating a set of \sbol{Feature} objects as \sbol{input}, \sbol{output}, or \sbol{nondirectional} elements of the interface.
-
-
-% Not including: CombinatorialDerivation, Implementation, ExperimentalData, Model, Collection, Attachment
 \end{itemize}
+
+%\item \emph{\sbol{Sequence}}:
+%Generally represents a contiguous series of monomers in a macromolecular polymer such as DNA, RNA, or protein. A \sbol{Sequence} can also encode the atoms and bonds of a molecule with non-linear structure (see \ref{sec:Sequence}).
+
+\end{description}

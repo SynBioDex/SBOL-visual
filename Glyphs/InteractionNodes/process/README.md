@@ -26,6 +26,5 @@ The assocated SBO term also covers:
 
 Examples of RECOMMENDED usage:
 
-- Biochemical reaction process of the reactant citrate and the catalyst aconitase to produce the product cis-aconitate:
-
-  ![process example](process-example.png)
+- Biochemical reaction process of the reactant citrate and the catalyst aconitase to produce the product cis-aconitate.
+<img src="https://github.com/SynBioDex/SBOL-visual/blob/issue111/Glyphs/InteractionNodes/process/process-example.png" height="300" />

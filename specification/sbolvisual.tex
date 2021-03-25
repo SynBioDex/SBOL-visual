@@ -115,85 +115,85 @@
 % Start of document
 % -----------------------------------------------------------------------------
 %Commands to highlight SBOL versions
-%\newcommand{\twoonezero}[1]{%
-%\cbcolor{red}
-%\cbstart%
-%{\color{red}%
-%\version{red}{2.1.0}%
-%#1
-%}
-%\cbend
-%}
-%
-%% version that avoids undesirable page break in glyph collections
-%\newcommand{\twoonezeronopage}[1]{%
-%\cbcolor{red}
-%\cbstart%
-%{\color{red}%
-%#1
-%}
-%\cbend
-%}
-%
-%\newcommand{\twotwozero}[1]{%
-%\cbcolor{magenta}
-%\cbstart%
-%{\color{magenta}%
-%\version{magenta}{2.2.0}%
-%#1
-%}
-%\cbend
-%}
-%
-%% version that avoids undesirable page break in glyph collections
-%\newcommand{\twotwozeronopage}[1]{%
-%\cbcolor{magenta}
-%\cbstart%
-%{\color{red}%
-%#1
-%}
-%\cbend
-%}
-%
-%\newcommand{\twothreezero}[1]{%
-%\cbcolor{BrickRed}
-%\cbstart%
-%{\color{BrickRed}%
-%\version{BrickRed}{2.3.0}%
-%#1
-%}
-%\cbend
-%}
-%
-%% version that avoids undesirable page break in glyph collections
-%\newcommand{\twothreezeronopage}[1]{%
-%\cbcolor{BrickRed}
-%\cbstart%
-%{\color{BrickRed}%
-%#1
-%}
-%\cbend
-%}
-%
-%\newcommand{\twofourzero}[1]{%
-%\cbcolor{cyan}
-%\cbstart%
-%{\color{cyan}%
-%\version{cyan}{2.4.0}%
-%#1
-%}
-%\cbend
-%}
-%
-%% version that avoids undesirable page break in glyph collections
-%\newcommand{\twofourzeronopage}[1]{%
-%\cbcolor{cyan}
-%\cbstart%
-%{\color{cyan}%
-%#1
-%}
-%\cbend
-%}
+\newcommand{\twoonezero}[1]{%
+\cbcolor{red}
+\cbstart%
+{\color{red}%
+\version{red}{2.1.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twoonezeronopage}[1]{%
+\cbcolor{red}
+\cbstart%
+{\color{red}%
+#1
+}
+\cbend
+}
+
+\newcommand{\twotwozero}[1]{%
+\cbcolor{magenta}
+\cbstart%
+{\color{magenta}%
+\version{magenta}{2.2.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twotwozeronopage}[1]{%
+\cbcolor{magenta}
+\cbstart%
+{\color{red}%
+#1
+}
+\cbend
+}
+
+\newcommand{\twothreezero}[1]{%
+\cbcolor{BrickRed}
+\cbstart%
+{\color{BrickRed}%
+\version{BrickRed}{2.3.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twothreezeronopage}[1]{%
+\cbcolor{BrickRed}
+\cbstart%
+{\color{BrickRed}%
+#1
+}
+\cbend
+}
+
+\newcommand{\twofourzero}[1]{%
+\cbcolor{cyan}
+\cbstart%
+{\color{cyan}%
+\version{cyan}{2.4.0}%
+#1
+}
+\cbend
+}
+
+% version that avoids undesirable page break in glyph collections
+\newcommand{\twofourzeronopage}[1]{%
+\cbcolor{cyan}
+\cbstart%
+{\color{cyan}%
+#1
+}
+\cbend
+}
 
 
 % -----------------------------------------------------------------------------
@@ -203,40 +203,68 @@
 \begin{document}
 
 \packageTitle{\latex Class for SBML Package Specifications}
-\packageVersion{Version 3.0-alpha}
+\packageVersion{Version 2.4-alpha}
 \packageVersionDate{TBD}
 
 % BBF RFC \rfcnum{}: 
-\title{Synthetic Biology Open \\Language Visual (SBOL Visual) Version~3.0-alpha}
+\title{Synthetic Biology Open \\Language Visual (SBOL Visual) Version~2.4-alpha}
 
 
 \author{{\bf Editors:}\hfil\\
 \begin{tabular}{l>{\hspace*{15pt}}r}
 Hasan Baig & \emph{University of Connecticut, USA}\\
 Pedro Fontanarrosa & \emph{University of Utah, USA}\\
-James McLaughlin & \emph{EMBL-EBI, UK}\\
-James Scott-Brown & \emph{University of Oxford, UK}\\
+Vishwesh Kulkarni & \emph{University of Warwick, UK}\\
+James McLaughlin & \emph{Newcastle University, UK}\\
 Prashant Vaidyanathan & \emph{Microsoft Research, UK}\\
 \multicolumn{2}{c}{\href{mailto:sbol-editors@googlegroups.com}{\sffamily sbol-editors@googlegroups.com}}\\
 \multicolumn{2}{c}{ {\bf Chair:} } \\
 Chris Myers & \emph{University of Colorado Boulder, USA}\\
 \end{tabular}\\
 {\bf Additional authors, by last name:}\\
-%\begin{small}
+\begin{small}
 \begin{tabular}{l>{\hspace*{15pt}}r}
+Bryan Bartley & \emph{Raytheon BBN Technologies, USA}\\
 Jacob Beal & \emph{Raytheon BBN Technologies, USA}\\
+Swapnil Bhatia & \emph{Boston University, USA}\\
+Shyam Bhakta & \emph{Rice University, USA}\\
+Michael Bissell & \emph{Shipyard Toolchains LLC, USA}\\
+Kevin Clancy & \emph{Thermo Fisher Scientific, USA}\\
+Robert Sidney Cox & \emph{Kobe University, Japan}\\
+Angel Go\~{n}i Moreno & \emph{Newcastle University, UK}\\
 Thomas Gorochowski & \emph{University of Bristol, UK}\\
+Raik Grunberg &\emph{KAUST, Saudi Arabia}\\
+Jihwan Lee & \emph{Rice University, USA}\\
+Augustin Luna & \emph{Harvard Medical School, USA}\\
+Curtis Madsen & \emph{Sandia National Laboratories, USA}\\
 Goksel Misirli & \emph{Keele University, UK}\\
-\bf{and also any others} & \bf{who contributed since 2.3 or otherwise should be authors} \\
+Tramy Nguyen & \emph{University of Utah, USA}\\
+Nicolas Le Novere & \emph{Babraham Institute, UK}\\
+Zachary Palchick & \emph{Zymergen, USA}\\
+Matthew Pocock & \emph{Turing Ate My Hamster, Ltd., UK}\\
+Nicholas Roehner & \emph{Raytheon BBN Technologies, USA}\\
+Herbert Sauro & \emph{University of Washington, USA}\\
+James Scott-Brown & \emph{University of Oxford, UK}\\
+John T. Sexton & \emph{Rice University, USA}\\
+Guy-Bart Stan & \emph{Imperial College, UK}\\
+Jeffrey J. Tabor & \emph{Rice University, USA}\\
+Logan Terry & \emph{Univesity of Utah, USA}\\
+Marta Vazquez Vilar & \emph{Universitat Politecnica de Valencia, Spain}\\
+Chris Voigt & \emph{MIT, USA}\\
+Anil Wipat & \emph{Newcastle University, UK}\\
+David Zong & \emph{Rice University, USA}\\
+Zach Zundel & \emph{University of Utah, USA}\\
+%\bf{and also any others} & \bf{who believe they should be authors} \\
 \end{tabular}
-%\end{small}
+\end{small}
 }
+
+% Non-contributing editors who do not qualify for authorship after their term expires:
+%Umesh P & \emph{Kerala Technological University, India}\\
 
 
 \maketitlepage
-
-\todo[inline]{Change glyph directory names to match glyph categories, rather than SBOL 2 terms}
-\todo[inline]{Clean shmoos out of diagrams}
+%\tododeferred{Confirm date, authors, turn off draft mode}
 
 \maketableofcontents
 
@@ -258,7 +286,7 @@ Goksel Misirli & \emph{Keele University, UK}\\
 
 \input{apdx-examples}
 
-\input{apdx-mapping}
+\input{apdx-sbolv1}
 
 \newpage
 \label{s:bibliography}

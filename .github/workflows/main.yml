@@ -5,9 +5,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  release:
-    types: [ created ]
-
 
 jobs:
   build_latex:
@@ -15,19 +12,14 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
-
+        
       - name: Install dependencies
         run: |
           npm install markdown-pdf
 
       - name: Generate PDFs for glyphs
         run: python3 scripts/rebuild_glyphs.py
-
-      - name: Generate tex file for examples appendix
-        run: |
-          cd scripts
-          python3 generate_examples_appendix.py
-
+        
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@v0.2.0
         with:
@@ -37,19 +29,11 @@ jobs:
       - name: Move PDF
         run: mkdir -p output && cp specification/sbolvisual.pdf output
 
-      - name: Upload PDF as build artifact
+      - name: Upload PDF as artifact
         uses: actions/upload-artifact@v1.0.0
         with:
           name: PDF
           path: output
-
-      - if: github.event_name == 'release'
-        name: Upload PDF as release artifact
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: output/sbolvisual.pdf
 
   build_sampler:
       runs-on: ubuntu-latest
@@ -79,24 +63,12 @@ jobs:
           git config --local user.name "GitHub Action"
           git add sampler/
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate sampler"
-
+          
       - name: Push changes
         if: ${{ github.event_name == 'push' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Compress samplers
-        run: zip -j samplers sampler/*
-
-      - if: github.event_name == 'release'
-        name: Upload sampler as release artifact
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: samplers.zip
-
 
   build_glph_zipfiles:
       runs-on: ubuntu-latest
@@ -136,21 +108,3 @@ jobs:
         with:
           name: PNG Glyphs
           path: glyph_collections/png
-
-      - if: github.event_name == 'release'
-        name: Compress glyphs
-        run: |
-          zip -j glyphs-svg glyph_collections/svg/*
-          zip -j glyphs-pdf glyph_collections/pdf/*
-          zip -j glyphs-png glyph_collections/png/*
-
-      - if: github.event_name == 'release'
-        name: Upload glyphs as release artifact
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: |
-            glyphs-svg.zip
-            glyphs-pdf.zip
-            glyphs-png.zip
