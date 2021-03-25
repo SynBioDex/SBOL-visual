@@ -1,0 +1,57 @@
+% -----------------------------------------------------------------------------
+\section{Mapping between to SBOL Visual 1, 2, 3}\label{sec:specmapping}
+% -----------------------------------------------------------------------------
+
+\subsection{Mapping between SBOL Visual 1 and SBOL Visual 2}\label{sec:sbol1}
+
+SBOL Visual 2 differs from SBOL Visual 1 in the following major ways:
+\begin{itemize}
+\item Diagram syntax is expanded to include functional interactions and molecular species.
+\item The relationship between diagrams and the SBOL data model is made explicit.
+\item A number of requirements and best practices are specified for glyphs and diagrams, including:
+	\begin{itemize}
+	\item Glyphs include information on interior, bounding box, and recommended backbone alignment.
+	\item Sequence feature glyphs are required to have their bounding boxes contact the nucleic acid backbone.
+	\item Nucleic acid diagrams now require the nucleic acid backbone line, and the number of lines allowed in various circumstances is constrained.
+	\item Explicit statement of when a glyph can and cannot be used to represent a particular element of a diagram.
+	\end{itemize}
+\item Labels that name objects are distinguished from other types of textual annotation.
+\item Explicit statement of which aspects of a symbol are {\em not} controlled.
+\item Symbol variants are now supported.
+\end{itemize}
+
+In addition, the collection of sequence feature glyphs have been expanded and modified in the following ways:
+\begin{itemize}
+\item All non-ambiguous glyphs have been provided with bounding box, interior, and recommended backbone alignment.
+\item The User Defined glyph has been split into Unspecified, No Glyph Assigned, Engineered Region, and Composite. 
+\item Glyphs have been added for Aptamer, Biopolymer Location, Chromosomal Locus, Circular Plasmid, Inert DNA Spacer, Intron, Non-Coding RNA Gene, Omitted Detail, Origin of Transfer, PolyA Site, Polypeptide Region, Specific Recombination Site, and Stop Site.
+\item The following ontology terms have been assigned or adjusted: 
+	\begin{itemize}
+	\item Ribonuclease Site has been assigned SO:0001977.
+	\item 5' Sticky End Restriction Site has been assigned SO:0001975.
+	\item 3' Sticky End Restriction Site has been assigned SO:0001976.
+	\item Signature has been assigned SO:0001978.
+	\item RNA Stability Element has been updated from the obsolete SO:0001957 to the current SO:0001979
+	\item Restriction Enzyme Recognition Site, in addition to SO:0000139 has a second definition as SO:0000061.
+	\item 5' Overhang Site and 3' Overhang Site were erroneously listed with their ontology terms exchanged; this has been fixed.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Mapping between SBOL Visual 2 and SBOL Visual 3}\label{sec:sbol2}
+
+The major difference between SBOL Visual 3 and SBOL Visual 2 is that diagrams and glyphs are defined with respect to the SBOL 3 data model rather than the SBOL 2 data model.
+SBOL Visual 3 diagrams may still be related to the SBOL 2 data model by following the mapping between SBOL 3 and SBOL 2 data models provided in the SBOL 3 specification.
+
+A byproduct of this change is that the use of dashed undirected lines for subsystem mappings has been removed.
+In SBOL Visual 2, dashed line mappings were analogous to an SBOL 2 \sbol{MapsTo}, which is a compound mapping relationship indicating both reference into a subsystem and one of several identity relationships.
+In SBOL 3, these functions have been divided between two classes, \sbol{Constraint} to indicate relationships (including identity) and \sbol{ComponentReference} to access subsystem features.
+In SBOL Visual 3, interactions crossing a subsystem boundary line indicate access of subsystem features via \sbol{ComponentReference}.
+As SBOL 3 \sbol{Constraint} objects can express many other relationships besides identity, however, the potential use of dashed undirected lines to indicate identity relationships is currently reserved as a potential future addition to the SBOL Visual 3 specification, but not yet implemented.
+Until a decision is made about how to represent these relationships, the specification is mute on both constraints and dashed undirected lines, which means that it is acceptable to use them, if desired, as an annotation indicating identity.
+
+In addition, collection of glyphs has been modified as follows:
+\begin{itemize}
+\item The deprecated Insulator glyph and ``shmoo'' Macromolecule alternative glyph have been removed.
+\item Deprecated BioPAX alternatives to SBO terms for molecular species glyphs have been removed.
+\end{itemize}
+
