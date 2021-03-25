@@ -7,27 +7,27 @@
   {
     "fileName": "apdx-exa2.pdf",
     "label": "f:apdx:exa2",
-    "caption": "The same functional unit as in \\ref{f:apdx:exa1}, with additional assembly-focused information: there is a 5' overhang before the promoter, a 3' overhand after the terminator, and an assembly scar between the promoter and the ribosome entry site left over from a prior step of assembly."
+    "caption": "The same functional unit as in the previous figure, with additional assembly-focused information: there is a 5' overhang before the promoter, a 3' overhand after the terminator, and an assembly scar between the promoter and the ribosome entry site left over from a prior step of assembly."
   },
   {
     "fileName": "apdx-exa3.pdf",
     "label": "f:apdx:exa3",
-    "caption": "Promoter pTet stored in a circular plasmid. The promoter is prepared for being cut out of the plasmid: it is preceded by a 5' sticky end restriction site and followed by a 3' stick end restriction site.  In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
+    "caption": "Promoter pTet stored in a circular plasmid. The promoter is prepared for being cut out of the plasmid: it is preceded by a 5' sticky end restriction site and followed by a 3' stick end restriction site. In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
   },
   {
     "fileName": "apdx-exa4.pdf",
     "label": "f:apdx:exa4",
-    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that the restriction sites before and after the promoter are blunt-end."
+    "caption": "Promoter pTet stored in a circular plasmid, flanked by blunt-ended restriction sites. In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
   },
   {
     "fileName": "apdx-exa5.pdf",
     "label": "f:apdx:exa5",
-    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that the cut structure of the restriction sites before and after the promoter is not specified."
+    "caption": "Promoter pTet stored in a circular plasmid, flanked by restriction sites with unspecified cut structure. In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
   },
   {
     "fileName": "apdx-exa6.pdf",
     "label": "f:apdx:exa6",
-    "caption": "Promoter stored in a plasmid as in \\ref{f:apdx:exa3}, except that there is a ribonuclease site after the promoter rather than restriction sites flanking it."
+    "caption": "Circular plasmid containing a pTet promoter followed by a ribonuclease site. In addition, the plasmid has been bar-coded with a signature and has its origin of replication marked."
   },
   {
     "fileName": "apdx-exa7.pdf",
@@ -47,7 +47,7 @@
   {
     "fileName": "apdx-exa10.pdf",
     "label": "f:apdx:exa10",
-    "caption": "The same functional unit as in \\ref{f:apdx:exa1}, except that information about the CDS is missing, leaving it to fall back on the default unspecified glyph."
+    "caption": "A functional unit consisting of promoter, ribosome entry site, CDS, and terminator, except that information about the CDS is missing, leaving it to fall back on the default unspecified glyph."
   },
   {
     "fileName": "apdx-exa11.pdf",
