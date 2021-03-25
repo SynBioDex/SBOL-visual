@@ -19,6 +19,10 @@ version_macros = {
 
 for glyph_category in data:
 
+    # Skip output generation for categories such as "Deprecated"
+    if not glyph_category["output"]:
+        continue
+
     # Generate individual PDF files for each glyph
     for glyph in glyph_category["glyphs"]:
         glyph_name = glyph["name"]

@@ -74,5 +74,13 @@
       {"lastEdited": "2.2.0", "name": "ssNA", "displayName": "Single-Stranded Nucleic Acid"},
       {"lastEdited": "2.2.0", "name": "unspecified", "displayName":  "Unspecified"}
     ]
-  }
+  }, {
+  "type": "Deprecated",
+  "output": null,
+  "dir": "Deprecated",
+  "glyphs": [
+    {"name":  "insulator", "displayName":  "Insulator"},
+    {"name":  "macromolecule", "displayName":  "Macromolecule"}
+  ]
+}
 ]
