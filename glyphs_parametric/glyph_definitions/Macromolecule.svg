@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="Macromolecule" soterms="SBO:0000245" parametric:defaults="height=8;width=18">
 
-<rect class="bounding-box" id="bounding-box" parametric:x="0" x="0" parametric:y="{-height/2,0}" y="-4.0" parametric:width="{width}" width="18" parametric:height="{height}" height="8" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+<rect class="bounding-box" id="bounding-box" parametric:x="0" x="0" parametric:y="{-height/2},0" y="-4.0" parametric:width="{width}" width="18" parametric:height="{height}" height="8" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
 
     <path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,0 L18,0" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
 
