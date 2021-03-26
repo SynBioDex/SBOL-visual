@@ -8,6 +8,8 @@
 
 2. Need to agree on SVG path naming and ensuring we minimise number of paths to simplify customisation in tools. For example, multiple paths at present are used for wiggly location stems – need to consolidate into one.
 
+> I don't think the path names (`id`) elements are actually needed - I think the `class` attributes (`bounding-box`/`baseline`/`filled-background-path`/`unfilled-path`) are sufficient.
+
 3. The origin (baseline start point) is (0,0) in all glyphs. This causes them to be cropped when viewed in a Web browser or imported into Powerpoint. Could we set up clipping planes to be automatically added such that only the glyph is visible or generate shifted versions without all the bounding box and baseline? Use viewBox and remove width and height for the SVG? See SingleStrandedNuclicAcid.svg for an example which works nicely.
 
 > The `scripts/convert.py` script generates output files in several formats from the parametric glyph definitions; when generating the SVG output it adds a `g` element with an appropriately set `transform` attribute so that the glyph displays properly when the file is opened in an image editor or web browser.
