@@ -36,7 +36,7 @@ Proposed changes should be made in either a branch or a separate fork on GitHub.
 Here is an example of git commands to achieve this:
 
     git clone https://github.com/SynBioDex/SBOL-visual.git
-    git pull origin master # MAKE SURE NO ONE HAS MADE ANYMORE CHANGES
+    git pull origin master # MAKE SURE NO ONE HAS MADE ANY MORE CHANGES
     git checkout -b <newBranch> # CREATE NEW BRANCH
     
     # MAKE YOUR EDITS

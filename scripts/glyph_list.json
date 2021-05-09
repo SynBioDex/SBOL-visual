@@ -2,7 +2,7 @@
   {
     "type": "Sequence Features",
     "output": "glyphs.tex",
-    "dir": "",
+    "dir": "SequenceFeatures",
     "glyphs": [
       {"lastEdited": "", "name": "aptamer", "displayName": "Aptamer"},
       {"lastEdited": "", "name": "assembly-scar",  "displayName": "Assembly Scar" },
@@ -14,7 +14,6 @@
       {"lastEdited": "", "name": "composite", "displayName": "Composite"},
       {"lastEdited": "", "name": "engineered-region",  "displayName": "Engineered Region"},
       {"lastEdited": "2.3.0", "name": "inert-dna-spacer", "displayName": "Inert DNA Spacer"},
-      {"lastEdited": "2.3.0", "name": "insulator", "displayName": "Insulator"},
       {"lastEdited": "2.2.0", "name": "intron",  "displayName": "Intron"},
       {"lastEdited": "", "name": "location", "displayName": "Location"},
       {"lastEdited": "", "name": "no-glyph-assigned", "displayName": "No Glyph Assigned"},
@@ -64,7 +63,7 @@
   {
     "type": "Molecular Species",
     "output": "speciesglyphs.tex",
-    "dir": "FunctionalComponents",
+    "dir": "MolecularSpecies",
     "glyphs": [
       {"lastEdited": "2.3.0", "name": "complex", "displayName": "Complex"},
       {"lastEdited": "2.2.0", "name": "dsNA", "displayName": "Double-Stranded Nucleic Acid"},
@@ -75,5 +74,13 @@
       {"lastEdited": "2.2.0", "name": "ssNA", "displayName": "Single-Stranded Nucleic Acid"},
       {"lastEdited": "2.2.0", "name": "unspecified", "displayName":  "Unspecified"}
     ]
-  }
+  }, {
+  "type": "Deprecated",
+  "output": null,
+  "dir": "Deprecated",
+  "glyphs": [
+    {"name":  "insulator", "displayName":  "Insulator"},
+    {"name":  "macromolecule", "displayName":  "Macromolecule"}
+  ]
+}
 ]

@@ -24,7 +24,7 @@ def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
 
     svg_height = num_rows * glyph_height + (num_rows + 1) * y_padding + title_space
 
-    print(f"Creating grid of {len(glyphs)} glyphs")
+    print(f"{title_string}: creating grid of {len(glyphs)} glyphs")
 
     svg = ET.Element('svg')
     svg.attrib['width'] = str(svg_width)
@@ -78,9 +78,7 @@ def create_glyph_grid(glyphs, alternative_glyph_names, title_string="Title"):
         title.attrib['font-size'] = "8pt"
         title.attrib['y'] = str(glyph_width / 2)
 
-        print(glyph_filename)
         if glyph_filename in alternative_glyph_names:
-            print("ALTERNATE!")
             title.attrib['font-style'] = 'italic'
             title.attrib['font-style'] = 'bold'
             rect.attrib['fill'] = 'lightgrey'
@@ -136,7 +134,6 @@ for glyph_category in data:
                 svg_tree = tree.getroot()
 
                 glyph_svgs.append({"svg": copy.deepcopy(svg_tree), "name": glyph_name, "displayName": glyph_display_name, "fileName": filename})
-                print(f"Added: {filename}")
 
     grid = create_glyph_grid(glyph_svgs, alternative_glyph_names, title_string=glyph_category["type"])
     grid_svg_string = ET.tostring(grid, encoding="unicode")

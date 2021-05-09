@@ -15,12 +15,13 @@ definitions_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 initial_path = os.getcwd()
 
 version_macros = {
-    "2.1.0": "\\twoonezeronopage",
-    "2.2.0": "\\twotwozeronopage",
-    "2.3.0": "\\twothreezeronopage"
 }
 
 for glyph_category in data:
+
+    # Skip output generation for categories such as "Deprecated"
+    if not glyph_category["output"]:
+        continue
 
     # Generate individual PDF files for each glyph
     for glyph in glyph_category["glyphs"]:
@@ -52,11 +53,11 @@ for glyph_category in data:
         for glyph in glyph_category["glyphs"]:
             glyph_name = glyph["name"]
 
-            if glyph["lastEdited"]:
+            if glyph["lastEdited"] and glyph["lastEdited"] in version_macros:
                 output_file.write(version_macros[glyph["lastEdited"]] + "{\n")
 
             relative_pdf_path = os.path.join("glyphscript", "Glyphs", glyph_category["dir"], glyph_name + ".pdf")
             output_file.write("\\includepdf[pagecommand={},pages={1-}]{%s}\n" % relative_pdf_path)
 
-            if glyph["lastEdited"]:
+            if glyph["lastEdited"] and glyph["lastEdited"] in version_macros:
                 output_file.write("}\n")
