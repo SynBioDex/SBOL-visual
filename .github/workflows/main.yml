@@ -64,7 +64,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add specification/glyphscript/Glyphs/
-          git diff-index --quiet HEAD || git commit -m "Automatically update PDFs for individual glyphs"
+          git diff-index --quiet HEAD specification/glyphscript/Glyphs/ || git commit -m "Automatically update PDFs for individual glyphs"
           
       - name: Push changes
         if: ${{ github.event_name == 'push' }}
