@@ -34,8 +34,8 @@ for glyph_category in data:
 
         if os.path.exists(readme_file):
 
-            # Skip PDF generation if PDF has been modified more recently than the dir containing README & image files
-            if os.path.exists(pdf_name) and os.path.getmtime(pdf_name) > os.path.getmtime(readme_dir):
+            # Skip PDF generation if PDF has been modified more recently than the README file
+            if os.path.exists(pdf_name) and os.path.getmtime(pdf_name) > os.path.getmtime(readme_file):
                 continue
 
             # We need to change directory so that the relative paths to images used in README.md work correctly
