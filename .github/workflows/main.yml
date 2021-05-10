@@ -12,13 +12,20 @@ on:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    needs: build_sampler
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Install dependencies
         run: |
           npm install markdown-pdf
+          sudo apt install git-restore-mtime
+          
+      - name: Reset file modification times
+        run: git restore-mtime
 
       - name: Generate PDFs for glyphs
         run: python3 scripts/rebuild_glyphs.py
@@ -50,6 +57,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: output/sbolvisual.pdf
+          
+      - if: ${{ github.event_name == 'push' }}
+        name: Commit glyph PDFs, ready to push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add specification/glyphscript/Glyphs/
+          git diff-index --quiet HEAD specification/glyphscript/Glyphs/ || git commit -m "Automatically update PDFs for individual glyphs"
+          
+      - name: Push changes
+        if: ${{ github.event_name == 'push' }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   build_sampler:
       runs-on: ubuntu-latest

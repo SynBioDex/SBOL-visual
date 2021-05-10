@@ -7,7 +7,7 @@
 | **Editor** | Zach Palchick |
 | **Type** | Specification |
 | **SBOL Visual Version** | 2.2 |
-| **Status** | Final |
+| **Status** | Accepted |
 | **Created** | 30-Mas-2019 |
 | **Last modified** |  |
 | **Issue**         | https://github.com/SynBioDex/SBOL-visual/issues/62 |
