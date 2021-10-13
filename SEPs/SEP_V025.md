@@ -1,0 +1,120 @@
+# SEP V025: Parametric Definitions of SBOL Visual glyphs
+
+| SEP | |
+| --- | --- |
+| **Title** | Parametric Definitions of SBOL Visual glyphs |
+| **Authors** | James Scott Brown (james@jamesscottbrown.com) |
+| **Editor** |  |
+| **Type** | Specification |
+| **SBOL Visual Version** |  |
+| **Status** | Draft |
+| **Created** | 14-Oct-2021 |
+| **Last modified** | 14-Oct-2021 |
+| **Issue** |  |
+
+
+## Abstract
+
+This SEP defines a format for definining the shape of SBOL Visual glyphs as Parametric SVG files, enabling them to directly used by automated tools.
+
+## <a name="rationale"></a> 1. Rationale 
+
+A number of tools have been created to draw SBOlv diagrams, and it is becoming challenge to keep the set of glyphs that they support up to date.
+
+It is common to want to customize glyphs, such as by stretching the body (but not the head) of the arrow representing a CDS, or by using distinct fill colors to visually distinguish between different CDSs displayed in the same diagram. 
+To handle this variability in geometry and basic aesthetics, many tools to use separate dedicated functions for the rendering of each glyph.
+
+An alternative approach, is to encode the glyph library in a machine-readable format that is flexible enough to capture all the information needed to tailor the rendering process through the introduction of glyph specific parameters. Parameters capture customizable features like color and line width, as well as allowable variations in glyph shape like width and height. Using this approach, the rendering code of a tool can remain constant even when new glyphs are created or existing glyphs are updated.
+
+This SEP proposes a specific format for these parametric glyph definitions.
+
+The motivation is described further in [paraSBOLv: a foundation for standard-compliant genetic design visualization tools](https://academic.oup.com/synbio/advance-article/doi/10.1093/synbio/ysab022/6347203).
+
+## 2. Specification <a name="specification"></a>
+
+Each glyph defined in the SBOL Visual specification must be accompanied by a Parametric SVG file in the official [SBOL-visual repository](https://github.com/SynBioDex/SBOL-visual).
+
+This should contain a single `<svg>` tag, which MUST have the following attributes:
+
+* `xmlns="http://www.w3.org/2000/svg"`
+* `xmlns:parametric="https://parametric-svg.github.io/v0.2"`
+* `glyphtype`, containing the abbreviated name of the glpyh (e.g., `glyphtype="CDS"`)
+* `SO`, containing a comma-separated list of Sequence Ontology terms that apply to the glyph (e.g., `terms="SO:0000316"`)
+* `parametric:defaults`, containing a default value for each parameter used in the glyph definition
+
+The `svg` element MUST contain the following elements:
+
+* a `path` with class `bounding-box`, corresponding to the bounding-box defined in [SEP V001](https://github.com/SynBioDex/SBOL-visual/blob/master/SEPs/SEP_V001.md).
+* a `path` with class `baseline`, corresponding to the recommended backbone alignment line defined in [SEP V001](https://github.com/SynBioDex/SBOL-visual/blob/master/SEPs/SEP_V001.md).
+* one or more paths wih class `filled-path`, representing parts of the glyph which should be filled with the  glyphs' fill color when drawn
+
+The `svg` element MAY also contain zero or more paths wih class `unfilled-path`, representing holes in the glyph that should be filled with the diagrams's background color when drawn.
+
+Within these paths, geometric variation can be achieved by including formulas (enclosed in curly brackets) within a `parametric:path` attribute.
+This is a feature of the Parametric SVG format, rather than being defined by this specification.
+
+The glyph SHOULD be parametrised such that:
+
+* the `baseline` is positioned at `y=0`
+* the total width of the glyph is `width`
+* the total height of the glyph is `height`
+
+The names and meaning of any other parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
+Sufficient parameters should be included to accomodate as wide a range of reasonable geometric variations as is posisble wihout introducing undue complexity into the definitions of paths.
+
+The default values specified for the `width` and `height` SHOULD be `48`. 
+However, alternative values MAY be used if the glyph has an aspect ratio that differs significantly from a square, or if a glyph is intended to be drawn at a signficantly different size to other glyphs (e.g., the small molecule glyph).
+
+
+
+## 3. Examples <a name='example'></a>
+
+The CDS glyph can be represented as:
+
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="CDS" terms="SO:0000316" parametric:defaults="arrowbody_height=15;arrowhead_width=7;width=30;height=15">
+
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height/2}" y="14.5" parametric:width="{width}" width="34" parametric:height="{height}" height="21.0" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L34,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+
+<path class="filled-path" id="cds" parametric:d="M{0},{0}
+ L{0},{-arrowbody_height/2}
+ L{width - arrowhead_width},{-arrowbody_height/2}
+ L{width - arrowhead_width},{-height/2}
+ L{width},{0}
+  L{width - arrowhead_width},{height/2}
+   L{width - arrowhead_width},{arrowbody_height/2}
+   L{0},{arrowbody_height/2} Z" d="M2,25 L2,17.5 L26,17.5 L26,17.5 L32,25 L26,32.5 L26,32.5 L2,32.5 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+
+</svg>
+```
+
+## <a name='compatibility'></a> 4. Backwards Compatibility
+
+This change is backwards compatabile: the required changes are the addition of a new Parametric SVG file for each glyph to the repository, and the addition of text describing this format to the specification. All previously permitted SBOLv diagrams remain permitted, and no diagrams are made permitted as a result of this change.
+
+## <a name='discussion'></a> 5. Discussion
+
+TBD
+
+## <a name='copyright'></a> Copyright
+
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="sbolstandard.org">
+    <span property="dct:title">SBOL developers</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">SEP V024</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="sbolstandard.org">
+  United States</span>.
+</p>
