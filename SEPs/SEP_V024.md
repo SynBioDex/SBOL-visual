@@ -19,7 +19,7 @@ This SEP presents the proposed change from SBOL Visual 2.3 to SBOL Visual 3.0.
 
 ## <a name="rationale"></a> 1. Rationale 
 
-Now that the SBOL 3 data standard has been released, we need to update SBOL Visual to be gounded in SBOL 3 rather than SBOL 2.
+Now that the SBOL 3 data standard has been released, we need to update SBOL Visual to be grounded in SBOL 3 rather than SBOL 2.
 
 ## 2. Specification <a name="specification"></a>
 
