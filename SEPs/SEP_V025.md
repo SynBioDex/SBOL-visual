@@ -19,7 +19,7 @@ This SEP defines a format for definining the shape of SBOL Visual glyphs as Para
 
 ## <a name="rationale"></a> 1. Rationale 
 
-A number of tools have been created to draw SBOlv diagrams, and it is becoming challenge to keep the set of glyphs that they support up to date.
+A number of tools have been created to draw SBOLv diagrams, and it is becoming challenge to keep the set of glyphs that they support up to date.
 
 It is common to want to customize glyphs, such as by stretching the body (but not the head) of the arrow representing a CDS, or by using distinct fill colors to visually distinguish between different CDSs displayed in the same diagram. 
 To handle this variability in geometry and basic aesthetics, many tools to use separate dedicated functions for the rendering of each glyph.
