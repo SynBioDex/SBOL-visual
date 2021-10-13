@@ -24,7 +24,7 @@ A number of tools have been created to draw SBOLv diagrams, and it is becoming c
 It is common to want to customize glyphs, such as by stretching the body (but not the head) of the arrow representing a CDS, or by using distinct fill colors to visually distinguish between different CDSs displayed in the same diagram. 
 To handle this variability in geometry and basic aesthetics, many tools to use separate dedicated functions for the rendering of each glyph.
 
-An alternative approach, is to encode the glyph library in a machine-readable format that is flexible enough to capture all the information needed to tailor the rendering process through the introduction of glyph specific parameters. Parameters capture customizable features like color and line width, as well as allowable variations in glyph shape like width and height. Using this approach, the rendering code of a tool can remain constant even when new glyphs are created or existing glyphs are updated.
+An alternative approach is to encode the glyph library in a machine-readable format that is flexible enough to capture all the information needed to tailor the rendering process through the introduction of glyph specific parameters. Parameters capture customizable features like color and line width, as well as allowable variations in glyph shape like width and height. Using this approach, the rendering code of a tool can remain constant even when new glyphs are created or existing glyphs are updated.
 
 This SEP proposes a specific format for these parametric glyph definitions.
 
