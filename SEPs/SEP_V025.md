@@ -40,7 +40,7 @@ Parametric SVG is an extension to SVG that allows the values of attributes to be
 
 It does this by by defining a new namespace called parametric, and then adding extra attributes in this namespace (e.g., `parametric:d` is the parametric equivalent of the conventional `d` attribute). Tools which are unfamiliar with Parametric SVG will ignore these attributes and render the SVG using the non-parametric attributes.
 
-Within attributes, the contents of curly brackets are evaluated as a formula.
+Tools that understand Parametric SVG will process any attribute whose name begins with `parametric:` by evaluating the contents of curly brackets as a formula (substituting in the values of the parameters), and use result in place of the corresponding non-parametric attribute.
 
 Default values of parameters are specified by the `parametric:defaults` attribtue on the top-level `svg` tag.
 
