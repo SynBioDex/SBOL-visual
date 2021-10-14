@@ -57,7 +57,8 @@ The glyph SHOULD be parametrised such that:
 
 * the `baseline` is positioned at `y=0`
 * the total width of the glyph is `width`
-* the total height of the glyph is `height`
+
+Glyphs that do not have a fixed aspect ratio SHOULD also have a `height` parameter that determines the total height of the glyph. Glpyhs that have a fixed aspect ratio SHOULD NOT have a `height` parameter.
 
 The names and meaning of any other parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
 Sufficient parameters should be included to accomodate as wide a range of reasonable geometric variations as is posisble wihout introducing undue complexity into the definitions of paths.
