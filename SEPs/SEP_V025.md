@@ -83,12 +83,22 @@ The currently permitted additional parameter names are:
 * `arrowbody_height`
 * `arrowhead_width`
 
-
-
 The default values specified for the `width` and `height` SHOULD be `48`. 
 However, alternative values MAY be used if the glyph has an aspect ratio that differs significantly from a square, or if a glyph is intended to be drawn at a signficantly different size to other glyphs (e.g., the small molecule glyph).
 
 For each parametric attribute (e.g., `parametric:svg`), the corresponding non-parametric attribute (e.g., `svg`) MUST be set to the values obtained by substituting the default parameter values into the value of the parametric attribute.
+
+
+### Automated verification steps
+
+When a new glyph is proposed, an automated script will verify that:
+* the required attributes on the `svg` tag are present
+* parameters have default values assigned
+* the required path elements are present
+* only permitted parameter names are used
+* the non-parametric values of attributes match the values obtained by substituting the default parameter values into the value of the corresponding parametric attribute
+
+A script will also render images of the glyph using a range of parameter values, so that these can be visually checked.
 
 ## 3. Examples <a name='example'></a>
 
