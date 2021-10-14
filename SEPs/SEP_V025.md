@@ -61,12 +61,12 @@ The glyph SHOULD be parametrised such that:
 Glyphs that do not have a fixed aspect ratio SHOULD also have a `height` parameter that determines the total height of the glyph. Glpyhs that have a fixed aspect ratio SHOULD NOT have a `height` parameter.
 
 The geometry of some glyphs can change in a more complex way than simple geometric scaling; this is handled by adding additional parameters.
-The names and meaning of any other parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
+The names and meaning of any additional parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
 Sufficient parameters should be included to accomodate as wide a range of reasonable geometric variations as is posisble wihout introducing undue complexity into the definitions of paths.
 
 Parameter names MUST be taken from the list of permitted parameter names; if a new parameter name is required for a new glyph, then the SEP proposing this glyph MUST also propose addition of this name to the permitted list.
 
-The currently permitted other parameter names are:
+The currently permitted additional parameter names are:
 
 * `arrowbody_height`
 * `arrowhead_width`
