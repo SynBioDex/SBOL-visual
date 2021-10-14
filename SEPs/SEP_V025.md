@@ -64,6 +64,15 @@ The geometry of some glyphs can change in a more complex way than simple geometr
 The names and meaning of any other parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
 Sufficient parameters should be included to accomodate as wide a range of reasonable geometric variations as is posisble wihout introducing undue complexity into the definitions of paths.
 
+Parameter names MUST be taken from the list of permitted parameter names; if a new parameter name is required for a new glyph, then the SEP proposing this glyph MUST also propose addition of this name to the permitted list.
+
+The currently permitted other parameter names are:
+
+* `arrowbody_height`
+* `arrowhead_width`
+
+
+
 The default values specified for the `width` and `height` SHOULD be `48`. 
 However, alternative values MAY be used if the glyph has an aspect ratio that differs significantly from a square, or if a glyph is intended to be drawn at a signficantly different size to other glyphs (e.g., the small molecule glyph).
 
