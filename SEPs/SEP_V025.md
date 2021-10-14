@@ -32,9 +32,18 @@ The motivation is described further in [paraSBOLv: a foundation for standard-com
 
 ## 2. Specification <a name="specification"></a>
 
-Each glyph defined in the SBOL Visual specification must be accompanied by a Parametric SVG file in the official [SBOL-visual repository](https://github.com/SynBioDex/SBOL-visual).
+### Appendix D: Specification for the SBOL Visual Glyph Library
 
-### The Parametric SVG format
+The standard for the *SBOL Visual Language* describes the appearance of diagrams, but it is intentionally agnostic about *how* diagrams are drawn: users are free to use any tool, including tools that have no knowledge of the standard (such as a general-purpose graphics tool, or a physical whiteboard and marker).
+
+However, to assist tool developers, the developers of the SBOL Visual standard have also created a *SBOL Visual Glyph Library* that contains a file describing the shape of each glyph in the machine-readable Parametric SVG format; tool developers are encouraged to make use of these files, but they are not required to do so.
+
+To enable the use of the files in this library automated tools, they must have a consistent structure, which is defined by this appendix.
+
+The files in this library are also used by the workflow automation scripts that generate the specification PDF and other artifacts (such as the zip files of glyph images).
+
+
+#### The Parametric SVG format
 
 Parametric SVG is an extension to SVG that allows the values of attributes to be specified as a formula or arithmetic expression that can include parameters, rather than as a specific numerical values to attributes (e.g., width = 10).
 
@@ -44,7 +53,7 @@ Tools that understand Parametric SVG will process any attribute whose name begin
 
 Default values of parameters are specified by the `parametric:defaults` attribtue on the top-level `svg` tag.
 
-### Representing SBOL Visual glyphs as Parametric SVGs
+#### Representing SBOL Visual glyphs as Parametric SVGs
 
 This should contain a single `<svg>` tag, which MUST have the following attributes:
 
@@ -89,9 +98,9 @@ However, alternative values MAY be used if the glyph has an aspect ratio that di
 For each parametric attribute (e.g., `parametric:svg`), the corresponding non-parametric attribute (e.g., `svg`) MUST be set to the values obtained by substituting the default parameter values into the value of the parametric attribute.
 
 
-### Automated verification steps
+#### Automated verification steps
 
-When a new glyph is proposed, an automated script will verify that:
+Before a new glyph is added to the library, an automated script will verify that:
 * the required attributes on the `svg` tag are present
 * parameters have default values assigned
 * the required path elements are present
