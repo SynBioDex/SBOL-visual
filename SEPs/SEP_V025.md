@@ -74,7 +74,7 @@ The CDS glyph can be represented as:
 
 
 ```xml
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="CDS" terms="SO:0000316" parametric:defaults="arrowbody_height=15;arrowhead_width=7;width=30;height=15">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="48" height="48" glyphtype="CDS" terms="SO:0000316" parametric:defaults="arrowbody_height=15;arrowhead_width=7;width=30;height=15">
 
 <rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height/2}" y="14.5" parametric:width="{width}" width="34" parametric:height="{height}" height="21.0" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
 
