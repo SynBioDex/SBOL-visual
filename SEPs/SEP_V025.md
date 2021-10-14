@@ -58,7 +58,7 @@ The `svg` element MUST contain the following elements:
 
 * a `path` with class `bounding-box`, corresponding to the bounding-box defined in [SEP V001](https://github.com/SynBioDex/SBOL-visual/blob/master/SEPs/SEP_V001.md).
 * a `path` with class `baseline`, corresponding to the recommended backbone alignment line defined in [SEP V001](https://github.com/SynBioDex/SBOL-visual/blob/master/SEPs/SEP_V001.md).
-* one or more paths wih class `filled-path`, representing parts of the glyph which should be filled with the  glyphs' fill color when drawn
+* one or more `path` elements wih class `filled-path`, representing parts of the glyph which should be filled with the  glyphs' fill color when drawn
 
 The `svg` element MAY also contain zero or more paths wih class `unfilled-path`, representing holes in the glyph that should be filled with the diagrams's background color when drawn.
 
