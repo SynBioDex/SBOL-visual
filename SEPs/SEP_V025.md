@@ -34,7 +34,7 @@ The motivation is described further in [paraSBOLv: a foundation for standard-com
 
 Each glyph defined in the SBOL Visual specification must be accompanied by a Parametric SVG file in the official [SBOL-visual repository](https://github.com/SynBioDex/SBOL-visual).
 
-### The Parametric SVG format
+### The Parametric SVG format
 
 Parametric SVG is an extension to SVG that allows the values of attributes to be specified as a formula or arithmetic expression that can include parameters, rather than as a specific numerical values to attributes (e.g., width = 10).
 
@@ -44,7 +44,7 @@ Within attributes, the contents of curly brackets are evaluated as a formula.
 
 Default values of parameters are specified by the `parametric:defaults` attribtue on the top-level `svg` tag.
 
-### Representing SBOL Visual glyphs as Parametric SVGs
+### Representing SBOL Visual glyphs as Parametric SVGs
 
 This should contain a single `<svg>` tag, which MUST have the following attributes:
 
