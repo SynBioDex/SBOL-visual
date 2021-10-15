@@ -77,9 +77,10 @@ This is a feature of the Parametric SVG format, rather than being defined by thi
 The glyph SHOULD be parametrised such that:
 
 * the `baseline` is positioned at `y=0`
-* the total width of the glyph is `width`
+* when the `scale` parameter is set to `1`, the glyph is appropriately sized relative to an Unspecified Molecular Species Glyph that is 32 pixels tall
 
-Glyphs that do not have a fixed aspect ratio SHOULD also have a `height` parameter that determines the total height of the glyph. Glpyhs that have a fixed aspect ratio SHOULD NOT have a `height` parameter.
+Glyphs that do not have a fixed aspect ratio SHOULD also have an `aspectRatio` parameter that sets the ratio between the width and the height of the glyph; increasing `aspectRatio` MUST increase the width of the glyph without changing its height.
+Glyphs that have a fixed aspect ratio SHOULD NOT have an `aspectRatio` parameter.
 
 The geometry of some glyphs can change in a more complex way than simple geometric scaling; this is handled by adding additional parameters.
 The names and meaning of any additional parameters used should be chosen so as to be as consistent as possible with existing parametric glyph definitions.
