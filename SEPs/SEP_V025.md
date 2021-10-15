@@ -113,20 +113,13 @@ The CDS glyph can be represented as:
 
 
 ```xml
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="48" height="48" glyphtype="CDS" terms="SO:0000316" parametric:defaults="arrowbody_height=15;arrowhead_width=7;width=30;height=15">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:parametric="https://parametric-svg.github.io/v0.2" version="1.1" width="100" height="100" glyphtype="CDS" soterms="SO:0000316" parametric:defaults="scale=1;arrowbody_height=15;arrowhead_width=7;defaultWidth=30;defaultHeight=15">
 
-<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-height/2}" y="14.5" parametric:width="{width}" width="34" parametric:height="{height}" height="21.0" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
+<rect class="bounding-box" id="bounding-box" parametric:x="{0}" x="0" parametric:y="{-defaultHeight*scale/2}" y="14.5" parametric:defaultWidth="{aspectRatio*defaultHeight*scale}" width="34" parametric:defaultHeight="{defaultHeight*scale}" height="21.0" style="fill:none;stroke:rgb(150,150,150);stroke-opacity:0.5;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5,0.8" />
 
-<path class="baseline" id="baseline" parametric:d="M{0},{0} L{width},{0}" d="M0,25 L34,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
+<path class="baseline" id="baseline" parametric:d="M{0},{0} L{aspectRatio*defaultHeight*scale},{0}" d="M0,25 L34,25" parametric:y="{0}" style="fill:none;stroke:black;stroke-width:1pt" />
 
-<path class="filled-path" id="cds" parametric:d="M{0},{0}
- L{0},{-arrowbody_height/2}
- L{width - arrowhead_width},{-arrowbody_height/2}
- L{width - arrowhead_width},{-height/2}
- L{width},{0}
-  L{width - arrowhead_width},{height/2}
-   L{width - arrowhead_width},{arrowbody_height/2}
-   L{0},{arrowbody_height/2} Z" d="M2,25 L2,17.5 L26,17.5 L26,17.5 L32,25 L26,32.5 L26,32.5 L2,32.5 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
+<path class="filled-path" id="cds" parametric:d="M{0},{0}  L{0},{-arrowbody_height/2}  L{-arrowhead_width + aspectRatio*defaultHeight*scale},{-arrowbody_height/2}  L{-arrowhead_width + aspectRatio*defaultHeight*scale},{-defaultHeight*scale/2}  L{aspectRatio*defaultHeight*scale},{0}   L{-arrowhead_width + aspectRatio*defaultHeight*scale},{defaultHeight*scale/2}    L{-arrowhead_width + aspectRatio*defaultHeight*scale},{arrowbody_height/2}    L{0},{arrowbody_height/2} Z" d="M2,25 L2,17.5 L26,17.5 L26,17.5 L32,25 L26,32.5 L26,32.5 L2,32.5 Z" style="fill:rgb(230,230,230);fill-rule:nonzero;stroke:black;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt" />
 
 </svg>
 ```
