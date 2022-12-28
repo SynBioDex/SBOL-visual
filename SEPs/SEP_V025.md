@@ -2,7 +2,7 @@
 
 | SEP | |
 | --- | --- |
-| **Title** | Overlapping parts |
+| **Title** | Handle nucleic acid parts with overlapping sequences |
 | **Authors** | Thomas Gorochowski (tom@chofski.co.uk) |
 | **Editor** | James Scott Brown |
 | **Type** | Specification |
@@ -28,7 +28,7 @@ The examples below show an overlapping aptamer and ribosome binding site in the 
 
 ![Figure 1](img/SEP_V025_Fig-1.png)
 
-Below are some additional examples of the annotations use. (**a**) A backbone can contain many separated regions of overlapping parts as found in RNA-based computational devices (Green _et al._ _Nature_ 548, 117–121, 2017). (**b**) RNA-based regulatory parts can contain many internal functional interactions that are affected by external components like small RNAs (Westbrook _et al._ _Nucleic Acids Research_ 45, 5614–5624, 2017). (**c**) In addition to RNA-based regulatory parts, the ability to represent overlapping elements provides a means to show that multiple operator sites are present within other regulatory parts (e.g. a transcriptional promoter).
+Below are some additional examples of the annotation in use. (**a**) A backbone can contain many separated regions of overlapping parts as found in RNA-based computational devices (Green _et al._ _Nature_ 548, 117–121, 2017). (**b**) RNA-based regulatory parts can contain many internal functional interactions that are affected by external components like small RNAs (Westbrook _et al._ _Nucleic Acids Research_ 45, 5614–5624, 2017). (**c**) In addition to RNA-based regulatory parts, the ability to represent overlapping elements provides a means to show multiple operator sites that are commonly present within promoters.
 
 ![Figure 2](img/SEP_V025_Fig-2.png)
 
