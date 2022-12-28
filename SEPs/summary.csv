@@ -1,25 +1,26 @@
 SEP,Type,SBOL Visual Version,Status,Issue,Title,Replaces,Created,Last modified,Editor,Authors
-v001,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/4,"Bounding box, interior, backbone alignment",,01-Jul-2017,03-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
-v002,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/5,Alternative Glyphs,,21-Jul-2017,,,Jacob Beal (jakebeal@ieee.org)
-v003,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/6,Distinguished Unknowns,,21-Jul-2017,17-Aug-2017,,Jacob Beal (jakebeal@ieee.org)
-v004,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/8,New Glyph Collection,,22-Aug-2017,18-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
-v005,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/9,Ambiguities and Variants,,30-Aug-2017,17-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
-v006,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/11,No Glyph Assigned,,14-Sep-2017,,,"Jacob Beal (jakebeal@ieee.org), Chris Myers"
-v007,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/12,Stem-Top Glyphs,,17-Sep-2017,12-Nov-2017,,Jacob Beal (jakebeal@ieee.org)
-v008,Specification,2.0,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/13,Functional Component Glyphs,,25-Sep-2017,26-Sep-2017,,Jacob Beal (jakebeal@ieee.org)
-v009,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/16,Engineered Region vs. Composite,,7-Oct-2017,,,"Jacob Beal (jakebeal@ieee.org), Chris Myers, John Sexton"
-v010,Specification,2.0,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/17,"Bounding box, interior, backbone alignment",,10-Oct-2017,19-Oct-2017,,"Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof, Jacob Beal"
-v011,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/40,Genomic Context,,12-Apr-2018,12-Apr-2018,,"Angel Goni Moreno, Shyam Bhakta, Jacob Beal, John Sexton, Sebastian Castillo-Hair"
-v012,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/41,Transcription and translation end points,,07-Apr-2018,19-Apr-2018,,"Thomas Gorochowski, John Sexton, Jacob Beal"
-v013,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/47,Multi-source and multi-target arrows,,23-Aug-2018,4-Nov-2018,,"Thomas Gorochowski, Jacob Beal"
-v014,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/48,Modules and MapsTo,,18-Jul-2018,4-Nov-2018,,"James Scott-Brown (james@jamesscottbrown.com), Jacob Beal"
+v001,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/4,"Bounding box, interior, backbone alignment",,01-Jul-17,03-Sep-17,,Jacob Beal (jakebeal@ieee.org)
+v002,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/5,Alternative Glyphs,,21-Jul-17,,,Jacob Beal (jakebeal@ieee.org)
+v003,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/6,Distinguished Unknowns,,21-Jul-17,17-Aug-17,,Jacob Beal (jakebeal@ieee.org)
+v004,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/8,New Glyph Collection,,22-Aug-17,18-Sep-17,,Jacob Beal (jakebeal@ieee.org)
+v005,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/9,Ambiguities and Variants,,30-Aug-17,17-Sep-17,,Jacob Beal (jakebeal@ieee.org)
+v006,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/11,No Glyph Assigned,,14-Sep-17,,,"Jacob Beal (jakebeal@ieee.org), Chris Myers"
+v007,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/12,Stem-Top Glyphs,,17-Sep-17,12-Nov-17,,Jacob Beal (jakebeal@ieee.org)
+v008,Specification,2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/13,Functional Component Glyphs,,25-Sep-17,26-Sep-17,,Jacob Beal (jakebeal@ieee.org)
+v009,Specification,1.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/16,Engineered Region vs. Composite,,07-Oct-17,,,"Jacob Beal (jakebeal@ieee.org), Chris Myers, John Sexton"
+v010,Specification,2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/17,"Bounding box, interior, backbone alignment",,10-Oct-17,19-Oct-17,,"Chris Myers, Anil Wipat, Zachary Palchick, Nicholas Roehner, Bryan Bartley, Ruud Stoof, Jacob Beal"
+v011,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/40,Genomic Context,,12-Apr-18,12-Apr-18,,"Angel Goni Moreno, Shyam Bhakta, Jacob Beal, John Sexton, Sebastian Castillo-Hair"
+v012,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/41,Transcription and translation end points,,07-Apr-18,19-Apr-18,,"Thomas Gorochowski, John Sexton, Jacob Beal"
+v013,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/47,Multi-source and multi-target arrows,,23-Aug-18,04-Nov-18,,"Thomas Gorochowski, Jacob Beal"
+v014,Specification,2.1,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/48,Modules and MapsTo,,18-Jul-18,04-Nov-18,,"James Scott-Brown (james@jamesscottbrown.com), Jacob Beal"
 v015,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/62,Change BioPAX to SBO,,30-Mas-2019,,Zach Palchick,Jacob Beal (jakebeal@ieee.org)
-v016,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/63,Introns and Polypeptide Regions,,13-Apr-2019,,,"Jacob Beal (jakebeal@ieee.org), Marta Vázquez Vilar (marvazvi@ibmcp.upv.es)"
-v017,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/67,"Protein, Macromolecule, and Alternative Simple Chemicals",,1-June-2019,11-July-2019,Zach Palchick,Jacob Beal (jakebeal@ieee.org)
-v018,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/73,Interactions with Interaction Nodes,,5-Oct-2019,18-Oct-2020,TBD,Jacob Beal (jakebeal@ieee.org)
-v019,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/74,Allow Complex to Include DNA Backbone,,6-Oct-2019,2-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), John Sexton"
-v020,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/78,Recommend use of polypeptide region for 2A Sequences,,22-Oct-2019,5-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta"
-v021,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/102,Unspecified Interaction Glyph Node,,3-Sep-2020,3-Oct-2020,TBD,Logan Terry
-v022,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/103,Inert DNA spacer,,7-Sept-2020,2-Oct-2020,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta, John Sexton"
-v023,Process,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/109,SBOL Visual specification change workflow,,9-Oct-2020,23-Nov-2020,TBD,Jacob Beal (jakebeal@ieee.org)
-v024,Specification,3.0,Draft,https://github.com/SynBioDex/SBOL-visual/issues/155,SBOL Visual 3.0,,25-Mar-2021,25-Mar-2021,James Scott Brown,Jacob Beal (jakebeal@ieee.org)
+v016,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/63,Introns and Polypeptide Regions,,13-Apr-19,,,"Jacob Beal (jakebeal@ieee.org), Marta Vázquez Vilar (marvazvi@ibmcp.upv.es)"
+v017,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/67,"Protein, Macromolecule, and Alternative Simple Chemicals",,01-Jun-19,11-Jul-19,Zach Palchick,Jacob Beal (jakebeal@ieee.org)
+v018,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/73,Interactions with Interaction Nodes,,05-Oct-19,18-Oct-20,TBD,Jacob Beal (jakebeal@ieee.org)
+v019,Specification,2.2,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/74,Allow Complex to Include DNA Backbone,,06-Oct-19,02-Oct-20,TBD,"Jacob Beal (jakebeal@ieee.org), John Sexton"
+v020,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/78,Recommend use of polypeptide region for 2A Sequences,,22-Oct-19,05-Oct-20,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta"
+v021,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/102,Unspecified Interaction Glyph Node,,03-Sep-20,03-Oct-20,TBD,Logan Terry
+v022,Specification,2.3,Accepted,https://github.com/SynBioDex/SBOL-visual/issues/103,Inert DNA spacer,,07-Sep-20,02-Oct-20,TBD,"Jacob Beal (jakebeal@ieee.org), Shyam Bhakta, John Sexton"
+v023,Process,,Draft,https://github.com/SynBioDex/SBOL-visual/issues/109,SBOL Visual specification change workflow,,09-Oct-20,23-Nov-20,TBD,Jacob Beal (jakebeal@ieee.org)
+v024,Specification,3,Draft,https://github.com/SynBioDex/SBOL-visual/issues/155,SBOL Visual 3.0,,25-Mar-21,25-Mar-21,James Scott Brown,Jacob Beal (jakebeal@ieee.org)
+v025,Specification,3,Draft,,Handle nucleic acid parts with overlapping sequences,,07-Oct-22,07-Oct-22,,Thomas Gorochowski (tom@chofski.co.uk)
