@@ -3,26 +3,16 @@
 
 
 | SEP | |
-
 | --- | --- |
-
-| **Title** | Introduction of “//” as a Glyph for Generic DNA Breaks in SBOL Visual|
-
+| **Title** | Introduction of “//” as a Glyph for Generic DNA Breaks in SBOL Visual |
 | **Authors** | Georgie Hau Sorensen (georgiehausorensen@gmail.com), Lukas Buecherl |
-
 | **Editor** | Felipe Buson (fxbuson@gmail.com)|
-
 | **Type** | Specification |
-
 | **SBOL Visual Version** | |
-
 | **Status** | Draft |
-
 | **Created** | 26 Feb 2026 |
-
 | **Last modified** |  26 Feb 2026 |
-
-| **Issue**         | |
+| **Issue** | |
 
 
 
@@ -37,17 +27,11 @@ This proposal introduces a new SBOL Visual glyph, represented by the character s
 ## Table of Contents  <remove TOC if SEP is rather short>
 
 - [1. Rationale](#rationale) 
-
 - [2. Specification](#specification)
-
 - [3. Example or Use Case](#example)
-
 - [4. Backwards Compatibility](#compatibility)
-
 - [5. Discussion](#discussion)
-
 - [References](#references)
-
 - [Copyright](#copyright)
 
 
@@ -61,9 +45,7 @@ This proposal introduces a new SBOL Visual glyph, represented by the character s
 The “//” mark is traditionally used in biological schematics to indicate:
 
 - “region removed/not drawn”
-
 - “break in continuity”
-
 - “shift in sequence”  
 
 This convention is common in textbooks, research illustrations, and even circuit diagrams in other fields. 
@@ -77,11 +59,8 @@ The familiarity of this symbol lowers the cognitive load for new users, and it m
 The “//” glyph:
 
 - Is visually compact
-
 - Does not resemble any existing SBOL Visual glyph
-
 - Can be rendered easily in both digital and hand-drawn form
-
 - Maintains clarity even at small scale
 
   
@@ -99,9 +78,7 @@ The “//” glyph consists of two short, parallel, diagonal slashes.
 These may be oriented:
 
 - Forward-slanted (primary, recommended)
-
 - Backward-slanted (optional alternative for stylistic compatibility with other diagram elements)
-
 
 
 2.2. Placement
@@ -109,9 +86,7 @@ These may be oriented:
 The glyph placed in-line on a DNA backbone to indicate that:
 
 - A region of arbitrary length is not shown
-
 - Sequence continuity is intentionally omitted
-
 
 
 Example:
