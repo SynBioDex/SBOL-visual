@@ -125,7 +125,7 @@ This SEP is backward compatible insofar as it doesn't directly introduces confli
      href="sbolstandard.org">
     <span property="dct:title">SBOL developers</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">SEP V001</span>.
+  <span property="dct:title">SEP V026</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="US" about="sbolstandard.org">
