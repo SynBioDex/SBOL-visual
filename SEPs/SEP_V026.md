@@ -94,11 +94,9 @@ The glyph may represent a non-specific sequence gap
 
 ## 3. Example or Use case <a name="example"></a>:
 
-[ promoter ] —— // —— [ CDS ]
+![Figure1](img/SEP_V026_Fig-1.png)
 
-
-
-
+Here, the diagram represents two genes in distinct loci in the genome, separated by omitted genomic context,represented by the proposed glyph.
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
