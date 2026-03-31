@@ -1,10 +1,9 @@
-# SEP V026: Introduction of “//” as a Glyph for Generic DNA Breaks in SBOL Visual
-
+# SEP V026: Introduction of “//” as an alternative Glyph for Omitted Detail
 
 
 | SEP | |
 | --- | --- |
-| **Title** | Introduction of “//” as a Glyph for Generic DNA Breaks in SBOL Visual |
+| **Title** | Introduction of “//” as an alternative Glyph for Omitted Detail |
 | **Authors** | Georgie Hau Sorensen (georgiehausorensen@gmail.com), Lukas Buecherl |
 | **Editor** | Felipe Buson (fxbuson@gmail.com)|
 | **Type** | Specification |
@@ -106,7 +105,9 @@ This SEP is backward compatible insofar as it doesn't directly introduces confli
 
 ## 5. Discussion <a name='discussion'></a>
 
+This proposition was raised in the review the community did for the "[A Decade of SBOL Visual](https://pubs.acs.org/doi/10.1021/acssynbio.5c00417)" article, over multiple HARMONY and COMBINE conferences. We noted the glyph was preferred over other options to represent long omissions on genetic diagrams.
 
+It was also noted that this glyph was already proposed on [SEP_V003](SEP_V003.md) as Omitted Detail, but was avoided for possible confusion with Blunt Restriction Site.
 
 ## Copyright <a name='copyright'></a>
 
