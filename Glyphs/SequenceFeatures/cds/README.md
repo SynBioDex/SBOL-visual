@@ -8,6 +8,10 @@ The coding sequence glyph is a "box" with one side bent out arrow-like to show d
 
 ![glyph specification](cds-specification.png)
 
+Alternately, CDS may be aligned to the backbone with the bottom of the glyph instead of the middle:
+
+![glyph specification](cds-specification-altalign.png)
+
 Alternately, CDS may be represented as a block arrow:
 
 ![glyph specification](cds-arrow-specification.png)
