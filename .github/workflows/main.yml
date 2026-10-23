@@ -45,7 +45,7 @@ jobs:
         run: mkdir -p output && cp specification/sbolvisual.pdf output
 
       - name: Upload PDF as build artifact
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: PDF
           path: output
@@ -88,7 +88,7 @@ jobs:
         run: python3 scripts/generate_sampler.py
 
       - name: Upload samplers as artifact
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: samplers
           path: sampler
@@ -141,19 +141,19 @@ jobs:
         run: python3 scripts/collate_glyphs.py
 
       - name: Upload zipfile of SVGs
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: SVG Glyphs
           path: glyph_collections/svg
 
       - name: Upload zipfile of PDFs
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: PDF Glyphs
           path: glyph_collections/pdf
 
       - name: Upload zipfile of PNGs
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: PNG Glyphs
           path: glyph_collections/png
