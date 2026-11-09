@@ -1,16 +1,16 @@
-# SEP V026: Introduction of “//” as an alternative Glyph for Omitted Detail
+# SEP V026: Introduction of double slash as an alternative Glyph for Omitted Detail
 
 
 | SEP | |
 | --- | --- |
-| **Title** | Introduction of “//” as an alternative Glyph for Omitted Detail |
-| **Authors** | Georgie Hau Sorensen (georgiehausorensen@gmail.com), Lukas Buecherl |
-| **Editor** | Felipe Buson (fxbuson@gmail.com)|
+| **Title** | Introduction of double slash as an alternative Glyph for Omitted Detail |
+| **Authors** | Felipe Buson (fxbuson@gmail.com), Georgie Hau Sorensen, Lukas Buecherl |
+| **Editor** | Prashant Vaidyanathan (vprashant1@gmail.com) |
 | **Type** | Specification |
 | **SBOL Visual Version** | |
 | **Status** | Draft |
 | **Created** | 26 Feb 2026 |
-| **Last modified** |  26 Feb 2026 |
+| **Last modified** |  09 Nov 2026 |
 | **Issue** | |
 
 
@@ -19,7 +19,7 @@
 
 ## Abstract
 
-This proposal introduces a new SBOL Visual glyph, represented by the character sequence “//”, to denote generic breaks in DNA. These breaks include regions where sequence continuity is intentionally unspecified, undefined, interrupted, or skipped for schematic clarity. The use of “//” aligns with widespread conventions in biological schematics and provides a simple, intuitive, and compact symbol to improve readability.
+This proposal introduces a new SBOL Visual glyph, represented by diagonal double slashes, to denote generic breaks in DNA. These breaks include regions where sequence continuity is intentionally unspecified, undefined, interrupted, or skipped for schematic clarity. The use of double slash aligns with widespread conventions in biological schematics and provides a simple, intuitive, and compact symbol to improve readability. 
 
 
 
@@ -40,24 +40,23 @@ This proposal introduces a new SBOL Visual glyph, represented by the character s
 
 1.1. Widespread Use
 
-The “//” mark is traditionally used in biological schematics to indicate:
+The double slash mark is traditionally used in biological schematics to indicate:
 
 - “region removed/not drawn”
 - “break in continuity”
 - “shift in sequence”  
 
-This convention is common in textbooks, research illustrations, and even circuit diagrams in other fields. 
+This convention is common in textbooks, research illustrations, and even circuit diagrams in other fields, and has been adopted more widely than the current Omitted Detail glyph currently in SBOL Visual. 
 
 The familiarity of this symbol lowers the cognitive load for new users, and it makes diagrams more immediately interpretable.
 
 
-
 1.2. Glyph Simplicity
 
-The “//” glyph:
+The double slash glyph:
 
 - Is visually compact
-- Does not resemble any existing SBOL Visual glyph
+- Is sufficiently distinct from existing SBOL Visual glyphs
 - Can be rendered easily in both digital and hand-drawn form
 - Maintains clarity even at small scale
 
@@ -65,30 +64,17 @@ The “//” glyph:
 
 ## 2. Specification <a name="specification"></a>
 
-2.1. Glyph Definition
+### Omitted Detail
+
+The Omitted Detail glyph is a break in the backbone with an ellipsis to indicate that material would normally be in that location:
 
 
 
-The “//” glyph consists of two short, parallel, diagonal slashes. 
+Alternately, Omitted Detail may be represented with a slanted double slash breaking the backbone line:
 
 
 
-These may be oriented:
-
-- Forward-slanted (primary, recommended)
-- Backward-slanted (optional alternative for stylistic compatibility with other diagram elements)
-
-
-2.2. Placement
-
-The glyph placed in-line on a DNA backbone to indicate that:
-
-- A region of arbitrary length is not shown
-- Sequence continuity is intentionally omitted
-
-2.3. Semantic Meaning
-
-The glyph may represent a non-specific sequence gap
+In this case, the slash lines MUST be slanted in order to differentiate this glyph with Blunt Restriction Site.
 
 
 ## 3. Example or Use case <a name="example"></a>:
@@ -99,8 +85,7 @@ Here, the diagram represents two genes in distinct loci in the genome, separated
 
 ## 4. Backwards Compatibility <a name='compatibility'></a>
 
-This SEP is backward compatible insofar as it doesn't directly introduces conflicts with existing glyphs. There is an argument to be made whether its function can be fully covered using the existing "engineered region" glyph. It is worth noting that any diagrams without this introduced break glyph will remain valid.
-
+This SEP is backward compatible insofar as it doesn't directly introduces conflicts with existing glyphs. As mentioned in the dicussion section below, there is some similarity to Blunt Restriction Site, if the diagonal slashes are not drawn with enough of an angle.
 
 
 ## 5. Discussion <a name='discussion'></a>
@@ -108,6 +93,8 @@ This SEP is backward compatible insofar as it doesn't directly introduces confli
 This proposition was raised in the review the community did for the "[A Decade of SBOL Visual](https://pubs.acs.org/doi/10.1021/acssynbio.5c00417)" article, over multiple HARMONY and COMBINE conferences. We noted the glyph was preferred over other options to represent long omissions on genetic diagrams.
 
 It was also noted that this glyph was already proposed on [SEP_V003](SEP_V003.md) as Omitted Detail, but was avoided for possible confusion with Blunt Restriction Site.
+
+Editors now reconsidered adding this glyph as an alternative and the possible confusion was brought up again, so an explicit warning about the angle of the diagonal slashes should be included.
 
 ## Copyright <a name='copyright'></a>
 
