@@ -13,9 +13,12 @@
      id="defs1" /><g
      id="layer1"
      transform="translate(-156.47585,-101.52944)"><path
-       style="fill:#999999;fill-opacity:1;stroke:#cccccc;stroke-width:0.141111;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.282222, 0.141111;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 156.47585,106.52104 h 12.70512"
+       style="opacity:0.5;fill:#999999;fill-opacity:1;stroke:#999999;stroke-width:0.141111;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.282222, 0.141111;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 156.47585,106.52104 h 4.76507"
        id="path4135" /><path
+       style="opacity:0.5;fill:#999999;fill-opacity:1;stroke:#999999;stroke-width:0.141111;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.282222, 0.141111;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 164.41591,106.52104 h 4.76506"
+       id="path1" /><path
        style="fill:none;stroke:#000000;stroke-width:0.846667;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 158.64416,111.01874 2.59676,-4.49771 2.59675,-4.4977"
        id="path3" /><path
