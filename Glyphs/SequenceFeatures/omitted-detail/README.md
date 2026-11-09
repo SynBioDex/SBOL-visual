@@ -4,7 +4,7 @@
 No SO term is associated with Omitted Detail, as it is indicating that something is *not* being represented.
 
 ## Recommended Glyph and Alternates
-The Omitted Detail glyph is a break in the backbone with an ellipsis to indicate that material would normally be in that location. Its recommended use is with three dots breaking the backbone line:
+The Omitted Detail glyph is a break in the backbone with an ellipsis to indicate that material would normally be in that location:
 
 ![glyph specification](omitted-detail-specification.png)
 
